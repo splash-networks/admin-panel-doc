@@ -1,2 +1,3 @@
-# admin-panel-doc
-Admin Panel Documentation
+# Admin Panel Documentation
+
+Dev server: `python -m mkdocs serve`
