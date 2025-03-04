@@ -1,0 +1,20 @@
+site_name: Splash Admin Panel
+nav:
+  - Home: index.md
+  - Guide: guide.md
+theme:
+  name: material
+  logo: assets/logo.png
+  palette:
+    - scheme: default
+      primary: blue  # Change primary color
+      accent: amber   # Change accent color
+extra:
+  generator: false
+  favicon: assets/images/favicon.png
+  homepage: https://splashnetworks.co
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@splashnetworksco
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/splash-networks/
