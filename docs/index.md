@@ -1,4 +1,4 @@
-# Documentation
+# Documentation Home
 
 This is a basic guide for setting up and performing common tasks on the Splash Admin Panel.
 

@@ -1,10 +1,12 @@
 site_name: Splash Admin Panel
+site_url: https://docs.splashnetworks.co
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - Accessing Customer Data: customer-data.md
   - Creating Portals: creating-portals.md
   - Integrations:
+      - integrations/index.md
       - Ubiquiti Unifi: integrations/unifi.md
 theme:
   name: material
@@ -14,13 +16,40 @@ theme:
       primary: blue  # Change primary color
       accent: amber   # Change accent color
   features:
-    - navigation.expand  # Ensures the Integrations section stays open
+    - navigation.expand
+    - header.autohide
+    - navigation.footer
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+plugins:
+  - glightbox
+  - search
 extra:
   generator: false
   favicon: assets/images/favicon.png
   homepage: https://docs.splashnetworks.co
   social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:hello@splashnetworks.co
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@splashnetworksco
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/splash-networks/
+  analytics:
+    provider: google
+    property: G-1ZJ93Z9D5T
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
