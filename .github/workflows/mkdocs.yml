@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: 3.11
       - run: pip install \
-          mkdocs-material
+          mkdocs-material glightbox
       - run: mkdocs gh-deploy --config-file mkdocs.yml --force
 
   deploy:
