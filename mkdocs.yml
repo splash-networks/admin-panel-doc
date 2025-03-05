@@ -18,7 +18,7 @@ theme:
 extra:
   generator: false
   favicon: assets/images/favicon.png
-  homepage: https://splashnetworks.co
+  homepage: https://blog.splashnetworks.co
   social:
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@splashnetworksco
