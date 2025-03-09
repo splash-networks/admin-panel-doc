@@ -1,5 +1,3 @@
-# Creating Portals
-
 ## Setting up Templates
 
 In the Templates tab you can add a new template using the New template button or through the Import button if you have a previous export that you'd like to import.

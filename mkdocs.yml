@@ -4,10 +4,11 @@ nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - Accessing Customer Data: customer-data.md
-  - Creating Portals: creating-portals.md
-  - Integrations:
-      - integrations/index.md
-      - Ubiquiti Unifi: integrations/unifi.md
+  - Defining Templates: defining-templates.md
+  - Creating Portals:
+      - portals/index.md
+      - Ubiquiti Unifi: portals/unifi.md
+      - Aruba/HPE Instant On: portals/aruba-instant-on.md
 theme:
   name: material
   logo: assets/logo.png

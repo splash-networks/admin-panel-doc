@@ -1,6 +1,4 @@
-## Ubiquiti Unifi
-
-To set up a portal for Unifi first we need to create a template. Then we have to add the Unifi controller which will be using that portal. A single template can be applied to multiple sites.
+To set up a portal for Unifi first we need to [create a template](../defining-templates.md). Then we have to add the Unifi controller which will be using that portal. A single template can be applied to multiple sites.
 
 ## Add a Unifi Controller
 

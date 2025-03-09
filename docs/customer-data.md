@@ -1,5 +1,3 @@
-# Customer Data
-
 ## Customers
 
 The data entered by the customers appears in the Customers tab.
