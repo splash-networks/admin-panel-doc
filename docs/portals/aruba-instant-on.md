@@ -1,4 +1,4 @@
-To set up a portal for Aruba Instant On first we need to [create a template](../defining-templates.md).
+To set up a portal for Aruba/HPE Instant On first we need to [create a template](../defining-templates.md).
 
 ## Add a Portal
 
@@ -6,7 +6,7 @@ To create a portal go to the Portal tab and click on the New portal button. Ente
 
 ![Aruba Portal](../assets/images/portal-aruba.png)
 
-The `Guest Portal URL` will be created based on the URL of the Splash Admin followed by the path given by Site ID.
+The `Guest Portal URL` will be created based on the URL of the Splash Admin app followed by the path given by Site ID.
 
 Select the venue and the template and click on the Create button.
 
@@ -27,7 +27,7 @@ You can click on the Edit button against each entry to modify it if needed.
 
 ## Instant On Portal Settings
 
-Login to your account on the [HPE Instant On cloud](https://portal.instant-on.hpe.com/) and select the site on which you want to apply guest portal.
+Login to your account on the [HPE Instant On cloud](https://portal.instant-on.hpe.com/) and select the site on which you want to apply guest portal. Create a new Network of type `Guest`. In Network Options enable `Guest Portal`.
 
 ![Aruba Guest Network](../assets/images/aruba-create-network.png)
 

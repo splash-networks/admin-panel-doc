@@ -3,12 +3,15 @@ site_url: https://docs.splashnetworks.co
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
-  - Accessing Customer Data: customer-data.md
   - Defining Templates: defining-templates.md
   - Creating Portals:
       - portals/index.md
       - Ubiquiti Unifi: portals/unifi.md
       - Aruba/HPE Instant On: portals/aruba-instant-on.md
+  - Accessing Customer Data:
+      - customer-data/index.md
+      - Through Web: customer-data/web.md
+      - Through API: customer-data/api.md
 theme:
   name: material
   logo: assets/logo.png
