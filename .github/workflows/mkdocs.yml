@@ -46,3 +46,14 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord Notification
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d '{"content": "Docs successfully deployed via repository: *${{ github.repository }}*!"}' \
+          ${{ secrets.DISCORD_WEBHOOK_URL }}
