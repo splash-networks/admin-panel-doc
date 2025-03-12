@@ -2,7 +2,7 @@ To set up a portal for Unifi first we need to [create a template](../defining-te
 
 ## Add a Unifi Controller
 
-To add a Unifi Controller we will click on the New unifi controller button in the Unifi Controllers tab. An interactive wizard will launch. You need to enter the name, URL and username password for the Unifi Controller. It needs to be a local user with 2FA. The controller should be reachable directly over the internet using the provider hostname, not via ui.com portal.
+To add a Unifi Controller we will click on the New unifi controller button in the Unifi Controllers tab. An interactive wizard will launch. You need to enter the name, URL and username password for the Unifi Controller. It needs to be a local user without 2FA. The controller should be reachable directly over the internet using the provider hostname, not via ui.com portal.
 
 ![Unifi Wizard 1](../assets/images/unifi-wizard-1.png)
 
