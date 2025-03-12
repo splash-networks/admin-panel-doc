@@ -20,7 +20,7 @@ In Simple Flow the user enters their email and mobile number data but does not h
 Here is an example of Simple flow:
 
 <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/JJcc-oSoWrg" 
+    src="https://www.youtube.com/embed/K6QrtRPBBg4" 
     frameborder="0" allowfullscreen>
 </iframe>
 
