@@ -55,5 +55,16 @@ jobs:
         run: |
           curl -H "Content-Type: application/json" \
           -X POST \
-          -d '{"content": "Docs successfully deployed via repository: *${{ github.repository }}*!"}' \
-          ${{ secrets.DISCORD_WEBHOOK_URL }}
+          -d '{
+            "embeds": [{
+              "title": "🚀 Documentation portal successfully deployed",
+              "description": "✅ The update for *${{ github.repository }}* has been successfully built and deployed!",
+              "color": 65280,
+              "fields": [
+                {
+                  "name": "Commit",
+                  "value": "[${{ github.sha }}](https://github.com/${{ github.repository }}/commit/${{ github.sha }})"
+                }
+              ]
+            }]
+          }' ${{ secrets.DISCORD_WEBHOOK_URL }}
