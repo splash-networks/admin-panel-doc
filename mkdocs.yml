@@ -29,7 +29,6 @@ theme:
 plugins:
   - glightbox
   - search
-  - meta
 extra:
   generator: false
   favicon: assets/images/favicon.png
