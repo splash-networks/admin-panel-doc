@@ -29,6 +29,7 @@ theme:
 plugins:
   - glightbox
   - search
+  - meta
 extra:
   generator: false
   favicon: assets/images/favicon.png
@@ -40,15 +41,6 @@ extra:
       link: https://www.youtube.com/@splashnetworksco
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/splash-networks/
-  metadata:
-    title: "Splash Networks Docs"
-    description: "Documentation for Splash Admin"
-    image: "https://docs.splashnetworks.co/assets/logo.png"
-    og:image: "https://docs.splashnetworks.co/assets/logo.png"
-    og:type: "website"
-    og:url: "https://docs.splashnetworks.co/"
-    og:title: "Splash Networks Docs"
-    og:description: "Official documentation for Splash Networks"
   analytics:
     provider: google
     property: G-1ZJ93Z9D5T
