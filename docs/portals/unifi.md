@@ -1,12 +1,12 @@
-To set up a portal for Unifi first we need to [create a template](../defining-templates.md). Then we have to add the Unifi controller which will be using that portal. A single template can be applied to multiple sites.
+To set up a portal for Unifi first you need to [create a template](../defining-templates.md). Then you have to add the Unifi controller which will be using that portal. A single template can be applied to multiple sites.
 
 ## Add a Unifi Controller
 
-To add a Unifi Controller we will click on the New unifi controller button in the Unifi Controllers tab. An interactive wizard will launch. You need to enter the name, URL and username password for the Unifi Controller. It needs to be a local user without 2FA. The controller should be reachable directly over the internet using the provided hostname, not via ui.com portal.
+To add a Unifi Controller you will click on the New unifi controller button in the Unifi Controllers tab. An interactive wizard will launch. You need to enter the name, URL and username password for the Unifi Controller. It needs to be a local user without 2FA. The controller should be reachable directly over the internet using the provided hostname, not via ui.com portal.
 
 ![Unifi Wizard 1](../assets/images/unifi-wizard-1.png)
 
-In the 2nd step the connection with the Unifi controller will be tested. If the connection is successful, we will get an option to assign sites on the Unifi controller to corresponding venues and templates on the Splash Admin Panel. You can use the `+` button at the bottom to add multiple sites.
+In the 2nd step the connection with the Unifi controller will be tested. If the connection is successful, you will get an option to assign sites on the Unifi controller to corresponding venues and templates on the Splash Admin Panel. You can use the `+` button at the bottom to add multiple sites.
 
 ![Unifi Wizard 2](../assets/images/unifi-wizard-2.png)
 
@@ -20,7 +20,7 @@ The controller will start showing on the Unifi Controllers page:
 
 ![Controller Added](../assets/images/controller-added.png)
 
-You should check the site in the Unifi Controller to double check the captive portal settings. In Hotspot -> Authentication `External Portal Server` should be selected. 
+You should check the site in the Unifi Controller to double-check the captive portal settings. In Hotspot -> Authentication `External Portal Server` should be selected. 
 
 ![Unifi External Portal Server](../assets/images/unifi-external-portal-server.png)
 
@@ -44,7 +44,7 @@ Domain: <Splash Admin Panel Domain>
 
 ## Portals
 
-We can go to Portals to view the settings for the portal(s) just added.
+You can go to Portals to view the settings for the portal(s) just added.
 
 ![Unifi Portals](../assets/images/unifi-portals.png)
 

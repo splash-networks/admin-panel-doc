@@ -1,4 +1,4 @@
-To set up a portal for Aruba/HPE Instant On first we need to [create a template](../defining-templates.md).
+To set up a portal for Aruba/HPE Instant On first you need to [create a template](../defining-templates.md).
 
 ## Add a Portal
 
@@ -8,11 +8,11 @@ To create a portal go to the Portal tab and click on the New portal button. Ente
 
 The `Guest Portal URL` will be created based on the URL of the Splash Admin app followed by the path given by Site ID.
 
-Select the venue and the template and click on the Create button.
+Select the venue and template and click on the Create button.
 
 ## Portal Settings
 
-We can go to Portals to view the settings for the portal(s) just added.
+You can go to Portals to view the settings for the portal(s) just added.
 
 Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:
 

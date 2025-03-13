@@ -2,14 +2,28 @@
 
 This is a basic guide for setting up and performing common tasks on the Splash Admin Panel.
 
-## Login
+## Introduction
 
-This is the login screen. You will login using your credentials.
+The Splash Admin application has 2 main purposes:
 
-![Login Screen](assets/images/login-screen.png)
+1. Creating external captive portals
+2. Providing an admin interface for viewing and exporting user data
 
-## Dashboard
+## Terminology
 
-After successful login you will see a dashboard like this showing you some quick stats about your sites.
+It is important to familiarize yourself with the following terminology to understand the sequence of steps required to set up the system.
 
-![Dashboard](assets/images/dashboard.png)
+- #### Business:
+The organization in which portal is being deployed, such as Starbucks or Harvard University. A business can have several venues.
+- #### Venue:
+The location or site where portal is being deployed, such as Starbucks Dubai Mall or Harvard Law School.
+- #### Template:
+The template refers to the design of a portal splash page typically including logo, background, fonts, colors, form fields, and terms and conditions. It also specifies the portal flow i.e. the process a user has to complete to gain network access, such as verifying their contact information via a One Time Password (OTP). It is hardware-agnostic.
+- #### Portal:
+A portal is defined by attaching a template to a particular venue and hardware type such as Aruba or Unifi. It can have several unique parameters and settings such as URL, session timeout, Redirect URL etc. for each particular hardware type.
+
+## Configuration Steps
+
+The typical flow of operations when working on a new Splash Admin application would be like this:
+
+![Flow](assets/images/flow.png)
