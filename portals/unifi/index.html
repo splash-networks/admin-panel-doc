@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
     
     
       
@@ -621,18 +621,18 @@
 
   <h1>Ubiquiti Unifi</h1>
 
-<p>To set up a portal for Unifi first we need to <a href="../../defining-templates/">create a template</a>. Then we have to add the Unifi controller which will be using that portal. A single template can be applied to multiple sites.</p>
+<p>To set up a portal for Unifi first you need to <a href="../../defining-templates/">create a template</a>. Then you have to add the Unifi controller which will be using that portal. A single template can be applied to multiple sites.</p>
 <h2 id="add-a-unifi-controller">Add a Unifi Controller</h2>
-<p>To add a Unifi Controller we will click on the New unifi controller button in the Unifi Controllers tab. An interactive wizard will launch. You need to enter the name, URL and username password for the Unifi Controller. It needs to be a local user without 2FA. The controller should be reachable directly over the internet using the provided hostname, not via ui.com portal.</p>
+<p>To add a Unifi Controller you will click on the New unifi controller button in the Unifi Controllers tab. An interactive wizard will launch. You need to enter the name, URL and username password for the Unifi Controller. It needs to be a local user without 2FA. The controller should be reachable directly over the internet using the provided hostname, not via ui.com portal.</p>
 <p><a class="glightbox" href="../../assets/images/unifi-wizard-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 1" src="../../assets/images/unifi-wizard-1.png" /></a></p>
-<p>In the 2nd step the connection with the Unifi controller will be tested. If the connection is successful, we will get an option to assign sites on the Unifi controller to corresponding venues and templates on the Splash Admin Panel. You can use the <code>+</code> button at the bottom to add multiple sites.</p>
+<p>In the 2nd step the connection with the Unifi controller will be tested. If the connection is successful, you will get an option to assign sites on the Unifi controller to corresponding venues and templates on the Splash Admin Panel. You can use the <code>+</code> button at the bottom to add multiple sites.</p>
 <p><a class="glightbox" href="../../assets/images/unifi-wizard-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 2" src="../../assets/images/unifi-wizard-2.png" /></a></p>
 <p>The 3rd and final step applies the settings for captive portal to the respective site on the Unifi controller. Click on the Create button to complete the process.</p>
 <p><a class="glightbox" href="../../assets/images/unifi-wizard-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 3" src="../../assets/images/unifi-wizard-3.png" /></a></p>
 <p>Completing this process sets up the captive portal for the selected site(s) on the Admin Panel.</p>
 <p>The controller will start showing on the Unifi Controllers page:</p>
 <p><a class="glightbox" href="../../assets/images/controller-added.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Controller Added" src="../../assets/images/controller-added.png" /></a></p>
-<p>You should check the site in the Unifi Controller to double check the captive portal settings. In Hotspot -&gt; Authentication <code>External Portal Server</code> should be selected. </p>
+<p>You should check the site in the Unifi Controller to double-check the captive portal settings. In Hotspot -&gt; Authentication <code>External Portal Server</code> should be selected. </p>
 <p><a class="glightbox" href="../../assets/images/unifi-external-portal-server.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi External Portal Server" src="../../assets/images/unifi-external-portal-server.png" /></a></p>
 <p>By clicking on Edit you can view the IP address: it should show the IP address of the Splash Admin Panel server.</p>
 <p><a class="glightbox" href="../../assets/images/unifi-portal-server-ip.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portal Server IP" src="../../assets/images/unifi-portal-server-ip.png" /></a></p>
@@ -647,7 +647,7 @@ Domain: checked
 Domain: &lt;Splash Admin Panel Domain&gt;
 </code></pre>
 <h2 id="portals">Portals</h2>
-<p>We can go to Portals to view the settings for the portal(s) just added.</p>
+<p>You can go to Portals to view the settings for the portal(s) just added.</p>
 <p><a class="glightbox" href="../../assets/images/unifi-portals.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portals" src="../../assets/images/unifi-portals.png" /></a></p>
 <p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
 <pre><code>Redirect URL: the URL a user is redirected to after succesful portal authorization
