@@ -1,5 +1,9 @@
-site_name: Splash Admin Panel
+site_name: Splash Admin Panel Docs
+site_description: Documentation for Splash Admin Panel
 site_url: https://docs.splashnetworks.co
+site_author: Splash Networks
+copyright: Copyright &copy; 2025 Splash Networks
+
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
@@ -7,6 +11,7 @@ nav:
   - Creating Portals:
       - portals/index.md
       - Ubiquiti Unifi: portals/unifi.md
+      - Mikrotik: portals/mikrotik.md
       - Aruba/HPE Instant On: portals/aruba-instant-on.md
   - Accessing Customer Data:
       - customer-data/index.md
@@ -34,12 +39,16 @@ extra:
   favicon: assets/images/favicon.png
   homepage: https://docs.splashnetworks.co
   social:
+    - icon: fontawesome/solid/globe
+      link: https://splashnetworks.co
     - icon: fontawesome/solid/paper-plane
       link: mailto:hello@splashnetworks.co
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@splashnetworksco
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/splash-networks/
+    - icon: fontawesome/brands/github
+      link: https://github.com/splash-networks
   analytics:
     provider: google
     property: G-1ZJ93Z9D5T
