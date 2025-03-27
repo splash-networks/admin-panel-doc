@@ -12,13 +12,13 @@
         <meta name="author" content="Splash Networks">
       
       
-        <link rel="canonical" href="https://docs.splashnetworks.co/portals/unifi/">
+        <link rel="canonical" href="https://docs.splashnetworks.co/portals/mikrotik/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../unifi/">
       
       
-        <link rel="next" href="../mikrotik/">
+        <link rel="next" href="../aruba-instant-on/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Ubiquiti Unifi - Splash Admin Panel Docs</title>
+        <title>Mikrotik - Splash Admin Panel Docs</title>
       
     
     
@@ -97,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#add-a-unifi-controller" class="md-skip">
+        <a href="#add-a-portal" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ubiquiti Unifi
+              Mikrotik
             
           </span>
         </div>
@@ -356,6 +356,28 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../unifi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ubiquiti Unifi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -370,7 +392,7 @@
           
   
   <span class="md-ellipsis">
-    Ubiquiti Unifi
+    Mikrotik
     
   </span>
   
@@ -382,7 +404,7 @@
         
   
   <span class="md-ellipsis">
-    Ubiquiti Unifi
+    Mikrotik
     
   </span>
   
@@ -403,20 +425,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-a-unifi-controller" class="md-nav__link">
+  <a href="#add-a-portal" class="md-nav__link">
     <span class="md-ellipsis">
-      Add a Unifi Controller
+      Add a Portal
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#portals" class="md-nav__link">
+  <a href="#portal-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Portals
+      Portal Settings
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mikrotik-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mikrotik Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mikrotik Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hotspot-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hotspot Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portal-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portal Files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -424,28 +479,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mikrotik/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Mikrotik
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -614,20 +647,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-a-unifi-controller" class="md-nav__link">
+  <a href="#add-a-portal" class="md-nav__link">
     <span class="md-ellipsis">
-      Add a Unifi Controller
+      Add a Portal
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#portals" class="md-nav__link">
+  <a href="#portal-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Portals
+      Portal Settings
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mikrotik-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mikrotik Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mikrotik Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hotspot-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hotspot Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portal-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portal Files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -647,43 +713,54 @@
 
 
 
-  <h1>Ubiquiti Unifi</h1>
+  <h1>Mikrotik</h1>
 
-<p>To set up a portal for Unifi first you need to <a href="../../defining-templates/">create a template</a>. Then you have to add the Unifi controller which will be using that portal. A single template can be applied to multiple sites.</p>
-<h2 id="add-a-unifi-controller">Add a Unifi Controller</h2>
-<p>To add a Unifi Controller you will click on the New unifi controller button in the Unifi Controllers tab. An interactive wizard will launch. You need to enter the name, URL and username password for the Unifi Controller. It needs to be a local user without 2FA. The controller should be reachable directly over the internet using the provided hostname, not via ui.com portal.</p>
-<p><a class="glightbox" href="../../assets/images/unifi-wizard-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 1" src="../../assets/images/unifi-wizard-1.png" /></a></p>
-<p>In the 2nd step the connection with the Unifi controller will be tested. If the connection is successful, you will get an option to assign sites on the Unifi controller to corresponding venues and templates on the Splash Admin Panel. You can use the <code>+</code> button at the bottom to add multiple sites.</p>
-<p><a class="glightbox" href="../../assets/images/unifi-wizard-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 2" src="../../assets/images/unifi-wizard-2.png" /></a></p>
-<p>The 3rd and final step applies the settings for captive portal to the respective site on the Unifi controller. Click on the Create button to complete the process.</p>
-<p><a class="glightbox" href="../../assets/images/unifi-wizard-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 3" src="../../assets/images/unifi-wizard-3.png" /></a></p>
-<p>Completing this process sets up the captive portal for the selected site(s) on the Admin Panel.</p>
-<p>The controller will start showing on the Unifi Controllers page:</p>
-<p><a class="glightbox" href="../../assets/images/controller-added.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Controller Added" src="../../assets/images/controller-added.png" /></a></p>
-<p>You should check the site in the Unifi Controller to double-check the captive portal settings. In Hotspot -&gt; Authentication <code>External Portal Server</code> should be selected. </p>
-<p><a class="glightbox" href="../../assets/images/unifi-external-portal-server.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi External Portal Server" src="../../assets/images/unifi-external-portal-server.png" /></a></p>
-<p>By clicking on Edit you can view the IP address: it should show the IP address of the Splash Admin Panel server.</p>
-<p><a class="glightbox" href="../../assets/images/unifi-portal-server-ip.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portal Server IP" src="../../assets/images/unifi-portal-server-ip.png" /></a></p>
-<p>In the Settings tab the Landing Page Settings should be like this:</p>
-<p><a class="glightbox" href="../../assets/images/unifi-landing-page.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Landing Page Settings" src="../../assets/images/unifi-landing-page.png" /></a></p>
-<pre><code>Show Landing Page: checked
-HTTPs Redirection Support: unchecked
-Encrypted URL: unchecked
-Secure Portal: checked
-Domain: checked
-
-Domain: &lt;Splash Admin Panel Domain&gt;
-</code></pre>
-<h2 id="portals">Portals</h2>
+<p>To set up a portal for Mikrotik first you need to <a href="../../defining-templates/">create a template</a>.</p>
+<h2 id="add-a-portal">Add a Portal</h2>
+<p>To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal, and in Hardware select <code>Mikrotik</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
+<p><a class="glightbox" href="../../assets/images/portal-mikrotik.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Portal" src="../../assets/images/portal-mikrotik.png" /></a></p>
+<p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Admin Panel app followed by the path given by Site ID. Note this URL as it will be required later.</p>
+<p>Select the venue and template and click on the Create button.</p>
+<h2 id="portal-settings">Portal Settings</h2>
 <p>You can go to Portals to view the settings for the portal(s) just added.</p>
-<p><a class="glightbox" href="../../assets/images/unifi-portals.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portals" src="../../assets/images/unifi-portals.png" /></a></p>
 <p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
-<pre><code>Redirect URL: the URL a user is redirected to after succesful portal authorization
-Business Name: name of the venue which will be displayed on top of the portal
-Duration: the time in seconds for which a user is authorized on the network
+<pre><code>Business Name: name of the venue which will be displayed on top of the portal
+Redirect URL: the URL a user is redirected to after succesful portal authorization
 </code></pre>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
-<p><a class="glightbox" href="../../assets/images/unifi-portal-details.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portal Details" src="../../assets/images/unifi-portal-details.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portal-settings-mikrotik.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Portal Settings" src="../../assets/images/portal-settings-mikrotik.png" /></a></p>
+<h2 id="mikrotik-settings">Mikrotik Settings</h2>
+<p>Before setting up Hotspot on Mikrotik it is important to enable access from WAN side, otherwise you would be locked out of the system once Hotspot is enabled.</p>
+<p>Access your Mikrotik router using Winbox. Go to IP -&gt; Firewall and disable the following rules that block access from WAN:</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-firewall.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Firewall" src="../../assets/images/mikrotik-firewall.png" /></a></p>
+<p>Go to IP -&gt; Addresses and note your router's WAN IP (usually WAN interface is <code>ether1</code>). Connect to your Mikrotik router through WinBox using this IP before proceeding further.</p>
+<h3 id="hotspot-setup">Hotspot Setup</h3>
+<p>Go to IP -&gt; Hotspot and click on Hotspot Setup.</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-hotspot-setup.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Hotspot Setup" src="../../assets/images/mikrotik-hotspot-setup.png" /></a></p>
+<p>A series of dialog boxes will appear. Select the following options:</p>
+<ol>
+<li>In HotSpot Interface select bridge and press Next.</li>
+<li>In Local address of network keep the default option and press Next.</li>
+<li>In Address Pool of Network keep the default option and press Next.</li>
+<li>In Select Certificate select None and press Next.</li>
+<li>In IP Address of SMTP Server keep the default option and press Next.</li>
+<li>In DNS Servers keep the default option and press Next.</li>
+<li>In DNS name type nothing and press Next.</li>
+<li>In Create local HotSpot user, keep Name <code>admin</code> and password blank and press Next.</li>
+</ol>
+<p>The setup is now complete. Go to IP -&gt; Hotspot -&gt; Server Profiles and select <code>hsprof1</code> profile. In Login tab check <code>HTTP PAP</code> option and uncheck all other options. Click OK to save settings.</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-hotspot-server-profile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Hotspot Server Profile" src="../../assets/images/mikrotik-hotspot-server-profile.png" /></a></p>
+<p>In IP -&gt; Hotspot -&gt; User Profiles open the <code>default</code> profile and disable MAC Cookie. Change the number of <code>Shared Users</code> to the maximum number of devices that you want to be connected to the hotspot simultaneously.</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-hotspot-user-profile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Hotspot User Profile" src="../../assets/images/mikrotik-hotspot-user-profile.png" /></a></p>
+<p>Go to IP -&gt; Hotspot -&gt; Walled Garden IP List and create a new entry. In Dst. Address add the IP address of your Splash Admin Panel server and click OK.</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-walled-garden.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Hotspot Walled Garden" src="../../assets/images/mikrotik-walled-garden.png" /></a></p>
+<h3 id="portal-files">Portal Files</h3>
+<p>Download this <a href="../../files/mikrotik.zip">file</a> and unzip it. Open the <code>login.html</code> file in a text editor. The Guest Portal URL generated earlier should be pasted in the form action field as shown below:</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-login.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Login File" src="../../assets/images/mikrotik-login.png" /></a></p>
+<p>Go to Files and in Hotspot select <code>login.html</code> and <code>alogin.html</code> files and remove them.</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-files.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Files" src="../../assets/images/mikrotik-files.png" /></a></p>
+<p>Replace them with the files on your computer by dragging and dropping them into the <code>hotspot</code> directory:</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-files-updated.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Files Updated" src="../../assets/images/mikrotik-files-updated.png" /></a></p>
 
 
 
@@ -761,7 +838,7 @@ Duration: the time in seconds for which a user is authorized on the network
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Creating Portals">
+          <a href="../unifi/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Ubiquiti Unifi">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -771,20 +848,20 @@ Duration: the time in seconds for which a user is authorized on the network
                 Previous
               </span>
               <div class="md-ellipsis">
-                Creating Portals
+                Ubiquiti Unifi
               </div>
             </div>
           </a>
         
         
           
-          <a href="../mikrotik/" class="md-footer__link md-footer__link--next" aria-label="Next: Mikrotik">
+          <a href="../aruba-instant-on/" class="md-footer__link md-footer__link--next" aria-label="Next: Aruba/HPE Instant On">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Mikrotik
+                Aruba/HPE Instant On
               </div>
             </div>
             <div class="md-footer__button md-icon">
