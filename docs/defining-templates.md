@@ -2,7 +2,7 @@
 
 In the Templates tab you can add a new template using the New template button or through the Import button if you have a previous export that you'd like to import.
 
-When creating a new template you can modify the logo and the text fields according to your preference. Also, you can add a Background Image. The changes will be displayed in real time on the panel on the right side.
+When creating a new template you can modify the logo and the text fields according to your preference. The field selector section allows you to enable/disable various fields like Email and Phone number based on your requirements. You can change the font, button color, and placeholders for fields. Also, you can add a Background Image. The changes will be displayed in real time on the panel on the right side.
 
 ![Template](assets/images/template.png)
 

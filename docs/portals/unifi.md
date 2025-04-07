@@ -53,7 +53,8 @@ Clicking on a portal takes you to the details for that portal. It lets you speci
 ```
 Redirect URL: the URL a user is redirected to after succesful portal authorization
 Business Name: name of the venue which will be displayed on top of the portal
-Duration: the time in seconds for which a user is authorized on the network
+Duration: the time in minutes for which a user is authorized on the network
+Expiry: the time in days after which a repeat user will have to enter their data again on the portal
 ```
 
 You can click on the Edit button against each entry to modify it if needed.
