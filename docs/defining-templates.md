@@ -35,6 +35,12 @@ Here is an example of OTP flow:
     frameborder="0" allowfullscreen>
 </iframe>
 
+### Email Based OTP Verification Caveat
+
+Implementing email based OTP verification is not recommended. A user in captive state does not have complete internet access, so they will not be able to check their email on the same device. Either they would need another device to check their email, or they would need to have cellular internet on the same device to receive email via that. Additionally, on iOS devices the Captive Network Assistant (CNA) launches a browser that does not allow switching to another window. If you switch to a different window for checking email the browser will close.
+
+Therefore, keep these limitations in mind when implementing email based OTP verifications.
+
 ## Preview Template
 
 You can click on the preview changes button on the top right to view a full screen preview for mobile, tablet and desktop in portrait and landscape orientation.
