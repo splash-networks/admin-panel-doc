@@ -480,6 +480,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#avoiding-browsing-warning-on-laptops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Avoiding Browsing Warning on Laptops
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -706,6 +715,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#avoiding-browsing-warning-on-laptops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Avoiding Browsing Warning on Laptops
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -776,6 +794,18 @@ Expiry: the time in days after which a repeat user will have to enter their data
 <p><a class="glightbox" href="../../assets/images/mikrotik-files.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Files" src="../../assets/images/mikrotik-files.png" /></a></p>
 <p>Replace them with the files on your computer by dragging and dropping them into the <code>hotspot</code> directory:</p>
 <p><a class="glightbox" href="../../assets/images/mikrotik-files-updated.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Files Updated" src="../../assets/images/mikrotik-files-updated.png" /></a></p>
+<h3 id="avoiding-browsing-warning-on-laptops">Avoiding Browsing Warning on Laptops</h3>
+<p>When using captive portal on laptops and desktops you may receive a browser warning like this about information being submitted insecurely:</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-warning.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Browser warning" src="../../assets/images/mikrotik-warning.png" /></a></p>
+<p>To avoid this you need to import a TLS certificate to your Mikrotik router. You can get one for free using Let's Encrypt. Here is the process for installing it to your router.</p>
+<p>Combine your certificate and key into one consolidated file and upload that to your router:</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-cert-upload.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Certificate Upload" src="../../assets/images/mikrotik-cert-upload.png" /></a></p>
+<p>Go to System -&gt; Certificates and click on the Import button. Select the file you just uploaded, make sure the <code>Trusted</code> option is checked and click Import.</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-cert-import.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Certificate Import" src="../../assets/images/mikrotik-cert-import.png" /></a></p>
+<p>The imported certificate will be shown. In our case we are using a wildcard TLS certificate generating using Let's Encrypt.</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-certificates.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Certificates" src="../../assets/images/mikrotik-certificates.png" /></a></p>
+<p>Go to IP -&gt; Hotspot -&gt; Server Profiles and select <code>hsprof1</code> profile. Enter a DNS name for your router (the respective DNS record should also exist and point to any of the interface IPs on Mikrotik). In Login section enable <code>HTTPS</code> and in SSL Certificate select the certificate imported in the previous step.</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik-hotspot-https.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Hotpsot HTTPS" src="../../assets/images/mikrotik-hotspot-https.png" /></a></p>
 
 
 
