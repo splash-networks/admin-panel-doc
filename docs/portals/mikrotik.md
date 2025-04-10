@@ -78,3 +78,27 @@ Go to Files and in Hotspot select `login.html` and `alogin.html` files and remov
 Replace them with the files on your computer by dragging and dropping them into the `hotspot` directory:
 
 ![Mikrotik Files Updated](../assets/images/mikrotik-files-updated.png)
+
+### Avoiding Browsing Warning on Laptops
+
+When using captive portal on laptops and desktops you may receive a browser warning like this about information being submitted insecurely:
+
+![Mikrotik Browser warning](../assets/images/mikrotik-warning.png)
+
+To avoid this you need to import a TLS certificate to your Mikrotik router. You can get one for free using Let's Encrypt. Here is the process for installing it to your router.
+
+Combine your certificate and key into one consolidated file and upload that to your router:
+
+![Mikrotik Certificate Upload](../assets/images/mikrotik-cert-upload.png)
+
+Go to System -> Certificates and click on the Import button. Select the file you just uploaded, make sure the `Trusted` option is checked and click Import.
+
+![Mikrotik Certificate Import](../assets/images/mikrotik-cert-import.png)
+
+The imported certificate will be shown. In our case we are using a wildcard TLS certificate generating using Let's Encrypt.
+
+![Mikrotik Certificates](../assets/images/mikrotik-certificates.png)
+
+Go to IP -> Hotspot -> Server Profiles and select `hsprof1` profile. Enter a DNS name for your router (the respective DNS record should also exist and point to any of the interface IPs on Mikrotik). In Login section enable `HTTPS` and in SSL Certificate select the certificate imported in the previous step.
+
+![Mikrotik Hotpsot HTTPS](../assets/images/mikrotik-hotspot-https.png)
