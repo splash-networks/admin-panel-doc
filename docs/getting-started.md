@@ -19,3 +19,9 @@ In the Businesses tab you can add a new business by clicking on the New business
 Each business can have multiple venues. You can go to the Venues tab to add venues using the New venue button:
 
 ![Venues](assets/images/venues.png)
+
+## Periodic Reports
+
+Under venue settings you have the option of enabling periodic reports. The reporting frequency can be daily/weekly/monthly. It will contain the data of customers and visits to that venue for the selected duration and will be emailed to the provided email addresses.
+
+![Venue Reports](assets/images/reports.png)
