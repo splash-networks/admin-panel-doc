@@ -93,7 +93,9 @@ Combine your certificate and key into one consolidated file and upload that to y
 
 Go to System -> Certificates and click on the Import button. Select the file you just uploaded, make sure the `Trusted` option is checked and click Import.
 
+<figure markdown="1">
 ![Mikrotik Certificate Import](../assets/images/mikrotik/mikrotik-cert-import.png)
+</figure>
 
 The imported certificate will be shown. In our case we are using a wildcard TLS certificate generating using Let's Encrypt.
 
@@ -101,4 +103,6 @@ The imported certificate will be shown. In our case we are using a wildcard TLS 
 
 Go to IP -> Hotspot -> Server Profiles and select `hsprof1` profile. Enter a DNS name for your router (the respective DNS record should also exist and point to any of the interface IPs on Mikrotik). In Login section enable `HTTPS` and in SSL Certificate select the certificate imported in the previous step.
 
+<figure markdown="1">
 ![Mikrotik Hotpsot HTTPS](../assets/images/mikrotik/mikrotik-hotspot-https.png)
+</figure>

@@ -2,7 +2,9 @@
 
 This is the login screen. You will login using your provided credentials.
 
-![Login Screen](assets/images/login-screen.png)
+<figure markdown="span">
+  ![Login Screen](assets/images/login-screen.png){ width="70%" }
+</figure>
 
 ## Dashboard
 
