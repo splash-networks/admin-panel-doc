@@ -962,11 +962,15 @@ Expiry: the time in days after which a repeat user will have to enter their data
 <p>Combine your certificate and key into one consolidated file and upload that to your router:</p>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-cert-upload.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Certificate Upload" src="../../assets/images/mikrotik/mikrotik-cert-upload.png" /></a></p>
 <p>Go to System -&gt; Certificates and click on the Import button. Select the file you just uploaded, make sure the <code>Trusted</code> option is checked and click Import.</p>
+<figure>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-cert-import.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Certificate Import" src="../../assets/images/mikrotik/mikrotik-cert-import.png" /></a></p>
+</figure>
 <p>The imported certificate will be shown. In our case we are using a wildcard TLS certificate generating using Let's Encrypt.</p>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-certificates.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Certificates" src="../../assets/images/mikrotik/mikrotik-certificates.png" /></a></p>
 <p>Go to IP -&gt; Hotspot -&gt; Server Profiles and select <code>hsprof1</code> profile. Enter a DNS name for your router (the respective DNS record should also exist and point to any of the interface IPs on Mikrotik). In Login section enable <code>HTTPS</code> and in SSL Certificate select the certificate imported in the previous step.</p>
+<figure>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-hotspot-https.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Hotpsot HTTPS" src="../../assets/images/mikrotik/mikrotik-hotspot-https.png" /></a></p>
+</figure>
 
 
 
