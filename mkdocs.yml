@@ -17,13 +17,33 @@ nav:
       - customer-data/index.md
       - Through Web: customer-data/web.md
       - Through API: customer-data/api.md
+  - Troubleshooting:
+      - troubleshooting/index.md
+      - Ubiquiti Unifi: troubleshooting/unifi.md
+      - Mikrotik: troubleshooting/mikrotik.md
+      - Aruba/HPE Instant On: troubleshooting/aruba-instant-on.md
 theme:
   name: material
   logo: assets/logo.png
   palette:
-    - scheme: default
-      primary: blue  # Change primary color
-      accent: amber   # Change accent color
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: amber
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
   features:
     - navigation.expand
     - header.autohide
@@ -34,6 +54,8 @@ theme:
 plugins:
   - glightbox
   - search
+markdown_extensions:
+  - md_in_html
 extra:
   generator: false
   favicon: assets/images/favicon.png
