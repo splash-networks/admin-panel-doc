@@ -2,58 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.splashnetworks.co/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/defining-templates/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/getting-started/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/customer-data/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/customer-data/api/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/customer-data/web/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/portals/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/portals/aruba-instant-on/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.splashnetworks.co/portals/mikrotik-with-radius/</loc>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/portals/mikrotik/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/portals/unifi/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/troubleshooting/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/troubleshooting/aruba-instant-on/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.splashnetworks.co/troubleshooting/mikrotik-with-radius/</loc>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/troubleshooting/mikrotik/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://docs.splashnetworks.co/troubleshooting/unifi/</loc>
-         <lastmod>2025-04-20</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
 </urlset>

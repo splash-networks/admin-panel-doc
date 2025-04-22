@@ -12,13 +12,13 @@
         <meta name="author" content="Splash Networks">
       
       
-        <link rel="canonical" href="https://docs.splashnetworks.co/troubleshooting/unifi/">
+        <link rel="canonical" href="https://docs.splashnetworks.co/troubleshooting/mikrotik-with-radius/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../mikrotik/">
       
       
-        <link rel="next" href="../mikrotik/">
+        <link rel="next" href="../aruba-instant-on/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Ubiquiti Unifi - Splash Admin Panel Docs</title>
+        <title>Mikrotik with RADIUS - Splash Admin Panel Docs</title>
       
     
     
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ubiquiti Unifi
+              Mikrotik with RADIUS
             
           </span>
         </div>
@@ -663,30 +663,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Ubiquiti Unifi
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../unifi/" class="md-nav__link">
         
   
   
@@ -697,42 +677,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#traffic-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Traffic Flow
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#client-isolation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Client Isolation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -765,10 +709,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../mikrotik-with-radius/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Mikrotik with RADIUS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -779,6 +743,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#traffic-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Traffic Flow
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -847,15 +838,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#client-isolation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Client Isolation
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -872,21 +854,12 @@
 
 
 
-  <h1>Ubiquiti Unifi</h1>
+  <h1>Mikrotik with RADIUS</h1>
 
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h2 id="traffic-flow">Traffic Flow</h2>
-<p>Here is the traffic flow in the case of Ubiquiti Unifi:</p>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-traffic-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Traffic Flow" src="../../assets/images/unifi/unifi-traffic-flow.png" /></a></p>
-<h2 id="client-isolation">Client Isolation</h2>
-<p>The client isolation setting on Unifi controller has been known to lead to this error when trying to access the captive portal:</p>
-<pre><code>Hotspot login cannot open the page because the network connection was lost
-</code></pre>
-<figure>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-client-isolation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Traffic Flow" src="../../assets/images/unifi/unifi-client-isolation.png" /></a></p>
-</figure>
-<p>To prevent it disable client device isolation in WiFi settings.</p>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-client-isolation-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Traffic Flow" src="../../assets/images/unifi/unifi-client-isolation-2.png" /></a></p>
+<p>Here is the traffic flow in the case of Mikrotik with RADIUS:</p>
+<p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-radius-traffic-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Traffic Flow" src="../../assets/images/mikrotik/mikrotik-radius-traffic-flow.png" /></a></p>
 
 
 
@@ -974,7 +947,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Troubleshooting">
+          <a href="../mikrotik/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mikrotik">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -984,20 +957,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Troubleshooting
+                Mikrotik
               </div>
             </div>
           </a>
         
         
           
-          <a href="../mikrotik/" class="md-footer__link md-footer__link--next" aria-label="Next: Mikrotik">
+          <a href="../aruba-instant-on/" class="md-footer__link md-footer__link--next" aria-label="Next: Aruba/HPE Instant On">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Mikrotik
+                Aruba/HPE Instant On
               </div>
             </div>
             <div class="md-footer__button md-icon">
