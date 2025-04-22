@@ -12,6 +12,7 @@ nav:
       - portals/index.md
       - Ubiquiti Unifi: portals/unifi.md
       - Mikrotik: portals/mikrotik.md
+      - Mikrotik with RADIUS: portals/mikrotik-with-radius.md
       - Aruba/HPE Instant On: portals/aruba-instant-on.md
   - Accessing Customer Data:
       - customer-data/index.md
@@ -21,6 +22,7 @@ nav:
       - troubleshooting/index.md
       - Ubiquiti Unifi: troubleshooting/unifi.md
       - Mikrotik: troubleshooting/mikrotik.md
+      - Mikrotik with RADIUS: troubleshooting/mikrotik-with-radius.md
       - Aruba/HPE Instant On: troubleshooting/aruba-instant-on.md
 theme:
   name: material
