@@ -8,10 +8,11 @@ When creating a new template you can modify the logo and the text fields accordi
 
 ## Flow
 
-There are 2 types of user authorization flows that are currently supported:
+There are 3 types of user authorization flows that are currently supported:
 
  - Simple
  - OTP
+ - Link
 
 ### Simple Flow
 
@@ -35,11 +36,22 @@ Here is an example of OTP flow:
     frameborder="0" allowfullscreen>
 </iframe>
 
+### Link Flow
+
+In Link Flow the user has to verify their email address by clicking on a verification link. The user is given internet access briefly, typically for 5 min, so they can access their email for completing verification. If they don't verify their email address during that time, they will be unauthorized from the network. If they do verify their email address, their session will be extended.
+
+Here is an example of Link flow:
+
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/MrXu8W95FNA" 
+    frameborder="0" allowfullscreen>
+</iframe>
+
 ### Email Based OTP Verification Caveat
 
-Implementing email based OTP verification is not recommended. A user in captive state does not have complete internet access, so they will not be able to check their email on the same device. Either they would need another device to check their email, or they would need to have cellular internet on the same device to receive email via that. Additionally, on iOS devices the Captive Network Assistant (CNA) launches a browser that does not allow switching to another window. If you switch to a different window for checking email the browser will close.
+Our recommended flow for email verification is Link flow.
 
-Therefore, keep these limitations in mind when implementing email based OTP verifications.
+Implementing email based OTP verification is not recommended. A user in captive state does not have complete internet access, so they will not be able to check their email on the same device. Either they would need another device to check their email, or they would need to have cellular internet on the same device to receive email via that. Additionally, on iOS devices the Captive Network Assistant (CNA) launches a browser that does not allow switching to another window. If you switch to a different window for checking email the browser will close.
 
 ## Preview Template
 
