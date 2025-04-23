@@ -6,7 +6,7 @@ To create a portal go to the Portal tab and click on the New portal button. Ente
 
 ![Mikrotik Portal](../assets/images/portal/mikrotik-radius-portal.png)
 
-The `Guest Portal URL` will be created based on the URL of the Splash Admin Panel app followed by the path given by Site ID. Note this URL as it will be required later.
+The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
 Select the venue and template and click on the Create button.
 
@@ -64,7 +64,7 @@ In IP -> Hotspot -> User Profiles open the `default` profile and disable MAC Coo
 
 ![Mikrotik Hotspot User Profile](../assets/images/mikrotik/mikrotik-hotspot-user-profile.png)
 
-Go to IP -> Hotspot -> Walled Garden IP List and create a new entry. In Dst. Address add the IP address of your Splash Admin Panel server and click OK.
+Go to IP -> Hotspot -> Walled Garden IP List and create a new entry. In Dst. Address add the IP address of your Splash Air server and click OK.
 
 ![Mikrotik Hotspot Walled Garden](../assets/images/mikrotik/mikrotik-walled-garden.png)
 

@@ -1,13 +1,13 @@
 # Documentation Home
 
-This is a basic guide for setting up and performing common tasks on the Splash Admin Panel.
+This is a basic guide for setting up and performing common tasks on Splash Air.
 
 ## Introduction
 
-The Splash Admin application has 2 main purposes:
+The Splash Air application has 2 main purposes:
 
 1. Creating external captive portals
-2. Providing an admin interface for viewing and exporting user data
+2. Providing a user-friendly interface for viewing and exporting user data
 
 ## Terminology
 
@@ -24,6 +24,6 @@ A portal is defined by attaching a template to a particular venue and hardware t
 
 ## Configuration Steps
 
-The typical flow of operations when working on a new Splash Admin application would be like this:
+The typical flow of operations when working on a new deployment of Splash Air would be like this:
 
 ![Flow](assets/images/flow.png)

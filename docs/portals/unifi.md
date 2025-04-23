@@ -6,7 +6,7 @@ To add a Unifi Controller you will click on the New unifi controller button in t
 
 ![Unifi Wizard 1](../assets/images/unifi/unifi-wizard-1.png)
 
-In the 2nd step the connection with the Unifi controller will be tested. If the connection is successful, you will get an option to assign sites on the Unifi controller to corresponding venues and templates on the Splash Admin Panel. You can use the `+` button at the bottom to add multiple sites.
+In the 2nd step the connection with the Unifi controller will be tested. If the connection is successful, you will get an option to assign sites on the Unifi controller to corresponding venues and templates on Splash Air. You can use the `+` button at the bottom to add multiple sites.
 
 ![Unifi Wizard 2](../assets/images/unifi/unifi-wizard-2.png)
 
@@ -14,7 +14,7 @@ The 3rd and final step applies the settings for captive portal to the respective
 
 ![Unifi Wizard 3](../assets/images/unifi/unifi-wizard-3.png)
 
-Completing this process sets up the captive portal for the selected site(s) on the Admin Panel.
+Completing this process sets up the captive portal for the selected site(s) on Splash Air.
 
 The controller will start showing on the Unifi Controllers page:
 
@@ -24,7 +24,7 @@ You should check the site in the Unifi Controller to double-check the captive po
 
 ![Unifi External Portal Server](../assets/images/unifi/unifi-external-portal-server.png)
 
-By clicking on Edit you can view the IP address: it should show the IP address of the Splash Admin Panel server.
+By clicking on Edit you can view the IP address: it should show the IP address of the Splash Air server.
 
 ![Unifi Portal Server IP](../assets/images/unifi/unifi-portal-server-ip.png)
 
@@ -39,7 +39,7 @@ Encrypted URL: unchecked
 Secure Portal: checked
 Domain: checked
 
-Domain: <Splash Admin Panel Domain>
+Domain: <Splash Air Domain>
 ```
 
 ## Portals
