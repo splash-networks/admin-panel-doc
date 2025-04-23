@@ -1,3 +1,7 @@
+```
+It is recommended to use RouterOS v7 for best results.
+```
+
 To set up a portal for Mikrotik first you need to [create a template](../defining-templates.md).
 
 ## Add a Portal
