@@ -390,6 +390,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#link-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#email-based-otp-verification-caveat" class="md-nav__link">
     <span class="md-ellipsis">
       Email Based OTP Verification Caveat
@@ -918,6 +927,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#link-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#email-based-otp-verification-caveat" class="md-nav__link">
     <span class="md-ellipsis">
       Email Based OTP Verification Caveat
@@ -963,10 +981,11 @@
 <p>When creating a new template you can modify the logo and the text fields according to your preference. The field selector section allows you to enable/disable various fields like Email and Phone number based on your requirements. You can change the font, button color, and placeholders for fields. Also, you can add a Background Image. The changes will be displayed in real time on the panel on the right side.</p>
 <p><a class="glightbox" href="../assets/images/template.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Template" src="../assets/images/template.png" /></a></p>
 <h2 id="flow">Flow</h2>
-<p>There are 2 types of user authorization flows that are currently supported:</p>
+<p>There are 3 types of user authorization flows that are currently supported:</p>
 <ul>
 <li>Simple</li>
 <li>OTP</li>
+<li>Link</li>
 </ul>
 <h3 id="simple-flow">Simple Flow</h3>
 <p>In Simple Flow the user enters their email and mobile number data but does not have to go through OTP based verification.</p>
@@ -984,9 +1003,17 @@
     frameborder="0" allowfullscreen>
 </iframe>
 
+<h3 id="link-flow">Link Flow</h3>
+<p>In Link Flow the user has to verify their email address by clicking on a verification link. The user is given internet access briefly, typically for 5 min, so they can access their email for completing verification. If they don't verify their email address during that time, they will be unauthorized from the network. If they do verify their email address, their session will be extended.</p>
+<p>Here is an example of Link flow:</p>
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/MrXu8W95FNA" 
+    frameborder="0" allowfullscreen>
+</iframe>
+
 <h3 id="email-based-otp-verification-caveat">Email Based OTP Verification Caveat</h3>
+<p>Our recommended flow for email verification is Link flow.</p>
 <p>Implementing email based OTP verification is not recommended. A user in captive state does not have complete internet access, so they will not be able to check their email on the same device. Either they would need another device to check their email, or they would need to have cellular internet on the same device to receive email via that. Additionally, on iOS devices the Captive Network Assistant (CNA) launches a browser that does not allow switching to another window. If you switch to a different window for checking email the browser will close.</p>
-<p>Therefore, keep these limitations in mind when implementing email based OTP verifications.</p>
 <h2 id="preview-template">Preview Template</h2>
 <p>You can click on the preview changes button on the top right to view a full screen preview for mobile, tablet and desktop in portrait and landscape orientation.</p>
 <p><a class="glightbox" href="../assets/images/preview-changes.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Preview Changes" src="../assets/images/preview-changes.png" /></a></p>
