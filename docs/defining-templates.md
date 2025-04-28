@@ -38,7 +38,7 @@ Here is an example of OTP flow:
 
 ### Link Flow
 
-In Link Flow the user has to verify their email address by clicking on a verification link. The user is given internet access briefly, typically for 5 min, so they can access their email for completing verification. If they don't verify their email address during that time, they will be unauthorized from the network. If they do verify their email address, their session will be extended.
+In Link Flow the user has to verify their email address by clicking on a verification link. The user is given internet access briefly, typically for 5 min, so they can access their email for completing verification. If they don't verify their email address during that time, they will be unauthorized from the network. If they do verify their email address, their session will be extended - whether the extension will be applied dynamically on existing session or will apply the next time they connect depends on the hardware type. For details refer to the compatibility matrix below.
 
 Here is an example of Link flow:
 
@@ -62,3 +62,14 @@ You can click on the preview changes button on the top right to view a full scre
 In the full screen preview you can use the buttons on the top to toggle between mobile, tablet and desktop view and switch orientation between portrait and landscape. This lets you visualize the captive portal as users will see it.
 
 ![Full Preview](assets/images/full-preview.png)
+
+## Hardware and Template Flow Compatibility Matrix
+
+The following compatibility matrix shows valid combinations of hardware and flow types along with comments:
+
+| Hardware/Flow        | Simple           | OTP              |       Link       | Comments                                                      |
+|:---------------------|:----------------:|:----------------:|:----------------:|:--------------------------------------------------------------|
+| Aruba Instant On     | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
+| Mikrotik             | :material-check: | :material-check: | :material-close: |                                                               |
+| Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension supported with RADIUS CoA |
+| Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | Link Flow 24-hr session extension supported                   |
