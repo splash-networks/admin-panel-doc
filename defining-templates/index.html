@@ -421,6 +421,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#hardware-and-template-flow-compatibility-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware and Template Flow Compatibility Matrix
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -958,6 +967,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#hardware-and-template-flow-compatibility-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware and Template Flow Compatibility Matrix
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1004,7 +1022,7 @@
 </iframe>
 
 <h3 id="link-flow">Link Flow</h3>
-<p>In Link Flow the user has to verify their email address by clicking on a verification link. The user is given internet access briefly, typically for 5 min, so they can access their email for completing verification. If they don't verify their email address during that time, they will be unauthorized from the network. If they do verify their email address, their session will be extended.</p>
+<p>In Link Flow the user has to verify their email address by clicking on a verification link. The user is given internet access briefly, typically for 5 min, so they can access their email for completing verification. If they don't verify their email address during that time, they will be unauthorized from the network. If they do verify their email address, their session will be extended - whether the extension will be applied dynamically on existing session or will apply the next time they connect depends on the hardware type. For details refer to the compatibility matrix below.</p>
 <p>Here is an example of Link flow:</p>
 <iframe width="560" height="315" 
     src="https://www.youtube.com/embed/MrXu8W95FNA" 
@@ -1019,6 +1037,49 @@
 <p><a class="glightbox" href="../assets/images/preview-changes.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Preview Changes" src="../assets/images/preview-changes.png" /></a></p>
 <p>In the full screen preview you can use the buttons on the top to toggle between mobile, tablet and desktop view and switch orientation between portrait and landscape. This lets you visualize the captive portal as users will see it.</p>
 <p><a class="glightbox" href="../assets/images/full-preview.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Full Preview" src="../assets/images/full-preview.png" /></a></p>
+<h2 id="hardware-and-template-flow-compatibility-matrix">Hardware and Template Flow Compatibility Matrix</h2>
+<p>The following compatibility matrix shows valid combinations of hardware and flow types along with comments:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Hardware/Flow</th>
+<th style="text-align: center;">Simple</th>
+<th style="text-align: center;">OTP</th>
+<th style="text-align: center;">Link</th>
+<th style="text-align: left;">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Aruba Instant On</td>
+<td style="text-align: center;">:material-check:</td>
+<td style="text-align: center;">:material-check:</td>
+<td style="text-align: center;">:material-check:</td>
+<td style="text-align: left;">Link Flow dynamic session extension not supported</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mikrotik</td>
+<td style="text-align: center;">:material-check:</td>
+<td style="text-align: center;">:material-check:</td>
+<td style="text-align: center;">:material-close:</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Mikrotik with RADIUS</td>
+<td style="text-align: center;">:material-check:</td>
+<td style="text-align: center;">:material-check:</td>
+<td style="text-align: center;">:material-check:</td>
+<td style="text-align: left;">Link Flow dynamic session extension supported with RADIUS CoA</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ubiquiti Unifi</td>
+<td style="text-align: center;">:material-check:</td>
+<td style="text-align: center;">:material-check:</td>
+<td style="text-align: center;">:material-check:</td>
+<td style="text-align: left;">Link Flow 24-hr session extension supported</td>
+</tr>
+</tbody>
+</table>
 
 
 
