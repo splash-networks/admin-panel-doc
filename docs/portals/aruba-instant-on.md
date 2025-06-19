@@ -6,7 +6,7 @@ To create a portal go to the Portal tab and click on the New portal button. Ente
 
 ![Aruba Portal](../assets/images/portal/portal-aruba.png)
 
-The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID.
+The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
 Select the venue and template and click on the Create button.
 

@@ -22,7 +22,7 @@ Clicking on a portal takes you to the details for that portal. It lets you speci
 
 ```
 Business Name: name of the venue which will be displayed on top of the portal
-Redirect URL: the URL a user is redirected to after succesful portal authorization
+Redirect URL: the URL a user is redirected to after successful portal authorization
 Expiry: the time in days after which a repeat user will have to enter their data again on the portal
 ```
 
