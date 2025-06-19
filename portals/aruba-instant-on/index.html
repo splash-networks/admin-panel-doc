@@ -15,14 +15,14 @@
         <link rel="canonical" href="https://docs.splashnetworks.co/portals/aruba-instant-on/">
       
       
-        <link rel="prev" href="../mikrotik-with-radius/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../customer-data/">
+        <link rel="next" href="../fortinet/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -345,6 +345,8 @@
       
         
       
+        
+      
     
     
     
@@ -383,75 +385,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../unifi/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Ubiquiti Unifi
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mikrotik/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Mikrotik
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mikrotik-with-radius/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Mikrotik with RADIUS
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -537,6 +470,98 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fortinet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fortinet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mikrotik/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mikrotik
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mikrotik-with-radius/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mikrotik with RADIUS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unifi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ubiquiti Unifi
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -682,6 +707,8 @@
       
         
       
+        
+      
     
     
     
@@ -731,12 +758,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/unifi/" class="md-nav__link">
+      <a href="../../troubleshooting/aruba-instant-on/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Ubiquiti Unifi
+    Aruba/HPE Instant On
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/fortinet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fortinet
     
   </span>
   
@@ -800,12 +850,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/aruba-instant-on/" class="md-nav__link">
+      <a href="../../troubleshooting/unifi/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Aruba/HPE Instant On
+    Ubiquiti Unifi
     
   </span>
   
@@ -896,7 +946,7 @@
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal, and in Hardware select <code>Aruba Instant On</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
 <p><a class="glightbox" href="../../assets/images/portal/portal-aruba.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Aruba Portal" src="../../assets/images/portal/portal-aruba.png" /></a></p>
-<p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID.</p>
+<p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the venue and template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
 <p>You can go to Portals to view the settings for the portal(s) just added.</p>
@@ -1000,7 +1050,7 @@ Expiry: the time in days after which a repeat user will have to enter their data
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../mikrotik-with-radius/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mikrotik with RADIUS">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Creating Portals">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1010,20 +1060,20 @@ Expiry: the time in days after which a repeat user will have to enter their data
                 Previous
               </span>
               <div class="md-ellipsis">
-                Mikrotik with RADIUS
+                Creating Portals
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../customer-data/" class="md-footer__link md-footer__link--next" aria-label="Next: Index">
+          <a href="../fortinet/" class="md-footer__link md-footer__link--next" aria-label="Next: Fortinet">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Index
+                Fortinet
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1114,10 +1164,10 @@ Expiry: the time in days after which a repeat user will have to enter their data
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
