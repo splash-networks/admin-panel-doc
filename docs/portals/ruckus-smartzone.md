@@ -57,3 +57,11 @@ In Hotspot Portal -> Authentication Server select On and select the option **Alw
 <figure markdown="span">
   ![Hotspot Settings](../assets/images/ruckus/hotspot-portal.png){ width="80%" }
 </figure>
+
+## MAC Encryption
+
+Access SmartZone via SSH and enter the following command:
+```
+ruckus(config)# no encrypt-mac-ip
+```
+This will ensure that the MAC and IP address of customer are recorded in plain-text. Otherwise, the default behavior is that they are encrypted.
