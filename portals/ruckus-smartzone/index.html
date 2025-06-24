@@ -12,13 +12,13 @@
         <meta name="author" content="Splash Networks">
       
       
-        <link rel="canonical" href="https://docs.splashnetworks.co/customer-data/web/">
+        <link rel="canonical" href="https://docs.splashnetworks.co/portals/ruckus-smartzone/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../mikrotik-with-radius/">
       
       
-        <link rel="next" href="../api/">
+        <link rel="next" href="../unifi/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Through Web - Splash Air Docs</title>
+        <title>Ruckus SmartZone - Splash Air Docs</title>
       
     
     
@@ -97,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#customers" class="md-skip">
+        <a href="#ruckus-sz-northbound-portal-interface" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Through Web
+              Ruckus SmartZone
             
           </span>
         </div>
@@ -326,6 +326,8 @@
       
   
   
+    
+  
   
   
     
@@ -351,17 +353,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../portals/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -380,7 +380,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Creating Portals
@@ -396,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/aruba-instant-on/" class="md-nav__link">
+      <a href="../aruba-instant-on/" class="md-nav__link">
         
   
   
@@ -419,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/fortinet/" class="md-nav__link">
+      <a href="../fortinet/" class="md-nav__link">
         
   
   
@@ -442,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/mikrotik/" class="md-nav__link">
+      <a href="../mikrotik/" class="md-nav__link">
         
   
   
@@ -465,7 +465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/mikrotik-with-radius/" class="md-nav__link">
+      <a href="../mikrotik-with-radius/" class="md-nav__link">
         
   
   
@@ -485,10 +485,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../portals/ruckus-smartzone/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Ruckus SmartZone
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -499,6 +519,60 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ruckus-sz-northbound-portal-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ruckus SZ Northbound Portal Interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Portal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portal-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portal Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smartzone-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      SmartZone Settings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -511,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/unifi/" class="md-nav__link">
+      <a href="../unifi/" class="md-nav__link">
         
   
   
@@ -538,8 +612,6 @@
       
   
   
-    
-  
   
   
     
@@ -557,15 +629,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../customer-data/" class="md-nav__link ">
               
   
   
@@ -584,7 +658,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Accessing Customer Data
@@ -597,30 +671,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Through Web
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../customer-data/web/" class="md-nav__link">
         
   
   
@@ -631,42 +685,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#customers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Customers
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#customer-visits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Customer Visits
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -679,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/" class="md-nav__link">
+      <a href="../../customer-data/api/" class="md-nav__link">
         
   
   
@@ -939,18 +957,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#customers" class="md-nav__link">
+  <a href="#ruckus-sz-northbound-portal-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      Customers
+      Ruckus SZ Northbound Portal Interface
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#customer-visits" class="md-nav__link">
+  <a href="#add-a-portal" class="md-nav__link">
     <span class="md-ellipsis">
-      Customer Visits
+      Add a Portal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portal-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portal Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smartzone-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      SmartZone Settings
     </span>
   </a>
   
@@ -972,14 +1008,38 @@
 
 
 
-  <h1>Through Web</h1>
+  <h1>Ruckus SmartZone</h1>
 
-<h2 id="customers">Customers</h2>
-<p>The data entered by the customers appears in the Customers tab.</p>
-<p><a class="glightbox" href="../../assets/images/customers.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Customers" src="../../assets/images/customers.png" /></a></p>
-<h2 id="customer-visits">Customer Visits</h2>
-<p>The data of customer visits to a particular venue can be seen in Customer Visits tab.</p>
-<p><a class="glightbox" href="../../assets/images/customer-visits.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Customer Visits" src="../../assets/images/customer-visits.png" /></a></p>
+<p>To set up a portal for Ruckus SmartZone (SZ) or virtual SmartZone (vSZ) first you need to <a href="../../defining-templates/">create a template</a>.</p>
+<h2 id="ruckus-sz-northbound-portal-interface">Ruckus SZ Northbound Portal Interface</h2>
+<p>Access SmartZone using web interface. Go to Administration -&gt; WISPr Northbound Interface. Enable Northbound Portal Interface Support and enter a username and password.</p>
+<p><a class="glightbox" href="../../assets/images/ruckus/nbi.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Ruckus NBI" src="../../assets/images/ruckus/nbi.png" /></a></p>
+<h2 id="add-a-portal">Add a Portal</h2>
+<p>On Splash Air go to Controllers -&gt; Ruckus SmartZone and add a new controller. Specify a name for it, and enter the username and password created in the previous step. Also enter the WAN IP or hostname of Ruckus SZ.</p>
+<p><a class="glightbox" href="../../assets/images/ruckus/controller.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Ruckus Controller" src="../../assets/images/ruckus/controller.png" /></a></p>
+<p>To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>Ruckus SmartZone</code>. Select the controller added in the previous step. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
+<p><a class="glightbox" href="../../assets/images/ruckus/portal-url.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Ruckus Portal" src="../../assets/images/ruckus/portal-url.png" /></a></p>
+<p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
+<p>Select the template and click on the Create button.</p>
+<h2 id="portal-settings">Portal Settings</h2>
+<p>You can go to Portals to view the settings for the portal(s) just added.</p>
+<p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
+<pre><code>Business Name: name of the venue which will be displayed on top of the portal
+Redirect URL: the URL a user is redirected to after successful portal authorization
+Expiry: the time in days after which a repeat user will have to enter their data again on the portal
+</code></pre>
+<p>You can click on the Edit button against each entry to modify it if needed.</p>
+<p><a class="glightbox" href="../../assets/images/ruckus/portal-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Ruckus Portal Settings" src="../../assets/images/ruckus/portal-settings.png" /></a></p>
+<h2 id="smartzone-settings">SmartZone Settings</h2>
+<p>Access SmartZone using web interface. Go to Network -&gt; Wireless LAN and select your zone. Create a new WLAN (or edit an existing one). Enter a name and SSID. In Authentication Options select <strong>Hotspot (WISPr)</strong>. In Encryption Options select <strong>None</strong>.</p>
+<p><a class="glightbox" href="../../assets/images/ruckus/wlan-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="WLAN Settings" src="../../assets/images/ruckus/wlan-settings.png" /></a></p>
+<p>In Hotspot Portal create a new profile in Hotspot (WISPr) Portal section. In Portal Name enter a name for it. In Login URL select <strong>External</strong>. In Redirect unauthenticated user Primary enter the Guest Portal URL copied earlier.</p>
+<p><a class="glightbox" href="../../assets/images/ruckus/hotspot-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Hotspot Settings" src="../../assets/images/ruckus/hotspot-settings.png" /></a></p>
+<p>In Walled Garden add the IP address of the Splash Air server:</p>
+<p><a class="glightbox" href="../../assets/images/ruckus/walled-garden.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Hotspot Walled Garden" src="../../assets/images/ruckus/walled-garden.png" /></a></p>
+<p>Click Apply to save the settings.</p>
+<p>In Hotspot Portal -&gt; Authentication Server select On and select the option <strong>Always Accept</strong>.</p>
+<p><a class="glightbox" href="../../assets/images/ruckus/hotspot-portal.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Hotspot Settings" src="../../assets/images/ruckus/hotspot-portal.png" /></a></p>
 
 
 
@@ -1067,7 +1127,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index">
+          <a href="../mikrotik-with-radius/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mikrotik with RADIUS">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1077,20 +1137,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Index
+                Mikrotik with RADIUS
               </div>
             </div>
           </a>
         
         
           
-          <a href="../api/" class="md-footer__link md-footer__link--next" aria-label="Next: Through API">
+          <a href="../unifi/" class="md-footer__link md-footer__link--next" aria-label="Next: Ubiquiti Unifi">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Through API
+                Ubiquiti Unifi
               </div>
             </div>
             <div class="md-footer__button md-icon">
