@@ -54,4 +54,6 @@ Click Apply to save the settings.
 
 In Hotspot Portal -> Authentication Server select On and select the option **Always Accept**.
 
-![Hotspot Settings](../assets/images/ruckus/hotspot-portal.png)
+<figure markdown="span">
+  ![Hotspot Settings](../assets/images/ruckus/hotspot-portal.png){ width="80%" }
+</figure>
