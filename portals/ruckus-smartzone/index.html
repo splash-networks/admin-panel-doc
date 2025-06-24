@@ -569,6 +569,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mac-encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      MAC Encryption
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -992,6 +1001,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mac-encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      MAC Encryption
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1042,6 +1060,11 @@ Expiry: the time in days after which a repeat user will have to enter their data
 <figure>
   <a class="glightbox" href="../../assets/images/ruckus/hotspot-portal.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Hotspot Settings" src="../../assets/images/ruckus/hotspot-portal.png" width="80%" /></a>
 </figure>
+<h2 id="mac-encryption">MAC Encryption</h2>
+<p>Access SmartZone via SSH and enter the following command:</p>
+<pre><code>ruckus(config)# no encrypt-mac-ip
+</code></pre>
+<p>This will ensure that the MAC and IP address of customer are recorded in plain-text. Otherwise, the default behavior is that they are encrypted.</p>
 
 
 
