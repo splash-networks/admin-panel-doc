@@ -14,6 +14,7 @@ nav:
       - Fortinet: portals/fortinet.md
       - Mikrotik: portals/mikrotik.md
       - Mikrotik with RADIUS: portals/mikrotik-with-radius.md
+      - Ruckus SmartZone: portals/ruckus-smartzone.md
       - Ubiquiti Unifi: portals/unifi.md
   - Accessing Customer Data:
       - customer-data/index.md
@@ -25,6 +26,7 @@ nav:
       - Fortinet: troubleshooting/fortinet.md
       - Mikrotik: troubleshooting/mikrotik.md
       - Mikrotik with RADIUS: troubleshooting/mikrotik-with-radius.md
+      - Ruckus SmartZone: troubleshooting/ruckus-smartzone.md
       - Ubiquiti Unifi: troubleshooting/unifi.md
 theme:
   name: material
