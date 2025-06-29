@@ -12,28 +12,28 @@
         <meta name="author" content="Splash Networks">
       
       
-        <link rel="canonical" href="https://docs.splashnetworks.co/troubleshooting/">
+        <link rel="canonical" href="https://docs.splashnetworks.co/portals/omada/">
       
       
-        <link rel="prev" href="../customer-data/api/">
+        <link rel="prev" href="../ruckus-smartzone/">
       
       
-        <link rel="next" href="aruba-instant-on/">
+        <link rel="next" href="../unifi/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Troubleshooting - Splash Air Docs</title>
+        <title>TP-Link Omada - Splash Air Docs</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -69,7 +69,7 @@
     
     
     
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -78,7 +78,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -97,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#troubleshooting" class="md-skip">
+        <a href="#add-a-portal" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://docs.splashnetworks.co" title="Splash Air Docs" class="md-header__button md-logo" aria-label="Splash Air Docs" data-md-component="logo">
       
-  <img src="../assets/logo.png" alt="logo">
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Troubleshooting
+              TP-Link Omada
             
           </span>
         </div>
@@ -248,7 +248,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.splashnetworks.co" title="Splash Air Docs" class="md-nav__button md-logo" aria-label="Splash Air Docs" data-md-component="logo">
       
-  <img src="../assets/logo.png" alt="logo">
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     Splash Air Docs
@@ -263,7 +263,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -285,7 +285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../getting-started/" class="md-nav__link">
         
   
   
@@ -307,7 +307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../defining-templates/" class="md-nav__link">
+      <a href="../../defining-templates/" class="md-nav__link">
         
   
   
@@ -326,6 +326,8 @@
       
   
   
+    
+  
   
   
     
@@ -353,17 +355,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../portals/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -382,7 +382,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Creating Portals
@@ -398,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../portals/aruba-instant-on/" class="md-nav__link">
+      <a href="../aruba-instant-on/" class="md-nav__link">
         
   
   
@@ -421,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../portals/fortinet/" class="md-nav__link">
+      <a href="../fortinet/" class="md-nav__link">
         
   
   
@@ -444,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../portals/mikrotik/" class="md-nav__link">
+      <a href="../mikrotik/" class="md-nav__link">
         
   
   
@@ -467,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../portals/mikrotik-with-radius/" class="md-nav__link">
+      <a href="../mikrotik-with-radius/" class="md-nav__link">
         
   
   
@@ -490,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../portals/ruckus-smartzone/" class="md-nav__link">
+      <a href="../ruckus-smartzone/" class="md-nav__link">
         
   
   
@@ -510,10 +510,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../portals/omada/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    TP-Link Omada
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -524,6 +544,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Portal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portal-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portal Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#omada-controller-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Omada Controller Settings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -536,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../portals/unifi/" class="md-nav__link">
+      <a href="../unifi/" class="md-nav__link">
         
   
   
@@ -590,7 +655,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../customer-data/" class="md-nav__link ">
+            <a href="../../customer-data/" class="md-nav__link ">
               
   
   
@@ -625,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../customer-data/web/" class="md-nav__link">
+      <a href="../../customer-data/web/" class="md-nav__link">
         
   
   
@@ -648,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../customer-data/api/" class="md-nav__link">
+      <a href="../../customer-data/api/" class="md-nav__link">
         
   
   
@@ -675,8 +740,6 @@
       
   
   
-    
-  
   
   
     
@@ -704,15 +767,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../troubleshooting/" class="md-nav__link ">
               
   
   
@@ -725,13 +790,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_6" id="__nav_6_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Troubleshooting
@@ -747,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aruba-instant-on/" class="md-nav__link">
+      <a href="../../troubleshooting/aruba-instant-on/" class="md-nav__link">
         
   
   
@@ -770,7 +835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="fortinet/" class="md-nav__link">
+      <a href="../../troubleshooting/fortinet/" class="md-nav__link">
         
   
   
@@ -793,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="mikrotik/" class="md-nav__link">
+      <a href="../../troubleshooting/mikrotik/" class="md-nav__link">
         
   
   
@@ -816,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="mikrotik-with-radius/" class="md-nav__link">
+      <a href="../../troubleshooting/mikrotik-with-radius/" class="md-nav__link">
         
   
   
@@ -839,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ruckus-smartzone/" class="md-nav__link">
+      <a href="../../troubleshooting/ruckus-smartzone/" class="md-nav__link">
         
   
   
@@ -862,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="omada/" class="md-nav__link">
+      <a href="../../troubleshooting/omada/" class="md-nav__link">
         
   
   
@@ -885,7 +950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="unifi/" class="md-nav__link">
+      <a href="../../troubleshooting/unifi/" class="md-nav__link">
         
   
   
@@ -925,8 +990,41 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Portal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portal-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portal Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#omada-controller-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Omada Controller Settings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -942,8 +1040,32 @@
 
 
 
-<h1 id="troubleshooting">Troubleshooting</h1>
-<p>This section contains troubleshooting guides for various types of hardware.</p>
+  <h1>TP-Link Omada</h1>
+
+<p>To set up a portal for TP-Link Omada first you need to <a href="../../defining-templates/">create a template</a>.</p>
+<h2 id="add-a-portal">Add a Portal</h2>
+<p>On Splash Air go to Controllers -&gt; TP-Link Omada and add a new controller. Specify a name for it, and enter the WAN IP or hostname of the Omada controller.</p>
+<p><a class="glightbox" href="../../assets/images/omada/controller.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Omada Controller" src="../../assets/images/omada/controller.png" /></a></p>
+<p>To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>TP-Link Omada</code>. Select the controller added in the previous step. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
+<p><a class="glightbox" href="../../assets/images/omada/portal-url.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Omada Portal" src="../../assets/images/omada/portal-url.png" /></a></p>
+<p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
+<p>Select the template and click on the Create button.</p>
+<h2 id="portal-settings">Portal Settings</h2>
+<p>You can go to Portals to view the settings for the portal(s) just added.</p>
+<p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
+<pre><code>Business Name: name of the venue which will be displayed on top of the portal
+Expiry: the time in days after which a repeat user will have to enter their data again on the portal
+</code></pre>
+<p>You can click on the Edit button against each entry to modify it if needed.</p>
+<p><a class="glightbox" href="../../assets/images/omada/portal-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Omada Portal Settings" src="../../assets/images/omada/portal-settings.png" /></a></p>
+<h2 id="omada-controller-settings">Omada Controller Settings</h2>
+<p>Access Omada controller using web interface. Go to Settings -&gt; Profiles -&gt; RADIUS Profile and create a new profile. Enter the IP address/URL and secret of your RADIUS server (details will be provided by Splash team).</p>
+<p><a class="glightbox" href="../../assets/images/omada/radius-profile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="RADIUS Profile" src="../../assets/images/omada/radius-profile.png" /></a></p>
+<p>Next, go to Settings -&gt; Authentication -&gt; Portal and create a new portal. Specify a name for it, and enable the Portal option. Select the SSID &amp; Network on which portal should be enabled. In <strong>Authentication Type</strong> select <code>RADIUS Server</code>. In RADIUS Profile select the profile created in the previous step. In <strong>Authentication Mode</strong> select <code>PAP</code>. In <strong>Portal Customization</strong> select <code>External Web Portal</code> and paste the Guest Portal URL copied earlier.</p>
+<p><a class="glightbox" href="../../assets/images/omada/portal.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Portal" src="../../assets/images/omada/portal.png" /></a></p>
+<p>Then go to Settings -&gt; Authentication -&gt; Portal -&gt; Access Control and enable Pre-Authentication Access. Add a new entry and put the IP address of the Splash Air server in it.</p>
+<p><a class="glightbox" href="../../assets/images/omada/access-control.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Access Control" src="../../assets/images/omada/access-control.png" /></a></p>
+<p>Click Apply to save the settings.</p>
 
 
 
@@ -1031,7 +1153,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../customer-data/api/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Through API">
+          <a href="../ruckus-smartzone/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Ruckus SmartZone">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1041,20 +1163,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Through API
+                Ruckus SmartZone
               </div>
             </div>
           </a>
         
         
           
-          <a href="aruba-instant-on/" class="md-footer__link md-footer__link--next" aria-label="Next: Aruba/HPE Instant On">
+          <a href="../unifi/" class="md-footer__link md-footer__link--next" aria-label="Next: Ubiquiti Unifi">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Aruba/HPE Instant On
+                Ubiquiti Unifi
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1145,10 +1267,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
