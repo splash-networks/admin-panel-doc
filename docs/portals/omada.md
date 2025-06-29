@@ -35,11 +35,11 @@ Access Omada controller using web interface. Go to Settings -> Profiles -> RADIU
 
 ![RADIUS Profile](../assets/images/omada/radius-profile.png)
 
-Next, go to Settings -> Authentication -> Portal and create a new portal. Specify a name for it, and enable the Portal option. Select the SSID & Network on which portal should be enabled. In **Authentication Type** select `RADIUS Server`. In RADIUS Profile select the profile created in the previous step. In **Authentication Mode** select `PAP`. In **Portal Customization** select `External Web Portal` and paste the Guest Portal URL copied earlier.
+Next, go to Settings -> Authentication -> Portal and create a new portal. Specify a name for it, and enable the Portal option. Select the SSID & Network on which portal should be enabled. In **Authentication Type** select `RADIUS Server`. In **RADIUS Profile** select the profile created in the previous step. In **Authentication Mode** select `PAP`. In **Portal Customization** select `External Web Portal` and paste the Guest Portal URL copied earlier.
 
 ![Portal](../assets/images/omada/portal.png)
 
-Then go to Settings -> Authentication -> Portal -> Access Control and enable Pre-Authentication Access. Add a new entry and put the IP address of the Splash Air server in it.
+Then go to Settings -> Authentication -> Portal -> Access Control and enable **Pre-Authentication Access**. Add a new entry and put the IP address of the Splash Air server in it.
 
 ![Access Control](../assets/images/omada/access-control.png)
 
