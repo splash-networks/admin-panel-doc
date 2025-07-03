@@ -15,14 +15,14 @@
         <link rel="canonical" href="https://docs.splashnetworks.co/portals/fortinet/">
       
       
-        <link rel="prev" href="../aruba-instant-on/">
+        <link rel="prev" href="../coova-chilli/">
       
       
         <link rel="next" href="../mikrotik/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
@@ -351,6 +351,8 @@
       
         
       
+        
+      
     
     
     
@@ -404,6 +406,29 @@
   
   <span class="md-ellipsis">
     Aruba/HPE Instant On
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coova-chilli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Coova Chilli
     
   </span>
   
@@ -763,6 +788,8 @@
       
         
       
+        
+      
     
     
     
@@ -818,6 +845,29 @@
   
   <span class="md-ellipsis">
     Aruba/HPE Instant On
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/coova-chilli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Coova Chilli
     
   </span>
   
@@ -1044,7 +1094,7 @@
 
 <p>To set up a portal for Fortinet FortiGate firewall first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
-<p>To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal, and in Hardware select <code>Fortinet</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
+<p>To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>Fortinet</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
 <p><a class="glightbox" href="../../assets/images/fortinet/portal-url.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fortinet Portal" src="../../assets/images/fortinet/portal-url.png" /></a></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the venue and template and click on the Create button.</p>
@@ -1053,6 +1103,7 @@
 <p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
 <pre><code>Business Name: name of the venue which will be displayed on top of the portal
 Expiry: the time in days after which a repeat user will have to enter their data again on the portal
+Duration (seconds) after email verification: when using &quot;Link&quot; type Flow it is the &quot;Session-Timeout&quot; a user will receive via RADIUS after successful email verification 
 </code></pre>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
 <h2 id="fortigate-settings">FortiGate Settings</h2>
@@ -1153,7 +1204,7 @@ Expiry: the time in days after which a repeat user will have to enter their data
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../aruba-instant-on/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Aruba/HPE Instant On">
+          <a href="../coova-chilli/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Coova Chilli">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1163,7 +1214,7 @@ Expiry: the time in days after which a repeat user will have to enter their data
                 Previous
               </span>
               <div class="md-ellipsis">
-                Aruba/HPE Instant On
+                Coova Chilli
               </div>
             </div>
           </a>
@@ -1270,7 +1321,7 @@ Expiry: the time in days after which a repeat user will have to enter their data
       <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
