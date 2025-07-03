@@ -2,7 +2,7 @@ To set up a portal for Fortinet FortiGate firewall first you need to [create a t
 
 ## Add a Portal
 
-To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal, and in Hardware select `Fortinet`. Then, enter a Site ID based on which the path of the portal URL will be defined.
+To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Fortinet`. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
 ![Fortinet Portal](../assets/images/fortinet/portal-url.png)
 
@@ -19,6 +19,7 @@ Clicking on a portal takes you to the details for that portal. It lets you speci
 ```
 Business Name: name of the venue which will be displayed on top of the portal
 Expiry: the time in days after which a repeat user will have to enter their data again on the portal
+Duration (seconds) after email verification: when using "Link" type Flow it is the "Session-Timeout" a user will receive via RADIUS after successful email verification 
 ```
 
 You can click on the Edit button against each entry to modify it if needed.
