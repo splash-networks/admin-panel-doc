@@ -63,7 +63,7 @@ Make the following changes:
 
 **option radiusserver2 rad02.chillispot.org**: should be commented out
 
-**option radiussecret `secret`**: RADIUS secret should be entered here (will be provided by Splash Air team)
+**option radiussecret `secret`**: RADIUS secret should be entered here (will be provided by Splash Networks' team)
 
 **option dhcpif `br-lan`**: LAN interface such as `br-lan` or `eth0` should be given here
 
