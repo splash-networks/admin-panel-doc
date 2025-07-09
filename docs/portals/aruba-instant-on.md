@@ -2,7 +2,7 @@ To set up a portal for Aruba/HPE Instant On first you need to [create a template
 
 ## Add a Portal
 
-To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal, and in Hardware select `Aruba Instant On`. Then, enter a Site ID based on which the path of the portal URL will be defined.
+To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal, and in Hardware select `Aruba Instant On`. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
 ![Aruba Portal](../assets/images/portal/portal-aruba.png)
 

@@ -2,13 +2,13 @@ To set up a portal for Fortinet FortiGate firewall first you need to [create a t
 
 ## Add a Portal
 
-To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Fortinet`. Then, enter a Site ID based on which the path of the portal URL will be defined.
+To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Fortinet`. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
 ![Fortinet Portal](../assets/images/fortinet/portal-url.png)
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
-Select the venue and template and click on the Create button.
+Select the template and click on the Create button.
 
 ## Portal Settings
 

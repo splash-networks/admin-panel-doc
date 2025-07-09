@@ -70,6 +70,7 @@ The following compatibility matrix shows valid combinations of hardware and flow
 | Hardware/Flow        | Simple           | OTP              |       Link       | Comments                                                      |
 |:---------------------|:----------------:|:----------------:|:----------------:|:--------------------------------------------------------------|
 | Aruba Instant On     | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
+| Cambium              | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Coova Chilli         | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Fortinet             | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Mikrotik             | :material-check: | :material-check: | :material-close: |                                                               |

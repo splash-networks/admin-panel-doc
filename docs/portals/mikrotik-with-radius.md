@@ -6,7 +6,7 @@ To set up a portal for Mikrotik first you need to [create a template](../definin
 
 ## Add a Portal
 
-To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal, and in Hardware select `Mikrotik with RADIUS`. Then, enter a Site ID based on which the path of the portal URL will be defined.
+To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal, and in Hardware select `Mikrotik with RADIUS`. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
 ![Mikrotik Portal](../assets/images/portal/mikrotik-radius-portal.png)
 

@@ -11,6 +11,7 @@ nav:
   - Creating Portals:
       - portals/index.md
       - Aruba/HPE Instant On: portals/aruba-instant-on.md
+      - Cambium: portals/cambium.md
       - Coova Chilli: portals/coova-chilli.md
       - Fortinet: portals/fortinet.md
       - LigoWave: portals/ligowave.md
@@ -26,6 +27,7 @@ nav:
   - Troubleshooting:
       - troubleshooting/index.md
       - Aruba/HPE Instant On: troubleshooting/aruba-instant-on.md
+      - Cambium: troubleshooting/cambium.md
       - Coova Chilli: troubleshooting/coova-chilli.md
       - Fortinet: troubleshooting/fortinet.md
       - Mikrotik: troubleshooting/mikrotik.md

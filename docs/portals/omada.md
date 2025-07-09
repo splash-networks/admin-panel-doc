@@ -6,7 +6,7 @@ On Splash Air go to Controllers -> TP-Link Omada and add a new controller. Speci
 
 ![Omada Controller](../assets/images/omada/controller.png)
 
-To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `TP-Link Omada`. Select the controller added in the previous step. Then, enter a Site ID based on which the path of the portal URL will be defined.
+To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `TP-Link Omada`. Select the controller added in the previous step. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
 ![Omada Portal](../assets/images/omada/portal-url.png)
 
