@@ -12,13 +12,13 @@
         <meta name="author" content="Splash Networks">
       
       
-        <link rel="canonical" href="https://docs.splashnetworks.co/troubleshooting/omada/">
+        <link rel="canonical" href="https://docs.splashnetworks.co/portals/opennds/">
       
       
-        <link rel="prev" href="../ruckus-smartzone/">
+        <link rel="prev" href="../mikrotik-with-radius/">
       
       
-        <link rel="next" href="../unifi/">
+        <link rel="next" href="../ruckus-smartzone/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>TP-Link Omada - Splash Air Docs</title>
+        <title>OpenNDS - Splash Air Docs</title>
       
     
     
@@ -97,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#traffic-flow" class="md-skip">
+        <a href="#add-a-portal" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TP-Link Omada
+              OpenNDS
             
           </span>
         </div>
@@ -326,6 +326,8 @@
       
   
   
+    
+  
   
   
     
@@ -361,17 +363,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../portals/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -390,7 +390,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Creating Portals
@@ -406,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/aruba-instant-on/" class="md-nav__link">
+      <a href="../aruba-instant-on/" class="md-nav__link">
         
   
   
@@ -429,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/cambium/" class="md-nav__link">
+      <a href="../cambium/" class="md-nav__link">
         
   
   
@@ -452,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/coova-chilli/" class="md-nav__link">
+      <a href="../coova-chilli/" class="md-nav__link">
         
   
   
@@ -475,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/fortinet/" class="md-nav__link">
+      <a href="../fortinet/" class="md-nav__link">
         
   
   
@@ -498,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/ligowave/" class="md-nav__link">
+      <a href="../ligowave/" class="md-nav__link">
         
   
   
@@ -521,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/mikrotik/" class="md-nav__link">
+      <a href="../mikrotik/" class="md-nav__link">
         
   
   
@@ -544,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/mikrotik-with-radius/" class="md-nav__link">
+      <a href="../mikrotik-with-radius/" class="md-nav__link">
         
   
   
@@ -564,10 +564,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../portals/opennds/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    OpenNDS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -578,6 +598,66 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Portal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portal-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portal Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opennds-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenNDS Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OpenNDS Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#helpful-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Helpful commands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -590,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/ruckus-smartzone/" class="md-nav__link">
+      <a href="../ruckus-smartzone/" class="md-nav__link">
         
   
   
@@ -613,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/omada/" class="md-nav__link">
+      <a href="../omada/" class="md-nav__link">
         
   
   
@@ -636,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../portals/unifi/" class="md-nav__link">
+      <a href="../unifi/" class="md-nav__link">
         
   
   
@@ -775,8 +855,6 @@
       
   
   
-    
-  
   
   
     
@@ -810,15 +888,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../troubleshooting/" class="md-nav__link ">
               
   
   
@@ -837,7 +917,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Troubleshooting
@@ -853,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aruba-instant-on/" class="md-nav__link">
+      <a href="../../troubleshooting/aruba-instant-on/" class="md-nav__link">
         
   
   
@@ -876,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cambium/" class="md-nav__link">
+      <a href="../../troubleshooting/cambium/" class="md-nav__link">
         
   
   
@@ -899,7 +979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../coova-chilli/" class="md-nav__link">
+      <a href="../../troubleshooting/coova-chilli/" class="md-nav__link">
         
   
   
@@ -922,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fortinet/" class="md-nav__link">
+      <a href="../../troubleshooting/fortinet/" class="md-nav__link">
         
   
   
@@ -945,7 +1025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mikrotik/" class="md-nav__link">
+      <a href="../../troubleshooting/mikrotik/" class="md-nav__link">
         
   
   
@@ -968,7 +1048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mikrotik-with-radius/" class="md-nav__link">
+      <a href="../../troubleshooting/mikrotik-with-radius/" class="md-nav__link">
         
   
   
@@ -991,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../opennds/" class="md-nav__link">
+      <a href="../../troubleshooting/opennds/" class="md-nav__link">
         
   
   
@@ -1014,7 +1094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ruckus-smartzone/" class="md-nav__link">
+      <a href="../../troubleshooting/ruckus-smartzone/" class="md-nav__link">
         
   
   
@@ -1034,30 +1114,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    TP-Link Omada
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/omada/" class="md-nav__link">
         
   
   
@@ -1068,33 +1128,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#traffic-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Traffic Flow
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1107,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unifi/" class="md-nav__link">
+      <a href="../../troubleshooting/unifi/" class="md-nav__link">
         
   
   
@@ -1155,11 +1188,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#traffic-flow" class="md-nav__link">
+  <a href="#add-a-portal" class="md-nav__link">
     <span class="md-ellipsis">
-      Traffic Flow
+      Add a Portal
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portal-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portal Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opennds-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenNDS Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OpenNDS Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#helpful-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Helpful commands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1179,12 +1245,70 @@
 
 
 
-  <h1>TP-Link Omada</h1>
+  <h1>OpenNDS</h1>
 
-<p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
-<h2 id="traffic-flow">Traffic Flow</h2>
-<p>Here is the traffic flow in the case of TP-Link Omada Controller:</p>
-<p><a class="glightbox" href="../../assets/images/omada/traffic-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Traffic Flow" src="../../assets/images/omada/traffic-flow.png" /></a></p>
+<p>To set up a portal for OpenNDS first you need to <a href="../../defining-templates/">create a template</a>.</p>
+<h2 id="add-a-portal">Add a Portal</h2>
+<p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>OpenNDS</code>. Enter a secret which will be used to secure communication between the router/AP and Splash Air server. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
+<p><a class="glightbox" href="../../assets/images/opennds/portal-url.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="OpenNDS Portal" src="../../assets/images/opennds/portal-url.png" /></a></p>
+<p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
+<p>Select the template and click on the Create button.</p>
+<h2 id="portal-settings">Portal Settings</h2>
+<p>You can go to Portals to view the settings for the portal(s) just added.</p>
+<p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
+<pre><code>Business Name: name of the venue which will be displayed on top of the portal
+Expiry: the time in days after which a repeat user will have to enter their data again on the portal
+Redirect URL: the URL a user is redirected to after successful portal authorization
+</code></pre>
+<p>You can click on the Edit button against each entry to modify it if needed.</p>
+<h2 id="opennds-settings">OpenNDS Settings</h2>
+<p>OpenNDS is an open-source captive portal package which is used in many Linux based routers. This guide is written for OpenWRT. However, OpenNDS can be made to work on other Linux based devices such as a Raspberry Pi.</p>
+<p>Access OpenWRT router/AP using LuCI web interface. By default, OpenWRT firewall does not allow web or SSH access on WAN IP. As a captive portal blocks all traffic on LAN until user is authenticated so when we initially enable captive portal on OpenWRT we would lose management access to the router. To manage OpenWRT we should therefore open access from WAN side. </p>
+<p>Go to Network -&gt; Firewall -&gt; Traffic Rules. Add a new rule with these properties:</p>
+<pre><code>Protocol: TCP
+Source zone: wan
+Destination zone: Device (input)
+Destination port: 80
+</code></pre>
+<p>Similarly, add another rule for <code>Destination port: 22</code>. Click on Save and apply. Once these rules are added you would be able to access OpenWRT via web and SSH from WAN side.</p>
+<p>Access your OpenWRT device over SSH using its WAN IP. Enter these commands:</p>
+<pre><code>opkg update
+opkg install opennds nano
+opkg install php8 php8-cli php8-mod-openssl
+</code></pre>
+<p>Recall the <code>Guest Portal URL</code> that was created earlier. In our example its value was: <a href="https://splashair.splashnetworks.co/on/site1">https://splashair.splashnetworks.co/on/site1</a></p>
+<p>It consists of 2 parts:</p>
+<p><strong>Hostname</strong>: <code>splashair.splashnetworks.co</code></p>
+<p><strong>Path</strong>: <code>/on/site1</code></p>
+<p>You will need to enter these parameters in the OpenNDS config file.</p>
+<p>Open OpenNDS config file:</p>
+<pre><code>nano /etc/config/opennds
+</code></pre>
+<p>Add the following parameters at the end:</p>
+<p><strong>option fasport <code>443</code></strong>: it tells OpenNDS that the captive portal is using HTTPS port 443</p>
+<p><strong>option fasremotefqdn <code>&lt;hostname&gt;</code></strong>: the hostname in <code>Guest Portal URL</code></p>
+<p><strong>option faspath <code>&lt;path&gt;</code></strong>: the path in <code>Guest Portal URL</code></p>
+<p><strong>option fasremoteip <code>&lt;IP address&gt;</code></strong>: the IP address of Splash Air server</p>
+<p><strong>option faskey <code>&lt;secret&gt;</code></strong>: the secret created with the portal will be entered here</p>
+<p>Save and exit.</p>
+<p>To apply the changes restart the service:</p>
+<pre><code>service opennds restart
+</code></pre>
+<p>To check current settings and status use this command:</p>
+<pre><code>ndsctl status
+</code></pre>
+<p><strong><em>Note</em></strong>: on some devices with OpenNDS it is observed that an <strong>option faskey <code>&lt;secret&gt;</code></strong> is appended automatically at the end of the config file by the device. In that case just modify that value and don't create a new <code>faskey</code> setting.</p>
+<h3 id="helpful-commands">Helpful commands</h3>
+<p>Enable/disable service</p>
+<pre><code>service opennds enable
+service opennds disable
+</code></pre>
+<p>Logout connected user</p>
+<pre><code>ndsctl deauth &lt;IP | MAC address&gt;
+</code></pre>
+<p>View logs</p>
+<pre><code>logread -f
+</code></pre>
 
 
 
@@ -1272,7 +1396,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../ruckus-smartzone/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Ruckus SmartZone">
+          <a href="../mikrotik-with-radius/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mikrotik with RADIUS">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1282,20 +1406,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Ruckus SmartZone
+                Mikrotik with RADIUS
               </div>
             </div>
           </a>
         
         
           
-          <a href="../unifi/" class="md-footer__link md-footer__link--next" aria-label="Next: Ubiquiti Unifi">
+          <a href="../ruckus-smartzone/" class="md-footer__link md-footer__link--next" aria-label="Next: Ruckus SmartZone">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Ubiquiti Unifi
+                Ruckus SmartZone
               </div>
             </div>
             <div class="md-footer__button md-icon">
