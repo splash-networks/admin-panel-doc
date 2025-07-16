@@ -25,18 +25,6 @@ nav:
       - customer-data/index.md
       - Through Web: customer-data/web.md
       - Through API: customer-data/api.md
-  - Troubleshooting:
-      - troubleshooting/index.md
-      - Aruba/HPE Instant On: troubleshooting/aruba-instant-on.md
-      - Cambium: troubleshooting/cambium.md
-      - Coova Chilli: troubleshooting/coova-chilli.md
-      - Fortinet: troubleshooting/fortinet.md
-      - Mikrotik: troubleshooting/mikrotik.md
-      - Mikrotik with RADIUS: troubleshooting/mikrotik-with-radius.md
-      - OpenNDS: troubleshooting/opennds.md
-      - Ruckus SmartZone: troubleshooting/ruckus-smartzone.md
-      - TP-Link Omada: troubleshooting/omada.md
-      - Ubiquiti Unifi: troubleshooting/unifi.md
 theme:
   name: material
   logo: assets/logo.png

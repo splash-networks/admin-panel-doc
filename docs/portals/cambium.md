@@ -36,3 +36,13 @@ In **Guest Access** tab, click on the **Enable** checkbox. In **Portal Mode** se
 ![AAA](../assets/images/cambium/guest-access.png)
 
 Save the settings. In case you created a new WLAN profile you'll need to apply that to your AP Group.
+
+## Troubleshooting
+
+To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.
+
+### Traffic Flow
+
+Here is the traffic flow in the case of Cambium:
+
+![Traffic Flow](../assets/images/cambium/cambium-traffic-flow.png)

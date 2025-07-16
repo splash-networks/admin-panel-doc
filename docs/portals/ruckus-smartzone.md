@@ -66,3 +66,13 @@ Access SmartZone via SSH and enter the following command:
 ruckus(config)# no encrypt-mac-ip
 ```
 This will ensure that the MAC and IP address of customer are recorded in plain-text. Otherwise, the default behavior is that they are encrypted.
+
+## Troubleshooting
+
+To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.
+
+### Traffic Flow
+
+Here is the traffic flow in the case of Ruckus SmartZone:
+
+![Traffic Flow](../assets/images/ruckus/traffic-flow.png)

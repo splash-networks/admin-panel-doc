@@ -45,3 +45,19 @@ Then go to User & Authorization -> User Groups and create a new group. Add the R
 Go back to Network -> Interface and select the interface on which captive portal is enabled. In User access select `Restricted to Groups` option. In `User groups` add the group that you created in the last step. Click OK to save the settings.
 
 ![Fortigate Interface Settings](../assets/images/fortinet/interface-settings-2.png)
+
+## Troubleshooting
+
+To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.
+
+### Traffic Flow
+
+Here is the traffic flow in the case of FortiGate firewall:
+
+![Traffic Flow](../assets/images/fortinet/traffic-flow.png)
+
+### RADIUS Test
+
+To test your RADIUS server You can go to User & Authentication -> RADIUS Servers. Select your RADIUS server and click on Test User Credentials. Here you can enter a username and password combination to see whether it passes RADIUS authorization or not.
+
+![RADIUS Test](../assets/images/fortinet/radius-test.png)

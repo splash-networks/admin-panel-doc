@@ -37,3 +37,13 @@ In Networks -> Guest Portal select Type `External`. In Portal URL select the Gue
 ![Aruba Portal URL](../assets/images/aruba/aruba-portal-url.png)
 
 In Primary RADIUS add the details of your RADIUS server, such as IP address and shared secret.
+
+## Troubleshooting
+
+To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.
+
+### Traffic Flow
+
+Here is the traffic flow in the case of HPE/Aruba Instant On:
+
+![Aruba Traffic Flow](../assets/images/aruba/aruba-traffic-flow.png)
