@@ -77,5 +77,6 @@ The following compatibility matrix shows valid combinations of hardware and flow
 | Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension supported with RADIUS CoA |
 | OpenNDS              | :material-check: | :material-check: | :material-close: |                                                               |
 | TP-Link Omada        | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
+| Ruckus One           | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Ruckus SmartZone     | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | Link Flow 24-hr session extension supported                   |
