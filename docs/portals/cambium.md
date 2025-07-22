@@ -27,7 +27,7 @@ You can click on the Edit button against each entry to modify it if needed.
 
 ## Cambium Settings
 
-Access Cambium cnMaestro using web interface. Go to Wi-Fi Profiles -> WLANs and select the profile on which you want to enable captive portal (or create a new one). In **AAA Servers** enter the IP address and secret of your RADIUS server (will be provided by Splash Networks' team).
+Access Cambium cnMaestro using web interface. Go to Wi-Fi Profiles > WLANs and select the profile on which you want to enable captive portal (or create a new one). In **AAA Servers** enter the IP address and secret of your RADIUS server (will be provided by Splash Networks' team).
 
 ![AAA](../assets/images/cambium/aaa.png)
 

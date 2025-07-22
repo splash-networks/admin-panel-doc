@@ -26,11 +26,11 @@ You can click on the Edit button against each entry to modify it if needed.
 
 ## FortiGate Settings
 
-Access FortiGate firewall using web interface. Go to Network -> Interfaces and select the interface on which you want to enable captive portal. Typically, it will be the LAN gateway interface.
+Access FortiGate firewall using web interface. Go to Network > Interfaces and select the interface on which you want to enable captive portal. Typically, it will be the LAN gateway interface.
 
 ![Fortigate interface](../assets/images/fortinet/interface.png)
 
-Click on Edit to modify its settings. Enable Security mode -> Captive Portal. In Authentication Portal, select `External` and enter the Guest Portal URL generated when creating the portal in Splash Air. In Exempt destination/services create a new entry and add the IP address of Splash Air application server in it.
+Click on Edit to modify its settings. Enable Security mode > Captive Portal. In Authentication Portal, select `External` and enter the Guest Portal URL generated when creating the portal in Splash Air. In Exempt destination/services create a new entry and add the IP address of Splash Air application server in it.
 
 ![Fortigate Interface Settings](../assets/images/fortinet/interface-settings.png)
 
@@ -38,11 +38,11 @@ In Redirect after Captive Portal you can specify a URL to which the URL will be 
 
 Click OK to save the settings.
 
-Go to User & Authorization -> RADIUS Servers and create a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks support team will be entered here.
+Go to User & Authorization > RADIUS Servers and create a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks support team will be entered here.
 
-Then go to User & Authorization -> User Groups and create a new group. Add the RADIUS server selected in the previous step and click on OK to save it.
+Then go to User & Authorization > User Groups and create a new group. Add the RADIUS server selected in the previous step and click on OK to save it.
 
-Go back to Network -> Interface and select the interface on which captive portal is enabled. In User access select `Restricted to Groups` option. In `User groups` add the group that you created in the last step. Click OK to save the settings.
+Go back to Network > Interface and select the interface on which captive portal is enabled. In User access select `Restricted to Groups` option. In `User groups` add the group that you created in the last step. Click OK to save the settings.
 
 ![Fortigate Interface Settings](../assets/images/fortinet/interface-settings-2.png)
 
@@ -58,6 +58,6 @@ Here is the traffic flow in the case of FortiGate firewall:
 
 ### RADIUS Test
 
-To test your RADIUS server You can go to User & Authentication -> RADIUS Servers. Select your RADIUS server and click on Test User Credentials. Here you can enter a username and password combination to see whether it passes RADIUS authorization or not.
+To test your RADIUS server You can go to User & Authentication > RADIUS Servers. Select your RADIUS server and click on Test User Credentials. Here you can enter a username and password combination to see whether it passes RADIUS authorization or not.
 
 ![RADIUS Test](../assets/images/fortinet/radius-test.png)

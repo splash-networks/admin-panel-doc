@@ -29,17 +29,17 @@ You can click on the Edit button against each entry to modify it if needed.
 
 Access LigoWave Infinity device using web portal.
 
-Go to Settings -> Network configuration and set Network mode to **Router**.
+Go to Settings > Network configuration and set Network mode to **Router**.
 
 <figure markdown="span">
   ![Network Configuration](../assets/images/ligowave/network-configuration.png){ width="80%" }
 </figure>
 
-In Settings -> Wireless Configuration go to Wireless settings (AP). Edit the settings on the SSID on which you want to enable captive portal. In Security settings set Security type to **Hotspot (UAM)**.
+In Settings > Wireless Configuration go to Wireless settings (AP). Edit the settings on the SSID on which you want to enable captive portal. In Security settings set Security type to **Hotspot (UAM)**.
 
 ![Security settings](../assets/images/ligowave/security-settings.png)
 
-In UAM settings -> RADIUS, enter a NAS ID which can be the IP address of the AP. Enter the IP address and secret of RADIUS server (will be provided by Splash Networks' team).
+In UAM settings > RADIUS, enter a NAS ID which can be the IP address of the AP. Enter the IP address and secret of RADIUS server (will be provided by Splash Networks' team).
 
 ![RADIUS](../assets/images/ligowave/radius.png)
 

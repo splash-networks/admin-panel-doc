@@ -32,7 +32,7 @@ Login to your account on the [HPE Instant On cloud](https://portal.instant-on.hp
 
 ![Aruba Guest Network](../assets/images/aruba/aruba-create-network.png)
 
-In Networks -> Guest Portal select Type `External`. In Portal URL select the Guest Portal URL that you copied earlier.
+In Networks > Guest Portal select Type `External`. In Portal URL select the Guest Portal URL that you copied earlier.
 
 ![Aruba Portal URL](../assets/images/aruba/aruba-portal-url.png)
 

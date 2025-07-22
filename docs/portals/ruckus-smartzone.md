@@ -2,13 +2,13 @@ To set up a portal for Ruckus SmartZone (SZ) or virtual SmartZone (vSZ) first yo
 
 ## Ruckus SZ Northbound Portal Interface
 
-Access SmartZone using web interface. Go to Administration -> WISPr Northbound Interface. Enable Northbound Portal Interface Support and enter a username and password.
+Access SmartZone using web interface. Go to Administration > WISPr Northbound Interface. Enable Northbound Portal Interface Support and enter a username and password.
 
 ![Ruckus NBI](../assets/images/ruckus/nbi.png)
 
 ## Add a Portal
 
-On Splash Air go to Controllers -> Ruckus SmartZone and add a new controller. Specify a name for it, and enter the username and password created in the previous step. Also enter the WAN IP or hostname of Ruckus SZ.
+On Splash Air go to Controllers > Ruckus SmartZone and add a new controller. Specify a name for it, and enter the username and password created in the previous step. Also enter the WAN IP or hostname of Ruckus SZ.
 
 ![Ruckus Controller](../assets/images/ruckus/controller.png)
 
@@ -39,7 +39,7 @@ You can click on the Edit button against each entry to modify it if needed.
 
 ## SmartZone Settings
 
-Access SmartZone using web interface. Go to Network -> Wireless LAN and select your zone. Create a new WLAN (or edit an existing one). Enter a name and SSID. In Authentication Options select **Hotspot (WISPr)**. In Encryption Options select **None**.
+Access SmartZone using web interface. Go to Network > Wireless LAN and select your zone. Create a new WLAN (or edit an existing one). Enter a name and SSID. In Authentication Options select **Hotspot (WISPr)**. In Encryption Options select **None**.
 
 ![WLAN Settings](../assets/images/ruckus/wlan-settings.png)
 
@@ -53,7 +53,7 @@ In Walled Garden add the IP address of the Splash Air server:
 
 Click Apply to save the settings.
 
-In Hotspot Portal -> Authentication Server select On and select the option **Always Accept**.
+In Hotspot Portal > Authentication Server select On and select the option **Always Accept**.
 
 <figure markdown="span">
   ![Hotspot Settings](../assets/images/ruckus/hotspot-portal.png){ width="80%" }

@@ -31,7 +31,7 @@ Coova Chilli is an open-source captive portal package which is used in many Linu
 
 Access OpenWRT router/AP using LuCI web interface. By default, OpenWRT firewall does not allow web or SSH access on WAN IP. As a captive portal blocks all traffic on LAN until user is authenticated so when we initially enable captive portal on OpenWRT we would lose management access to the router. To manage OpenWRT we should therefore open access from WAN side. 
 
-Go to Network -> Firewall -> Traffic Rules. Add a new rule with these properties:
+Go to Network > Firewall > Traffic Rules. Add a new rule with these properties:
 
 ```
 Protocol: TCP

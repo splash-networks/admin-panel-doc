@@ -27,7 +27,7 @@ You can click on the Edit button against each entry to modify it if needed.
 
 ## Ruckus One Settings
 
-Access Ruckus One using web interface. Go to Wi-Fi -> Wi-Fi Networks List and add a new network (or modify an existing network). Enter a name and in **Network Type** select `Captive Portal`.
+Access Ruckus One using web interface. Go to Wi-Fi > Wi-Fi Networks List and add a new network (or modify an existing network). Enter a name and in **Network Type** select `Captive Portal`.
 
 ![Network Settings](../assets/images/ruckusone/network.png)
 

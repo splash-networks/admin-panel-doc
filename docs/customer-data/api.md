@@ -2,7 +2,7 @@
 
 To access customer data via API the first step is to create an API Key.
 
-Go to Admin -> Generate API Key and press the Generate button.
+Go to Admin > Generate API Key and press the Generate button.
 
 ![Generate API Key](../assets/images/api/api-key-generate.png)
 
