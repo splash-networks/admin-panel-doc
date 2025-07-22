@@ -42,10 +42,10 @@ The **SMS Provider** field can be used to select the default SMS provider when u
 
 If SMS OTP based verification is not used then this field is not relevant.
 
-SMTP settings are required if these email based features need to be used:
+**SMTP** settings are required if these email based features need to be used:
 
  - Venue reports
  - Email OTP based user authorization
  - Email link based user authorization
 
-You can use the SMTP settings from an email service provider such as Sendgrid or Brevo. It is recommended to use the Test Email button to send a test email to ensure email functionality is successfully integrated before using this feature in a captive portal.
+You can use SMTP settings from an email service provider such as Sendgrid. It is recommended to use the Test Email button to send a test email to ensure email functionality is successfully integrated before using this feature in a captive portal.
