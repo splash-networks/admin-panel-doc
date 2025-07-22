@@ -1081,11 +1081,11 @@ Expiry: the time in days after which a repeat user will have to enter their data
 <p><a class="glightbox" href="../../assets/images/portal/portal-settings-mikrotik.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Portal Settings" src="../../assets/images/portal/portal-settings-mikrotik.png" /></a></p>
 <h2 id="mikrotik-settings">Mikrotik Settings</h2>
 <p>Before setting up Hotspot on Mikrotik it is important to enable access from WAN side, otherwise you would be locked out of the system once Hotspot is enabled.</p>
-<p>Access your Mikrotik router using Winbox. Go to IP -&gt; Firewall and disable the following rules that block access from WAN:</p>
+<p>Access your Mikrotik router using Winbox. Go to IP &gt; Firewall and disable the following rules that block access from WAN:</p>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-firewall.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Firewall" src="../../assets/images/mikrotik/mikrotik-firewall.png" /></a></p>
-<p>Go to IP -&gt; Addresses and note your router's WAN IP (usually WAN interface is <code>ether1</code>). Connect to your Mikrotik router through WinBox using this IP before proceeding further.</p>
+<p>Go to IP &gt; Addresses and note your router's WAN IP (usually WAN interface is <code>ether1</code>). Connect to your Mikrotik router through WinBox using this IP before proceeding further.</p>
 <h3 id="hotspot-setup">Hotspot Setup</h3>
-<p>Go to IP -&gt; Hotspot and click on Hotspot Setup.</p>
+<p>Go to IP &gt; Hotspot and click on Hotspot Setup.</p>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-hotspot-setup.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Hotspot Setup" src="../../assets/images/mikrotik/mikrotik-hotspot-setup.png" /></a></p>
 <p>A series of dialog boxes will appear. Select the following options:</p>
 <ol>
@@ -1098,11 +1098,11 @@ Expiry: the time in days after which a repeat user will have to enter their data
 <li>In DNS name type nothing and press Next.</li>
 <li>In Create local HotSpot user, keep Name <code>admin</code> and password blank and press Next.</li>
 </ol>
-<p>The setup is now complete. Go to IP -&gt; Hotspot -&gt; Server Profiles and select <code>hsprof1</code> profile. In Login tab check <code>HTTP PAP</code> option and uncheck all other options. Click OK to save settings.</p>
+<p>The setup is now complete. Go to IP &gt; Hotspot &gt; Server Profiles and select <code>hsprof1</code> profile. In Login tab check <code>HTTP PAP</code> option and uncheck all other options. Click OK to save settings.</p>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-hotspot-server-profile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Hotspot Server Profile" src="../../assets/images/mikrotik/mikrotik-hotspot-server-profile.png" /></a></p>
-<p>In IP -&gt; Hotspot -&gt; User Profiles open the <code>default</code> profile and disable MAC Cookie. Change the number of <code>Shared Users</code> to the maximum number of devices that you want to be connected to the hotspot simultaneously.</p>
+<p>In IP &gt; Hotspot &gt; User Profiles open the <code>default</code> profile and disable MAC Cookie. Change the number of <code>Shared Users</code> to the maximum number of devices that you want to be connected to the hotspot simultaneously.</p>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-hotspot-user-profile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Hotspot User Profile" src="../../assets/images/mikrotik/mikrotik-hotspot-user-profile.png" /></a></p>
-<p>Go to IP -&gt; Hotspot -&gt; Walled Garden IP List and create a new entry. In Dst. Address add the IP address of your Splash Air server and click OK.</p>
+<p>Go to IP &gt; Hotspot &gt; Walled Garden IP List and create a new entry. In Dst. Address add the IP address of your Splash Air server and click OK.</p>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-walled-garden.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Hotspot Walled Garden" src="../../assets/images/mikrotik/mikrotik-walled-garden.png" /></a></p>
 <h3 id="portal-files">Portal Files</h3>
 <p>Download this <a href="../../files/mikrotik.zip">file</a> and unzip it. Open the <code>login.html</code> file in a text editor. The Guest Portal URL generated earlier should be pasted in the form action field as shown below:</p>
@@ -1117,13 +1117,13 @@ Expiry: the time in days after which a repeat user will have to enter their data
 <p>To avoid this you need to import a TLS certificate to your Mikrotik router. You can get one for free using Let's Encrypt. Here is the process for installing it to your router.</p>
 <p>Combine your certificate and key into one consolidated file and upload that to your router:</p>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-cert-upload.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Certificate Upload" src="../../assets/images/mikrotik/mikrotik-cert-upload.png" /></a></p>
-<p>Go to System -&gt; Certificates and click on the Import button. Select the file you just uploaded, make sure the <code>Trusted</code> option is checked and click Import.</p>
+<p>Go to System &gt; Certificates and click on the Import button. Select the file you just uploaded, make sure the <code>Trusted</code> option is checked and click Import.</p>
 <figure>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-cert-import.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Certificate Import" src="../../assets/images/mikrotik/mikrotik-cert-import.png" /></a></p>
 </figure>
 <p>The imported certificate will be shown. In our case we are using a wildcard TLS certificate generating using Let's Encrypt.</p>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-certificates.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Certificates" src="../../assets/images/mikrotik/mikrotik-certificates.png" /></a></p>
-<p>Go to IP -&gt; Hotspot -&gt; Server Profiles and select <code>hsprof1</code> profile. Enter a DNS name for your router (the respective DNS record should also exist and point to any of the interface IPs on Mikrotik). In Login section enable <code>HTTPS</code> and in SSL Certificate select the certificate imported in the previous step.</p>
+<p>Go to IP &gt; Hotspot &gt; Server Profiles and select <code>hsprof1</code> profile. Enter a DNS name for your router (the respective DNS record should also exist and point to any of the interface IPs on Mikrotik). In Login section enable <code>HTTPS</code> and in SSL Certificate select the certificate imported in the previous step.</p>
 <figure>
 <p><a class="glightbox" href="../../assets/images/mikrotik/mikrotik-hotspot-https.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Mikrotik Hotpsot HTTPS" src="../../assets/images/mikrotik/mikrotik-hotspot-https.png" /></a></p>
 </figure>

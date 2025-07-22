@@ -1011,15 +1011,15 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 </code></pre>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
 <h2 id="fortigate-settings">FortiGate Settings</h2>
-<p>Access FortiGate firewall using web interface. Go to Network -&gt; Interfaces and select the interface on which you want to enable captive portal. Typically, it will be the LAN gateway interface.</p>
+<p>Access FortiGate firewall using web interface. Go to Network &gt; Interfaces and select the interface on which you want to enable captive portal. Typically, it will be the LAN gateway interface.</p>
 <p><a class="glightbox" href="../../assets/images/fortinet/interface.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fortigate interface" src="../../assets/images/fortinet/interface.png" /></a></p>
-<p>Click on Edit to modify its settings. Enable Security mode -&gt; Captive Portal. In Authentication Portal, select <code>External</code> and enter the Guest Portal URL generated when creating the portal in Splash Air. In Exempt destination/services create a new entry and add the IP address of Splash Air application server in it.</p>
+<p>Click on Edit to modify its settings. Enable Security mode &gt; Captive Portal. In Authentication Portal, select <code>External</code> and enter the Guest Portal URL generated when creating the portal in Splash Air. In Exempt destination/services create a new entry and add the IP address of Splash Air application server in it.</p>
 <p><a class="glightbox" href="../../assets/images/fortinet/interface-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fortigate Interface Settings" src="../../assets/images/fortinet/interface-settings.png" /></a></p>
 <p>In Redirect after Captive Portal you can specify a URL to which the URL will be redirected after successful portal authorization.</p>
 <p>Click OK to save the settings.</p>
-<p>Go to User &amp; Authorization -&gt; RADIUS Servers and create a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks support team will be entered here.</p>
-<p>Then go to User &amp; Authorization -&gt; User Groups and create a new group. Add the RADIUS server selected in the previous step and click on OK to save it.</p>
-<p>Go back to Network -&gt; Interface and select the interface on which captive portal is enabled. In User access select <code>Restricted to Groups</code> option. In <code>User groups</code> add the group that you created in the last step. Click OK to save the settings.</p>
+<p>Go to User &amp; Authorization &gt; RADIUS Servers and create a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks support team will be entered here.</p>
+<p>Then go to User &amp; Authorization &gt; User Groups and create a new group. Add the RADIUS server selected in the previous step and click on OK to save it.</p>
+<p>Go back to Network &gt; Interface and select the interface on which captive portal is enabled. In User access select <code>Restricted to Groups</code> option. In <code>User groups</code> add the group that you created in the last step. Click OK to save the settings.</p>
 <p><a class="glightbox" href="../../assets/images/fortinet/interface-settings-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fortigate Interface Settings" src="../../assets/images/fortinet/interface-settings-2.png" /></a></p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
@@ -1027,7 +1027,7 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 <p>Here is the traffic flow in the case of FortiGate firewall:</p>
 <p><a class="glightbox" href="../../assets/images/fortinet/traffic-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Traffic Flow" src="../../assets/images/fortinet/traffic-flow.png" /></a></p>
 <h3 id="radius-test">RADIUS Test</h3>
-<p>To test your RADIUS server You can go to User &amp; Authentication -&gt; RADIUS Servers. Select your RADIUS server and click on Test User Credentials. Here you can enter a username and password combination to see whether it passes RADIUS authorization or not.</p>
+<p>To test your RADIUS server You can go to User &amp; Authentication &gt; RADIUS Servers. Select your RADIUS server and click on Test User Credentials. Here you can enter a username and password combination to see whether it passes RADIUS authorization or not.</p>
 <p><a class="glightbox" href="../../assets/images/fortinet/radius-test.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="RADIUS Test" src="../../assets/images/fortinet/radius-test.png" /></a></p>
 
 

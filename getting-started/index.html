@@ -349,18 +349,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-business-and-venues" class="md-nav__link">
+  <a href="#adding-businesses-and-venues" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding Business and Venues
+      Adding Businesses and Venues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding Businesses and Venues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#periodic-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Periodic Reports
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#periodic-reports" class="md-nav__link">
+  <a href="#global-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Periodic Reports
+      Global Settings
     </span>
   </a>
   
@@ -913,18 +928,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-business-and-venues" class="md-nav__link">
+  <a href="#adding-businesses-and-venues" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding Business and Venues
+      Adding Businesses and Venues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding Businesses and Venues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#periodic-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Periodic Reports
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#periodic-reports" class="md-nav__link">
+  <a href="#global-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Periodic Reports
+      Global Settings
     </span>
   </a>
   
@@ -956,14 +986,28 @@
 <h2 id="dashboard">Dashboard</h2>
 <p>After successful login you will see a dashboard like this showing you some quick stats about your sites.</p>
 <p><a class="glightbox" href="../assets/images/dashboard.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Dashboard" src="../assets/images/dashboard.png" /></a></p>
-<h2 id="adding-business-and-venues">Adding Business and Venues</h2>
+<h2 id="adding-businesses-and-venues">Adding Businesses and Venues</h2>
 <p>In the Businesses tab you can add a new business by clicking on the New business button. After providing the business details its entry will be added:</p>
 <p><a class="glightbox" href="../assets/images/businesses.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Business" src="../assets/images/businesses.png" /></a></p>
 <p>Each business can have multiple venues. You can go to the Venues tab to add venues using the New venue button:</p>
 <p><a class="glightbox" href="../assets/images/venues.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Venues" src="../assets/images/venues.png" /></a></p>
-<h2 id="periodic-reports">Periodic Reports</h2>
+<h3 id="periodic-reports">Periodic Reports</h3>
 <p>Under venue settings you have the option of enabling periodic reports. The reporting frequency can be daily/weekly/monthly. It will contain the data of customers and visits to that venue for the selected duration and will be emailed to the provided email addresses.</p>
 <p><a class="glightbox" href="../assets/images/reports.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Venue Reports" src="../assets/images/reports.png" /></a></p>
+<h2 id="global-settings">Global Settings</h2>
+<p>In Admin &gt; Global Settings you can edit the global settings related to timezone, country, SMS and email options.</p>
+<p><strong>Timezone</strong> controls all the timestamps in the application, such as visit time and customer creation time.</p>
+<p><strong>Country</strong> controls which country is selected as the default in a portal template's phone number field (for details refer to the section on <a href="../defining-templates/">defining templates</a>)</p>
+<p><a class="glightbox" href="../assets/images/global-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Global Settings" src="../assets/images/global-settings.png" /></a></p>
+<p>The <strong>SMS Provider</strong> field can be used to select the default SMS provider when using SMS OTP based user authorization. Currently supported SMS providers are Twilio, Unifonic and TextBee. Each provider has their own API parameters like <em>Auth Token</em>, <em>SenderID</em> etc that need to be added under that provider's settings. It is recommended to use the Test SMS button to send a test SMS to ensure SMS functionality is successfully integrated before using this feature in a captive portal.</p>
+<p>If SMS OTP based verification is not used then this field is not relevant.</p>
+<p>SMTP settings are required if these email based features need to be used:</p>
+<ul>
+<li>Venue reports</li>
+<li>Email OTP based user authorization</li>
+<li>Email link based user authorization</li>
+</ul>
+<p>You can use the SMTP settings from an email service provider such as Sendgrid or Brevo. It is recommended to use the Test Email button to send a test email to ensure email functionality is successfully integrated before using this feature in a captive portal.</p>
 
 
 

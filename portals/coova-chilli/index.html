@@ -1026,7 +1026,7 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 <h2 id="coova-chilli-settings">Coova Chilli Settings</h2>
 <p>Coova Chilli is an open-source captive portal package which is used in many Linux based routers. This guide is written for OpenWRT. Our recommended OpenWRT firmware version is OpenWRT 19. Newer versions do not have <code>iptables</code> installed by default so Coova Chilli will not work out of the box. For newer firmwares we recommend using OpenNDS package instead of Coova Chilli.</p>
 <p>Access OpenWRT router/AP using LuCI web interface. By default, OpenWRT firewall does not allow web or SSH access on WAN IP. As a captive portal blocks all traffic on LAN until user is authenticated so when we initially enable captive portal on OpenWRT we would lose management access to the router. To manage OpenWRT we should therefore open access from WAN side. </p>
-<p>Go to Network -&gt; Firewall -&gt; Traffic Rules. Add a new rule with these properties:</p>
+<p>Go to Network &gt; Firewall &gt; Traffic Rules. Add a new rule with these properties:</p>
 <pre><code>Protocol: TCP
 Source zone: wan
 Destination zone: Device (input)
