@@ -38,7 +38,7 @@ Here is an example of OTP flow:
 
 ### Link Flow
 
-In Link Flow the user has to verify their email address by clicking on a verification link. The user is given internet access briefly, typically for 5 min, so they can access their email for completing verification. If they don't verify their email address during that time, they will be unauthorized from the network. If they do verify their email address, their session will be extended - whether the extension will be applied dynamically on existing session or will apply the next time they connect depends on the hardware type. For details refer to the compatibility matrix below.
+In Link Flow the user has to verify their email address by clicking on a verification link. The user is given internet access briefly, typically for 5 min, so they can access their email for completing verification. If they don't verify their email address during that time, they will be unauthorized from the network. If they do verify their email address, their session will be extended - whether the extension will be applied dynamically on existing session or will apply the next time they connect depends on the hardware type. For details refer to the compatibility matrix below - in comments it's mentioned whether dynamic session extension is supported or not.
 
 Here is an example of Link flow:
 
@@ -79,4 +79,5 @@ The following compatibility matrix shows valid combinations of hardware and flow
 | TP-Link Omada        | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Ruckus One           | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Ruckus SmartZone     | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
+| Ruijie               | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension support                   |
 | Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | Link Flow 24-hr session extension supported                   |
