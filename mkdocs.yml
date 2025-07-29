@@ -12,6 +12,7 @@ nav:
       - portals/index.md
       - Aruba/HPE Instant On: portals/aruba-instant-on.md
       - Cambium: portals/cambium.md
+      - Cisco: portals/cisco.md
       - Coova Chilli: portals/coova-chilli.md
       - Fortinet: portals/fortinet.md
       - LigoWave: portals/ligowave.md

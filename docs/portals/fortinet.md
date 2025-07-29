@@ -38,7 +38,7 @@ In Redirect after Captive Portal you can specify a URL to which the URL will be 
 
 Click OK to save the settings.
 
-Go to User & Authorization > RADIUS Servers and create a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks support team will be entered here.
+Go to User & Authorization > RADIUS Servers and create a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks' support team will be entered here.
 
 Then go to User & Authorization > User Groups and create a new group. Add the RADIUS server selected in the previous step and click on OK to save it.
 
