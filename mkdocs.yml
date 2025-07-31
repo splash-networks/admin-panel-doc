@@ -19,6 +19,7 @@ nav:
       - LigoWave: portals/ligowave.md
       - Mikrotik: portals/mikrotik.md
       - Mikrotik with RADIUS: portals/mikrotik-with-radius.md
+      - Open Mesh: portals/openmesh.md
       - OpenNDS: portals/opennds.md
       - Ruckus One: portals/ruckusone.md
       - Ruckus SmartZone: portals/ruckus-smartzone.md

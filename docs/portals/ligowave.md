@@ -51,3 +51,11 @@ In White/Black list tab, enter the IP address of Splash Air server in **White li
 ![Whitelist](../assets/images/ligowave/whitelist.png)
 
 Click the Done button. Then click on the Save changes button to apply the settings.
+
+## Troubleshooting
+
+To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.
+
+### Traffic Flow
+
+For traffic flow refer to the traffic flow section of Coova Chilli [here](coova-chilli.md/#traffic-flow).

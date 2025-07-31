@@ -71,10 +71,13 @@ The following compatibility matrix shows valid combinations of hardware and flow
 |:---------------------|:----------------:|:----------------:|:----------------:|:--------------------------------------------------------------|
 | Aruba Instant On     | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Cambium              | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
+| Cisco                | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Coova Chilli         | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
+| Draytek              | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Fortinet             | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Mikrotik             | :material-check: | :material-check: | :material-close: |                                                               |
 | Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension supported with RADIUS CoA |
+| Open Mesh            | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | OpenNDS              | :material-check: | :material-check: | :material-close: |                                                               |
 | TP-Link Omada        | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Ruckus One           | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
