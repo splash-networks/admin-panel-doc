@@ -715,6 +715,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#pre-auth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre Auth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ssh-access" class="md-nav__link">
     <span class="md-ellipsis">
       SSH Access
@@ -994,6 +1003,28 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../radius/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RADIUS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1065,6 +1096,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#pre-auth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre Auth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ssh-access" class="md-nav__link">
     <span class="md-ellipsis">
       SSH Access
@@ -1122,6 +1162,11 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>For traffic flow refer to the traffic flow section of Coova Chilli <a href="../coova-chilli/#traffic-flow">here</a>.</p>
+<h3 id="pre-auth">Pre Auth</h3>
+<p>Open Mesh devices perform a pre-auth process when a user comes online. It sends a RADIUS Access-Request with that user's MAC address as User-Name and empty User-Password (can be changed to MAC address by using the <strong>Use MAC addr for password</strong> toggle in Cloudtrax settings). If RADIUS accepts that request the user won't see the captive portal at all and would have internet directly. If you are using the RADIUS settings given <a href="../../radius/">here</a> then add the following line at the top of <code>/etc/freeradius/3.0/users</code> file:</p>
+<pre><code>DEFAULT User-Password == &quot;&quot;, Auth-Type := Reject
+</code></pre>
+<p>This will ensure that the portal always pops up for the client.</p>
 <h3 id="ssh-access">SSH Access</h3>
 <p>To access Open Mesh AP via SSH go to Configure &gt; Advanced and set a password in <strong>Root password</strong> field. Then AP can be accessed using username <code>root</code> and your configured password.</p>
 <p>Open Mesh devices use a daemon called <code>udsplash</code> for captive portal. Here are some helpful commands:</p>
