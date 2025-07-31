@@ -30,6 +30,7 @@ nav:
       - customer-data/index.md
       - Through Web: customer-data/web.md
       - Through API: customer-data/api.md
+  - RADIUS: radius.md
 theme:
   name: material
   logo: assets/logo.png
