@@ -1,4 +1,4 @@
-To set up a portals for Open Mesh first you need to [create a template](../defining-templates.md).
+To set up a portal for Open Mesh first you need to [create a template](../defining-templates.md).
 
 ## Add a Portal
 
