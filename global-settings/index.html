@@ -12,28 +12,28 @@
         <meta name="author" content="Splash Networks">
       
       
-        <link rel="canonical" href="https://docs.splashnetworks.co/portals/ligowave/">
+        <link rel="canonical" href="https://docs.splashnetworks.co/global-settings/">
       
       
-        <link rel="prev" href="../fortinet/">
+        <link rel="prev" href="../customer-data/api/">
       
       
-        <link rel="next" href="../mikrotik/">
+        <link rel="next" href="../radius/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>LigoWave - Splash Air Docs</title>
+        <title>Global Settings - Splash Air Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -69,7 +69,7 @@
     
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -78,7 +78,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -97,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#add-a-portal" class="md-skip">
+        <a href="#multi-tenancy" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://docs.splashnetworks.co" title="Splash Air Docs" class="md-header__button md-logo" aria-label="Splash Air Docs" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LigoWave
+              Global Settings
             
           </span>
         </div>
@@ -248,7 +248,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.splashnetworks.co" title="Splash Air Docs" class="md-nav__button md-logo" aria-label="Splash Air Docs" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../assets/logo.png" alt="logo">
 
     </a>
     Splash Air Docs
@@ -263,7 +263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -285,7 +285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -307,7 +307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../defining-templates/" class="md-nav__link">
+      <a href="../defining-templates/" class="md-nav__link">
         
   
   
@@ -326,8 +326,6 @@
       
   
   
-    
-  
   
   
     
@@ -375,15 +373,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../portals/" class="md-nav__link ">
               
   
   
@@ -402,7 +402,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Creating Portals
@@ -418,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aruba-instant-on/" class="md-nav__link">
+      <a href="../portals/aruba-instant-on/" class="md-nav__link">
         
   
   
@@ -441,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cambium/" class="md-nav__link">
+      <a href="../portals/cambium/" class="md-nav__link">
         
   
   
@@ -464,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cisco/" class="md-nav__link">
+      <a href="../portals/cisco/" class="md-nav__link">
         
   
   
@@ -487,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../coova-chilli/" class="md-nav__link">
+      <a href="../portals/coova-chilli/" class="md-nav__link">
         
   
   
@@ -510,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datto/" class="md-nav__link">
+      <a href="../portals/datto/" class="md-nav__link">
         
   
   
@@ -533,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../draytek/" class="md-nav__link">
+      <a href="../portals/draytek/" class="md-nav__link">
         
   
   
@@ -556,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fortinet/" class="md-nav__link">
+      <a href="../portals/fortinet/" class="md-nav__link">
         
   
   
@@ -576,30 +576,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    LigoWave
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../portals/ligowave/" class="md-nav__link">
         
   
   
@@ -610,75 +590,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#add-a-portal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add a Portal
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#portal-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Portal Settings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ligowave-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      LigoWave Settings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#traffic-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Traffic Flow
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -691,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mikrotik/" class="md-nav__link">
+      <a href="../portals/mikrotik/" class="md-nav__link">
         
   
   
@@ -714,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mikrotik-with-radius/" class="md-nav__link">
+      <a href="../portals/mikrotik-with-radius/" class="md-nav__link">
         
   
   
@@ -737,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../openmesh/" class="md-nav__link">
+      <a href="../portals/openmesh/" class="md-nav__link">
         
   
   
@@ -760,7 +671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../opennds/" class="md-nav__link">
+      <a href="../portals/opennds/" class="md-nav__link">
         
   
   
@@ -783,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ruckusone/" class="md-nav__link">
+      <a href="../portals/ruckusone/" class="md-nav__link">
         
   
   
@@ -806,7 +717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ruckus-smartzone/" class="md-nav__link">
+      <a href="../portals/ruckus-smartzone/" class="md-nav__link">
         
   
   
@@ -829,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ruijie/" class="md-nav__link">
+      <a href="../portals/ruijie/" class="md-nav__link">
         
   
   
@@ -852,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../omada/" class="md-nav__link">
+      <a href="../portals/omada/" class="md-nav__link">
         
   
   
@@ -875,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unifi/" class="md-nav__link">
+      <a href="../portals/unifi/" class="md-nav__link">
         
   
   
@@ -929,7 +840,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../customer-data/" class="md-nav__link ">
+            <a href="../customer-data/" class="md-nav__link ">
               
   
   
@@ -964,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../customer-data/web/" class="md-nav__link">
+      <a href="../customer-data/web/" class="md-nav__link">
         
   
   
@@ -987,7 +898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../customer-data/api/" class="md-nav__link">
+      <a href="../customer-data/api/" class="md-nav__link">
         
   
   
@@ -1014,10 +925,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../global-settings/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Global Settings
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1028,6 +959,57 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#multi-tenancy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-tenancy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multi-tenancy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tenant-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tenant Login
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#white-label" class="md-nav__link">
+    <span class="md-ellipsis">
+      White Label
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1039,7 +1021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../radius/" class="md-nav__link">
+      <a href="../radius/" class="md-nav__link">
         
   
   
@@ -1079,46 +1061,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-a-portal" class="md-nav__link">
+  <a href="#multi-tenancy" class="md-nav__link">
     <span class="md-ellipsis">
-      Add a Portal
+      Multi-tenancy
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#portal-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Portal Settings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ligowave-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      LigoWave Settings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
+    <nav class="md-nav" aria-label="Multi-tenancy">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#traffic-flow" class="md-nav__link">
+  <a href="#tenant-login" class="md-nav__link">
     <span class="md-ellipsis">
-      Traffic Flow
+      Tenant Login
     </span>
   </a>
   
@@ -1126,6 +1081,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#white-label" class="md-nav__link">
+    <span class="md-ellipsis">
+      White Label
+    </span>
+  </a>
   
 </li>
       
@@ -1145,42 +1109,53 @@
 
 
 
-  <h1>LigoWave</h1>
+  <h1>Global Settings</h1>
 
-<p>To set up a portal for LigoWave Infinity first you need to <a href="../../defining-templates/">create a template</a>.</p>
-<h2 id="add-a-portal">Add a Portal</h2>
-<p>To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>Coova Chilli</code>. Enter a secret which will be used to secure communication between the router/AP and Splash Air server. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p><a class="glightbox" href="../../assets/images/portals/coova/coova-portal-url.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Coova Portal" src="../../assets/images/portals/coova/coova-portal-url.png" /></a></p>
-<p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
-<p>Select the template and click on the Create button.</p>
-<h2 id="portal-settings">Portal Settings</h2>
-<p>You can go to Portals to view the settings for the portal(s) just added.</p>
-<p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
-<pre><code>Business Name: name of the venue which will be displayed on top of the portal
-Expiry: the time in days after which a repeat user will have to enter their data again on the portal
-Redirect URL: the URL a user is redirected to after successful portal authorization
-Duration (seconds) after email verification: when using &quot;Link&quot; type Flow it is the &quot;Session-Timeout&quot; a user will receive via RADIUS after successful email verification 
-</code></pre>
-<p>You can click on the Edit button against each entry to modify it if needed.</p>
-<h2 id="ligowave-settings">LigoWave Settings</h2>
-<p>Access LigoWave Infinity device using web portal.</p>
-<p>Go to Settings &gt; Network configuration and set Network mode to <strong>Router</strong>.</p>
+<p>In Admin &gt; Global Settings you can edit the global settings related to timezone, country, SMS and email options.</p>
+<p><strong>Timezone</strong> controls all the timestamps in the application, such as visit time and customer creation time.</p>
+<p><strong>Country</strong> controls which country is selected as the default in a portal template's phone number field (for details refer to the section on <a href="../defining-templates/">defining templates</a>)</p>
+<p><a class="glightbox" href="../assets/images/getting-started/global-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Global Settings" src="../assets/images/getting-started/global-settings.png" /></a></p>
+<p>The <strong>SMS Provider</strong> field can be used to select the default SMS provider when using SMS OTP based user authorization. Currently supported SMS providers are Twilio, Unifonic and TextBee. Each provider has their own API parameters like <em>Auth Token</em>, <em>SenderID</em> etc that need to be added under that provider's settings. It is recommended to use the Test SMS button to send a test SMS to ensure SMS functionality is successfully integrated before using this feature in a captive portal.</p>
+<p>If SMS OTP based verification is not used then this field is not relevant.</p>
+<p><strong>SMTP</strong> settings are required if these email based features need to be used:</p>
+<ul>
+<li>Venue reports</li>
+<li>Email OTP based user authorization</li>
+<li>Email link based user authorization</li>
+</ul>
+<p>You can use SMTP settings from an email service provider such as Sendgrid. It is recommended to use the Test Email button to send a test email to ensure email functionality is successfully integrated before using this feature in a captive portal.</p>
+<h3 id="multi-tenancy">Multi-tenancy</h3>
+<p>Multi-tenancy allows a single instance of Splash Air to serve multiple tenants. Each tenant will have an isolated view of the application. All the data of a tenant related to customers, visits, templates, portals etc. will not be visible to other tenants.</p>
+<p>Multi-tenancy can be enabled by checking multitenancy option. Click on the Save changes button to apply the setting.</p>
+<p><a class="glightbox" href="../assets/images/getting-started/multi-tenancy.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Multi tenancy" src="../assets/images/getting-started/multi-tenancy.png" /></a></p>
+<p>Once multi-tenancy has been enabled a Teams option will appear in the left sidebar. Accessing this option will allow you to create new teams. A root team called <code>default</code> is present from the start and cannot be removed.</p>
 <figure>
-  <a class="glightbox" href="../../assets/images/portals/ligowave/network-configuration.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Network Configuration" src="../../assets/images/portals/ligowave/network-configuration.png" width="80%" /></a>
+  <a class="glightbox" href="../assets/images/getting-started/teams.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Multi tenancy" src="../assets/images/getting-started/teams.png" width="70%" /></a>
 </figure>
-<p>In Settings &gt; Wireless Configuration go to Wireless settings (AP). Edit the settings on the SSID on which you want to enable captive portal. In Security settings set Security type to <strong>Hotspot (UAM)</strong>.</p>
-<p><a class="glightbox" href="../../assets/images/portals/ligowave/security-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Security settings" src="../../assets/images/portals/ligowave/security-settings.png" /></a></p>
-<p>In UAM settings &gt; RADIUS, enter a NAS ID which can be the IP address of the AP. Enter the IP address and secret of RADIUS server (will be provided by Splash Networks' team).</p>
-<p><a class="glightbox" href="../../assets/images/portals/ligowave/radius.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="RADIUS" src="../../assets/images/portals/ligowave/radius.png" /></a></p>
-<p>In Captive portal tab, <strong>Splash page type</strong> should be <code>External</code>. In <strong>Login URL</strong> enter the <code>Guest Portal URL</code> copied earlier. In <strong>Portal secret</strong> enter the secret created earlier.</p>
-<p><a class="glightbox" href="../../assets/images/portals/ligowave/captive-portal.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Captive Portal" src="../../assets/images/portals/ligowave/captive-portal.png" /></a>
-In White/Black list tab, enter the IP address of Splash Air server in <strong>White list</strong> section.</p>
-<p><a class="glightbox" href="../../assets/images/portals/ligowave/whitelist.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Whitelist" src="../../assets/images/portals/ligowave/whitelist.png" /></a></p>
-<p>Click the Done button. Then click on the Save changes button to apply the settings.</p>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
-<h3 id="traffic-flow">Traffic Flow</h3>
-<p>For traffic flow refer to the traffic flow section of Coova Chilli <a href="../coova-chilli/#traffic-flow">here</a>.</p>
+<p>You can click on the New team button to create a new team.</p>
+<p><a class="glightbox" href="../assets/images/getting-started/new-team.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="New team" src="../assets/images/getting-started/new-team.png" /></a></p>
+<p>The next step is to go to Users and click on the New user button to create a user for this team. There are 3 roles:</p>
+<ol>
+<li><strong>Super Admin</strong>: a global user that has full visibility of the application including the data of all tenants, and can add/delete/update all data such as businesses, venues, templates, portals, customers and visits</li>
+<li><strong>Admin</strong>: a tenant user that is a part of one or more teams</li>
+<li><strong>Viewer</strong>: a global user that has read-only visibility of the application including the data of all tenants, but cannot make any changes</li>
+</ol>
+<p>For a tenant you should create a user with <strong>Admin</strong> role.</p>
+<p><a class="glightbox" href="../assets/images/getting-started/new-user.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="New team" src="../assets/images/getting-started/new-user.png" /></a></p>
+<p>Once the user is created go back to team and click on the team to which this user should be added. Then, click on the Attach button and select the user in the Attach user modal.</p>
+<p><a class="glightbox" href="../assets/images/getting-started/attach-user.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Attach user to team" src="../assets/images/getting-started/attach-user.png" /></a></p>
+<p>Click on the Attach button to bind this Admin account to the selected team/tenant.</p>
+<h4 id="tenant-login">Tenant Login</h4>
+<p>The Admin user belonging to any tenant will use the following URL to login to the application: <code>https://&lt;Application Hostname&gt;/app</code></p>
+<p>If the application URL is <code>https://example.com</code>, then the login URL for tenant users will be <code>https://example.com/app</code>. Only Super Admins and Viewers will be able to login using <code>https://exmaple.com</code>. Tenants will have to use the <code>/app</code> path.</p>
+<p>After login a tenant user will be able to perform all the operations of the application normally such as creating new businesses, venues, templates, and portals etc.</p>
+<h3 id="white-label">White Label</h3>
+<p>If you have obtained a white label license then you can implement that in Global Settings. You have the option of adding regular and dark mode logo. In the Logo Upload section you can upload your logo like this:</p>
+<p><a class="glightbox" href="../assets/images/getting-started/logo-upload.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Logo Upload" src="../assets/images/getting-started/logo-upload.png" /></a></p>
+<p>Your logo will be shown in the top left corner instead of the original Splash Networks logo. Similarly, it will also be shown as the default placeholder logo when you create a new template.</p>
+<p><a class="glightbox" href="../assets/images/getting-started/template-logo.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Template Logo" src="../assets/images/getting-started/template-logo.png" /></a></p>
+<p>Similarly, you can add a favicon icon in Upload Favicon section. There are several online tools for creating a favicon icon file from a PNG or JPG file, such as <a href="https://favicomatic.com/">favicomatic</a>.</p>
+<p><a class="glightbox" href="../assets/images/getting-started/favicon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Favicon" src="../assets/images/getting-started/favicon.png" /></a></p>
 
 
 
@@ -1268,7 +1243,7 @@ In White/Black list tab, enter the IP address of Splash Air server in <strong>Wh
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../fortinet/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fortinet">
+          <a href="../customer-data/api/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Through API">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1278,20 +1253,20 @@ In White/Black list tab, enter the IP address of Splash Air server in <strong>Wh
                 Previous
               </span>
               <div class="md-ellipsis">
-                Fortinet
+                Through API
               </div>
             </div>
           </a>
         
         
           
-          <a href="../mikrotik/" class="md-footer__link md-footer__link--next" aria-label="Next: Mikrotik">
+          <a href="../radius/" class="md-footer__link md-footer__link--next" aria-label="Next: RADIUS">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Mikrotik
+                RADIUS
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1382,10 +1357,10 @@ In White/Black list tab, enter the IP address of Splash Air server in <strong>Wh
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
