@@ -4,7 +4,7 @@ To set up a portal for Datto first you need to [create a template](../defining-t
 
 To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Coova Chilli`. Enter a secret which will be used to secure communication between the router/AP and Splash Air server. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
-![Coova Portal](../assets/images/coova/coova-portal-url.png)
+![Coova Portal](../assets/images/portals/coova/coova-portal-url.png)
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
@@ -31,11 +31,11 @@ Access Datto Network Manager web portal and select the SSID on which captive por
 
 In Common tab, set an SSID in **SSID name**. Turn on the **Enable** option. In **Authentication** select `Open`.
 
-![Common](../assets/images/datto/common.png)
+![Common](../assets/images/portals/datto/common.png)
 
 Go to Captive Portal tab and turn on **Splash page**. In **Splash page type** select `Hosted remotely`. In **Splash page URL** enter the `Guest Portal URL` copied earlier. In **Splash page secret** enter the secret created earlier.
 
-![Splash Page settings](../assets/images/datto/captive-portal.png)
+![Splash Page settings](../assets/images/portals/datto/captive-portal.png)
 
 In **Splash page authentication type** select `RADIUS`. In **Server address 1** and **Server secret** enter the IP address and secret of your RADIUS server (will be provided by Splash Networks' team). Keep the **Use MAC addr for password** option off. In **Client force timeout** select a session timeout value. **Block unauthenticated users** should be on.
 

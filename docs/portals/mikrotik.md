@@ -8,7 +8,7 @@ To set up a portal for Mikrotik first you need to [create a template](../definin
 
 To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal, and in Hardware select `Mikrotik`. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
-![Mikrotik Portal](../assets/images/portal/portal-mikrotik.png)
+![Mikrotik Portal](../assets/images/portals/portal/portal-mikrotik.png)
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
@@ -28,7 +28,7 @@ Expiry: the time in days after which a repeat user will have to enter their data
 
 You can click on the Edit button against each entry to modify it if needed.
 
-![Mikrotik Portal Settings](../assets/images/portal/portal-settings-mikrotik.png)
+![Mikrotik Portal Settings](../assets/images/portals/portal/portal-settings-mikrotik.png)
 
 ## Mikrotik Settings
 
@@ -36,7 +36,7 @@ Before setting up Hotspot on Mikrotik it is important to enable access from WAN 
 
 Access your Mikrotik router using Winbox. Go to IP > Firewall and disable the following rules that block access from WAN:
 
-![Mikrotik Firewall](../assets/images/mikrotik/mikrotik-firewall.png)
+![Mikrotik Firewall](../assets/images/portals/mikrotik/mikrotik-firewall.png)
 
 Go to IP > Addresses and note your router's WAN IP (usually WAN interface is `ether1`). Connect to your Mikrotik router through WinBox using this IP before proceeding further.
 
@@ -44,7 +44,7 @@ Go to IP > Addresses and note your router's WAN IP (usually WAN interface is `et
 
 Go to IP > Hotspot and click on Hotspot Setup.
 
-![Mikrotik Hotspot Setup](../assets/images/mikrotik/mikrotik-hotspot-setup.png)
+![Mikrotik Hotspot Setup](../assets/images/portals/mikrotik/mikrotik-hotspot-setup.png)
 
 A series of dialog boxes will appear. Select the following options:
 
@@ -59,56 +59,56 @@ A series of dialog boxes will appear. Select the following options:
 
 The setup is now complete. Go to IP > Hotspot > Server Profiles and select `hsprof1` profile. In Login tab check `HTTP PAP` option and uncheck all other options. Click OK to save settings.
 
-![Mikrotik Hotspot Server Profile](../assets/images/mikrotik/mikrotik-hotspot-server-profile.png)
+![Mikrotik Hotspot Server Profile](../assets/images/portals/mikrotik/mikrotik-hotspot-server-profile.png)
 
 In IP > Hotspot > User Profiles open the `default` profile and disable MAC Cookie. Change the number of `Shared Users` to the maximum number of devices that you want to be connected to the hotspot simultaneously.
 
-![Mikrotik Hotspot User Profile](../assets/images/mikrotik/mikrotik-hotspot-user-profile.png)
+![Mikrotik Hotspot User Profile](../assets/images/portals/mikrotik/mikrotik-hotspot-user-profile.png)
 
 Go to IP > Hotspot > Walled Garden IP List and create a new entry. In Dst. Address add the IP address of your Splash Air server and click OK.
 
-![Mikrotik Hotspot Walled Garden](../assets/images/mikrotik/mikrotik-walled-garden.png)
+![Mikrotik Hotspot Walled Garden](../assets/images/portals/mikrotik/mikrotik-walled-garden.png)
 
 ### Portal Files
 
 Download this [file](../files/mikrotik.zip) and unzip it. Open the `login.html` file in a text editor. The Guest Portal URL generated earlier should be pasted in the form action field as shown below:
 
-![Mikrotik Login File](../assets/images/mikrotik/mikrotik-login.png)
+![Mikrotik Login File](../assets/images/portals/mikrotik/mikrotik-login.png)
 
 Go to Files and in Hotspot select `login.html` and `alogin.html` files and remove them.
 
-![Mikrotik Files](../assets/images/mikrotik/mikrotik-files.png)
+![Mikrotik Files](../assets/images/portals/mikrotik/mikrotik-files.png)
 
 Replace them with the files on your computer by dragging and dropping them into the `hotspot` directory:
 
-![Mikrotik Files Updated](../assets/images/mikrotik/mikrotik-files-updated.png)
+![Mikrotik Files Updated](../assets/images/portals/mikrotik/mikrotik-files-updated.png)
 
 ### Avoiding Browsing Warning on Laptops
 
 When using captive portal on laptops and desktops you may receive a browser warning like this about information being submitted insecurely:
 
-![Mikrotik Browser warning](../assets/images/mikrotik/mikrotik-warning.png)
+![Mikrotik Browser warning](../assets/images/portals/mikrotik/mikrotik-warning.png)
 
 To avoid this you need to import a TLS certificate to your Mikrotik router. You can get one for free using Let's Encrypt. Here is the process for installing it to your router.
 
 Combine your certificate and key into one consolidated file and upload that to your router:
 
-![Mikrotik Certificate Upload](../assets/images/mikrotik/mikrotik-cert-upload.png)
+![Mikrotik Certificate Upload](../assets/images/portals/mikrotik/mikrotik-cert-upload.png)
 
 Go to System > Certificates and click on the Import button. Select the file you just uploaded, make sure the `Trusted` option is checked and click Import.
 
 <figure markdown="1">
-![Mikrotik Certificate Import](../assets/images/mikrotik/mikrotik-cert-import.png)
+![Mikrotik Certificate Import](../assets/images/portals/mikrotik/mikrotik-cert-import.png)
 </figure>
 
 The imported certificate will be shown. In our case we are using a wildcard TLS certificate generating using Let's Encrypt.
 
-![Mikrotik Certificates](../assets/images/mikrotik/mikrotik-certificates.png)
+![Mikrotik Certificates](../assets/images/portals/mikrotik/mikrotik-certificates.png)
 
 Go to IP > Hotspot > Server Profiles and select `hsprof1` profile. Enter a DNS name for your router (the respective DNS record should also exist and point to any of the interface IPs on Mikrotik). In Login section enable `HTTPS` and in SSL Certificate select the certificate imported in the previous step.
 
 <figure markdown="1">
-![Mikrotik Hotpsot HTTPS](../assets/images/mikrotik/mikrotik-hotspot-https.png)
+![Mikrotik Hotpsot HTTPS](../assets/images/portals/mikrotik/mikrotik-hotspot-https.png)
 </figure>
 
 ## Troubleshooting
@@ -120,11 +120,11 @@ To troubleshoot problems it is important to understand the components involved i
 Here is the traffic flow in the case of Mikrotik:
 
 <figure markdown="1">
-![Mikrotik Traffic Flow](../assets/images/mikrotik/mikrotik-traffic-flow.png)
+![Mikrotik Traffic Flow](../assets/images/portals/mikrotik/mikrotik-traffic-flow.png)
 </figure>
 
 ### Portal Loops Between Welcome and Authorization Screen & User is Not Authorized
 
 This happens when your admin user has a password. Remove the password for the admin user to fix this issue.
 
-![Mikrotik Admin User Password](../assets/images/mikrotik/admin-user-password.png)
+![Mikrotik Admin User Password](../assets/images/portals/mikrotik/admin-user-password.png)

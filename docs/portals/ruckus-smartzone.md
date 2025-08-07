@@ -4,17 +4,17 @@ To set up a portal for Ruckus SmartZone (SZ) or virtual SmartZone (vSZ) first yo
 
 Access SmartZone using web interface. Go to Administration > WISPr Northbound Interface. Enable Northbound Portal Interface Support and enter a username and password.
 
-![Ruckus NBI](../assets/images/ruckus/nbi.png)
+![Ruckus NBI](../assets/images/portals/ruckus/nbi.png)
 
 ## Add a Portal
 
 On Splash Air go to Controllers > Ruckus SmartZone and add a new controller. Specify a name for it, and enter the username and password created in the previous step. Also enter the WAN IP or hostname of Ruckus SZ.
 
-![Ruckus Controller](../assets/images/ruckus/controller.png)
+![Ruckus Controller](../assets/images/portals/ruckus/controller.png)
 
 To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Ruckus SmartZone`. Select the controller added in the previous step. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
-![Ruckus Portal](../assets/images/ruckus/portal-url.png)
+![Ruckus Portal](../assets/images/portals/ruckus/portal-url.png)
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
@@ -35,28 +35,28 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 
 You can click on the Edit button against each entry to modify it if needed.
 
-![Ruckus Portal Settings](../assets/images/ruckus/portal-settings.png)
+![Ruckus Portal Settings](../assets/images/portals/ruckus/portal-settings.png)
 
 ## SmartZone Settings
 
 Access SmartZone using web interface. Go to Network > Wireless LAN and select your zone. Create a new WLAN (or edit an existing one). Enter a name and SSID. In Authentication Options select **Hotspot (WISPr)**. In Encryption Options select **None**.
 
-![WLAN Settings](../assets/images/ruckus/wlan-settings.png)
+![WLAN Settings](../assets/images/portals/ruckus/wlan-settings.png)
 
 In Hotspot Portal create a new profile in Hotspot (WISPr) Portal section. In Portal Name enter a name for it. In Login URL select **External**. In Redirect unauthenticated user Primary enter the Guest Portal URL copied earlier.
 
-![Hotspot Settings](../assets/images/ruckus/hotspot-settings.png)
+![Hotspot Settings](../assets/images/portals/ruckus/hotspot-settings.png)
 
 In Walled Garden add the IP address of the Splash Air server:
 
-![Hotspot Walled Garden](../assets/images/ruckus/walled-garden.png)
+![Hotspot Walled Garden](../assets/images/portals/ruckus/walled-garden.png)
 
 Click Apply to save the settings.
 
 In Hotspot Portal > Authentication Server select On and select the option **Always Accept**.
 
 <figure markdown="span">
-  ![Hotspot Settings](../assets/images/ruckus/hotspot-portal.png){ width="80%" }
+  ![Hotspot Settings](../assets/images/portals/ruckus/hotspot-portal.png){ width="80%" }
 </figure>
 
 ## MAC Encryption
@@ -75,4 +75,4 @@ To troubleshoot problems it is important to understand the components involved i
 
 Here is the traffic flow in the case of Ruckus SmartZone:
 
-![Traffic Flow](../assets/images/ruckus/traffic-flow.png)
+![Traffic Flow](../assets/images/portals/ruckus/traffic-flow.png)

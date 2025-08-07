@@ -4,7 +4,7 @@ To set up a portal for Open Mesh first you need to [create a template](../defini
 
 To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Coova Chilli`. Enter a secret which will be used to secure communication between the router/AP and Splash Air server. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
-![Coova Portal](../assets/images/coova/coova-portal-url.png)
+![Coova Portal](../assets/images/portals/coova/coova-portal-url.png)
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
@@ -31,11 +31,11 @@ Access CloudTrax web portal and select the SSID on which captive portal needs to
 
 In **SSID name** set an SSID. Turn on the **Enable** option. Turn off **Authentication**. Under Captive Portal turn on **Splash page**.
 
-![SSID](../assets/images/openmesh/ssid.png)
+![SSID](../assets/images/portals/openmesh/ssid.png)
 
 In **Splash page type** select `Hosted remotely`. In **Splash page URL** enter the `Guest Portal URL` copied earlier. In **Splash page secret** enter the secret created earlier. In **Splash page authentication type** select `RADIUS`. In **Server address 1** and **Server secret** enter the IP address and secret of your RADIUS server (will be provided by Splash Networks' team).
 
-![Splash Page settings](../assets/images/openmesh/splash-page.png)
+![Splash Page settings](../assets/images/portals/openmesh/splash-page.png)
 
 Keep the **Use MAC addr for password** option off. In **Client force timeout** select a session timeout value. Keep the remaining settings at their default values: **Block LAN access** and **Client isolation** should be on.
 

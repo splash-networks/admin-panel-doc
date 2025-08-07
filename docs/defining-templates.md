@@ -2,7 +2,7 @@
 
 In the Templates tab you can add a new template using the New template button. When creating a new template you can modify the logo and the text fields according to your preference. The field selector section allows you to enable/disable various fields like Email and Phone number based on your requirements. You can change the font, button color, and placeholders for fields. Also, you can add a Background Image. The changes will be displayed in real time on the panel on the right side.
 
-![Template](assets/images/template.png)
+![Template](assets/images/defining-templates/template.png)
 
 ## Flow
 
@@ -55,11 +55,11 @@ Implementing email based OTP verification is not recommended. A user in captive 
 
 You can click on the preview changes button on the top right to view a full screen preview for mobile, tablet and desktop in portrait and landscape orientation.
 
-![Preview Changes](assets/images/preview-changes.png)
+![Preview Changes](assets/images/defining-templates/preview-changes.png)
 
 In the full screen preview you can use the buttons on the top to toggle between mobile, tablet and desktop view and switch orientation between portrait and landscape. This lets you visualize the captive portal as users will see it.
 
-![Full Preview](assets/images/full-preview.png)
+![Full Preview](assets/images/defining-templates/full-preview.png)
 
 ## Hardware and Template Flow Compatibility Matrix
 

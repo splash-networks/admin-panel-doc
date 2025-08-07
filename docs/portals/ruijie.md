@@ -4,7 +4,7 @@ To set up a portal for Ruijie first you need to [create a template](../defining-
 
 To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Ruijie`. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
-![Ruijie Portal](../assets/images/ruijie/portal.png)
+![Ruijie Portal](../assets/images/portals/ruijie/portal.png)
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
@@ -30,7 +30,7 @@ You can click on the Edit button against each entry to modify it if needed.
 
 Access Ruijie cloud using web interface. Go to Auth & Accounts > Authentication > Captive Portal and add a new captive portal. Enter a name and in **Policy Mode** select `External`. Select the **SSID** on which portal needs to be applied. In **Portal Server URL** enter the `Guest Portal URL` copied earlier. In **Portal IP** enter the IP address of Splash Air server. Click OK to save settings.
 
-![Portal Settings](../assets/images/ruijie/ruijie-captive-portal.png)
+![Portal Settings](../assets/images/portals/ruijie/ruijie-captive-portal.png)
 
 ## Troubleshooting
 
@@ -40,7 +40,7 @@ To troubleshoot problems it is important to understand the components involved i
 
 Here is the traffic flow in the case of Ruijie:
 
-![Traffic Flow](../assets/images/ruijie/traffic-flow.png)
+![Traffic Flow](../assets/images/portals/ruijie/traffic-flow.png)
 
 ### HTTP access
 

@@ -4,7 +4,7 @@ To set up a portal for Coova Chilli first you need to [create a template](../def
 
 To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Coova Chilli`. Enter a secret which will be used to secure communication between the router/AP and Splash Air server. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
-![Coova Portal](../assets/images/coova/coova-portal-url.png)
+![Coova Portal](../assets/images/portals/coova/coova-portal-url.png)
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
@@ -121,4 +121,4 @@ To troubleshoot problems it is important to understand the components involved i
 
 Here is the traffic flow in the case of Coova Chilli:
 
-![Traffic Flow](../assets/images/coova/coova-traffic-flow.png)
+![Traffic Flow](../assets/images/portals/coova/coova-traffic-flow.png)

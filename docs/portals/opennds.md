@@ -4,7 +4,7 @@ To set up a portal for OpenNDS first you need to [create a template](../defining
 
 To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `OpenNDS`. Enter a secret which will be used to secure communication between the router/AP and Splash Air server. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
-![OpenNDS Portal](../assets/images/opennds/portal-url.png)
+![OpenNDS Portal](../assets/images/portals/opennds/portal-url.png)
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
@@ -123,5 +123,5 @@ To troubleshoot problems it is important to understand the components involved i
 Here is the traffic flow in the case of OpenNDS:
 
 <figure markdown="1">
-![OpenNDS Traffic Flow](../assets/images/opennds/opennds-traffic-flow.png)
+![OpenNDS Traffic Flow](../assets/images/portals/opennds/opennds-traffic-flow.png)
 </figure>

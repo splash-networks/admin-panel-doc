@@ -4,7 +4,7 @@ To set up a portal for Aruba/HPE Instant On first you need to [create a template
 
 To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal, and in Hardware select `Aruba Instant On`. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
-![Aruba Portal](../assets/images/portal/portal-aruba.png)
+![Aruba Portal](../assets/images/portals/portal/portal-aruba.png)
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
@@ -24,17 +24,17 @@ Expiry: the time in days after which a repeat user will have to enter their data
 
 You can click on the Edit button against each entry to modify it if needed.
 
-![Aruba Portal Settings](../assets/images/portal/portal-settings-aruba.png)
+![Aruba Portal Settings](../assets/images/portals/portal/portal-settings-aruba.png)
 
 ## Instant On Portal Settings
 
 Login to your account on the [HPE Instant On cloud](https://portal.instant-on.hpe.com/) and select the site on which you want to apply guest portal. Create a new Network of type `Guest`. In Network Options enable `Guest Portal`.
 
-![Aruba Guest Network](../assets/images/aruba/aruba-create-network.png)
+![Aruba Guest Network](../assets/images/portals/aruba/aruba-create-network.png)
 
 In Networks > Guest Portal select Type `External`. In Portal URL select the Guest Portal URL that you copied earlier.
 
-![Aruba Portal URL](../assets/images/aruba/aruba-portal-url.png)
+![Aruba Portal URL](../assets/images/portals/aruba/aruba-portal-url.png)
 
 In Primary RADIUS add the details of your RADIUS server, such as IP address and shared secret.
 
@@ -46,4 +46,4 @@ To troubleshoot problems it is important to understand the components involved i
 
 Here is the traffic flow in the case of HPE/Aruba Instant On:
 
-![Aruba Traffic Flow](../assets/images/aruba/aruba-traffic-flow.png)
+![Aruba Traffic Flow](../assets/images/portals/aruba/aruba-traffic-flow.png)

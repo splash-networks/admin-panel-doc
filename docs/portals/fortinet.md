@@ -4,7 +4,7 @@ To set up a portal for Fortinet FortiGate firewall first you need to [create a t
 
 To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Fortinet`. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
-![Fortinet Portal](../assets/images/fortinet/portal-url.png)
+![Fortinet Portal](../assets/images/portals/fortinet/portal-url.png)
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
@@ -28,11 +28,11 @@ You can click on the Edit button against each entry to modify it if needed.
 
 Access FortiGate firewall using web interface. Go to Network > Interfaces and select the interface on which you want to enable captive portal. Typically, it will be the LAN gateway interface.
 
-![Fortigate interface](../assets/images/fortinet/interface.png)
+![Fortigate interface](../assets/images/portals/fortinet/interface.png)
 
 Click on Edit to modify its settings. Enable Security mode > Captive Portal. In Authentication Portal, select `External` and enter the Guest Portal URL generated when creating the portal in Splash Air. In Exempt destination/services create a new entry and add the IP address of Splash Air application server in it.
 
-![Fortigate Interface Settings](../assets/images/fortinet/interface-settings.png)
+![Fortigate Interface Settings](../assets/images/portals/fortinet/interface-settings.png)
 
 In Redirect after Captive Portal you can specify a URL to which the URL will be redirected after successful portal authorization.
 
@@ -44,7 +44,7 @@ Then go to User & Authorization > User Groups and create a new group. Add the RA
 
 Go back to Network > Interface and select the interface on which captive portal is enabled. In User access select `Restricted to Groups` option. In `User groups` add the group that you created in the last step. Click OK to save the settings.
 
-![Fortigate Interface Settings](../assets/images/fortinet/interface-settings-2.png)
+![Fortigate Interface Settings](../assets/images/portals/fortinet/interface-settings-2.png)
 
 ## Troubleshooting
 
@@ -54,10 +54,10 @@ To troubleshoot problems it is important to understand the components involved i
 
 Here is the traffic flow in the case of FortiGate firewall:
 
-![Traffic Flow](../assets/images/fortinet/traffic-flow.png)
+![Traffic Flow](../assets/images/portals/fortinet/traffic-flow.png)
 
 ### RADIUS Test
 
 To test your RADIUS server You can go to User & Authentication > RADIUS Servers. Select your RADIUS server and click on Test User Credentials. Here you can enter a username and password combination to see whether it passes RADIUS authorization or not.
 
-![RADIUS Test](../assets/images/fortinet/radius-test.png)
+![RADIUS Test](../assets/images/portals/fortinet/radius-test.png)

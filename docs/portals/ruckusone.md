@@ -4,7 +4,7 @@ To set up a portal for Ruckus One first you need to [create a template](../defin
 
 To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Ruckus One`. In Secret enter the integration key obtained in Ruckus One (explained below in **Ruckus One Settings** section).Then, enter a Site ID based on which the path of the portal URL will be defined.
 
-![Ruckus Portal](../assets/images/ruckusone/portal.png)
+![Ruckus Portal](../assets/images/portals/ruckusone/portal.png)
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
@@ -29,11 +29,11 @@ You can click on the Edit button against each entry to modify it if needed.
 
 Access Ruckus One using web interface. Go to Wi-Fi > Wi-Fi Networks List and add a new network (or modify an existing network). Enter a name and in **Network Type** select `Captive Portal`.
 
-![Network Settings](../assets/images/ruckusone/network.png)
+![Network Settings](../assets/images/portals/ruckusone/network.png)
 
 Click Next. In **Portal Type** select `3rd Party Captive Portal (WISPr)` and click Next. In **Portal Provider** select `Custom Provider` and enter a name for it. In **Captive Portal URL** enter the `Guest Portal URL` created earlier. Copy the **Integration Key** which is given below and enter its value into the **Secret** field in Portal configuration on Splash Air.
 
-![Hotspot Settings](../assets/images/ruckusone/settings.png)
+![Hotspot Settings](../assets/images/portals/ruckusone/settings.png)
 
 Uncheck the following options:
 
@@ -53,4 +53,4 @@ To troubleshoot problems it is important to understand the components involved i
 
 Here is the traffic flow in the case of Ruckus One:
 
-![Traffic Flow](../assets/images/ruckusone/traffic-flow.png)
+![Traffic Flow](../assets/images/portals/ruckusone/traffic-flow.png)

@@ -4,7 +4,7 @@ To set up a portal for Cambium first you need to [create a template](../defining
 
 To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Cambium`. Then, enter a Site ID based on which the path of the portal URL will be defined.
 
-![Cambium Portal](../assets/images/cambium/portal.png)
+![Cambium Portal](../assets/images/portals/cambium/portal.png)
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
@@ -29,11 +29,11 @@ You can click on the Edit button against each entry to modify it if needed.
 
 Access Cambium cnMaestro using web interface. Go to Wi-Fi Profiles > WLANs and select the profile on which you want to enable captive portal (or create a new one). In **AAA Servers** enter the IP address and secret of your RADIUS server (will be provided by Splash Networks' team).
 
-![AAA](../assets/images/cambium/aaa.png)
+![AAA](../assets/images/portals/cambium/aaa.png)
 
 In **Guest Access** tab, click on the **Enable** checkbox. In **Portal Mode** select `Enternal Hotspot`. **Access Policy** should be `RADIUS`. **AP Server Protocol** should be `HTTP`. In **External Page URL** enter the `Guest Portal URL` copied earlier.
 
-![AAA](../assets/images/cambium/guest-access.png)
+![AAA](../assets/images/portals/cambium/guest-access.png)
 
 Save the settings. In case you created a new WLAN profile you'll need to apply that to your AP Group.
 
@@ -45,4 +45,4 @@ To troubleshoot problems it is important to understand the components involved i
 
 Here is the traffic flow in the case of Cambium:
 
-![Traffic Flow](../assets/images/cambium/cambium-traffic-flow.png)
+![Traffic Flow](../assets/images/portals/cambium/cambium-traffic-flow.png)
