@@ -1146,7 +1146,7 @@
 <p>To set up a portal for Datto first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>Coova Chilli</code>. Enter a secret which will be used to secure communication between the router/AP and Splash Air server. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p><a class="glightbox" href="../../assets/images/coova/coova-portal-url.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Coova Portal" src="../../assets/images/coova/coova-portal-url.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/coova/coova-portal-url.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Coova Portal" src="../../assets/images/portals/coova/coova-portal-url.png" /></a></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1161,9 +1161,9 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 <h2 id="datto-settings">Datto Settings</h2>
 <p>Access Datto Network Manager web portal and select the SSID on which captive portal needs to be enabled in Access Points &gt; SSID #.</p>
 <p>In Common tab, set an SSID in <strong>SSID name</strong>. Turn on the <strong>Enable</strong> option. In <strong>Authentication</strong> select <code>Open</code>.</p>
-<p><a class="glightbox" href="../../assets/images/datto/common.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Common" src="../../assets/images/datto/common.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/datto/common.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Common" src="../../assets/images/portals/datto/common.png" /></a></p>
 <p>Go to Captive Portal tab and turn on <strong>Splash page</strong>. In <strong>Splash page type</strong> select <code>Hosted remotely</code>. In <strong>Splash page URL</strong> enter the <code>Guest Portal URL</code> copied earlier. In <strong>Splash page secret</strong> enter the secret created earlier.</p>
-<p><a class="glightbox" href="../../assets/images/datto/captive-portal.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Splash Page settings" src="../../assets/images/datto/captive-portal.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/datto/captive-portal.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Splash Page settings" src="../../assets/images/portals/datto/captive-portal.png" /></a></p>
 <p>In <strong>Splash page authentication type</strong> select <code>RADIUS</code>. In <strong>Server address 1</strong> and <strong>Server secret</strong> enter the IP address and secret of your RADIUS server (will be provided by Splash Networks' team). Keep the <strong>Use MAC addr for password</strong> option off. In <strong>Client force timeout</strong> select a session timeout value. <strong>Block unauthenticated users</strong> should be on.</p>
 <p>Go to Advanced tab. <strong>Block LAN access</strong>, <strong>Client isolation</strong> and <strong>DNS Intercept</strong> should be on.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>

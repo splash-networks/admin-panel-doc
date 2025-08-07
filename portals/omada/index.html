@@ -1128,9 +1128,9 @@
 <p>To set up a portal for TP-Link Omada first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>On Splash Air go to Controllers &gt; TP-Link Omada and add a new controller. Specify a name for it, and enter the WAN IP or hostname of the Omada controller.</p>
-<p><a class="glightbox" href="../../assets/images/omada/controller.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Omada Controller" src="../../assets/images/omada/controller.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/omada/controller.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Omada Controller" src="../../assets/images/portals/omada/controller.png" /></a></p>
 <p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>TP-Link Omada</code>. Select the controller added in the previous step. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p><a class="glightbox" href="../../assets/images/omada/portal-url.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Omada Portal" src="../../assets/images/omada/portal-url.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/omada/portal-url.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Omada Portal" src="../../assets/images/portals/omada/portal-url.png" /></a></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1141,20 +1141,20 @@ Expiry: the time in days after which a repeat user will have to enter their data
 Duration (seconds) after email verification: when using &quot;Link&quot; type Flow it is the &quot;Session-Timeout&quot; a user will receive via RADIUS after successful email verification 
 </code></pre>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
-<p><a class="glightbox" href="../../assets/images/omada/portal-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Omada Portal Settings" src="../../assets/images/omada/portal-settings.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/omada/portal-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Omada Portal Settings" src="../../assets/images/portals/omada/portal-settings.png" /></a></p>
 <h2 id="omada-controller-settings">Omada Controller Settings</h2>
 <p>Access Omada controller using web interface. Go to Settings &gt; Profiles &gt; RADIUS Profile and create a new profile. Enter the IP address/URL and secret of your RADIUS server (details will be provided by Splash team).</p>
-<p><a class="glightbox" href="../../assets/images/omada/radius-profile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="RADIUS Profile" src="../../assets/images/omada/radius-profile.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/omada/radius-profile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="RADIUS Profile" src="../../assets/images/portals/omada/radius-profile.png" /></a></p>
 <p>Next, go to Settings &gt; Authentication &gt; Portal and create a new portal. Specify a name for it, and enable the Portal option. Select the SSID &amp; Network on which portal should be enabled. In <strong>Authentication Type</strong> select <code>RADIUS Server</code>. In <strong>RADIUS Profile</strong> select the profile created in the previous step. In <strong>Authentication Mode</strong> select <code>PAP</code>. In <strong>Portal Customization</strong> select <code>External Web Portal</code> and paste the Guest Portal URL copied earlier.</p>
-<p><a class="glightbox" href="../../assets/images/omada/portal.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Portal" src="../../assets/images/omada/portal.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/omada/portal.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Portal" src="../../assets/images/portals/omada/portal.png" /></a></p>
 <p>Then go to Settings &gt; Authentication &gt; Portal &gt; Access Control and enable <strong>Pre-Authentication Access</strong>. Add a new entry and put the IP address of the Splash Air server in it.</p>
-<p><a class="glightbox" href="../../assets/images/omada/access-control.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Access Control" src="../../assets/images/omada/access-control.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/omada/access-control.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Access Control" src="../../assets/images/portals/omada/access-control.png" /></a></p>
 <p>Click Apply to save the settings.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of TP-Link Omada Controller:</p>
-<p><a class="glightbox" href="../../assets/images/omada/traffic-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Traffic Flow" src="../../assets/images/omada/traffic-flow.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/omada/traffic-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Traffic Flow" src="../../assets/images/portals/omada/traffic-flow.png" /></a></p>
 
 
 

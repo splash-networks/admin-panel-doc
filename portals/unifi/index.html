@@ -1128,20 +1128,20 @@
 <p>To set up a portal for Unifi first you need to <a href="../../defining-templates/">create a template</a>. Then you have to add the Unifi controller which will be using that portal. A single template can be applied to multiple sites.</p>
 <h2 id="add-a-unifi-controller">Add a Unifi Controller</h2>
 <p>To add a Unifi Controller you will click on the New unifi controller button in the Unifi Controllers tab. An interactive wizard will launch. You need to enter the name, URL and username password for the Unifi Controller. It needs to be a local user without 2FA. The controller should be reachable directly over the internet using the provided hostname, not via ui.com portal.</p>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-wizard-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 1" src="../../assets/images/unifi/unifi-wizard-1.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-wizard-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 1" src="../../assets/images/portals/unifi/unifi-wizard-1.png" /></a></p>
 <p>In the 2nd step the connection with the Unifi controller will be tested. If the connection is successful, you will get an option to assign sites on the Unifi controller to corresponding venues and templates on Splash Air. You can use the <code>+</code> button at the bottom to add multiple sites.</p>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-wizard-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 2" src="../../assets/images/unifi/unifi-wizard-2.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-wizard-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 2" src="../../assets/images/portals/unifi/unifi-wizard-2.png" /></a></p>
 <p>The 3rd and final step applies the settings for captive portal to the respective site on the Unifi controller. Click on the Create button to complete the process.</p>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-wizard-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 3" src="../../assets/images/unifi/unifi-wizard-3.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-wizard-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 3" src="../../assets/images/portals/unifi/unifi-wizard-3.png" /></a></p>
 <p>Completing this process sets up the captive portal for the selected site(s) on Splash Air.</p>
 <p>The controller will start showing on the Unifi Controllers page:</p>
 <p><a class="glightbox" href="../../assets/images/controller-added.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Controller Added" src="../../assets/images/controller-added.png" /></a></p>
 <p>You should check the site in the Unifi Controller to double-check the captive portal settings. In Hotspot &gt; Authentication <code>External Portal Server</code> should be selected. </p>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-external-portal-server.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi External Portal Server" src="../../assets/images/unifi/unifi-external-portal-server.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-external-portal-server.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi External Portal Server" src="../../assets/images/portals/unifi/unifi-external-portal-server.png" /></a></p>
 <p>By clicking on Edit you can view the IP address: it should show the IP address of the Splash Air server.</p>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-portal-server-ip.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portal Server IP" src="../../assets/images/unifi/unifi-portal-server-ip.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-portal-server-ip.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portal Server IP" src="../../assets/images/portals/unifi/unifi-portal-server-ip.png" /></a></p>
 <p>In the Settings tab the Landing Page Settings should be like this:</p>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-landing-page.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Landing Page Settings" src="../../assets/images/unifi/unifi-landing-page.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-landing-page.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Landing Page Settings" src="../../assets/images/portals/unifi/unifi-landing-page.png" /></a></p>
 <pre><code>Show Landing Page: checked
 HTTPs Redirection Support: unchecked
 Encrypted URL: unchecked
@@ -1152,7 +1152,7 @@ Domain: &lt;Splash Air Domain&gt;
 </code></pre>
 <h2 id="portals">Portals</h2>
 <p>You can go to Portals to view the settings for the portal(s) just added.</p>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-portals.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portals" src="../../assets/images/unifi/unifi-portals.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-portals.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portals" src="../../assets/images/portals/unifi/unifi-portals.png" /></a></p>
 <p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
 <pre><code>Redirect URL: the URL a user is redirected to after successful portal authorization
 Business Name: name of the venue which will be displayed on top of the portal
@@ -1160,21 +1160,21 @@ Duration: the time in minutes for which a user is authorized on the network
 Expiry: the time in days after which a repeat user will have to enter their data again on the portal
 </code></pre>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-portal-details.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portal Details" src="../../assets/images/unifi/unifi-portal-details.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-portal-details.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portal Details" src="../../assets/images/portals/unifi/unifi-portal-details.png" /></a></p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of Ubiquiti Unifi:</p>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-traffic-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Traffic Flow" src="../../assets/images/unifi/unifi-traffic-flow.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-traffic-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Traffic Flow" src="../../assets/images/portals/unifi/unifi-traffic-flow.png" /></a></p>
 <h3 id="client-isolation">Client Isolation</h3>
 <p>The client isolation setting on Unifi controller has been known to lead to this error when trying to access the captive portal:</p>
 <pre><code>Hotspot login cannot open the page because the network connection was lost
 </code></pre>
 <figure>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-client-isolation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Traffic Flow" src="../../assets/images/unifi/unifi-client-isolation.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-client-isolation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Traffic Flow" src="../../assets/images/portals/unifi/unifi-client-isolation.png" /></a></p>
 </figure>
 <p>To prevent it disable client device isolation in WiFi settings.</p>
-<p><a class="glightbox" href="../../assets/images/unifi/unifi-client-isolation-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Traffic Flow" src="../../assets/images/unifi/unifi-client-isolation-2.png" /></a></p>
+<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-client-isolation-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Traffic Flow" src="../../assets/images/portals/unifi/unifi-client-isolation-2.png" /></a></p>
 
 
 
