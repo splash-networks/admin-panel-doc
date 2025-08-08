@@ -36,7 +36,7 @@ In Networks > Guest Portal select Type `External`. In Portal URL select the Gues
 
 ![Aruba Portal URL](../assets/images/portals/aruba/aruba-portal-url.png)
 
-In Primary RADIUS add the details of your RADIUS server, such as IP address and shared secret.
+In Primary RADIUS add the details of your RADIUS server, such as IP address and shared secret (will be provided by Splash Networks' team).
 
 ## Troubleshooting
 

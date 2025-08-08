@@ -10,6 +10,7 @@ nav:
   - Defining Templates: defining-templates.md
   - Creating Portals:
       - portals/index.md
+      - Aruba/HPE: portals/aruba.md
       - Aruba/HPE Instant On: portals/aruba-instant-on.md
       - Cambium: portals/cambium.md
       - Cisco: portals/cisco.md
@@ -57,6 +58,7 @@ theme:
         name: Switch to system preference
   features:
     - navigation.expand
+#    - navigation.tabs
     - header.autohide
     - navigation.footer
     - navigation.path
