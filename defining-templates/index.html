@@ -485,6 +485,8 @@
       
         
       
+        
+      
     
     
     
@@ -525,6 +527,29 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../portals/aruba/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aruba/HPE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1227,6 +1252,7 @@
     frameborder="0" allowfullscreen>
 </iframe>
 
+<p><strong>Note</strong>: You need to enter SMTP parameters for email verification, and API credentials of your SMS provider - such as Twilio - for SMS verification, in <a href="../global-settings/">Global Settings</a>.</p>
 <h3 id="link-flow">Link Flow</h3>
 <p>In Link Flow the user has to verify their email address by clicking on a verification link. The user is given internet access briefly, typically for 5 min, so they can access their email for completing verification. If they don't verify their email address during that time, they will be unauthorized from the network. If they do verify their email address, their session will be extended - whether the extension will be applied dynamically on existing session or will apply the next time they connect depends on the hardware type. For details refer to the compatibility matrix below - in comments it's mentioned whether dynamic session extension is supported or not.</p>
 <p>Here is an example of Link flow:</p>
@@ -1235,9 +1261,10 @@
     frameborder="0" allowfullscreen>
 </iframe>
 
+<p><strong>Note</strong>: You need to enter SMTP parameters for email verification in <a href="../global-settings/">Global Settings</a>.</p>
 <h3 id="email-based-otp-verification-caveat">Email Based OTP Verification Caveat</h3>
 <p>Our recommended flow for email verification is Link flow.</p>
-<p>Implementing email based OTP verification is not recommended. A user in captive state does not have complete internet access, so they will not be able to check their email on the same device. Either they would need another device to check their email, or they would need to have cellular internet on the same device to receive email via that. Additionally, on iOS devices the Captive Network Assistant (CNA) launches a browser that does not allow switching to another window. If you switch to a different window for checking email the browser will close.</p>
+<p>Implementing email based OTP verification is not recommended. A user in captive state does not have complete internet access, so they will not be able to check their email on the same device. Either they would need another device to check their email, or they would need to have cellular internet on the same device to receive email via that. Additionally, on iOS devices the Captive Network Assistant (CNA) launches a browser that does not allow switching to another window. If you switch to a different window for checking email the browser will close, thus leaving the verification process incomplete.</p>
 <h2 id="preview-template">Preview Template</h2>
 <p>You can click on the preview changes button on the top right to view a full screen preview for mobile, tablet and desktop in portrait and landscape orientation.</p>
 <p><a class="glightbox" href="../assets/images/defining-templates/preview-changes.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Preview Changes" src="../assets/images/defining-templates/preview-changes.png" /></a></p>
