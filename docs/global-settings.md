@@ -4,7 +4,7 @@ In Admin > Global Settings you can edit the global settings related to timezone,
 
 **Country** controls which country is selected as the default in a portal template's phone number field (for details refer to the section on [defining templates](defining-templates.md))
 
-![Global Settings](assets/images/getting-started/global-settings.png)
+![Global Settings](assets/images/global-settings/global-settings.png)
 
 The **SMS Provider** field can be used to select the default SMS provider when using SMS OTP based user authorization. Currently supported SMS providers are Twilio, Unifonic and TextBee. Each provider has their own API parameters like _Auth Token_, _SenderID_ etc that need to be added under that provider's settings. It is recommended to use the Test SMS button to send a test SMS to ensure SMS functionality is successfully integrated before using this feature in a captive portal.
 
@@ -22,9 +22,13 @@ You can use SMTP settings from an email service provider such as Sendgrid. It is
 
 Multi-tenancy allows a single instance of Splash Air to serve multiple tenants. Each tenant will have an isolated view of the application. All the data of a tenant related to customers, visits, templates, portals etc. will not be visible to other tenants.
 
+Each tenant is called a team. Each team can have one or more businesses, and each business can have one or more venues. Portals will be created on a per-venue basis.
+
+![Multi tenancy](assets/images/global-settings/team-diagram.png)
+
 Multi-tenancy can be enabled by checking multitenancy option. Click on the Save changes button to apply the setting.
 
-![Multi tenancy](assets/images/getting-started/multi-tenancy.png)
+![Multi tenancy](assets/images/global-settings/multi-tenancy.png)
 
 Once multi-tenancy has been enabled a Teams option will appear in the left sidebar. Accessing this option will allow you to create new teams. A root team called `default` is present from the start and cannot be removed.
 
@@ -34,7 +38,7 @@ Once multi-tenancy has been enabled a Teams option will appear in the left sideb
 
 You can click on the New team button to create a new team.
 
-![New team](assets/images/getting-started/new-team.png)
+![New team](assets/images/global-settings/new-team.png)
 
 The next step is to go to Users and click on the New user button to create a user for this team. There are 3 roles:
 
@@ -44,33 +48,33 @@ The next step is to go to Users and click on the New user button to create a use
 
 For a tenant you should create a user with **Admin** role.
 
-![New team](assets/images/getting-started/new-user.png)
+![New team](assets/images/global-settings/new-user.png)
 
 Once the user is created go back to team and click on the team to which this user should be added. Then, click on the Attach button and select the user in the Attach user modal.
 
-![Attach user to team](assets/images/getting-started/attach-user.png)
+![Attach user to team](assets/images/global-settings/attach-user.png)
 
 Click on the Attach button to bind this Admin account to the selected team/tenant.
 
-#### Tenant Login
+#### Team Login
 
-The Admin user belonging to any tenant will use the following URL to login to the application: `https://<Application Hostname>/app`
+The Admin user belonging to any team will use the following URL to login to the application: `https://<Application Hostname>/app`
 
-If the application URL is `https://example.com`, then the login URL for tenant users will be `https://example.com/app`. Only Super Admins and Viewers will be able to login using `https://exmaple.com`. Tenants will have to use the `/app` path.
+If the application URL is `https://example.com`, then the login URL for team users will be `https://example.com/app`. Only Super Admins and Viewers will be able to login using `https://exmaple.com`. Teams will have to use the `/app` path.
 
-After login a tenant user will be able to perform all the operations of the application normally such as creating new businesses, venues, templates, and portals etc.
+After login a team user will be able to perform all the operations of the application normally such as creating new businesses, venues, templates, and portals etc.
 
 ### White Label
 
 If you have obtained a white label license then you can implement that in Global Settings. You have the option of adding regular and dark mode logo. In the Logo Upload section you can upload your logo like this:
 
-![Logo Upload](assets/images/getting-started/logo-upload.png)
+![Logo Upload](assets/images/global-settings/logo-upload.png)
 
 Your logo will be shown in the top left corner instead of the original Splash Networks logo. Similarly, it will also be shown as the default placeholder logo when you create a new template.
 
-![Template Logo](assets/images/getting-started/template-logo.png)
+![Template Logo](assets/images/global-settings/template-logo.png)
 
 Similarly, you can add a favicon icon in Upload Favicon section. There are several online tools for creating a favicon icon file from a PNG or JPG file, such as [favicomatic](https://favicomatic.com/).
 
-![Favicon](assets/images/getting-started/favicon.png)
+![Favicon](assets/images/global-settings/favicon.png)
 
