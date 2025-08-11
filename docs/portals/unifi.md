@@ -18,7 +18,7 @@ Completing this process sets up the captive portal for the selected site(s) on S
 
 The controller will start showing on the Unifi Controllers page:
 
-![Controller Added](../assets/images/controller-added.png)
+![Controller Added](../assets/images/portals/unifi/controller-added.png)
 
 You should check the site in the Unifi Controller to double-check the captive portal settings. In Hotspot > Authentication `External Portal Server` should be selected. 
 

@@ -4,7 +4,7 @@ To access customer data via API the first step is to create an API Key.
 
 Go to Admin > Generate API Key and press the Generate button.
 
-![Generate API Key](../assets/images/api/api-key-generate.png)
+![Generate API Key](../assets/images/customer-data/api/api-key-generate.png)
 
 Copy the generated API Key as it will only be displayed once.
 
@@ -29,7 +29,7 @@ Request Type: GET
 API Endpoint: /customers
 ```
 
-![Get Customers](../assets/images/api/api-customers.png)
+![Get Customers](../assets/images/customer-data/api/api-customers.png)
 
 ## Customer Visits
 
@@ -40,4 +40,4 @@ Request Type: GET
 API Endpoint: /customer-visits
 ```
 
-![Get Customer Visits](../assets/images/api/api-visits.png)
+![Get Customer Visits](../assets/images/customer-data/api/api-visits.png)

@@ -40,11 +40,15 @@ You can click on the New team button to create a new team.
 
 ![New team](assets/images/global-settings/new-team.png)
 
-The next step is to go to Users and click on the New user button to create a user for this team. There are 3 roles:
+The next step is to go to Users and click on the New user button to create a user for this team. 
 
-1. **Super Admin**: a global user that has full visibility of the application including the data of all tenants, and can add/delete/update all data such as businesses, venues, templates, portals, customers and visits
-2. **Admin**: a tenant user that is a part of one or more teams
-3. **Viewer**: a global user that has read-only visibility of the application including the data of all tenants, but cannot make any changes
+#### User Roles
+
+There are 3 roles:
+
+1. **Super Admin**: a global user that has full visibility of the application including the data of all teams, and can add/delete/update all data such as businesses, venues, templates, portals, customers and visits
+2. **Admin**: a team user that is a part of one or more teams
+3. **Viewer**: a global user that has read-only visibility of the application including the data of all teams, but cannot make any changes
 
 For a tenant you should create a user with **Admin** role.
 
