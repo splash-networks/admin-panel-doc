@@ -12,28 +12,28 @@
         <meta name="author" content="Splash Networks">
       
       
-        <link rel="canonical" href="https://docs.splashnetworks.co/portals/unifi/">
+        <link rel="canonical" href="https://docs.splashnetworks.co/users/">
       
       
-        <link rel="prev" href="../omada/">
+        <link rel="prev" href="../global-settings/">
       
       
-        <link rel="next" href="../../customer-data/">
+        <link rel="next" href="../radius/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>Ubiquiti Unifi - Splash Air Docs</title>
+        <title>Users - Splash Air Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -69,7 +69,7 @@
     
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -78,7 +78,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -96,11 +96,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#add-a-unifi-controller" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -115,7 +110,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://docs.splashnetworks.co" title="Splash Air Docs" class="md-header__button md-logo" aria-label="Splash Air Docs" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -132,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ubiquiti Unifi
+              Users
             
           </span>
         </div>
@@ -248,7 +243,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.splashnetworks.co" title="Splash Air Docs" class="md-nav__button md-logo" aria-label="Splash Air Docs" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../assets/logo.png" alt="logo">
 
     </a>
     Splash Air Docs
@@ -263,7 +258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -285,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -307,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../defining-templates/" class="md-nav__link">
+      <a href="../defining-templates/" class="md-nav__link">
         
   
   
@@ -326,8 +321,6 @@
       
   
   
-    
-  
   
   
     
@@ -377,15 +370,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../portals/" class="md-nav__link ">
               
   
   
@@ -404,7 +399,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Creating Portals
@@ -420,7 +415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aruba/" class="md-nav__link">
+      <a href="../portals/aruba/" class="md-nav__link">
         
   
   
@@ -443,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aruba-instant-on/" class="md-nav__link">
+      <a href="../portals/aruba-instant-on/" class="md-nav__link">
         
   
   
@@ -466,7 +461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cambium/" class="md-nav__link">
+      <a href="../portals/cambium/" class="md-nav__link">
         
   
   
@@ -489,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cisco/" class="md-nav__link">
+      <a href="../portals/cisco/" class="md-nav__link">
         
   
   
@@ -512,7 +507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../coova-chilli/" class="md-nav__link">
+      <a href="../portals/coova-chilli/" class="md-nav__link">
         
   
   
@@ -535,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datto/" class="md-nav__link">
+      <a href="../portals/datto/" class="md-nav__link">
         
   
   
@@ -558,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../draytek/" class="md-nav__link">
+      <a href="../portals/draytek/" class="md-nav__link">
         
   
   
@@ -581,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fortinet/" class="md-nav__link">
+      <a href="../portals/fortinet/" class="md-nav__link">
         
   
   
@@ -604,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ligowave/" class="md-nav__link">
+      <a href="../portals/ligowave/" class="md-nav__link">
         
   
   
@@ -627,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mikrotik/" class="md-nav__link">
+      <a href="../portals/mikrotik/" class="md-nav__link">
         
   
   
@@ -650,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mikrotik-with-radius/" class="md-nav__link">
+      <a href="../portals/mikrotik-with-radius/" class="md-nav__link">
         
   
   
@@ -673,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../openmesh/" class="md-nav__link">
+      <a href="../portals/openmesh/" class="md-nav__link">
         
   
   
@@ -696,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../opennds/" class="md-nav__link">
+      <a href="../portals/opennds/" class="md-nav__link">
         
   
   
@@ -719,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ruckusone/" class="md-nav__link">
+      <a href="../portals/ruckusone/" class="md-nav__link">
         
   
   
@@ -742,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ruckus-smartzone/" class="md-nav__link">
+      <a href="../portals/ruckus-smartzone/" class="md-nav__link">
         
   
   
@@ -765,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ruijie/" class="md-nav__link">
+      <a href="../portals/ruijie/" class="md-nav__link">
         
   
   
@@ -788,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../omada/" class="md-nav__link">
+      <a href="../portals/omada/" class="md-nav__link">
         
   
   
@@ -808,30 +803,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Ubiquiti Unifi
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../portals/unifi/" class="md-nav__link">
         
   
   
@@ -842,75 +817,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#add-a-unifi-controller" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add a Unifi Controller
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#portals" class="md-nav__link">
-    <span class="md-ellipsis">
-      Portals
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#traffic-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Traffic Flow
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#client-isolation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Client Isolation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -954,7 +860,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../customer-data/" class="md-nav__link ">
+            <a href="../customer-data/" class="md-nav__link ">
               
   
   
@@ -989,7 +895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../customer-data/web/" class="md-nav__link">
+      <a href="../customer-data/web/" class="md-nav__link">
         
   
   
@@ -1012,7 +918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../customer-data/api/" class="md-nav__link">
+      <a href="../customer-data/api/" class="md-nav__link">
         
   
   
@@ -1042,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../global-settings/" class="md-nav__link">
+      <a href="../global-settings/" class="md-nav__link">
         
   
   
@@ -1061,10 +967,17 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../users/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1075,6 +988,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1086,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../radius/" class="md-nav__link">
+      <a href="../radius/" class="md-nav__link">
         
   
   
@@ -1119,65 +1033,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#add-a-unifi-controller" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add a Unifi Controller
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#portals" class="md-nav__link">
-    <span class="md-ellipsis">
-      Portals
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#traffic-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Traffic Flow
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#client-isolation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Client Isolation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1192,58 +1047,17 @@
 
 
 
-  <h1>Ubiquiti Unifi</h1>
+  <h1>Users</h1>
 
-<p>To set up a portal for Unifi first you need to <a href="../../defining-templates/">create a template</a>. Then you have to add the Unifi controller which will be using that portal. A single template can be applied to multiple sites.</p>
-<h2 id="add-a-unifi-controller">Add a Unifi Controller</h2>
-<p>To add a Unifi Controller you will click on the New unifi controller button in the Unifi Controllers tab. An interactive wizard will launch. You need to enter the name, URL and username password for the Unifi Controller. It needs to be a local user without 2FA. The controller should be reachable directly over the internet using the provided hostname, not via ui.com portal.</p>
-<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-wizard-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 1" src="../../assets/images/portals/unifi/unifi-wizard-1.png" /></a></p>
-<p>In the 2nd step the connection with the Unifi controller will be tested. If the connection is successful, you will get an option to assign sites on the Unifi controller to corresponding venues and templates on Splash Air. You can use the <code>+</code> button at the bottom to add multiple sites.</p>
-<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-wizard-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 2" src="../../assets/images/portals/unifi/unifi-wizard-2.png" /></a></p>
-<p>The 3rd and final step applies the settings for captive portal to the respective site on the Unifi controller. Click on the Create button to complete the process.</p>
-<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-wizard-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Wizard 3" src="../../assets/images/portals/unifi/unifi-wizard-3.png" /></a></p>
-<p>Completing this process sets up the captive portal for the selected site(s) on Splash Air.</p>
-<p>The controller will start showing on the Unifi Controllers page:</p>
-<p><a class="glightbox" href="../../assets/images/portals/unifi/controller-added.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Controller Added" src="../../assets/images/portals/unifi/controller-added.png" /></a></p>
-<p>You should check the site in the Unifi Controller to double-check the captive portal settings. In Hotspot &gt; Authentication <code>External Portal Server</code> should be selected. </p>
-<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-external-portal-server.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi External Portal Server" src="../../assets/images/portals/unifi/unifi-external-portal-server.png" /></a></p>
-<p>By clicking on Edit you can view the IP address: it should show the IP address of the Splash Air server.</p>
-<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-portal-server-ip.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portal Server IP" src="../../assets/images/portals/unifi/unifi-portal-server-ip.png" /></a></p>
-<p>In the Settings tab the Landing Page Settings should be like this:</p>
-<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-landing-page.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Landing Page Settings" src="../../assets/images/portals/unifi/unifi-landing-page.png" /></a></p>
-<pre><code>Show Landing Page: checked
-HTTPs Redirection Support: unchecked
-Encrypted URL: unchecked
-Secure Portal: checked
-Domain: checked
-
-Domain: &lt;Splash Air Domain&gt;
-</code></pre>
-<h2 id="portals">Portals</h2>
-<p>You can go to Portals to view the settings for the portal(s) just added.</p>
-<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-portals.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portals" src="../../assets/images/portals/unifi/unifi-portals.png" /></a></p>
-<p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
-<pre><code>Redirect URL: the URL a user is redirected to after successful portal authorization
-Business Name: name of the venue which will be displayed on top of the portal
-Duration: the time in minutes for which a user is authorized on the network
-Expiry: the time in days after which a repeat user will have to enter their data again on the portal
-</code></pre>
-<p>You can click on the Edit button against each entry to modify it if needed.</p>
-<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-portal-details.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Portal Details" src="../../assets/images/portals/unifi/unifi-portal-details.png" /></a></p>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
-<h3 id="traffic-flow">Traffic Flow</h3>
-<p>Here is the traffic flow in the case of Ubiquiti Unifi:</p>
-<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-traffic-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Traffic Flow" src="../../assets/images/portals/unifi/unifi-traffic-flow.png" /></a></p>
-<h3 id="client-isolation">Client Isolation</h3>
-<p>The client isolation setting on Unifi controller has been known to lead to this error when trying to access the captive portal:</p>
-<pre><code>Hotspot login cannot open the page because the network connection was lost
-</code></pre>
-<figure>
-<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-client-isolation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Traffic Flow" src="../../assets/images/portals/unifi/unifi-client-isolation.png" /></a></p>
-</figure>
-<p>To prevent it disable client device isolation in WiFi settings.</p>
-<p><a class="glightbox" href="../../assets/images/portals/unifi/unifi-client-isolation-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unifi Traffic Flow" src="../../assets/images/portals/unifi/unifi-client-isolation-2.png" /></a></p>
+<p>Users refer to administrative users that have access to Splash Air application for performing operational tasks such as creating portals and viewing customer data.</p>
+<p>To create a new user go to Users and click on the New user button. Enter a name, email address, and password, and select the role:</p>
+<p><a class="glightbox" href="../assets/images/users/create-user.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="New user" src="../assets/images/users/create-user.png" /></a></p>
+<p>There are 2 types of user roles in Splash Air:</p>
+<ol>
+<li><strong>Super Admin</strong>: a user that has full control of the application and can perform all operations</li>
+<li><strong>Viewer</strong>: a user that has read-only visibility of the application and data but cannot make any changes</li>
+</ol>
+<p>If multi-tenancy is being used then the application has 3 <a href="../global-settings/#user-roles">roles</a> instead of the two mentioned above.</p>
 
 
 
@@ -1331,7 +1145,7 @@ Expiry: the time in days after which a repeat user will have to enter their data
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../omada/" class="md-footer__link md-footer__link--prev" aria-label="Previous: TP-Link Omada">
+          <a href="../global-settings/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Global Settings">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1341,20 +1155,20 @@ Expiry: the time in days after which a repeat user will have to enter their data
                 Previous
               </span>
               <div class="md-ellipsis">
-                TP-Link Omada
+                Global Settings
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../customer-data/" class="md-footer__link md-footer__link--next" aria-label="Next: Index">
+          <a href="../radius/" class="md-footer__link md-footer__link--next" aria-label="Next: RADIUS">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Index
+                RADIUS
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1445,10 +1259,10 @@ Expiry: the time in days after which a repeat user will have to enter their data
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
