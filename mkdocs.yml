@@ -18,6 +18,7 @@ nav:
       - Datto: portals/datto.md
       - Draytek: portals/draytek.md
       - Fortinet: portals/fortinet.md
+      - Huawei: portals/huawei.md
       - LigoWave: portals/ligowave.md
       - Mikrotik: portals/mikrotik.md
       - Mikrotik with RADIUS: portals/mikrotik-with-radius.md
