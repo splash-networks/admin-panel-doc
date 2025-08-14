@@ -27,7 +27,7 @@ You can click on the Edit button against each entry to modify it if needed.
 
 ## Huawei FAT AP Settings
 
-**Note:** _There are 2 captive portal modes supported on Huawei: **HTTP** and **HTTPS**. HTTP is simpler to set up but is less secure and only will not work on iOS devices. The use of HTTPS is recommended as it is more secure and supported by all devices. The setup for HTTPS mode requires a few more steps so the procedure for setting it up is given at the end._
+**Note:** _There are 2 captive portal modes supported on Huawei: **HTTP** and **HTTPS**. HTTP is simpler to set up but is less secure and will not work on iOS devices. The use of HTTPS is recommended as it is more secure and supported by all devices. The setup for HTTPS mode requires a few more steps so the procedure for setting it up is given at the end._
 
 ### HTTP Setup
 
@@ -156,11 +156,11 @@ Now you can apply this SSL policy to the AP so it doesn't show a certificate war
 
 Assuming HTTP configurations described above are already in place, a few modifications are required to switch from HTTP to HTTPS mode.
 
-Go to Advanced > AAA > Portal Server Global Configuration and switch to External Portal tab. In HTTP Protocol section switch to `HTTPS-based` in **HTTP interoperation mode**. Select the SSL policy created above and in **Local gateway address** select `All addresses`. Port number will remain `8443`. Click Apply to save the settings.
+Go to Advanced > AAA > Portal Server Global Configuration and switch to External Portal tab. In HTTP Protocol section switch to `HTTPS-based` in **HTTP interoperation mode**. Select the SSL policy created above and in **Local gateway address** select `All addresses`. Port number will be `8443`. Click Apply to save the settings.
 
 ![External Portal HTTPS](../assets/images/portals/huawei/external-portal-https.png)
 
-In Portal Authentication Server List click on the existing server to access its details. Expand **URL Option Settings** and update the `Login URL` based on your Huawei AP's hostname. If your AP has the hostname of `huawei.splashnetworks.co` then enter this URL:
+In Portal Authentication Server List click on the existing server to access its details. Expand **URL Option Settings** and update the `Login URL` based on your Huawei AP's hostname. If your AP has a hostname of `huawei.splashnetworks.co` then enter this URL:
 
 ```
 https://huawei.splashnetworks.co:8443
