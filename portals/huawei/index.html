@@ -676,6 +676,54 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Huawei FAT AP Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#https-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTPS Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HTTPS Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tls-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      TLS Certificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#https-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTPS Configurations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -692,6 +740,15 @@
   <a href="#traffic-flow" class="md-nav__link">
     <span class="md-ellipsis">
       Traffic Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ios-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      iOS Error
     </span>
   </a>
   
@@ -1175,6 +1232,54 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Huawei FAT AP Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#https-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTPS Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HTTPS Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tls-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      TLS Certificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#https-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTPS Configurations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1191,6 +1296,15 @@
   <a href="#traffic-flow" class="md-nav__link">
     <span class="md-ellipsis">
       Traffic Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ios-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      iOS Error
     </span>
   </a>
   
@@ -1235,6 +1349,8 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 </code></pre>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
 <h2 id="huawei-fat-ap-settings">Huawei FAT AP Settings</h2>
+<p><strong>Note:</strong> <em>There are 2 captive portal modes supported on Huawei: <strong>HTTP</strong> and <strong>HTTPS</strong>. HTTP is simpler to set up but is less secure and only will not work on iOS devices. The use of HTTPS is recommended as it is more secure and supported by all devices. The setup for HTTPS mode requires a few more steps so the procedure for setting it up is given at the end.</em></p>
+<h3 id="http-setup">HTTP Setup</h3>
 <p>Login to your Huawei FAT AP using its web interface. Go to Configuration &gt; Internet Configuration and make sure Internet access mode is <code>Gateway</code> and NAT is On.</p>
 <p><a class="glightbox" href="../../assets/images/portals/huawei/gateway.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Huawei Portal" src="../../assets/images/portals/huawei/gateway.png" /></a></p>
 <p>Similarly, ensure that the LAN interface on which you want to enable portal is using DHCP from the AP.</p>
@@ -1253,6 +1369,8 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 <li>Login URL keyword/Login URL: <code>url</code>. The value of the URL will be based on your LAN gateway IP. For gateway IP of <code>192.168.50.1</code> the value will be <code>http://192.168.50.1:8000</code></li>
 </ul>
 <p><a class="glightbox" href="../../assets/images/portals/huawei/url-options.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="URL Options" src="../../assets/images/portals/huawei/url-options.png" /></a></p>
+<p>(Optional) To set a redirect URL to which the user is redirected after successful portal login expand Parameter Parsing Configuration section. In <strong>Login success response</strong> select <code>Redirect to the specified URL</code>. Then, enter a URL to which the user should be redirected:</p>
+<p><a class="glightbox" href="../../assets/images/portals/huawei/parameter-parsing.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Parameter Parsing" src="../../assets/images/portals/huawei/parameter-parsing.png" /></a></p>
 <p>Click OK to save the settings.</p>
 <p>Next, go to Advanced &gt; Security &gt; AAA &gt; RADIUS tab and create a new RADIUS Server Profile. Enter the IP address and Secret (will be provided by Splash Networks' team) and check the <strong>Authentication</strong> option.</p>
 <p><a class="glightbox" href="../../assets/images/portals/huawei/radius-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="RADIUS 1" src="../../assets/images/portals/huawei/radius-1.png" /></a></p>
@@ -1272,11 +1390,66 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
   <a class="glightbox" href="../../assets/images/portals/huawei/wlan-2-acl.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="WLAN 2 ACL" src="../../assets/images/portals/huawei/wlan-2-acl.png" width="70%" /></a>
 </figure>
 <p>Click Next to go to the last step. In Step 3 keep the default settings and click Finish to save the settings.</p>
+<h3 id="https-setup">HTTPS Setup</h3>
+<p>To set up HTTPS you first need 2 things:</p>
+<ol>
+<li>TLS certificate</li>
+<li>DNS record pointing to your Huawei AP</li>
+</ol>
+<h4 id="tls-certificate">TLS Certificate</h4>
+<p>In this example we have used Let's Encrypt to obtain a TLS certificate for free. The domain in our case is <code>huawei.splashnetworks.co</code> which is configured to point to the WAN IP of Huawei AP.</p>
+<pre><code>certbot certonly --manual --preferred-challenges dns --key-type rsa --rsa-key-size 2048 -d huawei.splashnetworks.co
+</code></pre>
+<p>It will generate a DNS challenge to verify domain ownership. After completing that it will produce 4 files:</p>
+<ol>
+<li><code>privkey.pem</code></li>
+<li><code>cert.pem</code></li>
+<li><code>chain.pem</code></li>
+<li><code>fullchain.pem</code></li>
+</ol>
+<p>Huawei requires the private key to be password protected which it is currently not. Here's how to password protect it:</p>
+<pre><code>openssl rsa -aes256 -in privkey.pem -out privkey_encrypted.pem
+</code></pre>
+<p>It will ask for a password and then output <code>privkey_encrypted.pem</code> file.</p>
+<p>Before uploading the certificate to AP we need to combine the private key and certificate in a single file. Create a consolidated file <code>combined.pem</code> like this:</p>
+<pre><code>cat privkey_encrypted.pem fullchain.pem &gt; combined.pem
+</code></pre>
+<p>On Huawei AP go to Advanced &gt; Security &gt; Certificate Management and click on Upload Certificate. Enter a name for it, and in <strong>Certificate type</strong> select <code>Local+CA+Private key</code>. In <strong>Certificate format</strong> select <code>PEM</code>. Upload the <code>combined.pem</code> in <strong>Certificate file</strong> and provide its password.</p>
+<figure>
+  <a class="glightbox" href="../../assets/images/portals/huawei/upload-cert.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Upload Cert" src="../../assets/images/portals/huawei/upload-cert.png" width="70%" /></a>
+</figure>
+<p>Click OK to save. Then go to Advanced &gt; Security &gt; SSL and create a new SSL policy. In <strong>SSL policy name</strong> input a name for the policy. In <strong>SSL policy type</strong> select <code>Server</code>. In <strong>Certificate name</strong> select the certificate created in the previous step. Keep the remaining values at their default and click OK to save.</p>
+<p><a class="glightbox" href="../../assets/images/portals/huawei/ssl-policy.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SSL Policy" src="../../assets/images/portals/huawei/ssl-policy.png" /></a></p>
+<p>Now you can apply this SSL policy to the AP so it doesn't show a certificate warning on web login. Access the AP using SSH and deploy the SSL policy created in the previous step using command-line:</p>
+<pre><code>[huawei-AP] http secure-server ssl-policy splash
+</code></pre>
+<h4 id="https-configurations">HTTPS Configurations</h4>
+<p>Assuming HTTP configurations described above are already in place, a few modifications are required to switch from HTTP to HTTPS mode.</p>
+<p>Go to Advanced &gt; AAA &gt; Portal Server Global Configuration and switch to External Portal tab. In HTTP Protocol section switch to <code>HTTPS-based</code> in <strong>HTTP interoperation mode</strong>. Select the SSL policy created above and in <strong>Local gateway address</strong> select <code>All addresses</code>. Port number will remain <code>8443</code>. Click Apply to save the settings.</p>
+<p><a class="glightbox" href="../../assets/images/portals/huawei/external-portal-https.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="External Portal HTTPS" src="../../assets/images/portals/huawei/external-portal-https.png" /></a></p>
+<p>In Portal Authentication Server List click on the existing server to access its details. Expand <strong>URL Option Settings</strong> and update the <code>Login URL</code> based on your Huawei AP's hostname. If your AP has the hostname of <code>huawei.splashnetworks.co</code> then enter this URL:</p>
+<pre><code>https://huawei.splashnetworks.co:8443
+</code></pre>
+<p>It should appear like this:</p>
+<p><a class="glightbox" href="../../assets/images/portals/huawei/url-options-https.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="URL Options HTTPS" src="../../assets/images/portals/huawei/url-options-https.png" /></a></p>
+<p>Click on OK to save the changes. Then go to Advanced &gt; Security &gt; ACL &gt; Domain Name Configuration. Click on Create to add a domain which we will later reference in our ACL. Enter an ID and your domain like this:</p>
+<figure>
+  <a class="glightbox" href="../../assets/images/portals/huawei/domain-name.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Domain Name" src="../../assets/images/portals/huawei/domain-name.png" width="70%" /></a>
+</figure>
+<p>Then go to User ACL Settings tab and add a new rule to your existing ACL to permit the domain created in the last step by adding it in <strong>Dest domain name</strong>:</p>
+<p><a class="glightbox" href="../../assets/images/portals/huawei/acl-domain.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ACL Domain" src="../../assets/images/portals/huawei/acl-domain.png" /></a></p>
+<p>HTTPS configuration is now complete. No change is required on Splash Air to support HTTPS mode.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of Huawei:</p>
 <p><a class="glightbox" href="../../assets/images/portals/huawei/traffic-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Huawei Traffic Flow" src="../../assets/images/portals/huawei/traffic-flow.png" /></a></p>
+<h3 id="ios-error">iOS Error</h3>
+<p>When using HTTP captive portal mode iOS devices will produce an error like this:</p>
+<figure>
+  <a class="glightbox" href="../../assets/images/portals/huawei/ios-error.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="iOS Error" src="../../assets/images/portals/huawei/ios-error.png" width="70%" /></a>
+</figure>
+<p>This is because HTTP mode is less secure and is therefore blocked on iOS. The solution is to switch to HTTPS mode.</p>
 
 
 
