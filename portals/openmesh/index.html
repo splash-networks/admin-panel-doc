@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
@@ -1264,11 +1264,11 @@
 <h2 id="portal-settings">Portal Settings</h2>
 <p>You can go to Portals to view the settings for the portal(s) just added.</p>
 <p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
-<pre><code>Business Name: name of the venue which will be displayed on top of the portal
+<div class="highlight"><pre><span></span><code>Business Name: name of the venue which will be displayed on top of the portal
 Expiry: the time in days after which a repeat user will have to enter their data again on the portal
 Redirect URL: the URL a user is redirected to after successful portal authorization
 Duration (seconds) after email verification: when using &quot;Link&quot; type Flow it is the &quot;Session-Timeout&quot; a user will receive via RADIUS after successful email verification 
-</code></pre>
+</code></pre></div>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
 <h2 id="open-mesh-settings">Open Mesh Settings</h2>
 <p>Access CloudTrax web portal and select the SSID on which captive portal needs to be enabled in Configure &gt; SSID #.</p>
@@ -1283,18 +1283,18 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 <p>For traffic flow refer to the traffic flow section of Coova Chilli <a href="../coova-chilli/#traffic-flow">here</a>.</p>
 <h3 id="pre-auth">Pre Auth</h3>
 <p>Open Mesh devices perform a pre-auth process when a user comes online. It sends a RADIUS Access-Request with that user's MAC address as User-Name and empty User-Password (can be changed to MAC address by using the <strong>Use MAC addr for password</strong> toggle in Cloudtrax settings). If RADIUS accepts that request the user won't see the captive portal at all and would have internet directly. If you are using the RADIUS settings given <a href="../../radius/">here</a> then add the following line at the top of <code>/etc/freeradius/3.0/users</code> file:</p>
-<pre><code>DEFAULT User-Password == &quot;&quot;, Auth-Type := Reject
-</code></pre>
+<div class="highlight"><pre><span></span><code>DEFAULT User-Password == &quot;&quot;, Auth-Type := Reject
+</code></pre></div>
 <p>This will ensure that the portal always pops up for the client.</p>
 <h3 id="ssh-access">SSH Access</h3>
 <p>To access Open Mesh AP via SSH go to Configure &gt; Advanced and set a password in <strong>Root password</strong> field. Then AP can be accessed using username <code>root</code> and your configured password.</p>
 <p>Open Mesh devices use a daemon called <code>udsplash</code> for captive portal. Here are some helpful commands:</p>
 <p>Check online users</p>
-<pre><code>udsplash -l
-</code></pre>
+<div class="highlight"><pre><span></span><code>udsplash -l
+</code></pre></div>
 <p>Logout connected user</p>
-<pre><code>udsplash -n &lt;ssid&gt; -A &lt;MAC address&gt;
-</code></pre>
+<div class="highlight"><pre><span></span><code>udsplash -n &lt;ssid&gt; -A &lt;MAC address&gt;
+</code></pre></div>
 <p>For example: <code>udsplash -n ssid4 -A 5A:0B:F7:02:A3:6E</code></p>
 
 
@@ -1429,7 +1429,8 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
@@ -1497,10 +1498,10 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

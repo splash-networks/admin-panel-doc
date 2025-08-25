@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
@@ -1136,26 +1136,26 @@
 <p>Some vendors require the use of RADIUS in their captive portal authorization flows (e.g. HPE/Aruba Instant On). These instructions can be used to set up a RADIUS server using FreeRADIUS.</p>
 <h3 id="freeradius-setup">FreeRADIUS Setup</h3>
 <p>Install FreeRADIUS:</p>
-<pre><code>apt-get install freeradius freeradius-mysql freeradius-utils
-</code></pre>
+<div class="copy highlight"><pre><span></span><code>apt-get<span class="w"> </span>install<span class="w"> </span>freeradius<span class="w"> </span>freeradius-mysql<span class="w"> </span>freeradius-utils
+</code></pre></div>
 <p>Allow all NAS clients to connect to it:</p>
-<pre><code>nano /etc/freeradius/3.0/clients.conf
-</code></pre>
+<div class="copy highlight"><pre><span></span><code>nano<span class="w"> </span>/etc/freeradius/3.0/clients.conf
+</code></pre></div>
 <p>Add the following lines at the end (replace <code>testing123</code> with a more secure secret):</p>
-<pre><code>client all {
-       ipaddr          = 0.0.0.0/0
-       secret          = testing123
-}
-</code></pre>
+<div class="copy highlight"><pre><span></span><code>client<span class="w"> </span>all<span class="w"> </span><span class="o">{</span>
+<span class="w">       </span><span class="nv">ipaddr</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>.0.0.0/0
+<span class="w">       </span><span class="nv">secret</span><span class="w">          </span><span class="o">=</span><span class="w"> </span>testing123
+<span class="o">}</span>
+</code></pre></div>
 <p>Authenticate all users without checking username/password:</p>
-<pre><code>nano /etc/freeradius/3.0/users
-</code></pre>
+<div class="copy highlight"><pre><span></span><code>nano<span class="w"> </span>/etc/freeradius/3.0/users
+</code></pre></div>
 <p>Add the following on top:</p>
-<pre><code>DEFAULT Auth-Type := Accept
-</code></pre>
+<div class="copy highlight"><pre><span></span><code>DEFAULT<span class="w"> </span>Auth-Type<span class="w"> </span>:<span class="o">=</span><span class="w"> </span>Accept
+</code></pre></div>
 <p>Restart FreeRADIUS service:</p>
-<pre><code>systemctl restart freeradius.service
-</code></pre>
+<div class="copy highlight"><pre><span></span><code>systemctl<span class="w"> </span>restart<span class="w"> </span>freeradius.service
+</code></pre></div>
 
 
 
@@ -1273,7 +1273,8 @@
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
@@ -1341,10 +1342,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

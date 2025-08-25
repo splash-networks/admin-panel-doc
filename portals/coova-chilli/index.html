@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
@@ -1258,29 +1258,29 @@
 <h2 id="portal-settings">Portal Settings</h2>
 <p>You can go to Portals to view the settings for the portal(s) just added.</p>
 <p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
-<pre><code>Business Name: name of the venue which will be displayed on top of the portal
+<div class="highlight"><pre><span></span><code>Business Name: name of the venue which will be displayed on top of the portal
 Expiry: the time in days after which a repeat user will have to enter their data again on the portal
 Redirect URL: the URL a user is redirected to after successful portal authorization
 Duration (seconds) after email verification: when using &quot;Link&quot; type Flow it is the &quot;Session-Timeout&quot; a user will receive via RADIUS after successful email verification 
-</code></pre>
+</code></pre></div>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
 <h2 id="coova-chilli-settings">Coova Chilli Settings</h2>
 <p>Coova Chilli is an open-source captive portal package which is used in many Linux based routers. This guide is written for OpenWRT. Our recommended OpenWRT firmware version is OpenWRT 19. Newer versions do not have <code>iptables</code> installed by default so Coova Chilli will not work out of the box. For newer firmwares we recommend using OpenNDS package instead of Coova Chilli.</p>
 <p>Access OpenWRT router/AP using LuCI web interface. By default, OpenWRT firewall does not allow web or SSH access on WAN IP. As a captive portal blocks all traffic on LAN until user is authenticated so when we initially enable captive portal on OpenWRT we would lose management access to the router. To manage OpenWRT we should therefore open access from WAN side. </p>
 <p>Go to Network &gt; Firewall &gt; Traffic Rules. Add a new rule with these properties:</p>
-<pre><code>Protocol: TCP
+<div class="highlight"><pre><span></span><code>Protocol: TCP
 Source zone: wan
 Destination zone: Device (input)
 Destination port: 80
-</code></pre>
+</code></pre></div>
 <p>Similarly, add another rule for <code>Destination port: 22</code>. Click on Save and apply. Once these rules are added you would be able to access OpenWRT via web and SSH from WAN side.</p>
 <p>Access your OpenWRT device over SSH using its WAN IP. Enter these commands:</p>
-<pre><code>opkg update
+<div class="highlight"><pre><span></span><code>opkg update
 opkg install coova-chilli nano
-</code></pre>
+</code></pre></div>
 <p>Open coova-chilli config file:</p>
-<pre><code>nano /etc/config/chilli
-</code></pre>
+<div class="highlight"><pre><span></span><code>nano /etc/config/chilli
+</code></pre></div>
 <p>Make the following changes:</p>
 <p><strong>option disabled 1</strong>: should be commented out</p>
 <p><strong>option radiusserver1 <code>radius IP</code></strong>: the IP of Splash Air should be added here</p>
@@ -1291,26 +1291,26 @@ opkg install coova-chilli nano
 <p><strong>option uamsecret <code>secret</code></strong>: UAM secret created earlier should be entered here</p>
 <p>Save and exit.</p>
 <p>To check chilli runtime settings use this command:</p>
-<pre><code>cat /var/run/chilli_&lt;config&gt;.conf
-</code></pre>
+<div class="highlight"><pre><span></span><code>cat /var/run/chilli_&lt;config&gt;.conf
+</code></pre></div>
 <p>To apply the changes stop and start the service:</p>
-<pre><code>/etc/init.d/chilli stop
+<div class="highlight"><pre><span></span><code>/etc/init.d/chilli stop
 /etc/init.d/chilli start
-</code></pre>
+</code></pre></div>
 <h3 id="helpful-commands">Helpful commands</h3>
 <p>Enable/disable service</p>
-<pre><code>/etc/init.d/chilli enable
+<div class="highlight"><pre><span></span><code>/etc/init.d/chilli enable
 /etc/init.d/chilli disable
-</code></pre>
+</code></pre></div>
 <p>Check online users</p>
-<pre><code>chilli_query list
-</code></pre>
+<div class="highlight"><pre><span></span><code>chilli_query list
+</code></pre></div>
 <p>Logout connected user</p>
-<pre><code>chilli_query logout &lt;MAC address&gt;
-</code></pre>
+<div class="highlight"><pre><span></span><code>chilli_query logout &lt;MAC address&gt;
+</code></pre></div>
 <p>View logs</p>
-<pre><code>logread -f
-</code></pre>
+<div class="highlight"><pre><span></span><code>logread -f
+</code></pre></div>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
@@ -1449,7 +1449,8 @@ opkg install coova-chilli nano
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
@@ -1517,10 +1518,10 @@ opkg install coova-chilli nano
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
