@@ -51,7 +51,7 @@ For traffic flow refer to the traffic flow section of Coova Chilli [here](coova-
 
 Open Mesh devices perform a pre-auth process when a user comes online. It sends a RADIUS Access-Request with that user's MAC address as User-Name and empty User-Password (can be changed to MAC address by using the **Use MAC addr for password** toggle in Cloudtrax settings). If RADIUS accepts that request the user won't see the captive portal at all and would have internet directly. If you are using the RADIUS settings given [here](../radius.md) then add the following line at the top of `/etc/freeradius/3.0/users` file:
 
-```
+```text { .copy }
 DEFAULT User-Password == "", Auth-Type := Reject
 ```
 
@@ -65,13 +65,13 @@ Open Mesh devices use a daemon called `udsplash` for captive portal. Here are so
 
 Check online users
 
-```
+```text { .copy }
 udsplash -l
 ```
 
 Logout connected user
 
-```
+```text { .copy }
 udsplash -n <ssid> -A <MAC address>
 ```
 

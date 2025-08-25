@@ -44,14 +44,14 @@ Similarly, add another rule for `Destination port: 22`. Click on Save and apply.
 
 Access your OpenWRT device over SSH using its WAN IP. Enter these commands:
 
-```
+```text { .copy }
 opkg update
 opkg install coova-chilli nano
 ```
 
 Open coova-chilli config file:
 
-```
+```text { .copy }
 nano /etc/config/chilli
 ```
 
@@ -75,13 +75,13 @@ Save and exit.
 
 To check chilli runtime settings use this command:
 
-```
+```text { .copy }
 cat /var/run/chilli_<config>.conf
 ```
 
 To apply the changes stop and start the service:
 
-```
+```text { .copy }
 /etc/init.d/chilli stop
 /etc/init.d/chilli start
 ```
@@ -90,26 +90,26 @@ To apply the changes stop and start the service:
 
 Enable/disable service
 
-```
+```text { .copy }
 /etc/init.d/chilli enable
 /etc/init.d/chilli disable
 ```
 
 Check online users
 
-```
+```text { .copy }
 chilli_query list
 ```
 
 Logout connected user
 
-```
+```text { .copy }
 chilli_query logout <MAC address>
 ```
 
 View logs
 
-```
+```text { .copy }
 logread -f
 ```
 

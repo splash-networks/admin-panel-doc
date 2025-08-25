@@ -111,7 +111,7 @@ To set up HTTPS you first need 2 things:
 
 In this example we have used Let's Encrypt to obtain a TLS certificate for free. The domain in our case is `huawei.splashnetworks.co` which is configured to point to the WAN IP of Huawei AP.
 
-```
+```text { .copy }
 certbot certonly --manual --preferred-challenges dns --key-type rsa --rsa-key-size 2048 -d huawei.splashnetworks.co
 ```
 
@@ -124,7 +124,7 @@ It will generate a DNS challenge to verify domain ownership. After completing th
 
 Huawei requires the private key to be password protected which it is currently not. Here's how to password protect it:
 
-```
+```text { .copy }
 openssl rsa -aes256 -in privkey.pem -out privkey_encrypted.pem
 ```
 
@@ -132,7 +132,7 @@ It will ask for a password and then output `privkey_encrypted.pem` file.
 
 Before uploading the certificate to AP we need to combine the private key and certificate in a single file. Create a consolidated file `combined.pem` like this:
 
-```
+```text { .copy }
 cat privkey_encrypted.pem fullchain.pem > combined.pem
 ```
 

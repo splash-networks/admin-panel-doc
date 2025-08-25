@@ -43,7 +43,7 @@ Similarly, add another rule for `Destination port: 22`. Click on Save and apply.
 
 Access your OpenWRT device over SSH using its WAN IP. Enter these commands:
 
-```
+```text { .copy }
 opkg update
 opkg install opennds nano
 opkg install php8 php8-cli php8-mod-openssl
@@ -61,7 +61,7 @@ You will need to enter these parameters in the OpenNDS config file.
 
 Open OpenNDS config file:
 
-```
+```text { .copy }
 nano /etc/config/opennds
 ```
 
@@ -81,13 +81,13 @@ Save and exit.
 
 To apply the changes restart the service:
 
-```
+```text { .copy }
 service opennds restart
 ```
 
 To check current settings and status use this command:
 
-```
+```text { .copy }
 ndsctl status
 ```
 
@@ -97,20 +97,20 @@ ndsctl status
 
 Enable/disable service
 
-```
+```text { .copy }
 service opennds enable
 service opennds disable
 ```
 
 Logout connected user
 
-```
+```text { .copy }
 ndsctl deauth <IP | MAC address>
 ```
 
 View logs
 
-```
+```text { .copy }
 logread -f
 ```
 
