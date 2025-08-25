@@ -1398,7 +1398,7 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 </ol>
 <h4 id="tls-certificate">TLS Certificate</h4>
 <p>In this example we have used Let's Encrypt to obtain a TLS certificate for free. The domain in our case is <code>huawei.splashnetworks.co</code> which is configured to point to the WAN IP of Huawei AP.</p>
-<div class="highlight"><pre><span></span><code>certbot certonly --manual --preferred-challenges dns --key-type rsa --rsa-key-size 2048 -d huawei.splashnetworks.co
+<div class="copy highlight"><pre><span></span><code>certbot certonly --manual --preferred-challenges dns --key-type rsa --rsa-key-size 2048 -d huawei.splashnetworks.co
 </code></pre></div>
 <p>It will generate a DNS challenge to verify domain ownership. After completing that it will produce 4 files:</p>
 <ol>
@@ -1408,11 +1408,11 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 <li><code>fullchain.pem</code></li>
 </ol>
 <p>Huawei requires the private key to be password protected which it is currently not. Here's how to password protect it:</p>
-<div class="highlight"><pre><span></span><code>openssl rsa -aes256 -in privkey.pem -out privkey_encrypted.pem
+<div class="copy highlight"><pre><span></span><code>openssl rsa -aes256 -in privkey.pem -out privkey_encrypted.pem
 </code></pre></div>
 <p>It will ask for a password and then output <code>privkey_encrypted.pem</code> file.</p>
 <p>Before uploading the certificate to AP we need to combine the private key and certificate in a single file. Create a consolidated file <code>combined.pem</code> like this:</p>
-<div class="highlight"><pre><span></span><code>cat privkey_encrypted.pem fullchain.pem &gt; combined.pem
+<div class="copy highlight"><pre><span></span><code>cat privkey_encrypted.pem fullchain.pem &gt; combined.pem
 </code></pre></div>
 <p>On Huawei AP go to Advanced &gt; Security &gt; Certificate Management and click on Upload Certificate. Enter a name for it, and in <strong>Certificate type</strong> select <code>Local+CA+Private key</code>. In <strong>Certificate format</strong> select <code>PEM</code>. Upload the <code>combined.pem</code> in <strong>Certificate file</strong> and provide its password.</p>
 <figure>

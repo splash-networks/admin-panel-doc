@@ -1283,17 +1283,17 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 <p>For traffic flow refer to the traffic flow section of Coova Chilli <a href="../coova-chilli/#traffic-flow">here</a>.</p>
 <h3 id="pre-auth">Pre Auth</h3>
 <p>Open Mesh devices perform a pre-auth process when a user comes online. It sends a RADIUS Access-Request with that user's MAC address as User-Name and empty User-Password (can be changed to MAC address by using the <strong>Use MAC addr for password</strong> toggle in Cloudtrax settings). If RADIUS accepts that request the user won't see the captive portal at all and would have internet directly. If you are using the RADIUS settings given <a href="../../radius/">here</a> then add the following line at the top of <code>/etc/freeradius/3.0/users</code> file:</p>
-<div class="highlight"><pre><span></span><code>DEFAULT User-Password == &quot;&quot;, Auth-Type := Reject
+<div class="copy highlight"><pre><span></span><code>DEFAULT User-Password == &quot;&quot;, Auth-Type := Reject
 </code></pre></div>
 <p>This will ensure that the portal always pops up for the client.</p>
 <h3 id="ssh-access">SSH Access</h3>
 <p>To access Open Mesh AP via SSH go to Configure &gt; Advanced and set a password in <strong>Root password</strong> field. Then AP can be accessed using username <code>root</code> and your configured password.</p>
 <p>Open Mesh devices use a daemon called <code>udsplash</code> for captive portal. Here are some helpful commands:</p>
 <p>Check online users</p>
-<div class="highlight"><pre><span></span><code>udsplash -l
+<div class="copy highlight"><pre><span></span><code>udsplash -l
 </code></pre></div>
 <p>Logout connected user</p>
-<div class="highlight"><pre><span></span><code>udsplash -n &lt;ssid&gt; -A &lt;MAC address&gt;
+<div class="copy highlight"><pre><span></span><code>udsplash -n &lt;ssid&gt; -A &lt;MAC address&gt;
 </code></pre></div>
 <p>For example: <code>udsplash -n ssid4 -A 5A:0B:F7:02:A3:6E</code></p>
 

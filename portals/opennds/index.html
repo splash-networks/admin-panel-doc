@@ -1274,7 +1274,7 @@ Destination port: 80
 </code></pre></div>
 <p>Similarly, add another rule for <code>Destination port: 22</code>. Click on Save and apply. Once these rules are added you would be able to access OpenWRT via web and SSH from WAN side.</p>
 <p>Access your OpenWRT device over SSH using its WAN IP. Enter these commands:</p>
-<div class="highlight"><pre><span></span><code>opkg update
+<div class="copy highlight"><pre><span></span><code>opkg update
 opkg install opennds nano
 opkg install php8 php8-cli php8-mod-openssl
 </code></pre></div>
@@ -1284,7 +1284,7 @@ opkg install php8 php8-cli php8-mod-openssl
 <p><strong>Path</strong>: <code>/on/site1</code></p>
 <p>You will need to enter these parameters in the OpenNDS config file.</p>
 <p>Open OpenNDS config file:</p>
-<div class="highlight"><pre><span></span><code>nano /etc/config/opennds
+<div class="copy highlight"><pre><span></span><code>nano /etc/config/opennds
 </code></pre></div>
 <p>Add the following parameters at the end:</p>
 <p><strong>option fasport <code>443</code></strong>: it tells OpenNDS that the captive portal is using HTTPS port 443</p>
@@ -1294,22 +1294,22 @@ opkg install php8 php8-cli php8-mod-openssl
 <p><strong>option faskey <code>&lt;secret&gt;</code></strong>: the secret created with the portal will be entered here</p>
 <p>Save and exit.</p>
 <p>To apply the changes restart the service:</p>
-<div class="highlight"><pre><span></span><code>service opennds restart
+<div class="copy highlight"><pre><span></span><code>service opennds restart
 </code></pre></div>
 <p>To check current settings and status use this command:</p>
-<div class="highlight"><pre><span></span><code>ndsctl status
+<div class="copy highlight"><pre><span></span><code>ndsctl status
 </code></pre></div>
 <p><strong><em>Note</em></strong>: on some devices with OpenNDS it is observed that an <strong>option faskey <code>&lt;secret&gt;</code></strong> is appended automatically at the end of the config file by the device. In that case just modify that value and don't create a new <code>faskey</code> setting.</p>
 <h3 id="helpful-commands">Helpful commands</h3>
 <p>Enable/disable service</p>
-<div class="highlight"><pre><span></span><code>service opennds enable
+<div class="copy highlight"><pre><span></span><code>service opennds enable
 service opennds disable
 </code></pre></div>
 <p>Logout connected user</p>
-<div class="highlight"><pre><span></span><code>ndsctl deauth &lt;IP | MAC address&gt;
+<div class="copy highlight"><pre><span></span><code>ndsctl deauth &lt;IP | MAC address&gt;
 </code></pre></div>
 <p>View logs</p>
-<div class="highlight"><pre><span></span><code>logread -f
+<div class="copy highlight"><pre><span></span><code>logread -f
 </code></pre></div>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>

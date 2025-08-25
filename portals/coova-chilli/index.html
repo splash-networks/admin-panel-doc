@@ -1275,11 +1275,11 @@ Destination port: 80
 </code></pre></div>
 <p>Similarly, add another rule for <code>Destination port: 22</code>. Click on Save and apply. Once these rules are added you would be able to access OpenWRT via web and SSH from WAN side.</p>
 <p>Access your OpenWRT device over SSH using its WAN IP. Enter these commands:</p>
-<div class="highlight"><pre><span></span><code>opkg update
+<div class="copy highlight"><pre><span></span><code>opkg update
 opkg install coova-chilli nano
 </code></pre></div>
 <p>Open coova-chilli config file:</p>
-<div class="highlight"><pre><span></span><code>nano /etc/config/chilli
+<div class="copy highlight"><pre><span></span><code>nano /etc/config/chilli
 </code></pre></div>
 <p>Make the following changes:</p>
 <p><strong>option disabled 1</strong>: should be commented out</p>
@@ -1291,25 +1291,25 @@ opkg install coova-chilli nano
 <p><strong>option uamsecret <code>secret</code></strong>: UAM secret created earlier should be entered here</p>
 <p>Save and exit.</p>
 <p>To check chilli runtime settings use this command:</p>
-<div class="highlight"><pre><span></span><code>cat /var/run/chilli_&lt;config&gt;.conf
+<div class="copy highlight"><pre><span></span><code>cat /var/run/chilli_&lt;config&gt;.conf
 </code></pre></div>
 <p>To apply the changes stop and start the service:</p>
-<div class="highlight"><pre><span></span><code>/etc/init.d/chilli stop
+<div class="copy highlight"><pre><span></span><code>/etc/init.d/chilli stop
 /etc/init.d/chilli start
 </code></pre></div>
 <h3 id="helpful-commands">Helpful commands</h3>
 <p>Enable/disable service</p>
-<div class="highlight"><pre><span></span><code>/etc/init.d/chilli enable
+<div class="copy highlight"><pre><span></span><code>/etc/init.d/chilli enable
 /etc/init.d/chilli disable
 </code></pre></div>
 <p>Check online users</p>
-<div class="highlight"><pre><span></span><code>chilli_query list
+<div class="copy highlight"><pre><span></span><code>chilli_query list
 </code></pre></div>
 <p>Logout connected user</p>
-<div class="highlight"><pre><span></span><code>chilli_query logout &lt;MAC address&gt;
+<div class="copy highlight"><pre><span></span><code>chilli_query logout &lt;MAC address&gt;
 </code></pre></div>
 <p>View logs</p>
-<div class="highlight"><pre><span></span><code>logread -f
+<div class="copy highlight"><pre><span></span><code>logread -f
 </code></pre></div>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
