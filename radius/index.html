@@ -1136,25 +1136,25 @@
 <p>Some vendors require the use of RADIUS in their captive portal authorization flows (e.g. HPE/Aruba Instant On). These instructions can be used to set up a RADIUS server using FreeRADIUS.</p>
 <h3 id="freeradius-setup">FreeRADIUS Setup</h3>
 <p>Install FreeRADIUS:</p>
-<div class="copy highlight"><pre><span></span><code>apt-get<span class="w"> </span>install<span class="w"> </span>freeradius<span class="w"> </span>freeradius-mysql<span class="w"> </span>freeradius-utils
+<div class="copy highlight"><pre><span></span><code>apt-get install freeradius freeradius-mysql freeradius-utils
 </code></pre></div>
 <p>Allow all NAS clients to connect to it:</p>
-<div class="copy highlight"><pre><span></span><code>nano<span class="w"> </span>/etc/freeradius/3.0/clients.conf
+<div class="copy highlight"><pre><span></span><code>nano /etc/freeradius/3.0/clients.conf
 </code></pre></div>
 <p>Add the following lines at the end (replace <code>testing123</code> with a more secure secret):</p>
-<div class="copy highlight"><pre><span></span><code>client<span class="w"> </span>all<span class="w"> </span><span class="o">{</span>
-<span class="w">       </span><span class="nv">ipaddr</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>.0.0.0/0
-<span class="w">       </span><span class="nv">secret</span><span class="w">          </span><span class="o">=</span><span class="w"> </span>testing123
-<span class="o">}</span>
+<div class="copy highlight"><pre><span></span><code>client all {
+       ipaddr          = 0.0.0.0/0
+       secret          = testing123
+}
 </code></pre></div>
 <p>Authenticate all users without checking username/password:</p>
-<div class="copy highlight"><pre><span></span><code>nano<span class="w"> </span>/etc/freeradius/3.0/users
+<div class="copy highlight"><pre><span></span><code>nano /etc/freeradius/3.0/users
 </code></pre></div>
 <p>Add the following on top:</p>
-<div class="copy highlight"><pre><span></span><code>DEFAULT<span class="w"> </span>Auth-Type<span class="w"> </span>:<span class="o">=</span><span class="w"> </span>Accept
+<div class="copy highlight"><pre><span></span><code>DEFAULT Auth-Type := Accept
 </code></pre></div>
 <p>Restart FreeRADIUS service:</p>
-<div class="copy highlight"><pre><span></span><code>systemctl<span class="w"> </span>restart<span class="w"> </span>freeradius.service
+<div class="copy highlight"><pre><span></span><code>systemctl restart freeradius.service
 </code></pre></div>
 
 

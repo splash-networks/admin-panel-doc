@@ -1266,7 +1266,7 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 <p>For traffic flow refer to the traffic flow section of Coova Chilli <a href="../coova-chilli/#traffic-flow">here</a>.</p>
 <h3 id="pre-auth">Pre Auth</h3>
 <p>Datto devices perform a pre-auth process when a user comes online. It sends a RADIUS Access-Request with that user's MAC address as User-Name and empty User-Password (can be changed to MAC address by using the <strong>Use MAC addr for password</strong> toggle in Network Manager settings). If RADIUS accepts that request the user won't see the captive portal at all and would have internet directly. If you are using the RADIUS settings given <a href="../../radius/">here</a> then add the following line at the top of <code>/etc/freeradius/3.0/users</code> file:</p>
-<div class="highlight"><pre><span></span><code>DEFAULT User-Password == &quot;&quot;, Auth-Type := Reject
+<div class="copy highlight"><pre><span></span><code>DEFAULT User-Password == &quot;&quot;, Auth-Type := Reject
 </code></pre></div>
 <p>This will ensure that the portal always pops up for the client.</p>
 
