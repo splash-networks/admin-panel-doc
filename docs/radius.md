@@ -4,19 +4,19 @@ Some vendors require the use of RADIUS in their captive portal authorization flo
 
 Install FreeRADIUS:
 
-```bash { .copy }
+```text { .copy }
 apt-get install freeradius freeradius-mysql freeradius-utils
 ```
 
 Allow all NAS clients to connect to it:
 
-```bash { .copy }
+```text { .copy }
 nano /etc/freeradius/3.0/clients.conf
 ```
 
 Add the following lines at the end (replace `testing123` with a more secure secret):
 
-```bash { .copy }
+```text { .copy }
 client all {
        ipaddr          = 0.0.0.0/0
        secret          = testing123
@@ -25,19 +25,19 @@ client all {
 
 Authenticate all users without checking username/password:
 
-```bash { .copy }
+```text { .copy }
 nano /etc/freeradius/3.0/users
 ```
 
 Add the following on top:
 
-```bash { .copy }
+```text { .copy }
 DEFAULT Auth-Type := Accept
 ```
 
 Restart FreeRADIUS service:
 
-```bash { .copy }
+```text { .copy }
 systemctl restart freeradius.service
 ```
 
