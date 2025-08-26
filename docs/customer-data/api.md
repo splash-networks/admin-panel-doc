@@ -22,22 +22,24 @@ This will be followed by the specific endpoint that you're querying.
 
 ## Customers
 
-Customer data can be retrieved using the customers API.
+Customer data can be retrieved using the customers API. If using multi-tenancy replace `default` with the team identifier.
 
 ```
 Request Type: GET
 API Endpoint: /customers
+Query Parameters: slug=default
 ```
 
 ![Get Customers](../assets/images/customer-data/api/api-customers.png)
 
 ## Customer Visits
 
-Customer visit data can be retrieved using the customer-visits API.
+Customer visit data can be retrieved using the customer-visits API. If using multi-tenancy replace `default` with the team identifier.
 
 ```
 Request Type: GET
 API Endpoint: /customer-visits
+Query Parameters: slug=default
 ```
 
 ![Get Customer Visits](../assets/images/customer-data/api/api-visits.png)
