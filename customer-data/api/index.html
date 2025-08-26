@@ -1183,15 +1183,17 @@
 </code></pre></div>
 <p>This will be followed by the specific endpoint that you're querying.</p>
 <h2 id="customers">Customers</h2>
-<p>Customer data can be retrieved using the customers API.</p>
+<p>Customer data can be retrieved using the customers API. If using multi-tenancy replace <code>default</code> with the team identifier.</p>
 <div class="highlight"><pre><span></span><code>Request Type: GET
 API Endpoint: /customers
+Query Parameters: slug=default
 </code></pre></div>
 <p><a class="glightbox" href="../../assets/images/customer-data/api/api-customers.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Get Customers" src="../../assets/images/customer-data/api/api-customers.png" /></a></p>
 <h2 id="customer-visits">Customer Visits</h2>
-<p>Customer visit data can be retrieved using the customer-visits API.</p>
+<p>Customer visit data can be retrieved using the customer-visits API. If using multi-tenancy replace <code>default</code> with the team identifier.</p>
 <div class="highlight"><pre><span></span><code>Request Type: GET
 API Endpoint: /customer-visits
+Query Parameters: slug=default
 </code></pre></div>
 <p><a class="glightbox" href="../../assets/images/customer-data/api/api-visits.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Get Customer Visits" src="../../assets/images/customer-data/api/api-visits.png" /></a></p>
 
