@@ -182,15 +182,34 @@ Then go to User ACL Settings tab and add a new rule to your existing ACL to perm
 
 HTTPS configuration is now complete. No change is required on Splash Air to support HTTPS mode.
 
+## Huawei Fit AP Settings
+
+Huawei Fit AP settings are similar to FAT AP settings. Note the following points: 
+
+- All configurations such as Certificate, SSL Policy, DHCP and NAT will be done on WLAN AC (WLC) instead of directly on the AP
+- In SSID **Forwarding mode** should be `Tunnel`
+
+![Forwarding Mode](../assets/images/portals/huawei/forwarding-mode.png)
+
+- Authentication-Free rule will be configured in Configuration > AP Config > Profile > Wireless Service > VAP Profile > profile > Authentication Profile > Authentication-free Rule Profile:
+
+![Auth Free Rule](../assets/images/portals/huawei/auth-free-rule-wlc.png)
+
+Other settings will be the same as given above for FAT AP.
+
 ## Troubleshooting
 
 To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.
 
 ### Traffic Flow
 
-Here is the traffic flow in the case of Huawei:
+Here is the traffic flow in the case of Huawei FAT AP:
 
 ![Huawei Traffic Flow](../assets/images/portals/huawei/traffic-flow.png)
+
+Here is the traffic flow in the case of Huawei FIT AP:
+
+![Huawei Traffic Flow FIT AP](../assets/images/portals/huawei/traffic-flow-fit-ap.png)
 
 ### iOS Error
 
