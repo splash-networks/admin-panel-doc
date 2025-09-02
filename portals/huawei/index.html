@@ -727,6 +727,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#huawei-fit-ap-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Huawei Fit AP Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       Troubleshooting
@@ -1283,6 +1292,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#huawei-fit-ap-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Huawei Fit AP Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       Troubleshooting
@@ -1439,11 +1457,25 @@ Duration (seconds) after email verification: when using &quot;Link&quot; type Fl
 <p>Then go to User ACL Settings tab and add a new rule to your existing ACL to permit the domain created in the last step by adding it in <strong>Dest domain name</strong>:</p>
 <p><a class="glightbox" href="../../assets/images/portals/huawei/acl-domain.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ACL Domain" src="../../assets/images/portals/huawei/acl-domain.png" /></a></p>
 <p>HTTPS configuration is now complete. No change is required on Splash Air to support HTTPS mode.</p>
+<h2 id="huawei-fit-ap-settings">Huawei Fit AP Settings</h2>
+<p>Huawei Fit AP settings are similar to FAT AP settings. Note the following points: </p>
+<ul>
+<li>All configurations such as Certificate, SSL Policy, DHCP and NAT will be done on WLAN AC (WLC) instead of directly on the AP</li>
+<li>In SSID <strong>Forwarding mode</strong> should be <code>Tunnel</code></li>
+</ul>
+<p><a class="glightbox" href="../../assets/images/portals/huawei/forwarding-mode.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Forwarding Mode" src="../../assets/images/portals/huawei/forwarding-mode.png" /></a></p>
+<ul>
+<li>Authentication-Free rule will be configured in Configuration &gt; AP Config &gt; Profile &gt; Wireless Service &gt; VAP Profile &gt; profile &gt; Authentication Profile &gt; Authentication-free Rule Profile:</li>
+</ul>
+<p><a class="glightbox" href="../../assets/images/portals/huawei/auth-free-rule-wlc.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Auth Free Rule" src="../../assets/images/portals/huawei/auth-free-rule-wlc.png" /></a></p>
+<p>Other settings will be the same as given above for FAT AP.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
-<p>Here is the traffic flow in the case of Huawei:</p>
+<p>Here is the traffic flow in the case of Huawei FAT AP:</p>
 <p><a class="glightbox" href="../../assets/images/portals/huawei/traffic-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Huawei Traffic Flow" src="../../assets/images/portals/huawei/traffic-flow.png" /></a></p>
+<p>Here is the traffic flow in the case of Huawei FIT AP:</p>
+<p><a class="glightbox" href="../../assets/images/portals/huawei/traffic-flow-fit-ap.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Huawei Traffic Flow FIT AP" src="../../assets/images/portals/huawei/traffic-flow-fit-ap.png" /></a></p>
 <h3 id="ios-error">iOS Error</h3>
 <p>When using HTTP captive portal mode iOS devices will produce an error like this:</p>
 <figure>
