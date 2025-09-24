@@ -197,6 +197,10 @@ Huawei Fit AP settings are similar to FAT AP settings. Note the following points
 
 Other settings will be the same as given above for FAT AP.
 
+## Huawei iMaster NCE-Campus Settings
+
+
+
 ## Troubleshooting
 
 To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.
