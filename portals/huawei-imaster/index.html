@@ -1289,27 +1289,32 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 </table>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/imaster-url-template.png" data-desc-position="bottom"><img alt="URL Template" src="../../assets/images/portals/huawei/imaster-url-template.png"></a></p>
 <p>Click OK to save the template.</p>
-<p>Go to <strong>RADIUS Relay Server</strong> and create a new template. Enter a name for it and in <strong>Authentication server</strong> section add a new server. Enter the IP address and Secret of your RADIUS server (will be provided by Splash Networks' team) and click on the submit button to save it. In <strong>Authentication protocol</strong> select <code>PAP</code>. Keep the other settings at default and click OK to save the template.</p>
+<p>Go to <strong>RADIUS Relay Server</strong> and create a new template. Enter a name for it. <strong>Authentication service</strong> should be <code>Portal</code>. In <strong>Authentication server</strong> section add a new server. Enter the IP address and Secret of your RADIUS server (will be provided by Splash Networks' team) and click on the submit button to save it. In <strong>Authentication protocol</strong> select <code>PAP</code>. Keep the other settings at default and click OK to save the template.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/radius-relay.png" data-desc-position="bottom"><img alt="RADIUS Relay Server" src="../../assets/images/portals/huawei/radius-relay.png"></a></p>
-<p>Next, go to Provision &gt; Device &gt; Site Configuration and create a new SSID (or modify an existing one). Enter the following settings:</p>
+<p>Next, go to Provision &gt; Device &gt; Site Configuration &gt; AP and create a new SSID (or modify an existing one). Enter the following settings:</p>
 <ul>
 <li><strong>SSID name</strong>: enter an SSID</li>
 <li><strong>Data forwarding mode</strong>: <code>Direct</code></li>
 <li><strong>Global DHCP address pool</strong>: enabled</li>
-<li><strong>WLAN security policy</strong>: <code>Open+Portal authentication</code></li>
-<li><strong>Authentication type</strong>: <code>Relay authentication by cloud platform</code></li>
-<li><strong>Interconnection mode</strong>: <code>RADIUS relay</code></li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/site-configuration.png" data-desc-position="bottom"><img alt="Site Configuration" src="../../assets/images/portals/huawei/site-configuration.png"></a></p>
+<p>Click Next to go to the next page. Configure the following settings here:</p>
+<ul>
+<li><strong>WLAN security policy</strong>: Open network =&gt; <code>Open + Portal authentication</code></li>
+<li><strong>Page pushing mode</strong>: <code>Cloud platform relay authentication</code></li>
+<li><strong>Interconnection mode</strong>: <code>RADIUS relay</code></li>
+<li><strong>Page push protocol</strong>: <code>HTTPS</code></li>
+</ul>
 <p>Under <strong>Third-party portal page authentication parameters</strong> enter these values:</p>
 <ul>
-<li><strong>Username</strong>: <code>Username</code></li>
-<li><strong>Password parameter name</strong>: <code>Password</code></li>
-<li><strong>Redirect URL matching rule</strong>: <code>Redirect URL</code></li>
+<li><strong>Username</strong>: <code>username</code></li>
+<li><strong>Password parameter name</strong>: <code>password</code></li>
+<li><strong>Redirect URL matching</strong>: <code>Fixed URL</code></li>
 <li><strong>Redirect URL upon authentication success</strong>: a redirect URL such as <code>https://www.google.com</code></li>
 <li><strong>RADIUS relay server</strong>: select the RADIUS relay server created in the previous step</li>
 <li><strong>Default permit rule</strong>: select the ACL created previously</li>
+<li><strong>Bypass policy</strong>: <code>Authenticated users can continue accessing the network, and new users are not allowed to access the network.</code></li>
 </ul>
+<p>Click Next to go to the next page. Keep all the settings at default and click OK to save.</p>
 <p>Finally, go to Admission &gt; Admission Resource &gt; Page Management &gt; Portal Page Push Policy. Enter a name for it. In Push Rule enable <strong>Match SSIDs</strong> and add the SSID created in the last step. In Page Push Rule use the following settings:</p>
 <ul>
 <li><strong>Authentication mode</strong>: <code>Cloud platform-based relay authentication</code></li>
