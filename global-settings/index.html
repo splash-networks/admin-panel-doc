@@ -15,7 +15,7 @@
         <link rel="prev" href="../customer-data/api/">
       
       
-        <link rel="next" href="../users/">
+        <link rel="next" href="../plans/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -1080,6 +1080,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#payment-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      Payment Gateway
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-factor-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two Factor Authentication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#white-label" class="md-nav__link">
     <span class="md-ellipsis">
       White Label
@@ -1092,6 +1110,28 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Plans
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1198,6 +1238,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#payment-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      Payment Gateway
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-factor-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two Factor Authentication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#white-label" class="md-nav__link">
     <span class="md-ellipsis">
       White Label
@@ -1266,6 +1324,17 @@
 <p>The Admin user belonging to any team will use the following URL to login to the application: <code>https://&lt;Application Hostname&gt;/app</code></p>
 <p>If the application URL is <code>https://example.com</code>, then the login URL for team users will be <code>https://example.com/app</code>. Only Super Admins and Viewers will be able to login using <code>https://exmaple.com</code>. Teams will have to use the <code>/app</code> path.</p>
 <p>After login a team user will be able to perform all the operations of the application normally such as creating new businesses, venues, templates, and portals etc.</p>
+<h3 id="payment-gateway">Payment Gateway</h3>
+<p>To use Payment Flow a payment gateway needs to be set up. Currently supported payment gateway is Stripe. Its API keys obtained from your Stripe account should be added to Global Settings in Stripe Payment section:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/images/global-settings/stripe.png" data-desc-position="bottom"><img alt="Attach user to team" src="../assets/images/global-settings/stripe.png"></a></p>
+<h3 id="two-factor-authentication">Two Factor Authentication</h3>
+<p>In Global Settings &gt; Security you can enable this checkbox to force all users to use Two Factor Authentication.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/images/global-settings/security.png" data-desc-position="bottom"><img alt="Security 2FA" src="../assets/images/global-settings/security.png"></a></p>
+<p>To enable 2-factor authentication using Google Authenticator or a similar app go to a user's account properties by clicking on the user avatar icon on the top right.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/images/global-settings/user-avatar.png" data-desc-position="bottom"><img alt="2FA User Avatar" src="../assets/images/global-settings/user-avatar.png"></a></p>
+<p>In the Two Factor Authentication section click on the Enable button:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/images/global-settings/enable-2fa.png" data-desc-position="bottom"><img alt="2FA Enable" src="../assets/images/global-settings/enable-2fa.png"></a></p>
+<p>Then scan the provided 2FA code using an authenticator application on your phone.</p>
 <h3 id="white-label">White Label</h3>
 <p>If you have obtained a white label license then you can implement that in Global Settings. You have the option of adding regular and dark mode logo. In the Logo Upload section you can upload your logo like this:</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/images/global-settings/logo-upload.png" data-desc-position="bottom"><img alt="Logo Upload" src="../assets/images/global-settings/logo-upload.png"></a></p>
@@ -1377,13 +1446,13 @@
         
         
           
-          <a href="../users/" class="md-footer__link md-footer__link--next" aria-label="Next: Users">
+          <a href="../plans/" class="md-footer__link md-footer__link--next" aria-label="Next: Plans">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Users
+                Plans
               </div>
             </div>
             <div class="md-footer__button md-icon">
