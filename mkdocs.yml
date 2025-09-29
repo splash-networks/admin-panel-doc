@@ -35,6 +35,7 @@ nav:
       - Through Web: customer-data/web.md
       - Through API: customer-data/api.md
   - Global Settings: global-settings.md
+  - Plans: plans.md
   - Users: users.md
   - RADIUS: radius.md
 theme:

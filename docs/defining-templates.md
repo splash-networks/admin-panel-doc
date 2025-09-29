@@ -6,11 +6,12 @@ In the Templates tab you can add a new template using the New template button. W
 
 ## Flow
 
-There are 3 types of user authorization flows that are currently supported:
+There are 4 types of user authorization flows that are currently supported:
 
  - Simple
  - OTP
  - Link
+ - Payment (beta)
 
 ### Simple Flow
 
@@ -49,11 +50,24 @@ Here is an example of Link flow:
 
 **Note**: You need to enter SMTP parameters for email verification in [Global Settings](global-settings.md).
 
-### Email Based OTP Verification Caveat
+#### Email Based OTP Verification Caveat
 
 Our recommended flow for email verification is Link flow.
 
 Implementing email based OTP verification is not recommended. A user in captive state does not have complete internet access, so they will not be able to check their email on the same device. Either they would need another device to check their email, or they would need to have cellular internet on the same device to receive email via that. Additionally, on iOS devices the Captive Network Assistant (CNA) launches a browser that does not allow switching to another window. If you switch to a different window for checking email the browser will close, thus leaving the verification process incomplete.
+
+### Payment Flow
+
+In Payment Flow the user makes payment to get internet access. It's possible to set up different payment plans such as daily/weekly/month and have different bandwidth rate-limits per plan, such as 10 Mbps upload/download, or 5 Mbps upload and 20 Mbps download, etc.
+
+Here is an example of Payment flow using Stripe as the payment gateway:
+
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/INh_rpSK57E" 
+    frameborder="0" allowfullscreen>
+</iframe>
+
+**Note**: You need to enter Stripe API keys in [Global Settings](global-settings.md) and create payment plans in Plans section.
 
 ## Preview Template
 
@@ -69,21 +83,21 @@ In the full screen preview you can use the buttons on the top to toggle between 
 
 The following compatibility matrix shows valid combinations of hardware and flow types along with comments:
 
-| Hardware/Flow        | Simple           | OTP              |       Link       | Comments                                                      |
-|:---------------------|:----------------:|:----------------:|:----------------:|:--------------------------------------------------------------|
-| Aruba Instant On     | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
-| Cambium              | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
-| Cisco                | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
-| Coova Chilli         | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
-| Draytek              | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
-| Fortinet             | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
-| Huawei               | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
-| Mikrotik             | :material-check: | :material-check: | :material-close: |                                                               |
-| Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension supported with RADIUS CoA |
-| Open Mesh            | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
-| OpenNDS              | :material-check: | :material-check: | :material-close: |                                                               |
-| TP-Link Omada        | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
-| Ruckus One           | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
-| Ruckus SmartZone     | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
-| Ruijie               | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension support                   |
-| Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | Link Flow 24-hr session extension supported                   |
+| Hardware/Flow        | Simple           | OTP              |       Link       | Payment          | Comments                                                      |
+|:---------------------|:----------------:|:----------------:|:----------------:|------------------|:--------------------------------------------------------------|
+| Aruba Instant On     | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
+| Cambium              | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
+| Cisco                | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
+| Coova Chilli         | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
+| Draytek              | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
+| Fortinet             | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
+| Huawei               | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
+| Mikrotik             | :material-check: | :material-check: | :material-close: | :material-close: |                                                               |
+| Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension supported with RADIUS CoA |
+| Open Mesh            | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
+| OpenNDS              | :material-check: | :material-check: | :material-close: | :material-close: |                                                               |
+| TP-Link Omada        | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
+| Ruckus One           | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
+| Ruckus SmartZone     | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
+| Ruijie               | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension support                   |
+| Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow 24-hr session extension supported                   |

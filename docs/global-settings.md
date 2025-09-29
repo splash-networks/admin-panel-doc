@@ -68,6 +68,28 @@ If the application URL is `https://example.com`, then the login URL for team use
 
 After login a team user will be able to perform all the operations of the application normally such as creating new businesses, venues, templates, and portals etc.
 
+### Payment Gateway
+
+To use Payment Flow a payment gateway needs to be set up. Currently supported payment gateway is Stripe. Its API keys obtained from your Stripe account should be added to Global Settings in Stripe Payment section:
+
+![Attach user to team](assets/images/global-settings/stripe.png)
+
+### Two Factor Authentication
+
+In Global Settings > Security you can enable this checkbox to force all users to use Two Factor Authentication.
+
+![Security 2FA](assets/images/global-settings/security.png)
+
+To enable 2-factor authentication using Google Authenticator or a similar app go to a user's account properties by clicking on the user avatar icon on the top right.
+
+![2FA User Avatar](assets/images/global-settings/user-avatar.png)
+
+In the Two Factor Authentication section click on the Enable button:
+
+![2FA Enable](assets/images/global-settings/enable-2fa.png)
+
+Then scan the provided 2FA code using an authenticator application on your phone.
+
 ### White Label
 
 If you have obtained a white label license then you can implement that in Global Settings. You have the option of adding regular and dark mode logo. In the Logo Upload section you can upload your logo like this:
