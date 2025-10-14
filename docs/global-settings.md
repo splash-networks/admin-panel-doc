@@ -74,6 +74,8 @@ To use Payment Flow a payment gateway needs to be set up. Currently supported pa
 
 ![Attach user to team](assets/images/global-settings/stripe.png)
 
+These [walled garden](walled-garden.md/#stripe) entries for Stripe should also be added.
+
 ### Two Factor Authentication
 
 In Global Settings > Security you can enable this checkbox to force all users to use Two Factor Authentication.

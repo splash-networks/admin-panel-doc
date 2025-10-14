@@ -37,6 +37,7 @@ nav:
   - Global Settings: global-settings.md
   - Plans: plans.md
   - Users: users.md
+  - Walled Garden: walled-garden.md
   - RADIUS: radius.md
 theme:
   name: material

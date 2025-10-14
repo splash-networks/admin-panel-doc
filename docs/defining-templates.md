@@ -67,7 +67,7 @@ Here is an example of Payment flow using Stripe as the payment gateway:
     frameborder="0" allowfullscreen>
 </iframe>
 
-**Note**: You need to enter Stripe API keys in [Global Settings](global-settings.md) and create payment plans in Plans section.
+**Note**: You need to enter Stripe API keys in [Global Settings](global-settings.md) and create payment plans in Plans section. Moreover, you will need to add [walled garden](walled-garden.md) entries to your device.
 
 ## Preview Template
 
@@ -100,4 +100,4 @@ The following compatibility matrix shows valid combinations of hardware and flow
 | Ruckus One           | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
 | Ruckus SmartZone     | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
 | Ruijie               | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension support                   |
-| Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow 24-hr session extension supported                   |
+| Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow 24-hr session extension supported                   |
