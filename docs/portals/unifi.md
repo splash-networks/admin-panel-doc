@@ -42,7 +42,7 @@ Domain: checked
 Domain: <Splash Air Domain>
 ```
 
-If using `Payment` Flow you need to add [walled garden](walled-garden.md) entries for your payment gateway such as Stripe in Pre-Authorization Allowances section.
+If using `Payment` Flow you need to add [walled garden](../walled-garden.md) entries for your payment gateway such as Stripe in Pre-Authorization Allowances section.
 
 <figure markdown="1">
 ![Unifi Portals](../assets/images/portals/unifi/walled-garden.png)

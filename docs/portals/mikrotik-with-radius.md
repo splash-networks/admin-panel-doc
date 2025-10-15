@@ -72,6 +72,10 @@ Go to IP > Hotspot > Walled Garden IP List and create a new entry. In Dst. Addre
 
 ![Mikrotik Hotspot Walled Garden](../assets/images/portals/mikrotik/mikrotik-walled-garden.png)
 
+If using `Payment` Flow then you need to add [walled garden](../walled-garden.md) entries for your payment gateway entries to **Walled Garden IP List**:
+
+![Mikrotik Hotspot Walled Garden](../assets/images/portals/mikrotik/walled-garden-ip-list.png)
+
 Go to RADIUS and click on New to add a new RADIUS server. In Service select `hotspot` and enter the Address and Secret of the RADIUS server.
 
 <figure markdown="span">
