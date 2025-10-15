@@ -4,6 +4,27 @@ In the Templates tab you can add a new template using the New template button. W
 
 ![Template](assets/images/defining-templates/template.png)
 
+## Fields
+
+The following fields are supported on the captive portal:
+
+| Field            | Comments                                                |
+|:-----------------|:--------------------------------------------------------|
+| First Name       | User's first name                                       |
+| Last Name        | User's last name                                        |
+| Email            | In `OTP` and `Link` flow email address is verified      |
+| Company          | Typically used in corporate environments                |
+| Phone            | In OTP flow phone number is verified via SMS            |
+| Address          | Link Flow dynamic session extension not supported       |
+| Announcement     | A field on top of the portal for relevant announcements |
+| Image Ad         | An image used for advertisement                         |
+| Video Ad         | A video used for advertisement                          |
+| Terms of Service | Detailed terms of service to which user must agree      |
+| Marketing otp-in | Checkbox for marketing consent                          |
+| Password         | User must enter password to proceed                     |
+
+The placeholders for each field can be changed in the Placeholders section of the template.
+
 ## Flow
 
 There are 4 types of user authorization flows that are currently supported:
@@ -69,16 +90,6 @@ Here is an example of Payment flow using Stripe as the payment gateway:
 
 **Note**: You need to enter Stripe API keys in [Global Settings](global-settings.md) and create payment plans in Plans section. Moreover, you will need to add [walled garden](walled-garden.md) entries to your device.
 
-## Preview Template
-
-You can click on the preview changes button on the top right to view a full screen preview for mobile, tablet and desktop in portrait and landscape orientation.
-
-![Preview Changes](assets/images/defining-templates/preview-changes.png)
-
-In the full screen preview you can use the buttons on the top to toggle between mobile, tablet and desktop view and switch orientation between portrait and landscape. This lets you visualize the captive portal as users will see it.
-
-![Full Preview](assets/images/defining-templates/full-preview.png)
-
 ## Hardware and Template Flow Compatibility Matrix
 
 The following compatibility matrix shows valid combinations of hardware and flow types along with comments:
@@ -101,3 +112,25 @@ The following compatibility matrix shows valid combinations of hardware and flow
 | Ruckus SmartZone     | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
 | Ruijie               | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension support                   |
 | Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow 24-hr session extension supported                   |
+
+## Preview Template
+
+You can click on the preview changes button on the top right to view a full screen preview for mobile, tablet and desktop in portrait and landscape orientation.
+
+![Preview Changes](assets/images/defining-templates/preview-changes.png)
+
+In the full screen preview you can use the buttons on the top to toggle between mobile, tablet and desktop view and switch orientation between portrait and landscape. This lets you visualize the captive portal as users will see it.
+
+![Full Preview](assets/images/defining-templates/full-preview.png)
+
+## Appearance
+
+The following additional options are available to control the appearance of the portal:
+
+**Design**: 2 designs are currently available
+
+**Background**: background image for desktop and tablet
+
+**Background mobile**: background image for mobile
+
+**Footer**: A footer to add company branding, links, or credits
