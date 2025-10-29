@@ -9,13 +9,13 @@
         <meta name="author" content="Splash Networks">
       
       
-        <link rel="canonical" href="https://docs.splashnetworks.co/portals/omada/">
+        <link rel="canonical" href="https://docs.splashnetworks.co/portals/teltonika/">
       
       
-        <link rel="prev" href="../teltonika/">
+        <link rel="prev" href="../ruijie/">
       
       
-        <link rel="next" href="../unifi/">
+        <link rel="next" href="../omada/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -23,7 +23,7 @@
     
     
       
-        <title>TP-Link Omada - Splash Air Docs</title>
+        <title>Teltonika - Splash Air Docs</title>
       
     
     
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TP-Link Omada
+              Teltonika
             
           </span>
         </div>
@@ -835,29 +835,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../teltonika/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Teltonika
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -873,7 +850,7 @@
   
   
   <span class="md-ellipsis">
-    TP-Link Omada
+    Teltonika
     
   </span>
   
@@ -886,7 +863,7 @@
   
   
   <span class="md-ellipsis">
-    TP-Link Omada
+    Teltonika
     
   </span>
   
@@ -925,9 +902,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#omada-controller-settings" class="md-nav__link">
+  <a href="#teltonika-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Omada Controller Settings
+      Teltonika Settings
     </span>
   </a>
   
@@ -961,6 +938,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../omada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TP-Link Omada
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1261,9 +1261,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#omada-controller-settings" class="md-nav__link">
+  <a href="#teltonika-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Omada Controller Settings
+      Teltonika Settings
     </span>
   </a>
   
@@ -1309,14 +1309,12 @@
 
 
 
-  <h1>TP-Link Omada</h1>
+  <h1>Teltonika</h1>
 
-<p>To set up a portal for TP-Link Omada first you need to <a href="../../defining-templates/">create a template</a>.</p>
+<p>To set up a portal for Teltonika first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
-<p>On Splash Air go to Controllers &gt; TP-Link Omada and add a new controller. Specify a name for it, and enter the WAN IP or hostname of the Omada controller.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/controller.png" data-desc-position="bottom"><img alt="Omada Controller" src="../../assets/images/portals/omada/controller.png"></a></p>
-<p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>TP-Link Omada</code>. Select the controller added in the previous step. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/portal-url.png" data-desc-position="bottom"><img alt="Omada Portal" src="../../assets/images/portals/omada/portal-url.png"></a></p>
+<p>To create a portal go to the Portal tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>Coova Chilli</code>. Enter a secret which will be used to secure communication between the router/AP and Splash Air server. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/coova/coova-portal-url.png" data-desc-position="bottom"><img alt="Coova Portal" src="../../assets/images/portals/coova/coova-portal-url.png"></a></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1324,23 +1322,34 @@
 <p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
 <div class="highlight"><pre><span></span><code>Business Name: name of the venue which will be displayed on top of the portal
 Expiry: the time in days after which a repeat user will have to enter their data again on the portal
+Redirect URL: the URL a user is redirected to after successful portal authorization
 Duration (seconds) after email verification: when using "Link" type Flow it is the "Session-Timeout" a user will receive via RADIUS after successful email verification 
 </code></pre></div>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/portal-settings.png" data-desc-position="bottom"><img alt="Omada Portal Settings" src="../../assets/images/portals/omada/portal-settings.png"></a></p>
-<h2 id="omada-controller-settings">Omada Controller Settings</h2>
-<p>Access Omada controller using web interface. Go to Settings &gt; Profiles &gt; RADIUS Profile and create a new profile. Enter the IP address/URL and secret of your RADIUS server (details will be provided by Splash team).</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/radius-profile.png" data-desc-position="bottom"><img alt="RADIUS Profile" src="../../assets/images/portals/omada/radius-profile.png"></a></p>
-<p>Next, go to Settings &gt; Authentication &gt; Portal and create a new portal. Specify a name for it, and enable the Portal option. Select the SSID &amp; Network on which portal should be enabled. In <strong>Authentication Type</strong> select <code>RADIUS Server</code>. In <strong>RADIUS Profile</strong> select the profile created in the previous step. In <strong>Authentication Mode</strong> select <code>PAP</code>. In <strong>Portal Customization</strong> select <code>External Web Portal</code> and paste the Guest Portal URL copied earlier.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/portal.png" data-desc-position="bottom"><img alt="Portal" src="../../assets/images/portals/omada/portal.png"></a></p>
-<p>Then go to Settings &gt; Authentication &gt; Portal &gt; Access Control and enable <strong>Pre-Authentication Access</strong>. Add a new entry and put the IP address of the Splash Air server in it.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/access-control.png" data-desc-position="bottom"><img alt="Access Control" src="../../assets/images/portals/omada/access-control.png"></a></p>
-<p>Click Apply to save the settings.</p>
+<h2 id="teltonika-settings">Teltonika Settings</h2>
+<p>Access Teltonika device using web portal.</p>
+<p>Go to System &gt; Package manager and install <strong>Hotspot</strong> package.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/teltonika/packge-manager.png" data-desc-position="bottom"><img alt="Package Manager" src="../../assets/images/portals/teltonika/packge-manager.png"></a></p>
+<p>Then go to Service &gt; Hotspot &gt; General and in Interface select the interface on which you want to enable hotspot.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/teltonika/interface.png" data-desc-position="bottom"><img alt="Interface" src="../../assets/images/portals/teltonika/interface.png"></a></p>
+<p>Click the Add button to start hotspot configuration on the interface. In General tab configure these settings:</p>
+<ul>
+<li><strong>Configuration profile</strong>: Default</li>
+<li><strong>Authentication mode</strong>: RADIUS</li>
+<li><strong>Landing page</strong>: External</li>
+<li><strong>Password encoding</strong>: on</li>
+<li><strong>Landing page address</strong>: <code>Guest Portal URL</code> created earlier</li>
+<li><strong>UAM secret</strong>: the secret created earlier</li>
+<li><strong>Success page</strong>: Custom</li>
+<li><strong>Custom URL</strong>: the URL a user is redirected to after successful portal authorization</li>
+</ul>
+<p>Next go to RADIUS tab and enter the IP address and secret of RADIUS server (will be provided by Splash Networks' team). Keep the other settings at their defaults and click Save and Apply.</p>
+<p>Click on the <strong>Enabled</strong> option to turn on the Hotspot feature and click Save &amp; Applyte.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/teltonika/enabled.png" data-desc-position="bottom"><img alt="Hotspot Enabled" src="../../assets/images/portals/teltonika/enabled.png"></a></p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
-<p>Here is the traffic flow in the case of TP-Link Omada Controller:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/traffic-flow.png" data-desc-position="bottom"><img alt="Traffic Flow" src="../../assets/images/portals/omada/traffic-flow.png"></a></p>
+<p>For traffic flow refer to the traffic flow section of Coova Chilli <a href="../coova-chilli/#traffic-flow">here</a>.</p>
 
 
 
@@ -1428,7 +1437,7 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../teltonika/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Teltonika">
+          <a href="../ruijie/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Ruijie">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
@@ -1438,20 +1447,20 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
                 Previous
               </span>
               <div class="md-ellipsis">
-                Teltonika
+                Ruijie
               </div>
             </div>
           </a>
         
         
           
-          <a href="../unifi/" class="md-footer__link md-footer__link--next" aria-label="Next: Ubiquiti Unifi">
+          <a href="../omada/" class="md-footer__link md-footer__link--next" aria-label="Next: TP-Link Omada">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Ubiquiti Unifi
+                TP-Link Omada
               </div>
             </div>
             <div class="md-footer__button md-icon">
