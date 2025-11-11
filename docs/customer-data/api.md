@@ -25,10 +25,19 @@ This will be followed by the specific endpoint that you're querying.
 Customer data can be retrieved using the customers API. If using multi-tenancy replace `default` with the team identifier.
 
 ```
-Request Type: GET
+HTTP Verb: GET
 API Endpoint: /customers
-Query Parameters: slug=default
 ```
+
+_Query parameters_
+
+| Parameter  | Required | Description                      |
+|:-----------|----------|:---------------------------------|
+| slug       | Required | Team ID                          |
+| per_page   | Optional | Number of items per page         |
+| page       | Optional | Page number of paginated results |
+| start_date | Optional | Show records since this date     |
+| end_date   | Optional | Show records till this date      |
 
 ![Get Customers](../assets/images/customer-data/api/api-customers.png)
 
@@ -37,9 +46,18 @@ Query Parameters: slug=default
 Customer visit data can be retrieved using the customer-visits API. If using multi-tenancy replace `default` with the team identifier.
 
 ```
-Request Type: GET
+HTTP Verb: GET
 API Endpoint: /customer-visits
-Query Parameters: slug=default
 ```
+
+_Query parameters_
+
+| Parameter  | Required | Description                      |
+|:-----------|----------|:---------------------------------|
+| slug       | Required | Team ID                          |
+| per_page   | Optional | Number of items per page         |
+| page       | Optional | Page number of paginated results |
+| start_date | Optional | Show records since this date     |
+| end_date   | Optional | Show records till this date      |
 
 ![Get Customer Visits](../assets/images/customer-data/api/api-visits.png)
