@@ -37,6 +37,7 @@ nav:
       - Through API: customer-data/api.md
   - Global Settings: global-settings.md
   - Plans: plans.md
+  - Surveys: surveys.md
   - Users: users.md
   - Walled Garden: walled-garden.md
   - RADIUS: radius.md
