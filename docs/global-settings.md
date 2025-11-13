@@ -92,6 +92,12 @@ In the Two Factor Authentication section click on the Enable button:
 
 Then scan the provided 2FA code using an authenticator application on your phone.
 
+### Email Marketing
+
+To upload customer records to your email marketing provider you can select your provider such as Mailchimp or Brevo from the **Email Marketing Provider** dropdown. Once selected, you'll need to enter your respective platform's API key below.
+
+Then, go to the Venues tab and click the Venue for which you want to enable this feature. Then select the list/audience to which contacts should be uploaded.
+
 ### White Label
 
 If you have obtained a white label license then you can implement that in Global Settings. You have the option of adding regular and dark mode logo. In the Logo Upload section you can upload your logo like this:
