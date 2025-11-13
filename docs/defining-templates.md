@@ -90,6 +90,17 @@ Here is an example of Payment flow using Stripe as the payment gateway:
 
 **Note**: You need to enter Stripe API keys in [Global Settings](global-settings.md) and create payment plans in Plans section. Moreover, you will need to add [walled garden](walled-garden.md) entries to your device.
 
+### Surveys
+
+To add a survey to the template click on the Survey dropdown and select a survey (created in the [Surveys](surveys.md) tab). There are 2 options for presenting the survey to users:
+
+ - **Immediately**: survey will be shown to first-time users after they enter their data
+ - **Returning Users**: survey will not be shown to first-time users, and will be only shown to a user on a repeat visit. The **Show After (Hours)** option specifies that the survey will be shown to a repeat user only after this many hours since their initial visit have elapsed
+
+The first option is useful if all users are required to complete the survey. The second option is more relevant in cases where a user's feedback is solicited after they've experienced a service (such as a hotel customer required to complete a survey after 24 hours).
+
+Once a user has submitted a survey they will not be required to complete it again.
+
 ## Hardware and Template Flow Compatibility Matrix
 
 The following compatibility matrix shows valid combinations of hardware and flow types along with comments:
