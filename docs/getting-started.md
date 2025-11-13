@@ -30,4 +30,4 @@ Under venue settings you have the option of enabling periodic reports. The repor
 
 ### Email Marketing
 
-You can upload customer data such as name, email address, phone number, etc. obtained via captive portal at this venue to your email marketing provider's account such as Mailchimp or Brevo. For that you need to select your Email Marekting Provider in Global Settings, and add their API parameters. Then, in Venues you can add or select the contact list to which those contacts will be uploaded.
+You can upload customer data such as name, email address, phone number, etc. obtained via captive portal at a venue to your email marketing provider's account such as Mailchimp or Brevo. For that you need to select your Email Marekting Provider in Global Settings, and add their API parameters. Then, in Venues you can add/select the contact list to which those contacts will be uploaded.
