@@ -42,6 +42,10 @@ Domain: checked
 Domain: <Splash Air Domain>
 ```
 
+Finally, go to Settings > WiFi and select your guest Wi-Fi network. Enable `Captive Portal` option in **Hotspot** section.
+
+![Unifi Portals](../assets/images/portals/unifi/ssid-hotspot.png)
+
 If using `Payment` Flow you need to add [walled garden](../walled-garden.md) entries for your payment gateway such as Stripe in Pre-Authorization Allowances section.
 
 <figure markdown="1">
