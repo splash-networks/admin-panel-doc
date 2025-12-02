@@ -121,6 +121,7 @@ The following compatibility matrix shows valid combinations of hardware and flow
 | TP-Link Omada        | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
 | Ruckus One           | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
 | Ruckus SmartZone     | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
+| Ruckus Unleashed     | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
 | Ruijie               | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension support                   |
 | Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow 24-hr session extension supported                   |
 
