@@ -50,7 +50,7 @@ Click the Add button to start hotspot configuration on the interface. In General
 
 Next go to RADIUS tab and enter the IP address and secret of RADIUS server (will be provided by Splash Networks' team). Keep the other settings at their defaults and click Save and Apply.
 
-Click on the **Enabled** option to turn on the Hotspot feature and click Save & Applyte.
+Click on the **Enabled** option to turn on the Hotspot feature and click Save & Apply.
 
 ![Hotspot Enabled](../assets/images/portals/teltonika/enabled.png)
 
