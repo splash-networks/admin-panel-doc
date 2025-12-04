@@ -48,7 +48,7 @@ Click the Add button to start hotspot configuration on the interface. In General
  - **Success page**: Custom
  - **Custom URL**: the URL a user is redirected to after successful portal authorization
 
-Next go to RADIUS tab and enter the IP address and secret of RADIUS server (will be provided by Splash Networks' team). Keep the other settings at their defaults and click Save and Apply.
+Next go to RADIUS tab and enter the IP address and secret of RADIUS server (will be provided by Splash Networks' team). Set **Require Message-Authenticator** to `off`. Keep the other settings at their defaults and click Save and Apply.
 
 Click on the **Enabled** option to turn on the Hotspot feature and click Save & Apply.
 
