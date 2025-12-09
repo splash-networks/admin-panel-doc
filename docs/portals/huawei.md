@@ -45,6 +45,8 @@ Similarly, add another rule to permit access to the AP from LAN. In this example
 
 ![Huawei Walled Garden](../assets/images/portals/huawei/firewall-3.png)
 
+If using IPv6 add another rule to allow access to ICMPv6.
+
 Then go to Advanced > Security > AAA and in Portal Server Global Configuration switch to External Portal tab. Check the **HTTP Protocol** option and in **HTTP interoperation mode** select `HTTP-based`. In **Local gateway address** select `All addresses`. Click Apply to save the settings.
 
 ![External Portal](../assets/images/portals/huawei/external-portal.png)
@@ -220,3 +222,7 @@ When using HTTP captive portal mode iOS devices will produce an error like this:
 </figure>
 
 This is because HTTP mode is less secure and is therefore blocked on iOS. The solution is to switch to HTTPS mode.
+
+### Frequent Disconnections or Portal Failures
+
+If the portal works on Android and not on iOS (or vice versa), try adding a rule to your User ACL to allow access to ICMPv6. This has been known to fix issues like these.
