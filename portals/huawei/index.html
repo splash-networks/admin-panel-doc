@@ -865,6 +865,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#frequent-disconnections-or-portal-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frequent Disconnections or Portal Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1701,6 +1712,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#frequent-disconnections-or-portal-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frequent Disconnections or Portal Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1798,6 +1820,7 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/firewall-1.png" data-desc-position="bottom"><img alt="Huawei Walled Garden" src="../../assets/images/portals/huawei/firewall-1.png"></a></p>
 <p>Similarly, add another rule to permit access to the AP from LAN. In this example the AP LAN interface has the IP of <code>192.168.50.1</code>.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/firewall-3.png" data-desc-position="bottom"><img alt="Huawei Walled Garden" src="../../assets/images/portals/huawei/firewall-3.png"></a></p>
+<p>If using IPv6 add another rule to allow access to ICMPv6.</p>
 <p>Then go to Advanced &gt; Security &gt; AAA and in Portal Server Global Configuration switch to External Portal tab. Check the <strong>HTTP Protocol</strong> option and in <strong>HTTP interoperation mode</strong> select <code>HTTP-based</code>. In <strong>Local gateway address</strong> select <code>All addresses</code>. Click Apply to save the settings.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/external-portal.png" data-desc-position="bottom"><img alt="External Portal" src="../../assets/images/portals/huawei/external-portal.png"></a></p>
 <p>In <strong>Portal Authentication Server List</strong> click on the Create button. In <strong>Server name</strong> enter a name for the server. In Server IP enter the IP of Splash Air server and click on the <code>+</code> button to add it. In <strong>Protocol type</strong> select <code>HTTP/HTTPS</code>. In <strong>URL</strong> enter the <code>Guest Portal URL</code> obtained earlier.</p>
@@ -1904,6 +1927,8 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/ios-error.png" data-desc-position="bottom"><img alt="iOS Error" src="../../assets/images/portals/huawei/ios-error.png" width="70%"></a>
 </figure>
 <p>This is because HTTP mode is less secure and is therefore blocked on iOS. The solution is to switch to HTTPS mode.</p>
+<h3 id="frequent-disconnections-or-portal-failures">Frequent Disconnections or Portal Failures</h3>
+<p>If the portal works on Android and not on iOS (or vice versa), try adding a rule to your User ACL to allow access to ICMPv6. This has been known to fix issues like these.</p>
 
 
 
