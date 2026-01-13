@@ -105,25 +105,25 @@ Once a user has submitted a survey they will not be required to complete it agai
 
 The following compatibility matrix shows valid combinations of hardware and flow types along with comments:
 
-| Hardware/Flow        | Simple           | OTP              |       Link       | Payment          | Comments                                                      |
-|:---------------------|:----------------:|:----------------:|:----------------:|------------------|:--------------------------------------------------------------|
-| Aruba Instant On     | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
-| Cambium              | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
-| Cisco                | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
-| Coova Chilli         | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
-| Draytek              | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
-| Fortinet             | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
-| Huawei               | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
-| Mikrotik             | :material-check: | :material-check: | :material-close: | :material-close: |                                                               |
-| Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension supported with RADIUS CoA |
-| Open Mesh            | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
-| OpenNDS              | :material-check: | :material-check: | :material-close: | :material-close: |                                                               |
-| TP-Link Omada        | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
-| Ruckus One           | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
-| Ruckus SmartZone     | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported             |
-| Ruckus Unleashed     | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported             |
-| Ruijie               | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension support                   |
-| Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow 24-hr session extension supported                   |
+| Hardware/Flow        | Simple           | OTP              |       Link       | Payment          | Comments                                                                              |
+|:---------------------|:----------------:|:----------------:|:----------------:|------------------|:--------------------------------------------------------------------------------------|
+| Aruba Instant On     | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported; bandwidth rate-limit not supported |
+| Cambium              | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
+| Cisco                | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
+| Coova Chilli         | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
+| Draytek              | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
+| Fortinet             | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
+| Huawei               | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
+| Mikrotik             | :material-check: | :material-check: | :material-close: | :material-close: |                                                                                       |
+| Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension supported with RADIUS CoA                         |
+| Open Mesh            | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
+| OpenNDS              | :material-check: | :material-check: | :material-close: | :material-close: |                                                                                       |
+| TP-Link Omada        | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
+| Ruckus One           | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
+| Ruckus SmartZone     | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
+| Ruckus Unleashed     | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported                                     |
+| Ruijie               | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension support                                           |
+| Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow 24-hr session extension supported                                           |
 
 ## Preview Template
 
