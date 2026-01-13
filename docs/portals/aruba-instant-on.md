@@ -36,7 +36,9 @@ In Networks > Guest Portal select Type `External`. In Portal URL select the Gues
 
 ![Aruba Portal URL](../assets/images/portals/aruba/aruba-portal-url.png)
 
-In Primary RADIUS add the details of your RADIUS server, such as IP address and shared secret (will be provided by Splash Networks' team).
+In RADIUS profile create a new RADIUS profile and add the details of your RADIUS server, such as IP address and shared secret (will be provided by Splash Networks' team).
+
+If using `Payment` Flow you need to add [walled garden](../walled-garden.md) entries for your payment gateway such as Stripe in Allowed Domains.
 
 ## Troubleshooting
 
