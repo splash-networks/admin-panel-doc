@@ -5,7 +5,7 @@ Some vendors require the use of RADIUS in their captive portal authorization flo
 Install FreeRADIUS:
 
 ```text { .copy }
-apt-get install freeradius freeradius-mysql freeradius-utils
+apt-get install -y freeradius freeradius-mysql freeradius-utils
 ```
 
 Allow all NAS clients to connect to it:
