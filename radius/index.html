@@ -1478,7 +1478,7 @@
 <p>Some vendors require the use of RADIUS in their captive portal authorization flows (e.g. HPE/Aruba Instant On). These instructions can be used to set up a RADIUS server using FreeRADIUS.</p>
 <h3 id="freeradius-setup">FreeRADIUS Setup</h3>
 <p>Install FreeRADIUS:</p>
-<div class="copy highlight"><pre><span></span><code>apt-get install freeradius freeradius-mysql freeradius-utils
+<div class="copy highlight"><pre><span></span><code>apt-get install -y freeradius freeradius-mysql freeradius-utils
 </code></pre></div>
 <p>Allow all NAS clients to connect to it:</p>
 <div class="copy highlight"><pre><span></span><code>nano /etc/freeradius/3.0/clients.conf
