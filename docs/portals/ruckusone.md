@@ -2,7 +2,7 @@ To set up a portal for Ruckus One first you need to [create a template](../defin
 
 ## Add a Portal
 
-To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Ruckus One`. In Secret enter the integration key obtained in Ruckus One (explained below in **Ruckus One Settings** section).Then, enter a Site ID based on which the path of the portal URL will be defined.
+To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select `Ruckus One`. In Secret enter the integration key obtained in Ruckus One (explained below in **Ruckus One Settings** section). Then, enter a Site ID based on which the path of the portal URL will be defined.
 
 ![Ruckus Portal](../assets/images/portals/ruckusone/portal.png)
 

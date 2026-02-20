@@ -60,7 +60,7 @@ Here is an example of OTP flow:
 
 ### Link Flow
 
-In Link Flow the user has to verify their email address by clicking on a verification link. The user is given internet access briefly, typically for 5 min, so they can access their email for completing verification. If they don't verify their email address during that time, they will be unauthorized from the network. If they do verify their email address, their session will be extended - whether the extension will be applied dynamically on existing session or will apply the next time they connect depends on the hardware type. For details refer to the compatibility matrix below - in comments it's mentioned whether dynamic session extension is supported or not.
+In Link Flow the user has to verify their email address by clicking on a verification link. The user is given internet access briefly, typically for 5 min, so they can access their email for completing verification. If they don't verify their email address during that time, they will be unauthorized from the network. If they do verify their email address, their session will be extended - whether the extension will be applied dynamically on existing session or will apply the next time they connect depends on the hardware type. For details refer to the table given below.
 
 Here is an example of Link flow:
 
@@ -70,6 +70,30 @@ Here is an example of Link flow:
 </iframe>
 
 **Note**: You need to enter SMTP parameters for email verification in [Global Settings](global-settings.md).
+
+| Hardware             | Link Flow Support | Dynamic Session Extension Support | Comments                  |
+|:---------------------|:-----------------:|:----------------------------------|---------------------------|
+| Aruba Instant On     | :material-check:  | :material-close:                  |                           |
+| Cambium              | :material-check:  | :material-close:                  |                           |
+| Cisco                | :material-check:  | :material-close:                  |                           |
+| Coova Chilli         | :material-check:  | :material-close:                  |                           |
+| Draytek              | :material-check:  | :material-close:                  |                           |
+| Fortinet             | :material-check:  | :material-close:                  |                           |
+| Huawei               | :material-check:  | :material-close:                  |                           |
+| Mikrotik             | :material-close:  |                                   |                           |
+| Mikrotik with RADIUS | :material-check:  | :material-check:                  | Supported with RADIUS CoA |
+| Open Mesh            | :material-check:  | :material-close:                  |                           |
+| OpenNDS              | :material-close:  |                                   |                           |
+| Ruckus One           | :material-check:  | :material-close:                  |                           |
+| Ruckus SmartZone     | :material-check:  | :material-close:                  |                           |
+| Ruckus Unleashed     | :material-check:  | :material-close:                  |                           |
+| Ruijie               | :material-check:  | :material-check:                  |                           |
+| Teltonika            | :material-check:  | :material-close:                  |                           |
+| TP-Link Omada        | :material-check:  | :material-close:                  |                           |
+| Sonicwall            | :material-check:  | :material-check:                  |                           |
+| Ubiquiti Unifi       | :material-check:  | :material-check:                  | 24-hr extension supported |
+
+*Table 1 – Link Flow Support*
 
 #### Email Based OTP Verification Caveat
 
@@ -103,27 +127,31 @@ Once a user has submitted a survey they will not be required to complete it agai
 
 ## Hardware and Template Flow Compatibility Matrix
 
-The following compatibility matrix shows valid combinations of hardware and flow types along with comments:
+The following compatibility matrix shows valid combinations of hardware and flow types along with comments. For details of Link Flow refer to Table 1 above:
 
-| Hardware/Flow        | Simple           | OTP              |       Link       | Payment          | Comments                                                                              |
-|:---------------------|:----------------:|:----------------:|:----------------:|------------------|:--------------------------------------------------------------------------------------|
-| Aruba Instant On     | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported; bandwidth rate-limit not supported |
-| Cambium              | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
-| Cisco                | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
-| Coova Chilli         | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
-| Draytek              | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
-| Fortinet             | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
-| Huawei               | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
-| Mikrotik             | :material-check: | :material-check: | :material-close: | :material-close: |                                                                                       |
-| Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension supported with RADIUS CoA                         |
-| Open Mesh            | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
-| OpenNDS              | :material-check: | :material-check: | :material-close: | :material-close: |                                                                                       |
-| TP-Link Omada        | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
-| Ruckus One           | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
-| Ruckus SmartZone     | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension not supported                                     |
-| Ruckus Unleashed     | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow dynamic session extension not supported                                     |
-| Ruijie               | :material-check: | :material-check: | :material-check: | :material-close: | Link Flow dynamic session extension support                                           |
-| Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | :material-check: | Link Flow 24-hr session extension supported                                           |
+| Hardware/Flow        | Simple           | OTP              | Payment          | Comments                           |
+|:---------------------|:----------------:|:----------------:|------------------|:-----------------------------------|
+| Aruba Instant On     | :material-check: | :material-check: | :material-check: | Bandwidth rate-limit not supported |
+| Cambium              | :material-check: | :material-check: | :material-close: |                                    |
+| Cisco                | :material-check: | :material-check: | :material-close: |                                    |
+| Coova Chilli         | :material-check: | :material-check: | :material-close: |                                    |
+| Draytek              | :material-check: | :material-check: | :material-close: |                                    |
+| Fortinet             | :material-check: | :material-check: | :material-close: | Bandwidth rate-limit not supported |
+| Huawei               | :material-check: | :material-check: | :material-close: |                                    |
+| Mikrotik             | :material-check: | :material-check: | :material-close: |                                    |
+| Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: |                                    |
+| Open Mesh            | :material-check: | :material-check: | :material-close: |                                    |
+| OpenNDS              | :material-check: | :material-check: | :material-close: |                                    |
+| Ruckus One           | :material-check: | :material-check: | :material-close: |                                    |
+| Ruckus SmartZone     | :material-check: | :material-check: | :material-close: |                                    |
+| Ruckus Unleashed     | :material-check: | :material-check: | :material-check: |                                    |
+| Ruijie               | :material-check: | :material-check: | :material-close: |                                    |
+| Teltonika            | :material-check: | :material-check: | :material-close: |                                    |
+| TP-Link Omada        | :material-check: | :material-check: | :material-close: |                                    |
+| Sonicwall            | :material-check: | :material-check: | :material-check: |                                    |
+| Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: |                                    |
+
+*Table 2 – Hardware and Template Flow Compatibility Matrix*
 
 ## Preview Template
 
