@@ -1688,6 +1688,7 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/fortinet/interface.png" data-desc-position="bottom"><img alt="Fortigate interface" src="../../assets/images/portals/fortinet/interface.png"></a></p>
 <p>Click on Edit to modify its settings. Enable Security mode &gt; Captive Portal. In Authentication Portal, select <code>External</code> and enter the Guest Portal URL generated when creating the portal in Splash Air. In Exempt destination/services create a new entry and add the IP address of Splash Air application server in it.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/fortinet/interface-settings.png" data-desc-position="bottom"><img alt="Fortigate Interface Settings" src="../../assets/images/portals/fortinet/interface-settings.png"></a></p>
+<p>If using <code>Payment</code> Flow you need to add <a href="../../walled-garden/">walled garden</a> entries for your payment gateway such as Stripe in a similar way as given above.</p>
 <p>In Redirect after Captive Portal you can specify a URL to which the URL will be redirected after successful portal authorization.</p>
 <p>Click OK to save the settings.</p>
 <p>Go to User &amp; Authorization &gt; RADIUS Servers and create a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks' support team will be entered here.</p>
