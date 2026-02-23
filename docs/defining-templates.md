@@ -134,9 +134,9 @@ The following compatibility matrix shows valid combinations of hardware and flow
 | Aruba Instant On     | :material-check: | :material-check: | :material-check: | Bandwidth rate-limit not supported |
 | Cambium              | :material-check: | :material-check: | :material-close: |                                    |
 | Cisco                | :material-check: | :material-check: | :material-close: |                                    |
-| Coova Chilli         | :material-check: | :material-check: | :material-close: |                                    |
+| Coova Chilli         | :material-check: | :material-check: | :material-check: |                                    |
 | Draytek              | :material-check: | :material-check: | :material-close: |                                    |
-| Fortinet             | :material-check: | :material-check: | :material-close: | Bandwidth rate-limit not supported |
+| Fortinet             | :material-check: | :material-check: | :material-check: | Bandwidth rate-limit not supported |
 | Huawei               | :material-check: | :material-check: | :material-close: |                                    |
 | Mikrotik             | :material-check: | :material-check: | :material-close: |                                    |
 | Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: |                                    |

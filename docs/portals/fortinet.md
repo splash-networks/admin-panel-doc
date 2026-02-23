@@ -34,6 +34,8 @@ Click on Edit to modify its settings. Enable Security mode > Captive Portal. In 
 
 ![Fortigate Interface Settings](../assets/images/portals/fortinet/interface-settings.png)
 
+If using `Payment` Flow you need to add [walled garden](../walled-garden.md) entries for your payment gateway such as Stripe in a similar way as given above.
+
 In Redirect after Captive Portal you can specify a URL to which the URL will be redirected after successful portal authorization.
 
 Click OK to save the settings.
