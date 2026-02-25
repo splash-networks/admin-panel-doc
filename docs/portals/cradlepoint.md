@@ -35,7 +35,7 @@ Access your device via Netcloud and go to Configuration > Edit. Then select Netw
 
 In **RADIUS Settings** enter the IP address and Shared Secret of RADIUS server (will be provided by Splash Networks' team)
 
- - **Redirection on Successful Authentication**: `To an administrator-defined URL.` - enter the Redirect URL below
+ - **Redirection on Successful Authentication**: `To an administrator-defined URL.` and enter the Redirect URL below
  - **MAC Authentication**: unchecked
 
 In **UAM Settings** configure these parameters:
