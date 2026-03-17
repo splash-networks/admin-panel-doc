@@ -98,6 +98,33 @@ To upload customer records to your email marketing provider you can select your 
 
 Then, go to the Venues tab and click the Venue for which you want to enable this feature. Then select the list/audience to which contacts should be uploaded.
 
+These providers are currently supported:
+
+ - Mailchimp
+ - Brevo
+ - GoHighLevel
+ - Revinate
+
+The details for integrating each provider are given below:
+
+#### Mailchimp
+
+Add **API Key** in Global Settings, and in Venues select the list to which contacts of that venue should be uploaded in the **Mailchimp List** dropdown menu.
+
+#### Brevo
+
+Add **API Key** in Global Settings, and in Venues select the list to which contacts of that venue should be uploaded in the **Brevo List** dropdown menu.
+
+#### GoHighLevel
+
+Generate a `Private Integration Key` in GoHighLevel settings with these permissions: `contacts.readonly` and `contacts.write`. Add it in Global Settings in **GoHighLevel API Key**. In Venues add the Location ID to which contacts should be uploaded. Location ID can be obtained from the GoHighLevel URL:
+
+![GoHighLevel](assets/images/global-settings/gohighlevel.png)
+
+#### Revinate
+
+In Venues add the Token obtained from Revinate in **Revinate List** field. No API Key needs to be added in the case of Revinate.
+
 ### White Label
 
 If you have obtained a white label license then you can implement that in Global Settings. You have the option of adding regular and dark mode logo. In the Logo Upload section you can upload your logo like this:
