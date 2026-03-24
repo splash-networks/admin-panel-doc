@@ -96,3 +96,9 @@ Hotspot login cannot open the page because the network connection was lost
 To prevent it disable client device isolation in WiFi settings.
 
 ![Unifi Traffic Flow](../assets/images/portals/unifi/unifi-client-isolation-2.png)
+
+## Additional Information
+
+[How to Create Local Admin Account on Unifi Controller](https://artofwifi.net/blog/use-local-admin-account-unifi-api-captive-portal)
+
+[Wireguard VPN Between Unifi Controller & Splash Air](https://blog.splashnetworks.co/wireguard-client-on-unifi-controller/)
