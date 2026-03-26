@@ -1,0 +1,1 @@
+Automations allow the admin to configure actions based on specific triggers. For example, the trigger can be the registration of a new customer. The action can be to send an email to the customer (or the admin) based on a pre-defined Template.

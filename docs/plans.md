@@ -12,7 +12,7 @@ Enter the following parameters for it:
 - **Volume Cap**: Volume quota*
 - **Max Devices**: Number of devices allowed for a user
 
-_*Note on volume quota: volume quota is calculated when a user connects. It does not affect a user's existing session. If a user exceeds their plan's volume they will not be able to connect the next time they attemp to connect._
+_*Note on volume quota: volume quota is calculated when a user connects. It does not affect a user's existing session. If a user exceeds their plan's volume they will not be able to connect the next time they attempt to connect._
 
 ![Plan Parameters](assets/images/plans/parameters.png)
 

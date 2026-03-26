@@ -7,6 +7,7 @@ copyright: Copyright &copy; 2025 Splash Networks
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
+  - Global Settings: global-settings.md
   - Defining Templates: defining-templates.md
   - Creating Portals:
       - portals/index.md
@@ -38,8 +39,8 @@ nav:
       - customer-data/index.md
       - Through Web: customer-data/web.md
       - Through API: customer-data/api.md
-  - Global Settings: global-settings.md
   - Plans: plans.md
+  - Automations: automations.md
   - Surveys: surveys.md
   - Users: users.md
   - Walled Garden: walled-garden.md
