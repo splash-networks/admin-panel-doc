@@ -25,6 +25,10 @@ The following fields are supported on the captive portal:
 
 The placeholders for each field can be changed in the Placeholders section of the template.
 
+## Additional Fields
+
+It is possible to create additional fields such as Birthday, Gender, Room Number, Alternate Phone/Email etc in the Additional Fields section of the template.
+
 ## Flow
 
 There are 4 types of user authorization flows that are currently supported:
@@ -32,7 +36,7 @@ There are 4 types of user authorization flows that are currently supported:
  - Simple
  - OTP
  - Link
- - Payment (beta)
+ - Payment
 
 ### Simple Flow
 
@@ -88,7 +92,6 @@ Here is an example of Link flow:
 | Ruckus SmartZone     | :material-check:  | :material-close:                  |                           |
 | Ruckus Unleashed     | :material-check:  | :material-close:                  |                           |
 | Ruijie               | :material-check:  | :material-check:                  |                           |
-| Teltonika            | :material-check:  | :material-close:                  |                           |
 | TP-Link Omada        | :material-check:  | :material-close:                  |                           |
 | Sonicwall            | :material-check:  | :material-check:                  |                           |
 | Ubiquiti Unifi       | :material-check:  | :material-check:                  | 24-hr extension supported |
@@ -146,7 +149,6 @@ The following compatibility matrix shows valid combinations of hardware and flow
 | Ruckus SmartZone     | :material-check: | :material-check: | :material-close: |                                    |
 | Ruckus Unleashed     | :material-check: | :material-check: | :material-check: |                                    |
 | Ruijie               | :material-check: | :material-check: | :material-close: |                                    |
-| Teltonika            | :material-check: | :material-check: | :material-close: |                                    |
 | TP-Link Omada        | :material-check: | :material-check: | :material-close: |                                    |
 | Sonicwall            | :material-check: | :material-check: | :material-check: |                                    |
 | Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: |                                    |
