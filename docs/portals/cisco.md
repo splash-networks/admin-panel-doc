@@ -25,7 +25,7 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 
 You can click on the Edit button against each entry to modify it if needed.
 
-## Cisco WLC Settings
+## Cisco WLC (AireOS) Settings
 
 Access Cisco WLC using web interface and click on **Advanced**. Go to Security > AAA > RADIUS > Authentication and add a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks' support team will be entered here.
 
@@ -80,6 +80,83 @@ HTTPS Redirection: Disabled
 ![Management](../assets/images/portals/cisco/mgmt.png)
 
 Click on Apply to save settings. WLC may need to be rebooted for these settings to take effect.
+
+## Cisco C9800 (IOS-XE) Settings
+
+Access Cisco WLC using web interface and go to Configuration > Security > Web Auth. In global profile Virtual IPv4 Address should be `192.0.2.2`.
+
+![Webauth](../assets/images/portals/cisco/c9800-webauth.png)
+
+Click on Add to create a new profile called **Splash** with these parameters:
+
+ - **Maximum HTTP connections**: 200
+ - **Init-State Timeout**: 3600
+ - **Type**: `webauth`
+
+Click on the Splash profile and in General tab use these settings:
+
+ - **Banner Type**: None
+ - **Turn-on Consent with Email**: Disabled
+ - **Captive Bypass Portal**: Disabled
+ - **Disable Success Window**: Enabled
+ - **Disable Logout Window**: Enabled
+ - **Sleeping Client Status**: Enabled
+ - **Sleeping Client Timeout**: 720
+
+In Advanced tab use these settings:
+
+ - **Redirect URL for login**: Guest Portal URL created earlier
+ - **Redirect On-Success**: redirect URL after successful portal authorization
+ - **Redirect On-Failure**: Guest Portal URL created earlier
+ - **Redirect Append for AP MAC Address**: `ap_mac`
+ - **Redirect Append for Client MAC Address**: `client_mac`
+ - **Portal IPV4 Address**: IP address of your Splash Air server
+
+![Webauth](../assets/images/portals/cisco/c9800-webauth-2.png)
+
+After that go to Configuration > Security > AAA > Servers/Groups and add a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks' support team will be entered here.
+
+Then, go to Server Groups tab and create a new Server group. The AAA server added earlier should be added to this group by moving it from Available Servers to Assigned Servers.
+
+Then, go to AAA Method List and click on the default list. Move your server group from Available Server Groups to Assigned Server Groups.
+
+Go to Configuration > Tags & Profiles > WLANs and create a new WLAN (or edit an existing WLAN). In Security > Layer 2 select **None**. In Security > Layer 3 use these settings:
+
+ - **Web Policy**: Enabled
+ - **Web Auth Parameter Map**: `Splash`
+ - **Authentication List**: default
+ - **On Mac Filter Failure**: Disabled
+ - **Splash Web Redirect**: Disabled
+
+Go to Configuration > Security > URL Filters and add a new filter:
+
+ - **List Name**: walledGarden
+ - **Type**: PRE_AUTH
+ - **Action**: PERMIT
+ - **URLs**: your Splash Air domain
+
+![Walled Garden](../assets/images/portals/cisco/c9800-walled-garden.png)
+
+Then, go to Configuration > Tags & Profiles > Policy and add a new policy. On general tab, enter a name for it. **Status** should be `Enabled`. On the Access Policies tab:
+
+ - **URL Filters**: walledGarden
+
+On Advanced tab:
+
+ - **Allow AAA Override**: checked
+
+After that go to Configuration > Tags & Profiles > Tags and add a new entry. Enter a name for it, and in WLAN-POLICY add a mapping for the WLAN Profile and Policy Profile created earlier:
+
+![Tag](../assets/images/portals/cisco/c9800-tag.png)
+
+Finally, go to Administration > Management > HTTP/HTTPS/Netconf/VTY and ensure these settings:
+
+ - **HTTP Access**: Enabled
+ - **HTTPS Access**: Enabled
+
+### Credits
+
+[Cloudi-Fi Cisco WLC 9800 Guide](https://help.cloudi-fi.com/hc/en-us/articles/9651117910941-How-to-enable-Cloudi-Fi-with-Cisco-WLC-9800-in-Local-Mode)
 
 ## Troubleshooting
 

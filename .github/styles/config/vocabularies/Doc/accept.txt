@@ -68,3 +68,4 @@ url
 userip
 usermac
 Automations
+walledGarden
