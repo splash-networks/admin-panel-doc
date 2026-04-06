@@ -645,13 +645,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cisco-wlc-settings" class="md-nav__link">
+  <a href="#cisco-wlc-aireos-settings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cisco WLC Settings
+        Cisco WLC (AireOS) Settings
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cisco-c9800-ios-xe-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cisco C9800 (IOS-XE) Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cisco C9800 (IOS-XE) Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1599,13 +1627,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cisco-wlc-settings" class="md-nav__link">
+  <a href="#cisco-wlc-aireos-settings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cisco WLC Settings
+        Cisco WLC (AireOS) Settings
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cisco-c9800-ios-xe-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cisco C9800 (IOS-XE) Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cisco C9800 (IOS-XE) Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1719,7 +1775,7 @@ Expiry: the time in days after which a repeat user will have to enter their data
 Duration (seconds) after email verification: when using "Link" type Flow it is the "Session-Timeout" a user will receive via RADIUS after successful email verification 
 </code></pre></div>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
-<h2 id="cisco-wlc-settings">Cisco WLC Settings</h2>
+<h2 id="cisco-wlc-aireos-settings">Cisco WLC (AireOS) Settings</h2>
 <p>Access Cisco WLC using web interface and click on <strong>Advanced</strong>. Go to Security &gt; AAA &gt; RADIUS &gt; Authentication and add a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks' support team will be entered here.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/radius.png" data-desc-position="bottom"><img alt="RADIUS" src="../../assets/images/portals/cisco/radius.png"></a></p>
 <p>Click on Apply to save the settings. Then go to Security &gt; Access Control Lists &gt; Access Control Lists (or FlexConnect ACLs if you're using FlexConnect) and create a new ACL. Click on the ACL name and add a new rule to it. Configure these settings:</p>
@@ -1751,6 +1807,71 @@ HTTPS Redirection: Disabled
 </code></pre></div>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/mgmt.png" data-desc-position="bottom"><img alt="Management" src="../../assets/images/portals/cisco/mgmt.png"></a></p>
 <p>Click on Apply to save settings. WLC may need to be rebooted for these settings to take effect.</p>
+<h2 id="cisco-c9800-ios-xe-settings">Cisco C9800 (IOS-XE) Settings</h2>
+<p>Access Cisco WLC using web interface and go to Configuration &gt; Security &gt; Web Auth. In global profile Virtual IPv4 Address should be <code>192.0.2.2</code>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/c9800-webauth.png" data-desc-position="bottom"><img alt="Webauth" src="../../assets/images/portals/cisco/c9800-webauth.png"></a></p>
+<p>Click on Add to create a new profile called <strong>Splash</strong> with these parameters:</p>
+<ul>
+<li><strong>Maximum HTTP connections</strong>: 200</li>
+<li><strong>Init-State Timeout</strong>: 3600</li>
+<li><strong>Type</strong>: <code>webauth</code></li>
+</ul>
+<p>Click on the Splash profile and in General tab use these settings:</p>
+<ul>
+<li><strong>Banner Type</strong>: None</li>
+<li><strong>Turn-on Consent with Email</strong>: Disabled</li>
+<li><strong>Captive Bypass Portal</strong>: Disabled</li>
+<li><strong>Disable Success Window</strong>: Enabled</li>
+<li><strong>Disable Logout Window</strong>: Enabled</li>
+<li><strong>Sleeping Client Status</strong>: Enabled</li>
+<li><strong>Sleeping Client Timeout</strong>: 720</li>
+</ul>
+<p>In Advanced tab use these settings:</p>
+<ul>
+<li><strong>Redirect URL for login</strong>: Guest Portal URL created earlier</li>
+<li><strong>Redirect On-Success</strong>: redirect URL after successful portal authorization</li>
+<li><strong>Redirect On-Failure</strong>: Guest Portal URL created earlier</li>
+<li><strong>Redirect Append for AP MAC Address</strong>: <code>ap_mac</code></li>
+<li><strong>Redirect Append for Client MAC Address</strong>: <code>client_mac</code></li>
+<li><strong>Portal IPV4 Address</strong>: IP address of your Splash Air server</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/c9800-webauth-2.png" data-desc-position="bottom"><img alt="Webauth" src="../../assets/images/portals/cisco/c9800-webauth-2.png"></a></p>
+<p>After that go to Configuration &gt; Security &gt; AAA &gt; Servers/Groups and add a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks' support team will be entered here.</p>
+<p>Then, go to Server Groups tab and create a new Server group. The AAA server added earlier should be added to this group by moving it from Available Servers to Assigned Servers.</p>
+<p>Then, go to AAA Method List and click on the default list. Move your server group from Available Server Groups to Assigned Server Groups.</p>
+<p>Go to Configuration &gt; Tags &amp; Profiles &gt; WLANs and create a new WLAN (or edit an existing WLAN). In Security &gt; Layer 2 select <strong>None</strong>. In Security &gt; Layer 3 use these settings:</p>
+<ul>
+<li><strong>Web Policy</strong>: Enabled</li>
+<li><strong>Web Auth Parameter Map</strong>: <code>Splash</code></li>
+<li><strong>Authentication List</strong>: default</li>
+<li><strong>On Mac Filter Failure</strong>: Disabled</li>
+<li><strong>Splash Web Redirect</strong>: Disabled</li>
+</ul>
+<p>Go to Configuration &gt; Security &gt; URL Filters and add a new filter:</p>
+<ul>
+<li><strong>List Name</strong>: walledGarden</li>
+<li><strong>Type</strong>: PRE_AUTH</li>
+<li><strong>Action</strong>: PERMIT</li>
+<li><strong>URLs</strong>: your Splash Air domain</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/c9800-walled-garden.png" data-desc-position="bottom"><img alt="Walled Garden" src="../../assets/images/portals/cisco/c9800-walled-garden.png"></a></p>
+<p>Then, go to Configuration &gt; Tags &amp; Profiles &gt; Policy and add a new policy. On general tab, enter a name for it. <strong>Status</strong> should be <code>Enabled</code>. On the Access Policies tab:</p>
+<ul>
+<li><strong>URL Filters</strong>: walledGarden</li>
+</ul>
+<p>On Advanced tab:</p>
+<ul>
+<li><strong>Allow AAA Override</strong>: checked</li>
+</ul>
+<p>After that go to Configuration &gt; Tags &amp; Profiles &gt; Tags and add a new entry. Enter a name for it, and in WLAN-POLICY add a mapping for the WLAN Profile and Policy Profile created earlier:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/c9800-tag.png" data-desc-position="bottom"><img alt="Tag" src="../../assets/images/portals/cisco/c9800-tag.png"></a></p>
+<p>Finally, go to Administration &gt; Management &gt; HTTP/HTTPS/Netconf/VTY and ensure these settings:</p>
+<ul>
+<li><strong>HTTP Access</strong>: Enabled</li>
+<li><strong>HTTPS Access</strong>: Enabled</li>
+</ul>
+<h3 id="credits">Credits</h3>
+<p><a href="https://help.cloudi-fi.com/hc/en-us/articles/9651117910941-How-to-enable-Cloudi-Fi-with-Cisco-WLC-9800-in-Local-Mode">Cloudi-Fi Cisco WLC 9800 Guide</a></p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
