@@ -20,8 +20,18 @@ _*Note on volume quota: volume quota is calculated when a user connects. It does
 
 In payment configuration select a payment method such as Stripe. Note that Stripe API keys will need to be configured in [Global Settings](global-settings.md/#payment-gateway).
 
-For Stripe a Product ID and Price ID needs to be added.
+Create a product in Stripe and obtain its product ID:
+
+![Payment Configuration](assets/images/plans/product-id.png)
+
+Click on the price and obtain its price ID:
+
+![Payment Configuration](assets/images/plans/price-id.png)
+
+The product ID and price ID needs to be added in Plan:
 
 ![Payment Configuration](assets/images/plans/payment-configuration.png)
 
 Note: the product needs to have a One-off price. It should not be a subscription.
+
+
