@@ -86,7 +86,6 @@ Here is an example of Link flow:
 | Huawei               | :material-check:  | :material-close:                  |                           |
 | Mikrotik             | :material-close:  |                                   |                           |
 | Mikrotik with RADIUS | :material-check:  | :material-check:                  | Supported with RADIUS CoA |
-| Open Mesh            | :material-check:  | :material-close:                  |                           |
 | OpenNDS              | :material-close:  |                                   |                           |
 | Ruckus One           | :material-check:  | :material-close:                  |                           |
 | Ruckus SmartZone     | :material-check:  | :material-close:                  |                           |
@@ -143,7 +142,6 @@ The following compatibility matrix shows valid combinations of hardware and flow
 | Huawei               | :material-check: | :material-check: | :material-close: |                                    |
 | Mikrotik             | :material-check: | :material-check: | :material-close: |                                    |
 | Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: |                                    |
-| Open Mesh            | :material-check: | :material-check: | :material-close: |                                    |
 | OpenNDS              | :material-check: | :material-check: | :material-close: |                                    |
 | Ruckus One           | :material-check: | :material-check: | :material-close: |                                    |
 | Ruckus SmartZone     | :material-check: | :material-check: | :material-close: |                                    |
