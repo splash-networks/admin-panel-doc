@@ -69,3 +69,10 @@ userip
 usermac
 Automations
 walledGarden
+venue_id
+number_of_days
+upspeed
+downspeed
+GBs
+max_devices
+volumecap
