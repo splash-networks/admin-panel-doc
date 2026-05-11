@@ -120,16 +120,17 @@ Headers:
 
 _Body parameters_
 
-| Parameter      | Required | Description                            |
-|:---------------|----------|:---------------------------------------|
-| slug           | Required | Team name                              |
-| code           | Required | Voucher code                           |
-| venue_id       | Required | ID of venue at which voucher can work  |
-| number_of_days | Required | Validity of voucher in days            |
-| upspeed        | Optional | Upload speed in Mbps (0 = unlimited)   |
-| downspeed      | Optional | Download speed in Mbps (0 = unlimited) |
-| volumecap      | Optional | Volume limit in GBs (0 = unlimited)    |
-| max_devices    | Optional | Max allowed devices (0 = unlimited)    |
+| Parameter      | Required | Description                             |
+|:---------------|----------|:----------------------------------------|
+| slug           | Required | Team name                               |
+| code           | Required | Voucher code                            |
+| venue_id       | Required | ID of venue at which voucher can work   |
+| number_of_days | Required | Validity of voucher in days             |
+| upspeed        | Optional | Upload speed in Mbps (0 = unlimited)    |
+| downspeed      | Optional | Download speed in Mbps (0 = unlimited)  |
+| volumecap      | Optional | Volume limit in GBs (0 = unlimited)     |
+| max_devices    | Optional | Max allowed devices (0 = unlimited)     |
+| customer_email | Optional | For sending voucher details to customer |
 
 ![Create Vouchers](assets/images/customer-data/api/create-vouchers.png)
 

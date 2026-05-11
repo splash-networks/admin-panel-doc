@@ -105,7 +105,7 @@ Implementing email based OTP verification is not recommended. A user in captive 
 
 ### Payment Flow
 
-In Payment Flow the user makes payment to get internet access. It's possible to set up different payment plans such as daily/weekly/month and have different bandwidth rate-limits per plan, such as 10 Mbps upload/download, or 5 Mbps upload and 20 Mbps download, etc.
+In Payment Flow the user makes payment to get internet access. It's possible to set up different payment plans such as daily/weekly/monthly and have different bandwidth rate-limits per plan, such as 10 Mbps upload/download, or 5 Mbps upload and 20 Mbps download, etc.
 
 Here is an example of Payment flow using Stripe as the payment gateway:
 
@@ -115,6 +115,17 @@ Here is an example of Payment flow using Stripe as the payment gateway:
 </iframe>
 
 **Note**: You need to enter Stripe API keys in [Global Settings](global-settings.md) and create payment plans in Plans section. Moreover, you will need to add [walled garden](walled-garden.md) entries to your device.
+
+### Voucher Flow
+
+In Voucher Flow the user enters a voucher code to get internet access. The admin can create vouchers with different durations like daily/weekly/monthly and have different bandwidth and volume based rate-limits.
+
+Here is an example of Voucher flow:
+
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/_oZITRVurgU" 
+    frameborder="0" allowfullscreen>
+</iframe>
 
 ### Surveys
 

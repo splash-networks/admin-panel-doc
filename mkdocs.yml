@@ -40,6 +40,7 @@ nav:
       - Ubiquiti Unifi: portals/unifi.md
   - Accessing Customer Data: customer-data/index.md
   - Plans: plans.md
+  - Vouchers: vouchers.md
   - Automations: automations.md
   - Surveys: surveys.md
   - APIs: api.md
