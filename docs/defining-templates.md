@@ -92,7 +92,7 @@ Here is an example of Link flow:
 | Ruckus Unleashed     | :material-check:  | :material-close:                  |                           |
 | Ruijie               | :material-check:  | :material-check:                  |                           |
 | TP-Link Omada        | :material-check:  | :material-close:                  |                           |
-| Sonicwall            | :material-check:  | :material-check:                  |                           |
+| Sonicwall            | :material-check:  | :material-close:                  |                           |
 | Ubiquiti Unifi       | :material-check:  | :material-check:                  | 24-hr extension supported |
 
 *Table 1 – Link Flow Support*
