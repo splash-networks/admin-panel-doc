@@ -123,7 +123,7 @@ In Voucher Flow the user enters a voucher code to get internet access. The admin
 Here is an example of Voucher flow:
 
 <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/_oZITRVurgU" 
+    src="https://www.youtube.com/embed/sGgDmuxxgbc" 
     frameborder="0" allowfullscreen>
 </iframe>
 
