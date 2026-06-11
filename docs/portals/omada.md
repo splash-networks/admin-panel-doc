@@ -44,6 +44,10 @@ Then go to Settings > Authentication > Portal > Access Control and enable **Pre-
 
 ![Access Control](../assets/images/portals/omada/access-control.png)
 
+If using `Payment` Flow you need to add [walled garden](../walled-garden.md) entries for your payment gateway such as Stripe in Pre-Authorization Access List as well.
+
+![Access Control](../assets/images/portals/omada/access-control-2.png)
+
 Click Apply to save the settings.
 
 ## Troubleshooting
