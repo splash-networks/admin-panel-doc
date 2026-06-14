@@ -1,3 +1,5 @@
+For Huawei iMaster NCE Campus click [here](huawei-imaster.md).
+
 To set up a portal for Huawei first you need to [create a template](../defining-templates.md).
 
 ## Add a Portal
