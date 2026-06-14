@@ -124,8 +124,8 @@ _Body parameters_
 |:---------------|----------|:----------------------------------------|
 | slug           | Required | Team name                               |
 | code           | Required | Voucher code                            |
-| venue_id       | Required | ID of venue at which voucher can work   |
 | number_of_days | Required | Validity of voucher in days             |
+| venue_id       | Optional | ID of venue at which voucher can work   |
 | upspeed        | Optional | Upload speed in Mbps (0 = unlimited)    |
 | downspeed      | Optional | Download speed in Mbps (0 = unlimited)  |
 | volumecap      | Optional | Volume limit in GBs (0 = unlimited)     |
