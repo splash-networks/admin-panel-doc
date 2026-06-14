@@ -1,4 +1,4 @@
-For Huawei FIT/FAT AP click [here](huawei-imaster.md).
+For Huawei FIT/FAT AP click [here](huawei.md).
 
 To set up a portal for Huawei iMaster NCE Campus first you need to [create a template](../defining-templates.md).
 
