@@ -91,7 +91,7 @@ Here is an example of Link flow:
 | Ruckus SmartZone     | :material-check:  | :material-close:                  |                           |
 | Ruckus Unleashed     | :material-check:  | :material-close:                  |                           |
 | Ruijie               | :material-check:  | :material-check:                  |                           |
-| TP-Link Omada        | :material-check:  | :material-close:                  |                           |
+| TP-Link Omada        | :material-check:  | :material-check:                  | Supported with RADIUS CoA |
 | Sonicwall            | :material-check:  | :material-close:                  |                           |
 | Ubiquiti Unifi       | :material-check:  | :material-check:                  | 24-hr extension supported |
 
