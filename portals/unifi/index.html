@@ -1191,6 +1191,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Add a Unifi Controller">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#self-hosted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Self-Hosted
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unifi-site-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unifi Site Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unifi-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unifi Settings
+      
+    </span>
+  </a>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1546,6 +1585,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Add a Unifi Controller">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#self-hosted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Self-Hosted
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unifi-site-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unifi Site Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unifi-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unifi Settings
+      
+    </span>
+  </a>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1678,8 +1756,22 @@
 
 <p>To set up a portal for Unifi first you need to <a href="../../defining-templates/">create a template</a>. Then you have to add the Unifi controller which will be using that portal. A single template can be applied to multiple sites.</p>
 <h2 id="add-a-unifi-controller">Add a Unifi Controller</h2>
-<p>To add a Unifi Controller you will click on the New unifi controller button in the Unifi Controllers tab. An interactive wizard will launch. You need to enter the name, URL and username password for the Unifi Controller. It needs to be a local user without 2FA. The controller should be reachable directly over the internet using the provided hostname, not via ui.com portal.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/unifi/unifi-wizard-1.png" data-desc-position="bottom"><img alt="Unifi Wizard 1" src="../../assets/images/portals/unifi/unifi-wizard-1.png"></a></p>
+<p>Unifi controllers can either be self-hosted or managed via Unifi Site Manager (unifi.ui.com).</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/unifi/unifi-controller-types.png" data-desc-position="bottom"><img alt="Unifi Controller" src="../../assets/images/portals/unifi/unifi-controller-types.png"></a></p>
+<h3 id="self-hosted">Self-Hosted</h3>
+<p>In case of a self-hosted Unifi controller there are 2 authentication methods: </p>
+<ol>
+<li>API Key (recommended for Unifi OS)</li>
+<li>Username Password (traditional method)</li>
+</ol>
+<p>For creating an API Key access your Unifi Network application and go to Integrations &gt; Create New API Key. Note this key as it won't be shown again.</p>
+<p>If using a controller on which API Key option is not available the Username Password option will have to be used instead. It needs to be the username and password of a local admin user without 2FA.</p>
+<p>The either case the controller should be reachable directly over the internet using the provided hostname, not via unifi.ui.com portal.</p>
+<p>To add a Unifi Controller click on the New Ubiquiti Unifi button in Controllers &gt; Ubiquiti Unifi. An interactive wizard will launch.</p>
+<p>You need to enter the name, URL and API key or Username Password for the Unifi Controller.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/unifi/unifi-wizard-api.png" data-desc-position="bottom"><img alt="Unifi Wizard 1" src="../../assets/images/portals/unifi/unifi-wizard-api.png"></a></p>
+<p>When using Username Password it will be added like this:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/unifi/unifi-wizard-username-password.png" data-desc-position="bottom"><img alt="Unifi Wizard 1" src="../../assets/images/portals/unifi/unifi-wizard-username-password.png"></a></p>
 <p>In the 2nd step the connection with the Unifi controller will be tested. If the connection is successful, you will get an option to assign sites on the Unifi controller to corresponding venues and templates on Splash Air. You can use the <code>+</code> button at the bottom to add multiple sites.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/unifi/unifi-wizard-2.png" data-desc-position="bottom"><img alt="Unifi Wizard 2" src="../../assets/images/portals/unifi/unifi-wizard-2.png"></a></p>
 <p>The 3rd and final step applies the settings for captive portal to the respective site on the Unifi controller. Click on the Create button to complete the process.</p>
@@ -1687,7 +1779,16 @@
 <p>Completing this process sets up the captive portal for the selected site(s) on Splash Air.</p>
 <p>The controller will start showing on the Unifi Controllers page:</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/unifi/controller-added.png" data-desc-position="bottom"><img alt="Controller Added" src="../../assets/images/portals/unifi/controller-added.png"></a></p>
-<p>You should check the site in the Unifi Controller to double-check the captive portal settings. In Hotspot &gt; Authentication <code>External Portal Server</code> should be selected. </p>
+<h3 id="unifi-site-manager">Unifi Site Manager</h3>
+<p>A Unifi OS console or server adopted on a unifi.ui.com account can be added using the wizard. It requires a Site Manager API key generated by the console owner.</p>
+<p>To generate a Site Manager API Key open unifi.ui.com and go to Settings &gt; API Keys. Generate an API key with Unifi Network Application permission.</p>
+<p>You will also require the Console ID. It can be found in the URL when you access the site.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/unifi/console-id.png" data-desc-position="bottom"><img alt="Unifi Console ID" src="../../assets/images/portals/unifi/console-id.png"></a></p>
+<p>To add a Unifi Controller click on the New Ubiquiti Unifi button in Controllers &gt; Ubiquiti Unifi. An interactive wizard will launch. Enter a name for the controller, select <code>Site Manager Proxy</code> as the <strong>Authentication Method</strong>, and enter the Console ID and Site Manager API Key.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/unifi/unifi-wizard-site-manager.png" data-desc-position="bottom"><img alt="Unifi Wizard 1" src="../../assets/images/portals/unifi/unifi-wizard-site-manager.png"></a></p>
+<p>The next steps are the same as given above for <a href="#self-hosted">self-hosted</a> controller.</p>
+<h2 id="unifi-settings">Unifi Settings</h2>
+<p>After adding the controller you should check the site in the Unifi Controller to double-check the captive portal settings. In Hotspot &gt; Authentication <code>External Portal Server</code> should be selected.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/unifi/unifi-external-portal-server.png" data-desc-position="bottom"><img alt="Unifi External Portal Server" src="../../assets/images/portals/unifi/unifi-external-portal-server.png"></a></p>
 <p>By clicking on Edit you can view the IP address: it should show the IP address of the Splash Air server.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/unifi/unifi-portal-server-ip.png" data-desc-position="bottom"><img alt="Unifi Portal Server IP" src="../../assets/images/portals/unifi/unifi-portal-server-ip.png"></a></p>
