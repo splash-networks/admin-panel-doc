@@ -140,6 +140,8 @@ To prevent it disable client device isolation in WiFi settings.
 
 ## Additional Information
 
+[Unifi Authentication Methods](https://artofwifi.net/blog/unifi-api-authentication-local-admin-vs-api-key-vs-site-manager)
+
 [How to Create Local Admin Account on Unifi Controller](https://artofwifi.net/blog/use-local-admin-account-unifi-api-captive-portal)
 
 [Wireguard VPN Between Unifi Controller & Splash Air](https://blog.splashnetworks.co/wireguard-client-on-unifi-controller/)
