@@ -1,4 +1,4 @@
-_Note: For applying bandwidth rate-limits, volume based quotas, or using payment/voucher flows click [here](mikrotik-with-radius.md)_.
+*For applying bandwidth rate-limits, volume based quotas, or using payment/voucher flows click [here](mikrotik-with-radius.md).*
 
 ```
 It is recommended to use RouterOS v7 for best results.
