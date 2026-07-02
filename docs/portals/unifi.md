@@ -17,7 +17,7 @@ For creating an API Key access your Unifi Network application and go to Integrat
 
 If using a controller on which API Key option is not available the Username Password option will have to be used instead. It needs to be the username and password of a local admin user without 2FA.
 
-The either case the controller should be reachable directly over the internet using the provided hostname, not via unifi.ui.com portal.
+In either case the controller should be reachable directly over the internet using the provided hostname, not via unifi.ui.com portal.
 
 To add a Unifi Controller click on the New Ubiquiti Unifi button in Controllers > Ubiquiti Unifi. An interactive wizard will launch.
 
