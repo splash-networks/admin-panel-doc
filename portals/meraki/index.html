@@ -9,13 +9,13 @@
         <meta name="author" content="Splash Networks">
       
       
-        <link rel="canonical" href="https://docs.splashnetworks.co/portals/cisco/">
+        <link rel="canonical" href="https://docs.splashnetworks.co/portals/meraki/">
       
       
-        <link rel="prev" href="../meraki/">
+        <link rel="prev" href="../cambium/">
       
       
-        <link rel="next" href="../coova-chilli/">
+        <link rel="next" href="../cisco/">
       
       
         
@@ -26,7 +26,7 @@
     
     
       
-        <title>Cisco WLC - Splash Air Docs</title>
+        <title>Cisco Meraki - Splash Air Docs</title>
       
     
     
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cisco WLC
+              Cisco Meraki
             
           </span>
         </div>
@@ -566,34 +566,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../meraki/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Cisco Meraki
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -611,7 +583,7 @@
   <span class="md-ellipsis">
     
   
-    Cisco WLC
+    Cisco Meraki
   
 
     
@@ -629,7 +601,7 @@
   <span class="md-ellipsis">
     
   
-    Cisco WLC
+    Cisco Meraki
   
 
     
@@ -675,41 +647,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cisco-wlc-aireos-settings" class="md-nav__link">
+  <a href="#meraki-portal-settings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cisco WLC (AireOS) Settings
+        Meraki Portal Settings
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cisco-c9800-ios-xe-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cisco C9800 (IOS-XE) Settings
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cisco C9800 (IOS-XE) Settings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#credits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Credits
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -745,6 +689,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cisco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco WLC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1607,41 +1579,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cisco-wlc-aireos-settings" class="md-nav__link">
+  <a href="#meraki-portal-settings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cisco WLC (AireOS) Settings
+        Meraki Portal Settings
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cisco-c9800-ios-xe-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cisco C9800 (IOS-XE) Settings
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cisco C9800 (IOS-XE) Settings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#credits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Credits
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1738,125 +1682,34 @@
 
 
 
-  <h1>Cisco WLC</h1>
+  <h1>Cisco Meraki</h1>
 
-<p>To set up a portal for Cisco WLC first you need to <a href="../../defining-templates/">create a template</a>.</p>
+<p>To set up a portal for Cisco Meraki first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
-<p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>Cisco WLC</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/portal.png" data-desc-position="bottom"><img alt="Create Portal" src="../../assets/images/portals/cisco/portal.png"></a></p>
+<p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal, and in Hardware select <code>Cisco Meraki</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/meraki/portal.png" data-desc-position="bottom"><img alt="Meraki Portal" src="../../assets/images/portals/meraki/portal.png"></a></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
-<p>Select the template and click on the Create button.</p>
+<p>Select the venue and template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
 <p>You can go to Portals to view the settings for the portal(s) just added.</p>
 <p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
 <div class="highlight"><pre><span></span><code>Business Name: name of the venue which will be displayed on top of the portal
-Redirect URL: the URL a user is redirected to after successful portal authorization
+Duration (seconds): the time in seconds for which a user is authorized on the network
 Expiry: the time in days after which a repeat user will have to enter their data again on the portal
 Duration (seconds) after email verification: when using "Link" type Flow it is the "Session-Timeout" a user will receive via RADIUS after successful email verification 
 </code></pre></div>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
-<h2 id="cisco-wlc-aireos-settings">Cisco WLC (AireOS) Settings</h2>
-<p>Access Cisco WLC using web interface and click on <strong>Advanced</strong>. Go to Security &gt; AAA &gt; RADIUS &gt; Authentication and add a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks' support team will be entered here.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/radius.png" data-desc-position="bottom"><img alt="RADIUS" src="../../assets/images/portals/cisco/radius.png"></a></p>
-<p>Click on Apply to save the settings. Then go to Security &gt; Access Control Lists &gt; Access Control Lists (or FlexConnect ACLs if you're using FlexConnect) and create a new ACL. Click on the ACL name and add a new rule to it. Configure these settings:</p>
-<div class="highlight"><pre><span></span><code>Sequence: 1
-Source: Any
-Destination: IP Address
-Protocol: Any
-DSCP: Any
-Action: Permit
-</code></pre></div>
-<p>In IP address enter the IP address of Splash Air server with Netmask <code>255.255.255.255</code>.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/acl.png" data-desc-position="bottom"><img alt="ACL" src="../../assets/images/portals/cisco/acl.png"></a></p>
-<p>Similarly, add a new rule with Source equal to Splash Air IP address and Destination Any:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/acl-2.png" data-desc-position="bottom"><img alt="ACL Summary" src="../../assets/images/portals/cisco/acl-2.png"></a></p>
-<p>Go to Security &gt; Web Auth &gt; Web Login Page. In <strong>Web Authentication Type</strong> select <code>External (Redirect to external server)</code>. In <strong>Redirect URL after login</strong> enter a redirect URL (optional). In <strong>External Webauth URL</strong> enter the Guest Portal URL copied earlier. Click on Apply to save settings.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/web-login.png" data-desc-position="bottom"><img alt="Web Auth" src="../../assets/images/portals/cisco/web-login.png"></a></p>
-<p>Next, go to WLANs and select the WLAN on which to apply guest portal. In Security &gt; Layer 3 set <strong>Layer 3 Security</strong> to be <code>Web Policy</code>. Below it select the <strong>Authentication</strong> option. In <strong>Preauthentication ACL</strong> select the ACL created previously. Check <strong>Over-ride Global Config</strong> option. In Web Auth type select <strong>External(Re-direct to external server)</strong> and in URL enter the Guest Portal URL.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/layer-3.png" data-desc-position="bottom"><img alt="Layer 3" src="../../assets/images/portals/cisco/layer-3.png"></a></p>
-<p>Then go to Security &gt; AAA Servers and in Authentication servers check the <strong>Enabled</strong> button. In Server 1 add the RADIUS server created previously:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/aaa.png" data-desc-position="bottom"><img alt="AAA" src="../../assets/images/portals/cisco/aaa.png"></a></p>
-<p>Scroll down to <strong>Authentication priority order for web-auth user</strong>. Use the arrows to ensure only <strong>RADIUS</strong> is in the <code>Order Used for Authentication</code> section:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/radius-order.png" data-desc-position="bottom"><img alt="RADIUS Order" src="../../assets/images/portals/cisco/radius-order.png"></a></p>
-<p>Click on Apply to save the settings.</p>
-<p>Finally, go to Management &gt; HTTP-HTTPS and configure these settings:</p>
-<div class="highlight"><pre><span></span><code>HTTP Access: Enabled
-HTTPS Access: Enabled
-WebAuth SecureWeb: Disabled
-HTTPS Redirection: Disabled
-</code></pre></div>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/mgmt.png" data-desc-position="bottom"><img alt="Management" src="../../assets/images/portals/cisco/mgmt.png"></a></p>
-<p>Click on Apply to save settings. WLC may need to be rebooted for these settings to take effect.</p>
-<h2 id="cisco-c9800-ios-xe-settings">Cisco C9800 (IOS-XE) Settings</h2>
-<p>Access Cisco WLC using web interface and go to Configuration &gt; Security &gt; Web Auth. In global profile Virtual IPv4 Address should be <code>192.0.2.2</code>.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/c9800-webauth.png" data-desc-position="bottom"><img alt="Webauth" src="../../assets/images/portals/cisco/c9800-webauth.png"></a></p>
-<p>Click on Add to create a new profile called <strong>Splash</strong> with these parameters:</p>
-<ul>
-<li><strong>Maximum HTTP connections</strong>: 200</li>
-<li><strong>Init-State Timeout</strong>: 3600</li>
-<li><strong>Type</strong>: <code>webauth</code></li>
-</ul>
-<p>Click on the Splash profile and in General tab use these settings:</p>
-<ul>
-<li><strong>Banner Type</strong>: None</li>
-<li><strong>Turn-on Consent with Email</strong>: Disabled</li>
-<li><strong>Captive Bypass Portal</strong>: Disabled</li>
-<li><strong>Disable Success Window</strong>: Enabled</li>
-<li><strong>Disable Logout Window</strong>: Enabled</li>
-<li><strong>Sleeping Client Status</strong>: Enabled</li>
-<li><strong>Sleeping Client Timeout</strong>: 720</li>
-</ul>
-<p>In Advanced tab use these settings:</p>
-<ul>
-<li><strong>Redirect URL for login</strong>: Guest Portal URL created earlier</li>
-<li><strong>Redirect On-Success</strong>: redirect URL after successful portal authorization</li>
-<li><strong>Redirect On-Failure</strong>: Guest Portal URL created earlier</li>
-<li><strong>Redirect Append for AP MAC Address</strong>: <code>ap_mac</code></li>
-<li><strong>Redirect Append for Client MAC Address</strong>: <code>client_mac</code></li>
-<li><strong>Portal IPV4 Address</strong>: IP address of your Splash Air server</li>
-</ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/c9800-webauth-2.png" data-desc-position="bottom"><img alt="Webauth" src="../../assets/images/portals/cisco/c9800-webauth-2.png"></a></p>
-<p>After that go to Configuration &gt; Security &gt; AAA &gt; Servers/Groups and add a new RADIUS server. The IP address and RADIUS secret shared by Splash Networks' support team will be entered here.</p>
-<p>Then, go to Server Groups tab and create a new Server group. The AAA server added earlier should be added to this group by moving it from Available Servers to Assigned Servers.</p>
-<p>Then, go to AAA Method List and click on the default list. Move your server group from Available Server Groups to Assigned Server Groups.</p>
-<p>Go to Configuration &gt; Tags &amp; Profiles &gt; WLANs and create a new WLAN (or edit an existing WLAN). In Security &gt; Layer 2 select <strong>None</strong>. In Security &gt; Layer 3 use these settings:</p>
-<ul>
-<li><strong>Web Policy</strong>: Enabled</li>
-<li><strong>Web Auth Parameter Map</strong>: <code>Splash</code></li>
-<li><strong>Authentication List</strong>: default</li>
-<li><strong>On Mac Filter Failure</strong>: Disabled</li>
-<li><strong>Splash Web Redirect</strong>: Disabled</li>
-</ul>
-<p>Go to Configuration &gt; Security &gt; URL Filters and add a new filter:</p>
-<ul>
-<li><strong>List Name</strong>: walledGarden</li>
-<li><strong>Type</strong>: PRE_AUTH</li>
-<li><strong>Action</strong>: PERMIT</li>
-<li><strong>URLs</strong>: your Splash Air domain</li>
-</ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/c9800-walled-garden.png" data-desc-position="bottom"><img alt="Walled Garden" src="../../assets/images/portals/cisco/c9800-walled-garden.png"></a></p>
-<p>Then, go to Configuration &gt; Tags &amp; Profiles &gt; Policy and add a new policy. On general tab, enter a name for it. <strong>Status</strong> should be <code>Enabled</code>. On the Access Policies tab:</p>
-<ul>
-<li><strong>URL Filters</strong>: walledGarden</li>
-</ul>
-<p>On Advanced tab:</p>
-<ul>
-<li><strong>Allow AAA Override</strong>: checked</li>
-</ul>
-<p>After that go to Configuration &gt; Tags &amp; Profiles &gt; Tags and add a new entry. Enter a name for it, and in WLAN-POLICY add a mapping for the WLAN Profile and Policy Profile created earlier:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/c9800-tag.png" data-desc-position="bottom"><img alt="Tag" src="../../assets/images/portals/cisco/c9800-tag.png"></a></p>
-<p>Finally, go to Administration &gt; Management &gt; HTTP/HTTPS/Netconf/VTY and ensure these settings:</p>
-<ul>
-<li><strong>HTTP Access</strong>: Enabled</li>
-<li><strong>HTTPS Access</strong>: Enabled</li>
-</ul>
-<h3 id="credits">Credits</h3>
-<p><a href="https://help.cloudi-fi.com/hc/en-us/articles/9651117910941-How-to-enable-Cloudi-Fi-with-Cisco-WLC-9800-in-Local-Mode">Cloudi-Fi Cisco WLC 9800 Guide</a></p>
+<h2 id="meraki-portal-settings">Meraki Portal Settings</h2>
+<p>Login to your Cisco Meraki account and select the SSID on which you want to apply guest portal in Wireless &gt; SSIDs.</p>
+<p>In <strong>Security</strong> select <code>Open</code>. Under <strong>Splash page</strong> select <code>Sign-on with my RADIUS server</code>. In <strong>Advanced splash settings</strong> go to <code>Walled Garden</code> and enable it. Add the IP address of your Splash Air server in walled garden ranges. If using <code>Payment</code> Flow you need to add <a href="../../walled-garden/">walled garden</a> entries for your payment gateway such as Stripe in Allowed Domains. In RADIUS add the IP address and RADIUS secret shared by Splash Networks' support team.</p>
+<p>Go to Wireless &gt; Splash Page and select your SSID. In <strong>Custom splash URL</strong> enter the <code>Guest Portal URL</code> generated earlier.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/meraki/splash-page.png" data-desc-position="bottom"><img alt="Meraki Portal" src="../../assets/images/portals/meraki/splash-page.png"></a></p>
+<p>Optionally, under "Where should users go after the splash page?" you can select <code>A different URL</code> and enter the URL to which you want users to be redirected to.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
-<p>Here is the traffic flow in the case of Cisco WLC:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/cisco/traffic-flow.png" data-desc-position="bottom"><img alt="Traffic Flow" src="../../assets/images/portals/cisco/traffic-flow.png"></a></p>
+<p>Here is the traffic flow in the case of Cisco Meraki:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/meraki/traffic-flow.png" data-desc-position="bottom"><img alt="Meraki Traffic Flow" src="../../assets/images/portals/meraki/traffic-flow.png"></a></p>
 
 
 
@@ -1944,7 +1797,7 @@ HTTPS Redirection: Disabled
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../meraki/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cisco Meraki">
+          <a href="../cambium/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cambium">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
@@ -1954,20 +1807,20 @@ HTTPS Redirection: Disabled
                 Previous
               </span>
               <div class="md-ellipsis">
-                Cisco Meraki
+                Cambium
               </div>
             </div>
           </a>
         
         
           
-          <a href="../coova-chilli/" class="md-footer__link md-footer__link--next" aria-label="Next: Coova Chilli">
+          <a href="../cisco/" class="md-footer__link md-footer__link--next" aria-label="Next: Cisco WLC">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Coova Chilli
+                Cisco WLC
               </div>
             </div>
             <div class="md-footer__button md-icon">
