@@ -17,7 +17,8 @@ nav:
       - Aruba/HPE: portals/aruba.md
       - Aruba/HPE Instant On: portals/aruba-instant-on.md
       - Cambium: portals/cambium.md
-      - Cisco: portals/cisco.md
+      - Cisco Meraki: portals/meraki.md
+      - Cisco WLC: portals/cisco.md
       - Coova Chilli: portals/coova-chilli.md
       - Cradlepoint: portals/cradlepoint.md
       - Datto: portals/datto.md
