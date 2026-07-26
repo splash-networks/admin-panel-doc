@@ -82,6 +82,10 @@ Go to RADIUS and click on New to add a new RADIUS server. In Service select `hot
   ![Mikrotik RADIUS](../assets/images/portals/mikrotik/radius.png){ width="80%" }
 </figure>
 
+Note: if using bandwidth rate-limits in 'Payment' or 'Voucher' Flow it is necessary to go to IP > Firewall and disable the default fasttrack rule.
+
+![Mikrotik Fasttrack Rule](../assets/images/portals/mikrotik/fasttrack.png)
+
 ### Portal Files
 
 Download this [file](../files/mikrotik.zip) and unzip it. Open the `login.html` file in a text editor. The Guest Portal URL generated earlier should be pasted in the form action field as shown below:
