@@ -1394,85 +1394,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#customers" class="md-nav__link">
+  <a href="#api-docs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Customers
+        API Docs
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#customer-visits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Customer Visits
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#venues" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Venues
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vouchers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vouchers
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Vouchers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#get-vouchers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Get Vouchers
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-voucher" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create Voucher
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delete-voucher" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Delete Voucher
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1601,85 +1529,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#customers" class="md-nav__link">
+  <a href="#api-docs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Customers
+        API Docs
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#customer-visits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Customer Visits
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#venues" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Venues
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vouchers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vouchers
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Vouchers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#get-vouchers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Get Vouchers
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-voucher" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create Voucher
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delete-voucher" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Delete Voucher
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1716,268 +1572,38 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/images/customer-data/api/api-key-generate.png" data-desc-position="bottom"><img alt="Generate API Key" src="../assets/images/customer-data/api/api-key-generate.png"></a></p>
 <p>Copy the generated API Key as it will only be displayed once.</p>
 <p>You can use the same page to delete an existing key and create a new one if needed.</p>
-<p>This API key will need to set as the value of the <code>X-API-Key</code> header when making API requests.</p>
-<p>The URL for API requests will be:</p>
-<div class="highlight"><pre><span></span><code>https://&lt;hostname&gt;/api
-</code></pre></div>
-<p>This will be followed by the specific endpoint that you're querying.</p>
-<h2 id="customers">Customers</h2>
-<p>Customer data can be retrieved using the customers API. If using multi-tenancy replace <code>default</code> with the team identifier.</p>
-<div class="highlight"><pre><span></span><code>HTTP Verb: GET
-API Endpoint: /customers
-Headers: 'X-API-Key': '&lt; your API key &gt;'
-</code></pre></div>
-<p><em>Query parameters</em></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Parameter</th>
-<th>Required</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">slug</td>
-<td>Required</td>
-<td style="text-align: left;">Team name</td>
-</tr>
-<tr>
-<td style="text-align: left;">per_page</td>
-<td>Optional</td>
-<td style="text-align: left;">Number of items per page</td>
-</tr>
-<tr>
-<td style="text-align: left;">page</td>
-<td>Optional</td>
-<td style="text-align: left;">Page number of paginated results</td>
-</tr>
-<tr>
-<td style="text-align: left;">start_date</td>
-<td>Optional</td>
-<td style="text-align: left;">Show records since this date</td>
-</tr>
-<tr>
-<td style="text-align: left;">end_date</td>
-<td>Optional</td>
-<td style="text-align: left;">Show records till this date</td>
-</tr>
-</tbody>
-</table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/images/customer-data/api/api-customers.png" data-desc-position="bottom"><img alt="Get Customers" src="../assets/images/customer-data/api/api-customers.png"></a></p>
-<h2 id="customer-visits">Customer Visits</h2>
-<p>Customer visit data can be retrieved using the customer-visits API. If using multi-tenancy replace <code>default</code> with the team identifier.</p>
-<div class="highlight"><pre><span></span><code>HTTP Verb: GET
-API Endpoint: /customer-visits
-Headers: 'X-API-Key': '&lt; your API key &gt;'
-</code></pre></div>
-<p><em>Query parameters</em></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Parameter</th>
-<th>Required</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">slug</td>
-<td>Required</td>
-<td style="text-align: left;">Team name</td>
-</tr>
-<tr>
-<td style="text-align: left;">per_page</td>
-<td>Optional</td>
-<td style="text-align: left;">Number of items per page</td>
-</tr>
-<tr>
-<td style="text-align: left;">page</td>
-<td>Optional</td>
-<td style="text-align: left;">Page number of paginated results</td>
-</tr>
-<tr>
-<td style="text-align: left;">start_date</td>
-<td>Optional</td>
-<td style="text-align: left;">Show records since this date</td>
-</tr>
-<tr>
-<td style="text-align: left;">end_date</td>
-<td>Optional</td>
-<td style="text-align: left;">Show records till this date</td>
-</tr>
-</tbody>
-</table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/images/customer-data/api/api-visits.png" data-desc-position="bottom"><img alt="Get Customer Visits" src="../assets/images/customer-data/api/api-visits.png"></a></p>
-<h2 id="venues">Venues</h2>
-<p>Venue related data can be retrieved using the venues API. If using multi-tenancy replace <code>default</code> with the team identifier.</p>
-<div class="highlight"><pre><span></span><code>HTTP Verb: GET
-API Endpoint: /venues
-Headers: 'X-API-Key': '&lt; your API key &gt;'
-</code></pre></div>
-<p><em>Query parameters</em></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Parameter</th>
-<th>Required</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">slug</td>
-<td>Required</td>
-<td style="text-align: left;">Team name</td>
-</tr>
-<tr>
-<td style="text-align: left;">per_page</td>
-<td>Optional</td>
-<td style="text-align: left;">Number of items per page</td>
-</tr>
-<tr>
-<td style="text-align: left;">page</td>
-<td>Optional</td>
-<td style="text-align: left;">Page number of paginated results</td>
-</tr>
-</tbody>
-</table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/images/customer-data/api/api-venues.png" data-desc-position="bottom"><img alt="Get Venues" src="../assets/images/customer-data/api/api-venues.png"></a></p>
-<h2 id="vouchers">Vouchers</h2>
-<h3 id="get-vouchers">Get Vouchers</h3>
-<p>To retrieve existing vouchers use the vouchers API. If using multi-tenancy replace <code>default</code> with the team identifier.</p>
-<div class="highlight"><pre><span></span><code>HTTP Verb: GET
-API Endpoint: /vouchers
-Headers: 'X-API-Key': '&lt; your API key &gt;'
-</code></pre></div>
-<p><em>Query parameters</em></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Parameter</th>
-<th>Required</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">slug</td>
-<td>Required</td>
-<td style="text-align: left;">Team name</td>
-</tr>
-<tr>
-<td style="text-align: left;">per_page</td>
-<td>Optional</td>
-<td style="text-align: left;">Number of items per page</td>
-</tr>
-<tr>
-<td style="text-align: left;">page</td>
-<td>Optional</td>
-<td style="text-align: left;">Page number of paginated results</td>
-</tr>
-</tbody>
-</table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/images/customer-data/api/get-vouchers.png" data-desc-position="bottom"><img alt="Get Vouchers" src="../assets/images/customer-data/api/get-vouchers.png"></a></p>
-<h3 id="create-voucher">Create Voucher</h3>
-<p>To create a new voucher use the vouchers API with POST verb. If using multi-tenancy replace <code>default</code> with the team identifier.</p>
-<div class="highlight"><pre><span></span><code>HTTP Verb: POST
-API Endpoint: /vouchers
-Headers: 
- - 'Content-Type': 'application/x-www-form-urlencoded'
- - 'X-API-Key': '&lt; your API key &gt;'
-</code></pre></div>
-<p><em>Body parameters</em></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Parameter</th>
-<th>Required</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">slug</td>
-<td>Required</td>
-<td style="text-align: left;">Team name</td>
-</tr>
-<tr>
-<td style="text-align: left;">code</td>
-<td>Required</td>
-<td style="text-align: left;">Voucher code</td>
-</tr>
-<tr>
-<td style="text-align: left;">number_of_days</td>
-<td>Required</td>
-<td style="text-align: left;">Validity of voucher in days</td>
-</tr>
-<tr>
-<td style="text-align: left;">venue_id</td>
-<td>Optional</td>
-<td style="text-align: left;">ID of venue at which voucher can work</td>
-</tr>
-<tr>
-<td style="text-align: left;">upspeed</td>
-<td>Optional</td>
-<td style="text-align: left;">Upload speed in Mbps (0 = unlimited)</td>
-</tr>
-<tr>
-<td style="text-align: left;">downspeed</td>
-<td>Optional</td>
-<td style="text-align: left;">Download speed in Mbps (0 = unlimited)</td>
-</tr>
-<tr>
-<td style="text-align: left;">volumecap</td>
-<td>Optional</td>
-<td style="text-align: left;">Volume limit in GBs (0 = unlimited)</td>
-</tr>
-<tr>
-<td style="text-align: left;">max_devices</td>
-<td>Optional</td>
-<td style="text-align: left;">Max allowed devices (0 = unlimited)</td>
-</tr>
-<tr>
-<td style="text-align: left;">customer_email</td>
-<td>Optional</td>
-<td style="text-align: left;">For sending voucher details to customer</td>
-</tr>
-</tbody>
-</table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/images/customer-data/api/create-vouchers.png" data-desc-position="bottom"><img alt="Create Vouchers" src="../assets/images/customer-data/api/create-vouchers.png"></a></p>
-<h3 id="delete-voucher">Delete Voucher</h3>
-<p>To retrieve existing vouchers use the vouchers API. If using multi-tenancy replace <code>default</code> with the team identifier.</p>
-<div class="highlight"><pre><span></span><code>HTTP Verb: DELETE
-API Endpoint: /vouchers/&lt;voucher-id&gt;
-Headers: 'X-API-Key': '&lt; your API key &gt;'
-</code></pre></div>
-<p><em>Query parameters</em></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Parameter</th>
-<th>Required</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">slug</td>
-<td>Required</td>
-<td style="text-align: left;">Team name</td>
-</tr>
-<tr>
-<td style="text-align: left;">per_page</td>
-<td>Optional</td>
-<td style="text-align: left;">Number of items per page</td>
-</tr>
-<tr>
-<td style="text-align: left;">page</td>
-<td>Optional</td>
-<td style="text-align: left;">Page number of paginated results</td>
-</tr>
-</tbody>
-</table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/images/customer-data/api/delete-voucher.png" data-desc-position="bottom"><img alt="Delete Vouchers" src="../assets/images/customer-data/api/delete-voucher.png"></a></p>
+<h2 id="api-docs">API Docs</h2>
+<style>
+  :root {
+    --scalar-custom-header-height: 60px; /* match Material's actual header height */
+  }
+</style>
+<script id="api-reference" data-url="/files/api.json" data-configuration="{
+    &quot;layout&quot;: &quot;modern&quot;,
+    &quot;showSidebar&quot;: true,
+    &quot;hideModels&quot;: false,
+    &quot;hideDownloadButton&quot;: true,
+    &quot;hideSearch&quot;: true,
+    &quot;hideDarkModeToggle&quot;: false,
+    &quot;darkMode&quot;: false,
+    &quot;authentication&quot;: {
+      &quot;preferredSecurityScheme&quot;: &quot;ApiKeyAuth&quot;,
+      &quot;securitySchemes&quot;: {
+        &quot;ApiKeyAuth&quot;: {
+          &quot;name&quot;: &quot;X-API-Key&quot;,
+          &quot;in&quot;: &quot;header&quot;,
+          &quot;value&quot;: &quot;&quot;
+        }
+      }
+    },
+    &quot;hiddenClients&quot;: &quot;true&quot;,
+    &quot;agent&quot;: {
+      &quot;disabled&quot;: true
+    },
+    &quot;customCss&quot;: &quot;.scalar-app { --scalar-color-accent: #2563eb; }&quot;
+  }">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
 
 
 
