@@ -12,6 +12,8 @@ You can use the same page to delete an existing key and create a new one if need
 
 ## API Docs
 
+You can test APIs here by entering your Splash Air application's hostname in **Server** section in front of `your_server` and your API key in the **Authentication** section below:
+
 <style>
   :root {
     --scalar-custom-header-height: 60px; /* match Material's actual header height */
@@ -27,16 +29,6 @@ You can use the same page to delete an existing key and create a new one if need
     "hideSearch": true,
     "hideDarkModeToggle": false,
     "darkMode": false,
-    "authentication": {
-      "preferredSecurityScheme": "ApiKeyAuth",
-      "securitySchemes": {
-        "ApiKeyAuth": {
-          "name": "X-API-Key",
-          "in": "header",
-          "value": ""
-        }
-      }
-    },
     "hiddenClients": "true",
     "agent": {
       "disabled": true
