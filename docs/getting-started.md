@@ -1,6 +1,6 @@
 ## Login
 
-This is the login screen. You will login using your provided credentials.
+This is the login screen. You will login using your user credentials.
 
 <figure markdown="span">
   ![Login Screen](assets/images/getting-started/login-screen.png){ width="70%" }

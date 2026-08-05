@@ -37,6 +37,7 @@ There are 4 types of user authorization flows that are currently supported:
  - OTP
  - Link
  - Payment
+ - Voucher
 
 ### Simple Flow
 
@@ -127,7 +128,7 @@ Here is an example of Voucher flow:
     frameborder="0" allowfullscreen>
 </iframe>
 
-### Surveys
+## Surveys
 
 To add a survey to the template click on the Survey dropdown and select a survey (created in the [Surveys](surveys.md) tab). There are 2 options for presenting the survey to users:
 
