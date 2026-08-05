@@ -1,8 +1,8 @@
 {
     "openapi": "3.1.0",
     "info": {
-        "title": "Splash Air",
-        "version": "0.0.1"
+        "title": "Laravel",
+        "version": "0.5.1"
     },
     "servers": [
         {
@@ -2454,35 +2454,17 @@
                             "null"
                         ]
                     },
-                    "company": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
                     "email": {
                         "type": [
                             "string",
                             "null"
                         ]
                     },
-                    "address": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "email_verified": {
-                        "type": "boolean"
-                    },
                     "phone": {
                         "type": [
                             "string",
                             "null"
                         ]
-                    },
-                    "phone_verified": {
-                        "type": "boolean"
                     },
                     "market_opt": {
                         "type": [
@@ -2495,9 +2477,6 @@
                             "string",
                             "null"
                         ]
-                    },
-                    "team_id": {
-                        "type": "integer"
                     },
                     "created_at": {
                         "type": [
@@ -2512,6 +2491,18 @@
                             "null"
                         ],
                         "format": "date-time"
+                    },
+                    "company": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "email_verified": {
+                        "type": "boolean"
+                    },
+                    "team_id": {
+                        "type": "integer"
                     },
                     "username": {
                         "type": [
@@ -2535,6 +2526,12 @@
                         ],
                         "format": "date-time"
                     },
+                    "address": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
                     "email_marketing_synced": {
                         "type": "boolean"
                     },
@@ -2543,29 +2540,32 @@
                             "string",
                             "null"
                         ]
+                    },
+                    "phone_verified": {
+                        "type": "boolean"
                     }
                 },
                 "required": [
                     "id",
                     "first_name",
                     "last_name",
-                    "company",
                     "email",
-                    "address",
-                    "email_verified",
                     "phone",
-                    "phone_verified",
                     "market_opt",
                     "aruba_site_id",
-                    "team_id",
                     "created_at",
                     "updated_at",
+                    "company",
+                    "email_verified",
+                    "team_id",
                     "username",
                     "requires_plan",
                     "active_plan",
                     "plan_expiration_date",
+                    "address",
                     "email_marketing_synced",
-                    "email_marketing_synced_platform"
+                    "email_marketing_synced_platform",
+                    "phone_verified"
                 ],
                 "title": "Customer"
             },
@@ -2691,20 +2691,25 @@
                     "id": {
                         "type": "integer"
                     },
-                    "crm_list_id": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
                     "business_id": {
-                        "type": "integer"
-                    },
-                    "team_id": {
                         "type": "integer"
                     },
                     "address": {
                         "type": "string"
+                    },
+                    "created_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    },
+                    "updated_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
                     },
                     "frequency": {
                         "type": [
@@ -2724,32 +2729,27 @@
                             "null"
                         ]
                     },
-                    "created_at": {
-                        "type": [
-                            "string",
-                            "null"
-                        ],
-                        "format": "date-time"
+                    "team_id": {
+                        "type": "integer"
                     },
-                    "updated_at": {
+                    "crm_list_id": {
                         "type": [
                             "string",
                             "null"
-                        ],
-                        "format": "date-time"
+                        ]
                     }
                 },
                 "required": [
                     "id",
-                    "crm_list_id",
                     "business_id",
-                    "team_id",
                     "address",
+                    "created_at",
+                    "updated_at",
                     "frequency",
                     "emails",
                     "report_id",
-                    "created_at",
-                    "updated_at"
+                    "team_id",
+                    "crm_list_id"
                 ],
                 "title": "Venue"
             },
@@ -2767,13 +2767,6 @@
                             "integer",
                             "null"
                         ]
-                    },
-                    "first_used_at": {
-                        "type": [
-                            "string",
-                            "null"
-                        ],
-                        "format": "date-time"
                     },
                     "team_id": {
                         "type": [
@@ -2809,13 +2802,19 @@
                     },
                     "max_devices": {
                         "type": "integer"
+                    },
+                    "first_used_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
                     }
                 },
                 "required": [
                     "id",
                     "code",
                     "customer_id",
-                    "first_used_at",
                     "team_id",
                     "created_at",
                     "updated_at",
@@ -2823,7 +2822,8 @@
                     "upspeed",
                     "downspeed",
                     "volumecap",
-                    "max_devices"
+                    "max_devices",
+                    "first_used_at"
                 ],
                 "title": "Voucher"
             }
