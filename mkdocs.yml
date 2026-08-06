@@ -25,6 +25,7 @@ nav:
       - Datto: portals/datto.md
       - Draytek: portals/draytek.md
       - Fortinet: portals/fortinet.md
+      - Grandstream: portals/grandstream.md
       - Huawei FIT/FAT AP: portals/huawei.md
       - Huawei iMaster NCE-Campus: portals/huawei-imaster.md
       - LigoWave: portals/ligowave.md
