@@ -16,7 +16,7 @@ The following ports need to be open for the application to function correctly:
 The installation can be done using a script. Your DNS hostname needs to be passed as a parameter to the script. Suppose your DNS hostname is `your-hostname.com` then you can run this one-liner command to download and execute the script (replace `your-hostname.com` with your actual DNS hostname):
 
 ```text { .copy }
-curl -fsSL https://gist.githubusercontent.com/nasirhafeez/1d2453275c7fc62d32c1678b48d734c3/raw | bash -s -- your-hostname.com
+curl -fsSL https://get.splashnetworks.co | bash -s -- your-hostname.com
 ```
 
 The script uses Docker and sets up a Docker Compose based environment, so make sure your VM/VPS supports Docker.
