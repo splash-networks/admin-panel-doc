@@ -1,7 +1,7 @@
 {
     "openapi": "3.1.0",
     "info": {
-        "title": "Laravel",
+        "title": "Splash Air",
         "version": "0.5.1"
     },
     "servers": [
