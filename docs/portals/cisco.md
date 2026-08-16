@@ -1,3 +1,5 @@
+For Cisco Meraki click [here](meraki.md).
+
 To set up a portal for Cisco WLC first you need to [create a template](../defining-templates.md).
 
 ## Add a Portal
