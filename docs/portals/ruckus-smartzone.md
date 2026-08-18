@@ -65,7 +65,7 @@ In Hotspot Portal > Authentication Server select On and select the option **Alwa
   ![Hotspot Settings](../assets/images/portals/ruckus/hotspot-portal.png){ width="80%" }
 </figure>
 
-If using `Payment` flow you need to add the details of your RADIUS server, such as IP address and shared secret (will be provided by Splash Networks' team) in Authentication and Accounting Server.
+If using `Payment` or `Vouher` flow you need to add the details of your RADIUS server, such as IP address and shared secret (will be provided by Splash Networks' team) in Authentication and Accounting Server.
 
 ![RADIUS](../assets/images/portals/ruckus/radius.png)
 
