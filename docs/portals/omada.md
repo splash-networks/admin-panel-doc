@@ -33,21 +33,21 @@ You can click on the Edit button against each entry to modify it if needed.
 
 ## Omada Controller Settings
 
-Access Omada controller using web interface. Go to Settings > Profiles > RADIUS Profile and create a new profile. Enter the IP address/URL and secret of your RADIUS server (details will be provided by Splash team).
+Access Omada controller using web interface. Go to Settings > Profile > RADIUS Profile and create a new profile. Enter the IP address/URL and secret of your RADIUS server (details will be provided by Splash team).
 
 ![RADIUS Profile](../assets/images/portals/omada/radius-profile.png)
 
-Next, go to Settings > Authentication > Portal and create a new portal. Specify a name for it, and enable the Portal option. Select the SSID & Network on which portal should be enabled. In **Authentication Type** select `RADIUS Server`. In **RADIUS Profile** select the profile created in the previous step. In **Authentication Mode** select `PAP`. In **Portal Customization** select `External Web Portal` and paste the Guest Portal URL copied earlier.
+Next, go to Settings > Authentication > Portal and create a new portal. Specify a name for it and enable the Portal option. Select the SSID & Network on which portal should be enabled. **HTTPS Redirection** should be disabled. In **Authentication** tab select `RADIUS Server` as the **Authentication Type**. In **RADIUS Profile** select the profile created in the previous step. In **Authentication Mode** select `PAP`. In **Portal Customization** select `External Web Portal` and paste the Guest Portal URL copied earlier.
 
 ![Portal](../assets/images/portals/omada/portal.png)
 
-Then go to Settings > Authentication > Portal > Access Control and enable **Pre-Authentication Access**. Add a new entry and put the IP address of the Splash Air server in it.
+Then go to Settings > Authentication > Portal > Access Control and enable **Pre-Authentication Access**. Add a new entry and put the IP address of the Splash Air server in it. If using `Payment` Flow you need to add [walled garden](../walled-garden.md) entries for your payment gateway such as Stripe in Pre-Authorization Access List as well.
 
-![Access Control](../assets/images/portals/omada/access-control.png)
 
-If using `Payment` Flow you need to add [walled garden](../walled-garden.md) entries for your payment gateway such as Stripe in Pre-Authorization Access List as well.
 
-![Access Control](../assets/images/portals/omada/access-control-2.png)
+<figure markdown="span">
+  ![Access Control](../assets/images/portals/omada/access-control.png){ width="80%" }
+</figure>
 
 Click Apply to save the settings.
 
