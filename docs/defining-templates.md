@@ -145,27 +145,27 @@ Once a user has submitted a survey they will not be required to complete it agai
 
 The following compatibility matrix shows valid combinations of hardware and flow types along with comments. For details of Link Flow refer to Table 1 above:
 
-| Hardware/Flow        | Simple           | OTP              | Payment          | Comments                           |
-|:---------------------|:----------------:|:----------------:|------------------|:-----------------------------------|
-| Aruba Instant On     | :material-check: | :material-check: | :material-check: | Bandwidth rate-limit not supported |
-| Cambium              | :material-check: | :material-check: | :material-close: |                                    |
-| Cisco                | :material-check: | :material-check: | :material-close: |                                    |
-| Cisco Meraki         | :material-check: | :material-check: | :material-check: |                                    |
-| Coova Chilli         | :material-check: | :material-check: | :material-check: |                                    |
-| Draytek              | :material-check: | :material-check: | :material-close: |                                    |
-| Fortinet             | :material-check: | :material-check: | :material-check: | Bandwidth rate-limit not supported |
-| Grandstream          | :material-check: | :material-check: | :material-check: |                                    |
-| Huawei               | :material-check: | :material-check: | :material-close: |                                    |
-| Mikrotik             | :material-check: | :material-check: | :material-close: |                                    |
-| Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: |                                    |
-| OpenNDS              | :material-check: | :material-check: | :material-close: |                                    |
-| Ruckus One           | :material-check: | :material-check: | :material-close: |                                    |
-| Ruckus SmartZone     | :material-check: | :material-check: | :material-close: |                                    |
-| Ruckus Unleashed     | :material-check: | :material-check: | :material-check: |                                    |
-| Ruijie               | :material-check: | :material-check: | :material-close: |                                    |
-| TP-Link Omada        | :material-check: | :material-check: | :material-close: |                                    |
-| Sonicwall            | :material-check: | :material-check: | :material-check: |                                    |
-| Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: |                                    |
+| Hardware/Flow        | Simple           | OTP              | Payment          | Voucher          | Comments                           |
+|:---------------------|:----------------:|:----------------:|------------------|------------------|:-----------------------------------|
+| Aruba Instant On     | :material-check: | :material-check: | :material-check: | :material-check: | Bandwidth rate-limit not supported |
+| Cambium              | :material-check: | :material-check: | :material-close: | :material-check: |                                    |
+| Cisco                | :material-check: | :material-check: | :material-close: | :material-check: |                                    |
+| Cisco Meraki         | :material-check: | :material-check: | :material-check: | :material-check: |                                    |
+| Coova Chilli         | :material-check: | :material-check: | :material-check: | :material-check: |                                    |
+| Draytek              | :material-check: | :material-check: | :material-close: | :material-check: |                                    |
+| Fortinet             | :material-check: | :material-check: | :material-check: | :material-check: | Bandwidth rate-limit not supported |
+| Grandstream          | :material-check: | :material-check: | :material-check: | :material-check: |                                    |
+| Huawei               | :material-check: | :material-check: | :material-close: | :material-check: |                                    |
+| Mikrotik             | :material-check: | :material-check: | :material-close: | :material-check: |                                    |
+| Mikrotik with RADIUS | :material-check: | :material-check: | :material-check: | :material-check: |                                    |
+| OpenNDS              | :material-check: | :material-check: | :material-close: | :material-check: |                                    |
+| Ruckus One           | :material-check: | :material-check: | :material-close: | :material-check: |                                    |
+| Ruckus SmartZone     | :material-check: | :material-check: | :material-close: | :material-check: |                                    |
+| Ruckus Unleashed     | :material-check: | :material-check: | :material-check: | :material-check: |                                    |
+| Ruijie               | :material-check: | :material-check: | :material-close: | :material-check: |                                    |
+| TP-Link Omada        | :material-check: | :material-check: | :material-close: | :material-check: |                                    |
+| Sonicwall            | :material-check: | :material-check: | :material-check: | :material-check: |                                    |
+| Ubiquiti Unifi       | :material-check: | :material-check: | :material-check: | :material-check: |                                    |
 
 *Table 2 – Hardware and Template Flow Compatibility Matrix*
 
