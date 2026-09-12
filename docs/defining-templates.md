@@ -31,7 +31,7 @@ It is possible to create additional fields such as Birthday, Gender, Room Number
 
 ## Flow
 
-There are 4 types of user authorization flows that are currently supported:
+There are 5 types of user authorization flows that are currently supported:
 
  - Simple
  - OTP
