@@ -1,6 +1,6 @@
 # Documentation Home
 
-This is a basic guide for setting up and performing common tasks on Splash Air.
+This is a basic guide for setting up and performing common tasks on Splash Air captive portal management system.
 
 ## Introduction
 

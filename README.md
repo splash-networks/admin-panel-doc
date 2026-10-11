@@ -9,9 +9,3 @@ pip install mkdocs mkdocs-material mkdocs-glightbox
 ```
 
 Dev server: `python -m mkdocs serve`
-
-### Vale spell checking command:
-
-```
-vale --config=.vale.ini --minAlertLevel=error docs
-```

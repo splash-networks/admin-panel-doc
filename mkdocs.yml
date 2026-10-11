@@ -41,12 +41,14 @@ nav:
       - Teltonika: portals/teltonika.md
       - TP-Link Omada: portals/omada.md
       - Ubiquiti Unifi: portals/unifi.md
-  - Accessing Customer Data: customer-data/index.md
+  - Accessing Customer Data:
+      - customer-data/index.md
+      - Web: customer-data/web.md
+      - APIs: api.md
   - Plans: plans.md
   - Vouchers: vouchers.md
   - Automations: automations.md
   - Surveys: surveys.md
-  - APIs: api.md
   - Users: users.md
   - Walled Garden: walled-garden.md
   - RADIUS: radius.md
