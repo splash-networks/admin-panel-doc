@@ -1822,7 +1822,7 @@
 <p>To set up a portal for Cisco Meraki first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal, and in Hardware select <code>Cisco Meraki</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/meraki/portal.png" data-desc-position="bottom"><img alt="Meraki Portal" src="../../assets/images/portals/meraki/portal.png"></a></p>
+<p></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the venue and template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1838,13 +1838,13 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 <p>Login to your Cisco Meraki account and select the SSID on which you want to apply guest portal in Wireless &gt; SSIDs.</p>
 <p>In <strong>Security</strong> select <code>Open</code>. Under <strong>Splash page</strong> select <code>Sign-on with my RADIUS server</code>. In <strong>Advanced splash settings</strong> go to <code>Walled Garden</code> and enable it. Add the IP address of your Splash Air server in walled garden ranges. If using <code>Payment</code> Flow you need to add <a href="../../walled-garden/">walled garden</a> entries for your payment gateway such as Stripe in Allowed Domains. In RADIUS add the IP address and RADIUS secret shared by Splash Networks' support team.</p>
 <p>Go to Wireless &gt; Splash Page and select your SSID. In <strong>Custom splash URL</strong> enter the <code>Guest Portal URL</code> generated earlier.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/meraki/splash-page.png" data-desc-position="bottom"><img alt="Meraki Portal" src="../../assets/images/portals/meraki/splash-page.png"></a></p>
+<p></p>
 <p>Optionally, under "Where should users go after the splash page?" you can select <code>A different URL</code> and enter the URL to which you want users to be redirected to.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of Cisco Meraki:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/meraki/traffic-flow.png" data-desc-position="bottom"><img alt="Meraki Traffic Flow" src="../../assets/images/portals/meraki/traffic-flow.png"></a></p>
+<p></p>
 
 
 

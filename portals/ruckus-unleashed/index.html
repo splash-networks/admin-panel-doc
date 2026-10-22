@@ -1821,7 +1821,7 @@
 <p>To set up a portal for Ruckus Unleashed first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>Ruckus Unleashed</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckusunleashed/portal-url.png" data-desc-position="bottom"><img alt="Ruckus Portal" src="../../assets/images/portals/ruckusunleashed/portal-url.png"></a></p>
+<p></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1835,20 +1835,20 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
 <h2 id="ruckus-unleashed-settings">Ruckus Unleashed Settings</h2>
 <p>Access Ruckus Unleashed using web interface. Go to Services &gt; Authentication Servers and add a new server. Enter a name for it, and in <strong>Type</strong> select <code>RADIUS</code>. <strong>Auth Method</strong> will be <code>PAP</code>. Enter the Server Address and Secret of your RADIUS server (these details will be provided by Splash team).</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckusunleashed/radius.png" data-desc-position="bottom"><img alt="RADIUS" src="../../assets/images/portals/ruckusunleashed/radius.png"></a></p>
+<p></p>
 <p>Then go to Services &gt; Wireless Hotspot and add a new Hotspot. Enter a name for it, and in Login Page enter the <code>Guest Portal URL</code> created earlier. In the options for <strong>After user is authenticated</strong> select <code>redirect to the following URL</code> and enter your preferred URL.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckusunleashed/hotspot-general.png" data-desc-position="bottom"><img alt="Hotspot" src="../../assets/images/portals/ruckusunleashed/hotspot-general.png"></a></p>
+<p></p>
 <p>On the next page in Authentication Servers section select the RADIUS server created previously. Keep the other options at their default values. Then click Next to go to the Walled Garden settings. Click on Add and enter the IP address of your portal server. If using <code>Payment</code> Flow you need to add <a href="../../walled-garden/">walled garden</a> entries for your payment gateway such as Stripe.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckusunleashed/walled-garden.png" data-desc-position="bottom"><img alt="Hotspot Walled Garden" src="../../assets/images/portals/ruckusunleashed/walled-garden.png"></a></p>
+<p></p>
 <p>On the next page related to Policy you do not need to create any rule. Click on the Add button to complete Hotspot configuration.</p>
 <p>Finally, go to Wi-Fi &gt; Wi-Fi Networks List and either create a new guest network (or modify an existing one). In <strong>Usage Type</strong> select <code>Hotspot Service</code>. In Hotspot Services select the service that you created.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckusunleashed/wi-fi.png" data-desc-position="bottom"><img alt="Wi-Fi" src="../../assets/images/portals/ruckusunleashed/wi-fi.png"></a></p>
+<p></p>
 <p>Click Next to go to Advanced Options. You do not need to change anything here. Click Add to complete the setup.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of Ruckus Unleashed:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckusunleashed/traffic-flow.png" data-desc-position="bottom"><img alt="Traffic Flow" src="../../assets/images/portals/ruckusunleashed/traffic-flow.png"></a></p>
+<p></p>
 
 
 

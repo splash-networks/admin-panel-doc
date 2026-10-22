@@ -1821,7 +1821,7 @@
 <p>To set up a portal for Ruckus One first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>Sonicwall</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/sonicwall/portal.png" data-desc-position="bottom"><img alt="Sonicwall Portal" src="../../assets/images/portals/sonicwall/portal.png"></a></p>
+<p></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1852,16 +1852,16 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 <p><strong>FQDN Hostname</strong>: the hostname as given in the example above</p>
 <p><strong>Manually set DNS entries</strong>: disabled</p>
 <p>Save and exit.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/sonicwall/address-object.png" data-desc-position="bottom"><img alt="Address Object" src="../../assets/images/portals/sonicwall/address-object.png"></a></p>
+<p></p>
 <p>If using <code>Payment</code> Flow you need to add <a href="../../walled-garden/">walled garden</a> entries for your payment gateway such as Stripe in a similar way as given above. Then go to Address Group, create a new address group and add these entries to it.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/sonicwall/address-group.png" data-desc-position="bottom"><img alt="Address Group Object" src="../../assets/images/portals/sonicwall/address-group.png"></a></p>
+<p></p>
 <p>Then go to Object &gt; Match Objects &gt; Zones and edit the zone on which you want to enable guest portal (such as LAN or DMZ). In Guest Services use these settings:</p>
 <p><strong>Enable Guest Service</strong>: enabled</p>
 <p><strong>Enable External Guest Authentication</strong>: enabled</p>
 <p><strong>Max Guests</strong>: based on your requirements</p>
 <p>If an address group was created for <code>Payment</code> Flow, then:</p>
 <p><strong>Pass Networks</strong>: enabled - and select the address group created in the previous step</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/sonicwall/zone-settings.png" data-desc-position="bottom"><img alt="Zone Settings" src="../../assets/images/portals/sonicwall/zone-settings.png"></a></p>
+<p></p>
 <p>Then click on the Configure button next to <code>Enable External Guest Authentication</code>. In General use these settings:</p>
 <p><strong>Client Redirect Protocol</strong>: <code>HTTPS</code></p>
 <p><strong>Web Server 1 Protocol</strong>: <code>HTTPS</code></p>
@@ -1869,16 +1869,16 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 <p><strong>Web Server 1 Port</strong>: <code>443</code></p>
 <p><strong>Enable Message Authentication</strong>: disabled</p>
 <p><strong>Enable Social Network Login</strong>: disabled</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/sonicwall/general.png" data-desc-position="bottom"><img alt="General" src="../../assets/images/portals/sonicwall/general.png"></a></p>
+<p></p>
 <p>Then go to <strong>Auth Pages</strong> tab. In <strong>External Authentication Pages of Web Server 1</strong>:</p>
 <p><strong>Login Page</strong>: the URL as given in the example earlier</p>
 <p>The remaining entries are not required when using Splash Air. However, leaving them blank is not allowed. So fill them up with a placeholder character like this:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/sonicwall/auth-pages.png" data-desc-position="bottom"><img alt="Auth Pages" src="../../assets/images/portals/sonicwall/auth-pages.png"></a></p>
+<p></p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of SonicWall firewall:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/sonicwall/traffic-flow.png" data-desc-position="bottom"><img alt="Traffic Flow" src="../../assets/images/portals/sonicwall/traffic-flow.png"></a></p>
+<p></p>
 
 
 

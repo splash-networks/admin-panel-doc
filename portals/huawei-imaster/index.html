@@ -1822,7 +1822,7 @@
 <p>To set up a portal for Huawei iMaster NCE Campus first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal, and in Hardware select <code>Huawei</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/portal.png" data-desc-position="bottom"><img alt="Huawei Portal" src="../../assets/images/portals/huawei/portal.png"></a></p>
+<p></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the venue and template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1837,10 +1837,10 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 <h2 id="huawei-imaster-nce-campus-settings">Huawei iMaster NCE-Campus Settings</h2>
 <p>Access iMaster NCE-Campus using web interface. Go to Design &gt; Template Management &gt; ACL. Create a new ACL. Set a name and number for it. Add a rule for the domain of your portal like this:</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/acl-domain-rule.png" data-desc-position="bottom"><img alt="ACL" src="../../assets/images/portals/huawei/acl-domain-rule.png" width="70%"></a>
+  
 </figure>
 <p>Add another rule for UDP port 53 (to allow DNS traffic).</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/imaster-acl.png" data-desc-position="bottom"><img alt="ACL" src="../../assets/images/portals/huawei/imaster-acl.png"></a></p>
+<p></p>
 <p>Then go to URL Template and create a new template. Specify a name for it. In <strong>Template type</strong> select <code>Cloud platform-relayed authentication</code>. In <strong>Carried parameter</strong> add the following parameters along with their values:</p>
 <table>
 <thead>
@@ -1864,10 +1864,10 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/imaster-url-template.png" data-desc-position="bottom"><img alt="URL Template" src="../../assets/images/portals/huawei/imaster-url-template.png"></a></p>
+<p></p>
 <p>Click OK to save the template.</p>
 <p>Go to <strong>RADIUS Relay Server</strong> and create a new template. Enter a name for it. <strong>Authentication service</strong> should be <code>Portal</code>. In <strong>Authentication server</strong> section add a new server. Enter the IP address and Secret of your RADIUS server (will be provided by Splash Networks' team) and click on the submit button to save it. In <strong>Authentication protocol</strong> select <code>PAP</code>. Keep the other settings at default and click OK to save the template.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/radius-relay.png" data-desc-position="bottom"><img alt="RADIUS Relay Server" src="../../assets/images/portals/huawei/radius-relay.png"></a></p>
+<p></p>
 <p>Next, go to Provision &gt; Device &gt; Site Configuration &gt; AP and create a new SSID (or modify an existing one). Enter the following settings:</p>
 <ul>
 <li><strong>SSID name</strong>: enter an SSID</li>
@@ -1903,7 +1903,7 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of Huawei iMaster NCE-Campus:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/imaster-traffic-flow.png" data-desc-position="bottom"><img alt="Huawei Traffic Flow" src="../../assets/images/portals/huawei/imaster-traffic-flow.png"></a></p>
+<p></p>
 
 
 
