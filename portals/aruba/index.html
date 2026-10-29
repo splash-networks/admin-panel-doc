@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -30,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1821,7 +1821,7 @@
 <p>To set up a portal for Aruba/HPE first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal, and in Hardware select <code>Aruba</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/arubai/portal.png" data-desc-position="bottom"><img alt="Aruba Portal" src="../../assets/images/portals/arubai/portal.png"></a></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the venue and template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1835,9 +1835,9 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
 <h2 id="arubahpe-settings">Aruba/HPE Settings</h2>
 <p>Login to your Aruba AP in instant mode via web and go to Configuration &gt; Networks. Select an existing network or create a new network on which you want to apply guest portal. Enter a name for it, and in Primary usage select <code>Guest</code>.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/arubai/new-network.png" data-desc-position="bottom"><img alt="New Network" src="../../assets/images/portals/arubai/new-network.png"></a></p>
 <p>On the Next screen in Client IP assignment select <code>Virtual Controller managed</code> and in Client VLAN assignment select <code>Default</code>.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/arubai/vlan.png" data-desc-position="bottom"><img alt="VLAN" src="../../assets/images/portals/arubai/vlan.png"></a></p>
 <p>Click Next to go to the third screen. In Splash page type select <code>External</code>. In Captive portal profile click on the <code>+</code> icon to create a new profile. Enter a name for it and in Type select <code>RADIUS Authentication</code>. The Guest Portal URL noted earlier now needs to be input in the <strong>IP or hostname</strong> and <strong>URL</strong> fields in the following way:</p>
 <p>Suppose the Guest portal URL is: <code>https://admin.splashnetworks.co/arubai/site1</code>. It will be divided into 2 sections:</p>
 <ul>
@@ -1849,21 +1849,21 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 </li>
 </ul>
 <p>Enter these values in <strong>IP or hostname</strong> and <strong>URL</strong> fields respectively. In <strong>Port</strong> enter <code>443</code>. Toggle <strong>Use HTTPS</strong> to on.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/arubai/portal-profile.png" data-desc-position="bottom"><img alt="Portal Profile" src="../../assets/images/portals/arubai/portal-profile.png"></a></p>
 <p>Click OK to save the profile. In <strong>Authentication server 1</strong> click on the <code>+</code> sign. In <strong>Type</strong> select <code>RADIUS</code>. Enter a name for it, and in <strong>IP address</strong> and <strong>Shared key</strong> enter the details of your RADIUS server (will be provided by Splash Networks' team).</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/arubai/auth-server.png" data-desc-position="bottom"><img alt="Auth Server" src="../../assets/images/portals/arubai/auth-server.png"></a></p>
 <p>Click OK to save RADIUS profile. Keep the other options at default.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/arubai/security.png" data-desc-position="bottom"><img alt="Portal Security" src="../../assets/images/portals/arubai/security.png"></a></p>
 <p>Click Next to go to the last screen. In <strong>Access Rules</strong> <code>Role-based</code> should be selected. In <strong>Roles</strong> click on the <code>+</code> icon to create a new role. Enter a name for it, such as <code>guest_portal</code>. The default access rule is set to <em>Allow any to all destinations</em>. Edit it and change the Action to <code>Deny</code>. Add a new rule with Destination type <code>to a particular server</code> to allow access to captive portal server. In <strong>IP</strong> enter the IP of Splash Air server. The remaining options will remain at their default values.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/arubai/rule.png" data-desc-position="bottom"><img alt="Rule" src="../../assets/images/portals/arubai/rule.png"></a></p>
 <p>Bring your newly added rule to the top. Toggle <strong>Assign pre-authentication role</strong> option to On and in the dropdown menu select your newly created profile <code>guest_portal</code>. The final settings should look like this:</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/arubai/access.png" data-desc-position="bottom"><img alt="Access" src="../../assets/images/portals/arubai/access.png"></a></p>
 <p>Click on Finish to save the settings.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of Aruba/HPE:</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/arubai/traffic-flow.png" data-desc-position="bottom"><img alt="Aruba Traffic Flow" src="../../assets/images/portals/arubai/traffic-flow.png"></a></p>
 
 
 
@@ -1919,7 +1919,7 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
                 
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! Help us improve this page by <a href="mailto:support@splashnetworks.co?subject=Docs%20feedback%3A%20Aruba/HPE&amp;body=Page%3A%20https://docs.splashnetworks.co/portals/aruba/">emailing our support team</a>.
             </div>
           
         </div>
@@ -2067,10 +2067,10 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

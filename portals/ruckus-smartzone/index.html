@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -30,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1865,12 +1865,12 @@
 <p>To set up a portal for Ruckus SmartZone (SZ) or virtual SmartZone (vSZ) first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="ruckus-sz-northbound-portal-interface">Ruckus SZ Northbound Portal Interface</h2>
 <p>Access SmartZone using web interface. Go to Administration &gt; WISPr Northbound Interface. Enable Northbound Portal Interface Support and enter a username and password.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckus/nbi.png" data-desc-position="bottom"><img alt="Ruckus NBI" src="../../assets/images/portals/ruckus/nbi.png"></a></p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>On Splash Air go to Controllers &gt; Ruckus SmartZone and add a new controller. Specify a name for it, and enter the username and password created in the previous step. Also enter the WAN IP or hostname of Ruckus SZ.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckus/controller.png" data-desc-position="bottom"><img alt="Ruckus Controller" src="../../assets/images/portals/ruckus/controller.png"></a></p>
 <p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>Ruckus SmartZone</code>. Select the controller added in the previous step. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckus/portal-url.png" data-desc-position="bottom"><img alt="Ruckus Portal" src="../../assets/images/portals/ruckus/portal-url.png"></a></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1882,25 +1882,25 @@ Expiry: the time in days after which a repeat user will have to enter their data
 Duration (seconds) after email verification: when using "Link" type Flow it is the "Session-Timeout" a user will receive via RADIUS after successful email verification 
 </code></pre></div>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckus/portal-settings.png" data-desc-position="bottom"><img alt="Ruckus Portal Settings" src="../../assets/images/portals/ruckus/portal-settings.png"></a></p>
 <h2 id="smartzone-settings">SmartZone Settings</h2>
 <p>Access SmartZone using web interface. Go to Network &gt; Wireless LAN and select your zone. Create a new WLAN (or edit an existing one). Enter a name and SSID. In Authentication Options select <strong>Hotspot (WISPr)</strong>. In Encryption Options select <strong>None</strong>.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckus/wlan-settings.png" data-desc-position="bottom"><img alt="WLAN Settings" src="../../assets/images/portals/ruckus/wlan-settings.png"></a></p>
 <p>In Hotspot Portal create a new profile in Hotspot (WISPr) Portal section. In Portal Name enter a name for it. In Login URL select <strong>External</strong>. In Redirect unauthenticated user Primary enter the Guest Portal URL copied earlier.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckus/hotspot-settings.png" data-desc-position="bottom"><img alt="Hotspot Settings" src="../../assets/images/portals/ruckus/hotspot-settings.png"></a></p>
 <p>In Walled Garden add the IP address of the Splash Air server:</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckus/walled-garden.png" data-desc-position="bottom"><img alt="Hotspot Walled Garden" src="../../assets/images/portals/ruckus/walled-garden.png"></a></p>
 <p>If using <code>Payment</code> flow <a href="../../walled-garden/">walled garden</a> entries for your payment gateway such as Stripe should be added as well.</p>
 <figure>
-  
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckus/walled-garden-payment.png" data-desc-position="bottom"><img alt="Hotspot Settings" src="../../assets/images/portals/ruckus/walled-garden-payment.png" width="90%"></a>
 </figure>
 <p>Click Apply to save the settings.</p>
 <p>In Hotspot Portal &gt; Authentication Server select On and select the option <strong>Always Accept</strong>.</p>
 <figure>
-  
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckus/hotspot-portal.png" data-desc-position="bottom"><img alt="Hotspot Settings" src="../../assets/images/portals/ruckus/hotspot-portal.png" width="80%"></a>
 </figure>
 <p>If using <code>Payment</code> or <code>Vouher</code> flow you need to add the details of your RADIUS server, such as IP address and shared secret (will be provided by Splash Networks' team) in Authentication and Accounting Server.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckus/radius.png" data-desc-position="bottom"><img alt="RADIUS" src="../../assets/images/portals/ruckus/radius.png"></a></p>
 <h2 id="mac-encryption">MAC Encryption</h2>
 <p>Access SmartZone via SSH and enter the following command:
 </p><div class="highlight"><pre><span></span><code>ruckus(config)# no encrypt-mac-ip
@@ -1910,7 +1910,7 @@ This will ensure that the MAC and IP address of customer are recorded in plain-t
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of Ruckus SmartZone:</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/ruckus/traffic-flow.png" data-desc-position="bottom"><img alt="Traffic Flow" src="../../assets/images/portals/ruckus/traffic-flow.png"></a></p>
 
 
 
@@ -1966,7 +1966,7 @@ This will ensure that the MAC and IP address of customer are recorded in plain-t
                 
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! Help us improve this page by <a href="mailto:support@splashnetworks.co?subject=Docs%20feedback%3A%20Ruckus%20SmartZone&amp;body=Page%3A%20https://docs.splashnetworks.co/portals/ruckus-smartzone/">emailing our support team</a>.
             </div>
           
         </div>
@@ -2114,10 +2114,10 @@ This will ensure that the MAC and IP address of customer are recorded in plain-t
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

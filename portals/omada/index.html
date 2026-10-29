@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -30,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1821,9 +1821,9 @@
 <p>To set up a portal for TP-Link Omada first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>On Splash Air go to Controllers &gt; TP-Link Omada and add a new controller. Specify a name for it, and enter the WAN IP or hostname of the Omada controller.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/controller.png" data-desc-position="bottom"><img alt="Omada Controller" src="../../assets/images/portals/omada/controller.png"></a></p>
 <p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>TP-Link Omada</code>. Select the controller added in the previous step. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/portal-url.png" data-desc-position="bottom"><img alt="Omada Portal" src="../../assets/images/portals/omada/portal-url.png"></a></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1835,22 +1835,22 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 Redirect URL: the URL a user is redirected to after successful portal authorization
 </code></pre></div>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/portal-settings.png" data-desc-position="bottom"><img alt="Omada Portal Settings" src="../../assets/images/portals/omada/portal-settings.png"></a></p>
 <h2 id="omada-controller-settings">Omada Controller Settings</h2>
 <p>Access Omada controller using web interface. Go to Settings &gt; Profile &gt; RADIUS Profile and create a new profile. Enter the IP address/URL and secret of your RADIUS server (details will be provided by Splash team).</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/radius-profile.png" data-desc-position="bottom"><img alt="RADIUS Profile" src="../../assets/images/portals/omada/radius-profile.png"></a></p>
 <p>Next, go to Settings &gt; Authentication &gt; Portal and create a new portal. Specify a name for it and enable the Portal option. Select the SSID &amp; Network on which portal should be enabled. <strong>HTTPS Redirection</strong> should be disabled. In <strong>Authentication</strong> tab select <code>RADIUS Server</code> as the <strong>Authentication Type</strong>. In <strong>RADIUS Profile</strong> select the profile created in the previous step. In <strong>Authentication Mode</strong> select <code>PAP</code>. In <strong>Portal Customization</strong> select <code>External Web Portal</code> and paste the Guest Portal URL copied earlier.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/portal.png" data-desc-position="bottom"><img alt="Portal" src="../../assets/images/portals/omada/portal.png"></a></p>
 <p>Then go to Settings &gt; Authentication &gt; Portal &gt; Access Control and enable <strong>Pre-Authentication Access</strong>. Add a new entry and put the IP address of the Splash Air server in it. If using <code>Payment</code> Flow you need to add <a href="../../walled-garden/">walled garden</a> entries for your payment gateway such as Stripe in Pre-Authorization Access List as well.</p>
 <figure>
-  
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/access-control.png" data-desc-position="bottom"><img alt="Access Control" src="../../assets/images/portals/omada/access-control.png" width="80%"></a>
 </figure>
 <p>Click Apply to save the settings.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of TP-Link Omada Controller:</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/omada/traffic-flow.png" data-desc-position="bottom"><img alt="Traffic Flow" src="../../assets/images/portals/omada/traffic-flow.png"></a></p>
 
 
 
@@ -1906,7 +1906,7 @@ Redirect URL: the URL a user is redirected to after successful portal authorizat
                 
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! Help us improve this page by <a href="mailto:support@splashnetworks.co?subject=Docs%20feedback%3A%20TP-Link%20Omada&amp;body=Page%3A%20https://docs.splashnetworks.co/portals/omada/">emailing our support team</a>.
             </div>
           
         </div>
@@ -2054,10 +2054,10 @@ Redirect URL: the URL a user is redirected to after successful portal authorizat
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

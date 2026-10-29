@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -30,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1821,7 +1821,7 @@
 <p>To set up a portal for Aruba/HPE Instant On first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal, and in Hardware select <code>Aruba Instant On</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/portal/portal-aruba.png" data-desc-position="bottom"><img alt="Aruba Portal" src="../../assets/images/portals/portal/portal-aruba.png"></a></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the venue and template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1832,20 +1832,20 @@ Duration (seconds): the time in seconds for which a user is authorized on the ne
 Expiry: the time in days after which a repeat user will have to enter their data again on the portal
 </code></pre></div>
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/portal/portal-settings-aruba.png" data-desc-position="bottom"><img alt="Aruba Portal Settings" src="../../assets/images/portals/portal/portal-settings-aruba.png"></a></p>
 <h2 id="instant-on-portal-settings">Instant On Portal Settings</h2>
 <p>Login to your account on the <a href="https://portal.instant-on.hpe.com/">HPE Instant On cloud</a> and select the site on which you want to apply guest portal. Create a new Network of type <code>Guest</code>. In Network Options enable <code>Guest Portal</code>.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/aruba/aruba-create-network.png" data-desc-position="bottom"><img alt="Aruba Guest Network" src="../../assets/images/portals/aruba/aruba-create-network.png"></a></p>
 <p>In Networks &gt; Guest Portal select Type <code>External</code>. In Portal URL select the Guest Portal URL that you copied earlier.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/aruba/aruba-portal-url.png" data-desc-position="bottom"><img alt="Aruba Portal URL" src="../../assets/images/portals/aruba/aruba-portal-url.png"></a></p>
 <p>In RADIUS profile create a new RADIUS profile and add the details of your RADIUS server, such as IP address and shared secret (will be provided by Splash Networks' team). <strong>Require RADIUS Message-Authenticator</strong> should be unchecked:</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/aruba/radius.png" data-desc-position="bottom"><img alt="Aruba Portal URL" src="../../assets/images/portals/aruba/radius.png"></a></p>
 <p>If using <code>Payment</code> Flow you need to add <a href="../../walled-garden/">walled garden</a> entries for your payment gateway such as Stripe in Allowed Domains.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of HPE/Aruba Instant On:</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/aruba/aruba-traffic-flow.png" data-desc-position="bottom"><img alt="Aruba Traffic Flow" src="../../assets/images/portals/aruba/aruba-traffic-flow.png"></a></p>
 
 
 
@@ -1901,7 +1901,7 @@ Expiry: the time in days after which a repeat user will have to enter their data
                 
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! Help us improve this page by <a href="mailto:support@splashnetworks.co?subject=Docs%20feedback%3A%20Aruba/HPE%20Instant%20On&amp;body=Page%3A%20https://docs.splashnetworks.co/portals/aruba-instant-on/">emailing our support team</a>.
             </div>
           
         </div>
@@ -2049,10 +2049,10 @@ Expiry: the time in days after which a repeat user will have to enter their data
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

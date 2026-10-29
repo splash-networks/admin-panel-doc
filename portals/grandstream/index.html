@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -30,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1821,7 +1821,7 @@
 <p>To set up a portal for Grandstream first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal, and in Hardware select <code>Grandstream</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/grandstream/portal.png" data-desc-position="bottom"><img alt="Portal" src="../../assets/images/portals/grandstream/portal.png"></a></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the venue and template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1836,7 +1836,7 @@ Duration (seconds): the time in seconds for which a user is authorized on the ne
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
 <h2 id="grandstream-settings">Grandstream Settings</h2>
 <p>Login to your account on the <a href="https://www.gdms.cloud/gwn">GDMS account</a> and go to Settings &gt; Profiles &gt; RADIUS. Add a new RADIUS profile. The IP address and RADIUS secret shared by Splash Networks' support team will be entered here:</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/grandstream/radius.png" data-desc-position="bottom"><img alt="RADIUS" src="../../assets/images/portals/grandstream/radius.png"></a></p>
 <p>Next, go to Settings &gt; Wi-Fi &gt; Portal Policy and add a new policy. Add a name for it and enter the following settings:</p>
 <ul>
 <li><strong>Splash page</strong>: External</li>
@@ -1849,20 +1849,20 @@ Duration (seconds): the time in seconds for which a user is authorized on the ne
 <li><strong>Enable HTTPS Redirection</strong>: disabled</li>
 <li><strong>Enable Secure Portal</strong>: disabled</li>
 </ul>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/grandstream/portal-policy.png" data-desc-position="bottom"><img alt="Portal Policy" src="../../assets/images/portals/grandstream/portal-policy.png"></a></p>
 <p>In Pre Authentication Rules enter the hostname of your Splash Air server. If using <code>Payment</code> Flow you need to add <a href="../../walled-garden/">walled garden</a> entries for your payment gateway such as Stripe in Allowed Domains.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/grandstream/pre-authentication.png" data-desc-position="bottom"><img alt="Portal Policy" src="../../assets/images/portals/grandstream/pre-authentication.png"></a></p>
 <p>Finally, go to Settings &gt; Wi-Fi &gt; Wireless LAN and create a new Wireless LAN (or edit an existing one). Enter a name for it, and use the following settings:</p>
 <ul>
 <li><strong>Enable Captive Portal</strong>: enabled</li>
 <li><strong>Captive Portal Policy</strong>: select the Policy created in the previous step</li>
 </ul>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/grandstream/wireless.png" data-desc-position="bottom"><img alt="WLAN" src="../../assets/images/portals/grandstream/wireless.png"></a></p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of Grandstream:</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/grandstream/traffic-flow.png" data-desc-position="bottom"><img alt="Traffic Flow" src="../../assets/images/portals/grandstream/traffic-flow.png"></a></p>
 
 
 
@@ -1918,7 +1918,7 @@ Duration (seconds): the time in seconds for which a user is authorized on the ne
                 
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! Help us improve this page by <a href="mailto:support@splashnetworks.co?subject=Docs%20feedback%3A%20Grandstream&amp;body=Page%3A%20https://docs.splashnetworks.co/portals/grandstream/">emailing our support team</a>.
             </div>
           
         </div>
@@ -2066,10 +2066,10 @@ Duration (seconds): the time in seconds for which a user is authorized on the ne
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

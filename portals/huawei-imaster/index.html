@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -30,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1822,7 +1822,7 @@
 <p>To set up a portal for Huawei iMaster NCE Campus first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal, and in Hardware select <code>Huawei</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/portal.png" data-desc-position="bottom"><img alt="Huawei Portal" src="../../assets/images/portals/huawei/portal.png"></a></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
 <p>Select the venue and template and click on the Create button.</p>
 <h2 id="portal-settings">Portal Settings</h2>
@@ -1837,10 +1837,10 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 <h2 id="huawei-imaster-nce-campus-settings">Huawei iMaster NCE-Campus Settings</h2>
 <p>Access iMaster NCE-Campus using web interface. Go to Design &gt; Template Management &gt; ACL. Create a new ACL. Set a name and number for it. Add a rule for the domain of your portal like this:</p>
 <figure>
-  
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/acl-domain-rule.png" data-desc-position="bottom"><img alt="ACL" src="../../assets/images/portals/huawei/acl-domain-rule.png" width="70%"></a>
 </figure>
 <p>Add another rule for UDP port 53 (to allow DNS traffic).</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/imaster-acl.png" data-desc-position="bottom"><img alt="ACL" src="../../assets/images/portals/huawei/imaster-acl.png"></a></p>
 <p>Then go to URL Template and create a new template. Specify a name for it. In <strong>Template type</strong> select <code>Cloud platform-relayed authentication</code>. In <strong>Carried parameter</strong> add the following parameters along with their values:</p>
 <table>
 <thead>
@@ -1864,10 +1864,10 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 </tr>
 </tbody>
 </table>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/imaster-url-template.png" data-desc-position="bottom"><img alt="URL Template" src="../../assets/images/portals/huawei/imaster-url-template.png"></a></p>
 <p>Click OK to save the template.</p>
 <p>Go to <strong>RADIUS Relay Server</strong> and create a new template. Enter a name for it. <strong>Authentication service</strong> should be <code>Portal</code>. In <strong>Authentication server</strong> section add a new server. Enter the IP address and Secret of your RADIUS server (will be provided by Splash Networks' team) and click on the submit button to save it. In <strong>Authentication protocol</strong> select <code>PAP</code>. Keep the other settings at default and click OK to save the template.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/radius-relay.png" data-desc-position="bottom"><img alt="RADIUS Relay Server" src="../../assets/images/portals/huawei/radius-relay.png"></a></p>
 <p>Next, go to Provision &gt; Device &gt; Site Configuration &gt; AP and create a new SSID (or modify an existing one). Enter the following settings:</p>
 <ul>
 <li><strong>SSID name</strong>: enter an SSID</li>
@@ -1903,7 +1903,7 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 <p>To troubleshoot problems it is important to understand the components involved in the captive portal user authorization process and the interactions between them.</p>
 <h3 id="traffic-flow">Traffic Flow</h3>
 <p>Here is the traffic flow in the case of Huawei iMaster NCE-Campus:</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/huawei/imaster-traffic-flow.png" data-desc-position="bottom"><img alt="Huawei Traffic Flow" src="../../assets/images/portals/huawei/imaster-traffic-flow.png"></a></p>
 
 
 
@@ -1959,7 +1959,7 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
                 
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! Help us improve this page by <a href="mailto:support@splashnetworks.co?subject=Docs%20feedback%3A%20Huawei%20iMaster%20NCE-Campus&amp;body=Page%3A%20https://docs.splashnetworks.co/portals/huawei-imaster/">emailing our support team</a>.
             </div>
           
         </div>
@@ -2107,10 +2107,10 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "header.autohide", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   
