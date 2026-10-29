@@ -123,4 +123,4 @@ extra:
           data: 0
           note: >-
             Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+            <a href="mailto:support@splashnetworks.co?subject=Docs%20feedback%3A%20{title}&body=Page%3A%20https://docs.splashnetworks.co{url}">emailing our support team</a>.
