@@ -308,6 +308,367 @@
                 }
             }
         },
+        "/hardware-types": {
+            "get": {
+                "operationId": "hardware-types:index",
+                "tags": [
+                    "HardwareType"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Hardware types retrieved successfully"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/HardwareType"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/portals": {
+            "get": {
+                "operationId": "portals:index",
+                "tags": [
+                    "PortalApi"
+                ],
+                "parameters": [
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 500
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "venue_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "template_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Portals retrieved successfully"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Portal"
+                                            }
+                                        },
+                                        "pagination": {
+                                            "type": "object",
+                                            "properties": {
+                                                "current_page": {
+                                                    "type": "integer"
+                                                },
+                                                "per_page": {
+                                                    "type": "integer"
+                                                },
+                                                "from": {
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "to": {
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "has_more_pages": {
+                                                    "type": "boolean"
+                                                }
+                                            },
+                                            "required": [
+                                                "current_page",
+                                                "per_page",
+                                                "from",
+                                                "to",
+                                                "has_more_pages"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data",
+                                        "pagination"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            },
+            "post": {
+                "operationId": "portals:store",
+                "tags": [
+                    "PortalApi"
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "host_name": {
+                                        "type": "string",
+                                        "maxLength": 255
+                                    },
+                                    "business_id": {
+                                        "type": "integer"
+                                    },
+                                    "venue_id": {
+                                        "type": "integer"
+                                    },
+                                    "hardware_types_id": {
+                                        "type": "integer"
+                                    },
+                                    "template_id": {
+                                        "type": "integer"
+                                    },
+                                    "site_id": {
+                                        "type": "string",
+                                        "maxLength": 255
+                                    },
+                                    "secret": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "maxLength": 255
+                                    },
+                                    "unifi_controller_id": {
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ]
+                                    },
+                                    "ruckus_smartzone_controller_id": {
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ]
+                                    },
+                                    "omada_controller_id": {
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ]
+                                    },
+                                    "protocol": {
+                                        "type": "string",
+                                        "enum": [
+                                            "PAP",
+                                            "CHAP"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "host_name",
+                                    "business_id",
+                                    "venue_id",
+                                    "hardware_types_id",
+                                    "template_id",
+                                    "site_id"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Portal created successfully"
+                                        },
+                                        "data": {
+                                            "$ref": "#/components/schemas/Portal"
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Your license limit for portals has been reached"
+                                        },
+                                        "data": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            }
+        },
+        "/portals/{id}": {
+            "delete": {
+                "operationId": "portals:destroy",
+                "tags": [
+                    "PortalApi"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Portal deleted successfully"
+                                        },
+                                        "data": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Portal not found"
+                                        },
+                                        "data": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/teams": {
             "get": {
                 "operationId": "teams:index",
@@ -1280,6 +1641,380 @@
                 }
             }
         },
+        "/templates": {
+            "get": {
+                "operationId": "templates:index",
+                "tags": [
+                    "Template"
+                ],
+                "parameters": [
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 500
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Templates retrieved successfully"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Template"
+                                            }
+                                        },
+                                        "pagination": {
+                                            "type": "object",
+                                            "properties": {
+                                                "current_page": {
+                                                    "type": "integer"
+                                                },
+                                                "per_page": {
+                                                    "type": "integer"
+                                                },
+                                                "from": {
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "to": {
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "has_more_pages": {
+                                                    "type": "boolean"
+                                                }
+                                            },
+                                            "required": [
+                                                "current_page",
+                                                "per_page",
+                                                "from",
+                                                "to",
+                                                "has_more_pages"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data",
+                                        "pagination"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            },
+            "post": {
+                "operationId": "templates:store",
+                "tags": [
+                    "Template"
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "maxLength": 255
+                                    },
+                                    "flow": {
+                                        "$ref": "#/components/schemas/TemplateFlow"
+                                    },
+                                    "medium": {
+                                        "anyOf": [
+                                            {
+                                                "$ref": "#/components/schemas/TemplateMedium"
+                                            },
+                                            {
+                                                "type": "null"
+                                            }
+                                        ]
+                                    },
+                                    "design": {
+                                        "$ref": "#/components/schemas/TemplateDesign"
+                                    },
+                                    "font": {
+                                        "type": "string",
+                                        "enum": [
+                                            "sans",
+                                            "suisse"
+                                        ]
+                                    },
+                                    "logo": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "format": "binary",
+                                        "contentMediaType": "application/octet-stream",
+                                        "description": "Maximum file size: 256 kilobytes."
+                                    },
+                                    "logo_size": {
+                                        "type": "string",
+                                        "enum": [
+                                            "small",
+                                            "medium",
+                                            "large"
+                                        ]
+                                    },
+                                    "btn_color": {
+                                        "type": "string"
+                                    },
+                                    "text_color": {
+                                        "type": "string",
+                                        "enum": [
+                                            "#111827",
+                                            "#fafafa"
+                                        ]
+                                    },
+                                    "hyperlink_text_color": {
+                                        "type": "string"
+                                    },
+                                    "survey_id": {
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ]
+                                    },
+                                    "show_when": {
+                                        "type": "string",
+                                        "enum": [
+                                            "immediately",
+                                            "returning"
+                                        ]
+                                    },
+                                    "show_when_after": {
+                                        "type": "integer",
+                                        "minimum": 0
+                                    }
+                                },
+                                "required": [
+                                    "name"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Template created successfully"
+                                        },
+                                        "data": {
+                                            "$ref": "#/components/schemas/Template"
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "anyOf": [
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "success": {
+                                                    "type": "boolean"
+                                                },
+                                                "message": {
+                                                    "type": "string",
+                                                    "const": "Your license only allows the simple flow"
+                                                },
+                                                "data": {
+                                                    "type": "null"
+                                                }
+                                            },
+                                            "required": [
+                                                "success",
+                                                "message",
+                                                "data"
+                                            ]
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "success": {
+                                                    "type": "boolean"
+                                                },
+                                                "message": {
+                                                    "type": "string",
+                                                    "const": "Your license limit for templates has been reached"
+                                                },
+                                                "data": {
+                                                    "type": "null"
+                                                }
+                                            },
+                                            "required": [
+                                                "success",
+                                                "message",
+                                                "data"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            }
+        },
+        "/templates/{id}": {
+            "delete": {
+                "operationId": "templates:destroy",
+                "tags": [
+                    "Template"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Template deleted successfully"
+                                        },
+                                        "data": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "data": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Template not found"
+                                        },
+                                        "data": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/users": {
             "get": {
                 "operationId": "users:index",
@@ -2146,6 +2881,136 @@
                 ],
                 "title": "Customer"
             },
+            "HardwareType": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    },
+                    "updated_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name",
+                    "created_at",
+                    "updated_at"
+                ],
+                "title": "HardwareType"
+            },
+            "Portal": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "business_id": {
+                        "type": "integer"
+                    },
+                    "hardware_types_id": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "host_name": {
+                        "type": "string"
+                    },
+                    "site_id": {
+                        "type": "string"
+                    },
+                    "venue_id": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "unifi_controller_id": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "template_id": {
+                        "type": "integer"
+                    },
+                    "created_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    },
+                    "updated_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    },
+                    "team_id": {
+                        "type": "integer"
+                    },
+                    "ruckus_smartzone_controller_id": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "omada_controller_id": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "secret": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "protocol": {
+                        "type": "string"
+                    },
+                    "is_active": {
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "id",
+                    "business_id",
+                    "hardware_types_id",
+                    "host_name",
+                    "site_id",
+                    "venue_id",
+                    "unifi_controller_id",
+                    "template_id",
+                    "created_at",
+                    "updated_at",
+                    "team_id",
+                    "ruckus_smartzone_controller_id",
+                    "omada_controller_id",
+                    "secret",
+                    "protocol",
+                    "is_active"
+                ],
+                "title": "Portal"
+            },
             "Team": {
                 "type": "object",
                 "properties": {
@@ -2217,6 +3082,465 @@
                     "updated_at"
                 ],
                 "title": "TeamUser"
+            },
+            "Template": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "logo": {
+                        "type": "string"
+                    },
+                    "background": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "heading1": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "heading2": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "terms": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "flow": {
+                        "$ref": "#/components/schemas/TemplateFlow"
+                    },
+                    "medium": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/components/schemas/TemplateMedium"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "font": {
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    },
+                    "updated_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    },
+                    "fname_placeholder": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "lname_placeholder": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "email_placeholder": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "btn_color": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "btn_text": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "is_firstName": {
+                        "type": "boolean"
+                    },
+                    "is_lastName": {
+                        "type": "boolean"
+                    },
+                    "is_company": {
+                        "type": "integer"
+                    },
+                    "is_email": {
+                        "type": "boolean"
+                    },
+                    "is_phone": {
+                        "type": "boolean"
+                    },
+                    "company_placeholder": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "is_tos": {
+                        "type": "boolean"
+                    },
+                    "tos": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "team_id": {
+                        "type": "integer"
+                    },
+                    "is_announcement": {
+                        "type": "boolean"
+                    },
+                    "is_image": {
+                        "type": "boolean"
+                    },
+                    "is_video": {
+                        "type": "boolean"
+                    },
+                    "announcement_text": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "image_ad": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "video_ad": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "footer": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "is_marketing": {
+                        "type": "boolean"
+                    },
+                    "marketing_text": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "is_address": {
+                        "type": "boolean"
+                    },
+                    "address_placeholder": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "is_password": {
+                        "type": "boolean"
+                    },
+                    "password_placeholder": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "template_password": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "text_color": {
+                        "type": "string"
+                    },
+                    "background_mobile": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "design": {
+                        "type": "string"
+                    },
+                    "image_url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "survey_id": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "show_when": {
+                        "type": "string"
+                    },
+                    "show_when_after": {
+                        "type": "integer"
+                    },
+                    "logo_size": {
+                        "type": "string"
+                    },
+                    "hyperlink_text_color": {
+                        "type": "string"
+                    },
+                    "use_field_icons": {
+                        "type": "boolean"
+                    },
+                    "force_ad_after_submit": {
+                        "type": "boolean"
+                    },
+                    "fname_hint": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "fname_error": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "lname_hint": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "lname_error": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "email_hint": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "email_error": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "company_hint": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "company_error": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "phone_hint": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "phone_error": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "address_hint": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "address_error": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "password_hint": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "password_error": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "tos_title": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "tos_pre_text": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "username_placeholder": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "payment_password_placeholder": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "tos_mandatory": {
+                        "type": "boolean"
+                    },
+                    "tos_pre_checked": {
+                        "type": "boolean"
+                    },
+                    "is_active": {
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name",
+                    "logo",
+                    "background",
+                    "heading1",
+                    "heading2",
+                    "terms",
+                    "flow",
+                    "medium",
+                    "font",
+                    "created_at",
+                    "updated_at",
+                    "fname_placeholder",
+                    "lname_placeholder",
+                    "email_placeholder",
+                    "btn_color",
+                    "btn_text",
+                    "is_firstName",
+                    "is_lastName",
+                    "is_company",
+                    "is_email",
+                    "is_phone",
+                    "company_placeholder",
+                    "is_tos",
+                    "tos",
+                    "team_id",
+                    "is_announcement",
+                    "is_image",
+                    "is_video",
+                    "announcement_text",
+                    "image_ad",
+                    "video_ad",
+                    "footer",
+                    "is_marketing",
+                    "marketing_text",
+                    "is_address",
+                    "address_placeholder",
+                    "is_password",
+                    "password_placeholder",
+                    "template_password",
+                    "text_color",
+                    "background_mobile",
+                    "design",
+                    "image_url",
+                    "survey_id",
+                    "show_when",
+                    "show_when_after",
+                    "logo_size",
+                    "hyperlink_text_color",
+                    "use_field_icons",
+                    "force_ad_after_submit",
+                    "fname_hint",
+                    "fname_error",
+                    "lname_hint",
+                    "lname_error",
+                    "email_hint",
+                    "email_error",
+                    "company_hint",
+                    "company_error",
+                    "phone_hint",
+                    "phone_error",
+                    "address_hint",
+                    "address_error",
+                    "password_hint",
+                    "password_error",
+                    "tos_title",
+                    "tos_pre_text",
+                    "username_placeholder",
+                    "payment_password_placeholder",
+                    "tos_mandatory",
+                    "tos_pre_checked",
+                    "is_active"
+                ],
+                "title": "Template"
+            },
+            "TemplateDesign": {
+                "type": "string",
+                "enum": [
+                    "old",
+                    "new"
+                ],
+                "title": "TemplateDesign"
+            },
+            "TemplateFlow": {
+                "type": "string",
+                "enum": [
+                    "simple",
+                    "otp",
+                    "link",
+                    "payment",
+                    "voucher"
+                ],
+                "title": "TemplateFlow"
+            },
+            "TemplateMedium": {
+                "type": "string",
+                "enum": [
+                    "none",
+                    "sms",
+                    "email"
+                ],
+                "title": "TemplateMedium"
             },
             "User": {
                 "type": "object",
