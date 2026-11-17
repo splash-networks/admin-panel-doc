@@ -134,6 +134,81 @@
                 }
             }
         },
+        "/customers/{id}": {
+            "delete": {
+                "operationId": "customers:destroy",
+                "summary": "Remove the specified resource from storage",
+                "tags": [
+                    "Customer"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Customer deleted successfully"
+                                        },
+                                        "data": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Customer not found"
+                                        },
+                                        "data": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/customer-visits": {
             "get": {
                 "operationId": "customer-visits:index",
@@ -304,6 +379,81 @@
                     },
                     "422": {
                         "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            }
+        },
+        "/customer-visits/{id}": {
+            "delete": {
+                "operationId": "customer-visits:destroy",
+                "summary": "Remove the specified resource from storage",
+                "tags": [
+                    "CustomerVisit"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Customer visit deleted successfully"
+                                        },
+                                        "data": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "const": "Customer visit not found"
+                                        },
+                                        "data": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "success",
+                                        "message",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -519,6 +669,13 @@
                                         "enum": [
                                             "PAP",
                                             "CHAP"
+                                        ]
+                                    },
+                                    "sonicwall_mode": {
+                                        "type": "string",
+                                        "enum": [
+                                            "CGI",
+                                            "API"
                                         ]
                                     }
                                 },
@@ -2989,6 +3146,9 @@
                     },
                     "is_active": {
                         "type": "boolean"
+                    },
+                    "sonicwall_mode": {
+                        "type": "string"
                     }
                 },
                 "required": [
@@ -3007,7 +3167,8 @@
                     "omada_controller_id",
                     "secret",
                     "protocol",
-                    "is_active"
+                    "is_active",
+                    "sonicwall_mode"
                 ],
                 "title": "Portal"
             },
