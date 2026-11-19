@@ -677,6 +677,14 @@
                                             "CGI",
                                             "API"
                                         ]
+                                    },
+                                    "sonicwall_hostname": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "pattern": "^[A-Za-z0-9]([A-Za-z0-9.-]*[A-Za-z0-9])?(:\\d{1,5})?$",
+                                        "maxLength": 255
                                     }
                                 },
                                 "required": [
@@ -2732,7 +2740,7 @@
                                         "format": "email",
                                         "maxLength": 255
                                     },
-                                    "number_of_days": {
+                                    "number_of_hours": {
                                         "type": "integer",
                                         "minimum": 1
                                     },
@@ -3149,6 +3157,12 @@
                     },
                     "sonicwall_mode": {
                         "type": "string"
+                    },
+                    "sonicwall_hostname": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     }
                 },
                 "required": [
@@ -3168,7 +3182,8 @@
                     "secret",
                     "protocol",
                     "is_active",
-                    "sonicwall_mode"
+                    "sonicwall_mode",
+                    "sonicwall_hostname"
                 ],
                 "title": "Portal"
             },
@@ -3850,7 +3865,7 @@
                         ],
                         "format": "date-time"
                     },
-                    "number_of_days": {
+                    "number_of_hours": {
                         "type": "integer"
                     },
                     "upspeed": {
@@ -3880,7 +3895,7 @@
                     "team_id",
                     "created_at",
                     "updated_at",
-                    "number_of_days",
+                    "number_of_hours",
                     "upspeed",
                     "downspeed",
                     "volumecap",
