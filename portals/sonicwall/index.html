@@ -15,14 +15,14 @@
         <link rel="prev" href="../ruijie/">
       
       
-        <link rel="next" href="../teltonika/">
+        <link rel="next" href="../sonicwall-api/">
       
       
         
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
     
     
       
@@ -404,6 +404,8 @@
       
         
           
+        
+      
         
       
         
@@ -1262,6 +1264,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../sonicwall-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SonicWall (v7.3 and above)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../teltonika/" class="md-nav__link">
         
   
@@ -1818,12 +1848,13 @@
 
   <h1>SonicWall</h1>
 
-<p>To set up a portal for Ruckus One first you need to <a href="../../defining-templates/">create a template</a>.</p>
+<p><em>This guide is only for SonicWall versions below 7.3.2. For version 7.3.2 and above, click <a href="../sonicwall-api/">here</a>.</em></p>
+<p>To set up a portal for SonicWall first you need to <a href="../../defining-templates/">create a template</a>.</p>
 <h2 id="add-a-portal">Add a Portal</h2>
 <p>To create a portal go to the Portals tab and click on the New portal button. Enter a name for the portal and specify the business and venue. In Hardware select <code>Sonicwall</code>. Then, enter a Site ID based on which the path of the portal URL will be defined.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/portals/sonicwall/portal.png" data-desc-position="bottom"><img alt="Sonicwall Portal" src="../../assets/images/portals/sonicwall/portal.png"></a></p>
 <p>The <code>Guest Portal URL</code> will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.</p>
-<p>Select the template and click on the Create button.</p>
+<p>Select the template and click on the Create button. Sonicwall Mode will be <code>CGI</code>.</p>
 <h2 id="portal-settings">Portal Settings</h2>
 <p>You can go to Portals to view the settings for the portal(s) just added.</p>
 <p>Clicking on a portal takes you to the details for that portal. It lets you specify additional settings:</p>
@@ -1836,10 +1867,10 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
 <p>You can click on the Edit button against each entry to modify it if needed.</p>
 <h2 id="sonicwall-settings">SonicWall Settings</h2>
 <p>Access SonicWall firewall appliance using web interface.</p>
-<p>An entry based on the Guest Portal URL noted earlier will need to be added first. Suppose the Guest portal URL is: <code>https://splashair.splashnetworks.co/sonicwall/sonic</code>. It consists of 2 sections:</p>
+<p>An entry based on the Guest Portal URL noted earlier will need to be added first. Suppose the Guest portal URL is: <code>https://splashair2.splashnetworks.co/sonicwall/sonic</code>. It consists of 2 sections:</p>
 <ul>
 <li>
-<p><em>Hostname</em>: <code>splashair.splashnetworks.co</code></p>
+<p><em>Hostname</em>: <code>splashair2.splashnetworks.co</code></p>
 </li>
 <li>
 <p><em>URL</em>: <code>sonicwall/sonic</code></p>
@@ -1983,13 +2014,13 @@ Duration (seconds) after email verification: when using "Link" type Flow it is t
         
         
           
-          <a href="../teltonika/" class="md-footer__link md-footer__link--next" aria-label="Next: Teltonika">
+          <a href="../sonicwall-api/" class="md-footer__link md-footer__link--next" aria-label="Next: SonicWall (v7.3 and above)">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Teltonika
+                SonicWall (v7.3 and above)
               </div>
             </div>
             <div class="md-footer__button md-icon">
