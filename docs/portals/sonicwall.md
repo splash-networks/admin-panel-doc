@@ -1,4 +1,6 @@
-To set up a portal for Ruckus One first you need to [create a template](../defining-templates.md).
+*This guide is only for SonicWall versions below 7.3.2. For version 7.3.2 and above, click [here](sonicwall-api.md).*
+
+To set up a portal for SonicWall first you need to [create a template](../defining-templates.md).
 
 ## Add a Portal
 
@@ -8,7 +10,7 @@ To create a portal go to the Portals tab and click on the New portal button. Ent
 
 The `Guest Portal URL` will be created based on the URL of the Splash Air application followed by the path given by Site ID. Note this URL as it will be required later.
 
-Select the template and click on the Create button.
+Select the template and click on the Create button. Sonicwall Mode will be `CGI`.
 
 ## Portal Settings
 
@@ -30,9 +32,9 @@ You can click on the Edit button against each entry to modify it if needed.
 
 Access SonicWall firewall appliance using web interface.
 
-An entry based on the Guest Portal URL noted earlier will need to be added first. Suppose the Guest portal URL is: `https://splashair.splashnetworks.co/sonicwall/sonic`. It consists of 2 sections:
+An entry based on the Guest Portal URL noted earlier will need to be added first. Suppose the Guest portal URL is: `https://splashair2.splashnetworks.co/sonicwall/sonic`. It consists of 2 sections:
 
- - _Hostname_: `splashair.splashnetworks.co`
+ - _Hostname_: `splashair2.splashnetworks.co`
 
  - _URL_: `sonicwall/sonic`
 

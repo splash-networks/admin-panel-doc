@@ -38,6 +38,7 @@ nav:
       - Ruckus Unleashed: portals/ruckus-unleashed.md
       - Ruijie: portals/ruijie.md
       - SonicWall: portals/sonicwall.md
+      - SonicWall (v7.3 and above): portals/sonicwall-api.md
       - Teltonika: portals/teltonika.md
       - TP-Link Omada: portals/omada.md
       - Ubiquiti Unifi: portals/unifi.md
